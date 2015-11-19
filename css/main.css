@@ -1,287 +1,267 @@
-/*====================================================================
-www.solvingbooks.com / BackEnd - Jose Osorio / FrontEnd - Jorge Monroy 
-====================================================================*/
+/*=================================================================
+www.solvingbooks.com / FrontEnd-Jorge Monroy / BackEnd-Jose Osorio
+=================================================================*/
+html {
+  box-sizing: border-box; }
 
+*, *::after, *::before {
+  box-sizing: inherit; }
 
-/*========================== SECCIÓN FONDO ESTUDIANTES ================================*/
+body:before {
+  background-image: -webkit-linear-gradient(left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100.0%, transparent 100.0%);
+  background-image: -moz-linear-gradient(left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100.0%, transparent 100.0%);
+  background-image: -ms-linear-gradient(left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100.0%, transparent 100.0%);
+  background-image: -o-linear-gradient(left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100.0%, transparent 100.0%);
+  background-image: linear-gradient(to left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100.0%, transparent 100.0%);
+  content: "";
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 68em;
+  opacity: 0.4;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: -1; }
 
-#home article {
-  position: relative;
-}
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  appearance: none;
+  background-color: #477dca;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.75em 1.5em;
+  text-decoration: none;
+  transition: background-color 150ms ease;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+  button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
+    background-color: #3964a2;
+    color: #fff; }
+  button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; }
+    button:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover {
+      background-color: #477dca; }
 
-#home .bg_estudiantes{
-	background: url('../public/images/home/desktop/bg1.jpg') no-repeat center;
-	background-size: cover;
-	margin-top: 51px;
-	height: 600px;
-}
+fieldset {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  margin: 0 0 0.75em;
+  padding: 1.5em; }
 
-#home .info_estudiantes{
-	bottom: 10%;
-	position: absolute;
-	left: 9vw;
-	margin-bottom: 60px;
-}
+input,
+label,
+select {
+  display: block;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em; }
 
-#home .info_estudiantes .info_mini {
-	background-color: rgba(255,255,255,0.45);
-	width: 340px;
-	border-radius: 12px;
-	margin-left: 0.5em;
-}
+label {
+  font-weight: 600;
+  margin-bottom: 0.375em; }
+  label.required::after {
+    content: "*"; }
+  label abbr {
+    display: none; }
 
-#home .info_estudiantes p:nth-child(3)  {
-	display: inline;
-	font-family: "Aleo Light";
-	font-size: 17px;
-	color: black;
-	margin-left: 2em;
-}
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea,
+select[multiple=multiple] {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  padding: 0.5em;
+  transition: border-color 150ms ease;
+  width: 100%; }
+  input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, input:not([type]):hover, textarea:hover,
+  select[multiple=multiple]:hover {
+    border-color: #b1b1b1; }
+  input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus,
+  select[multiple=multiple]:focus {
+    border-color: #477dca;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
+    outline: none; }
+  input[type="color"]:disabled, input[type="date"]:disabled, input[type="datetime"]:disabled, input[type="datetime-local"]:disabled, input[type="email"]:disabled, input[type="month"]:disabled, input[type="number"]:disabled, input[type="password"]:disabled, input[type="search"]:disabled, input[type="tel"]:disabled, input[type="text"]:disabled, input[type="time"]:disabled, input[type="url"]:disabled, input[type="week"]:disabled, input:not([type]):disabled, textarea:disabled,
+  select[multiple=multiple]:disabled {
+    background-color: #f2f2f2;
+    cursor: not-allowed; }
+    input[type="color"]:disabled:hover, input[type="date"]:disabled:hover, input[type="datetime"]:disabled:hover, input[type="datetime-local"]:disabled:hover, input[type="email"]:disabled:hover, input[type="month"]:disabled:hover, input[type="number"]:disabled:hover, input[type="password"]:disabled:hover, input[type="search"]:disabled:hover, input[type="tel"]:disabled:hover, input[type="text"]:disabled:hover, input[type="time"]:disabled:hover, input[type="url"]:disabled:hover, input[type="week"]:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover,
+    select[multiple=multiple]:disabled:hover {
+      border: 1px solid #ddd; }
 
-#home .info_estudiantes .info_mini p{
-	font-family: "Aleo Lightitalic";
-	font-size: 20px;
-	color: #282525;
-	padding: 15px;
-	margin: 0;
-}
+textarea {
+  resize: vertical; }
 
-#home .info_estudiantes span{
-	color: #00789A;
-}
+input[type="search"] {
+  appearance: none; }
 
-#home .info_estudiantes .boton_reg {
-	background: #00789A;
-	border-radius: 12px;
-	color: #fff;
-	font-family: "Blanch Caps";
-	font-size: 29px;
-	padding: 0 .6em .1em .6em;
-	margin-left: 0.5em;
-	display: inline;
-}
-/*========================== FIN SECCIÓN FONDO ESTUDIANTES ============================*/
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: 0.375em; }
+  input[type="checkbox"] + label,
+  input[type="radio"] + label {
+    display: inline-block; }
 
- /*================================ SECCIÓN INGENIERIAS ===============================*/
+input[type="file"] {
+  margin-bottom: 0.75em;
+  width: 100%; }
 
-#home #ingenierias {
-	padding-bottom: 70px;
-}
+select {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+  width: auto; }
 
-#home .ing_home {
-	padding-top: 40px;
-}
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+dl {
+  margin-bottom: 0.75em; }
+  dl dt {
+    font-weight: bold;
+    margin-top: 0.75em; }
+  dl dd {
+    margin: 0; }
 
-#home .ing_home p {
-	color: #444242;
-	padding-right: 34vw;
-	margin-bottom: 40px;
-}
+table {
+  border-collapse: collapse;
+  font-feature-settings: "kern", "liga", "tnum";
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%; }
 
-#home .ing_home .container .row .col-md-4 {
-	margin-bottom: 20px;
-	padding: 0;
-}
+th {
+  border-bottom: 1px solid #a6a6a6;
+  font-weight: 600;
+  padding: 0.75em 0;
+  text-align: left; }
 
-#home .ing_home .container .row .col-md-4 img {
-	width: 300px;
-	opacity: 0.35;
-}
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 0.75em 0; }
 
-#home .ing_home .container .row .primero img {
-	opacity: 1;
-}
+tr,
+td,
+th {
+  vertical-align: middle; }
 
-#home .ing_home .container .row .cuarto img,
-#home .ing_home .container .row .primero img {
-	float: right;
-}
+body {
+  color: #333;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-feature-settings: "kern", "liga", "pnum";
+  font-size: 1em;
+  line-height: 1.5; }
 
-#home .ing_home .container .row .tercero img,
-#home .ing_home .container .row .sexto img {
-	float: left;
-}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  line-height: 1.2;
+  margin: 0 0 0.75em; }
 
+p {
+  margin: 0 0 0.75em; }
 
-/*========================== FIN SECCIÓN INGENIERIAS =================================*/
+a {
+  color: #477dca;
+  text-decoration: none;
+  transition: color 150ms ease; }
+  a:active, a:focus, a:hover {
+    color: #355e98; }
 
+hr {
+  border-bottom: 1px solid #ddd;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: 1.5em 0; }
 
-/*=============================================================================
- ==========RESPONSIVE / RESPONSIVE / RESPONSIVE / RESPONSIVE ==================
-=============================================================================*/
-@media (max-width: 1199px) {
-	#home .ing_home .container .row .cuarto img,
-	#home .ing_home .container .row .primero img {
-		float: none;
-	}
+img,
+picture {
+  margin: 0;
+  max-width: 100%; }
 
-	#home .ing_home .container .row .tercero img,
-	#home .ing_home .container .row .sexto img {
-		float: none;
-	}
-}
-/*====NAVBAR DIFERENTE - MENOR A 767px =====*/
-@media (max-width: 767px) {
+/*==========FONTS==================*/
+@font-face {
+  font-family: "Blanch Caps";
+  src: url("../public/fonts/BLANCH_CAPS.otf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Aleo BoldItalic";
+  src: url("../public/fonts/aleo/Aleo-BoldItalic.otf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Aleo Bold";
+  src: url("../public/fonts/aleo/Aleo-Bold.otf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Aleo Lightitalic";
+  src: url("../public/fonts/aleo/Aleo-LightItalic.otf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Aleo Regular";
+  src: url("../public/fonts/aleo/Aleo-Regular.otf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Aleo Light";
+  src: url("../public/fonts/aleo/Aleo-Light.otf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Blanch Caps Light";
+  src: url("../public/fonts/BLANCH_CAPS_LIGHT.otf");
+  font-weight: normal;
+  font-style: normal; }
+/*===================BACKGROUND GRADIENT==================================================*/
+.gradient {
+  background: #f0f0f0;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #f0f0f0 1%, #ffffff 50%, #f0f0f0 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(1%, #f0f0f0), color-stop(50%, #ffffff), color-stop(100%, #f0f0f0));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #f0f0f0 1%, #ffffff 50%, #f0f0f0 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #f0f0f0 1%, #ffffff 50%, #f0f0f0 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #f0f0f0 1%, #ffffff 50%, #f0f0f0 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, #f0f0f0 1%, #ffffff 50%, #f0f0f0 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#f0f0f0',GradientType=1 );
+  /* IE6-9 */ }
 
-	#home .ing_home p {
-	    text-align: center;
-	    padding: 0 2vw;
-	}
+/*=====================OTHERS===============*/
+a:hover {
+  text-decoration: none; }
 
-	#home .ing_home h2 {
-	    text-align: center;
-	}
+ul {
+  text-align: center; }
 
-	#home .bg_estudiantes{
-		background: url('../public/images/home/movil/bg_movil.jpg') !important;
-		background-size: cover;
-		height: 100vh;
-		margin-top: 0px;
-	}
-
-	#home .info_estudiantes {
-	    bottom: 10%;
-	    position: absolute;
-	    left: 27vw;
-	    margin-bottom: 21vh;
-	}
-
-	#home .info_estudiantes .boton_reg {
-	    margin-left: 16vw;
-	    display: block;
-	    width: 113px;
-	    margin-top: 12px;
-	}
-
-	#home .info_estudiantes .info_mini {
-	    background-color: rgba(255,255,255,0.45);
-	    width: 340px;
-	    border-radius: 12px;
-	    margin-left: 0.5em;
-	    margin-top: 26px;
-	    margin-bottom: 20px;
-	}
-
-	#home .info_estudiantes p:nth-child(3) {
-	    margin-left: 11vw;
-	}
-}
-
-@media (max-width: 650px) {
-	#home .info_estudiantes {
-	    left: 23vw;
-	}
-
-	#home .info_estudiantes p:nth-child(3) {
-	    margin-left: 13vw;
-	}
-
-	#home .info_estudiantes .boton_reg {
-	    margin-left: 19vw;
-	}
-}
-
-@media (max-width: 550px) {
-	#home .info_estudiantes {
-	    left: 18vw;
-	}
-
-	#home .info_estudiantes p:nth-child(3) {
-	    margin-left: 16vw;
-	}
-
-	#home .info_estudiantes .boton_reg {
-	    margin-left: 23vw;
-	}
-}
-
-@media (max-width: 500px) {
-	#home .info_estudiantes {
-	    left: 13vw;
-	}
-
-	#home .info_estudiantes p:nth-child(3) {
-	    margin-left: 18vw;
-	}
-
-	#home .info_estudiantes .boton_reg {
-	    margin-left: 25vw;
-	}
-}
-
-@media (max-width: 450px) {
-	#home .info_estudiantes {
-	    left: 9vw;
-	}
-}
-
-@media (max-width: 400px) {
-	#home .info_estudiantes {
-	    left: 11vw;
-	}
-
-	#home .info_estudiantes h1 {
-		font-size: 2.8571em;
-		text-align: center;
-	}
-
-	#home .info_estudiantes .info_mini {
-	    width: 287px !important;
-	}
-
-	#home .info_estudiantes .info_mini p {	
-	    font-size: 1.2142em;
-	    text-align: center;
-	}
-
-	#home .info_estudiantes p:nth-child(3) {
-	    margin-left: 14vw;
-	    font-size: 1.1428em;
-	}
-
-	#home .info_estudiantes .boton_reg {
-	    margin-left: 22vw;
-	}
-}
-
-@media (max-width: 365px) {
-	#home .info_estudiantes {
-	    left: 6vw;
-	}
-
-	#home .info_estudiantes p:nth-child(3) {
-	    margin-left: 18vw;
-	}
-
-	#home .info_estudiantes .boton_reg {
-	    margin-left: 26vw;
-	}
-
-	#home .info_estudiantes .info_mini {
-	    width: 287px !important;
-	}
-}
-
-@media (max-width: 345px) {
-	#home .info_estudiantes {
-	    left: 4vw;
-	}
-
-	#home .info_estudiantes p:nth-child(3) {
-	    margin-left: 19vw;
-	}
-
-	#home .info_estudiantes .boton_reg {
-	    margin-left: 27vw;
-	}
-
-	#home .info_estudiantes h1 {
-		font-size: 2.7857em;
-		text-align: center;
-	}
-}
-
-
-
-
-
+/*# sourceMappingURL=main.css.map */

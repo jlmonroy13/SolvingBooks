@@ -1,0 +1,75 @@
+/*==========FONTS==================*/
+@font-face {
+	font-family:"Blanch Caps";
+	src: url("../public/fonts/BLANCH_CAPS.otf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:"Aleo BoldItalic";
+	src: url("../public/fonts/aleo/Aleo-BoldItalic.otf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:"Aleo Bold";
+	src: url("../public/fonts/aleo/Aleo-Bold.otf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:"Aleo Lightitalic";
+	src: url("../public/fonts/aleo/Aleo-LightItalic.otf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:"Aleo Regular";
+	src: url("../public/fonts/aleo/Aleo-Regular.otf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:"Aleo Light";
+	src: url("../public/fonts/aleo/Aleo-Light.otf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:"Blanch Caps Light";
+	src: url("../public/fonts/BLANCH_CAPS_LIGHT.otf");
+	font-weight: normal;
+	font-style: normal;
+}
+/*===================BACKGROUND GRADIENT==================================================*/
+.gradient {
+	background: #f0f0f0; /* Old browsers */
+	background: -moz-linear-gradient(left,  #f0f0f0 1%, #ffffff 50%, #f0f0f0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(1%,#f0f0f0), color-stop(50%,#ffffff), color-stop(100%,#f0f0f0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #f0f0f0 1%,#ffffff 50%,#f0f0f0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #f0f0f0 1%,#ffffff 50%,#f0f0f0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #f0f0f0 1%,#ffffff 50%,#f0f0f0 100%); /* IE10+ */
+	background: linear-gradient(to right,  #f0f0f0 1%,#ffffff 50%,#f0f0f0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#f0f0f0',GradientType=1 ); /* IE6-9 */
+}
+/*=====================OTHERS===============*/
+a:hover{
+	text-decoration:none;
+}
+
+ul {
+	text-align: center;
+}
+
+
+
+
+
+
+ 
