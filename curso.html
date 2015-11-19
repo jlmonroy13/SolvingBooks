@@ -1,0 +1,323 @@
+<!--================================================================== 
+www.solvingbooks.com / BackEnd - Jose Osorio / FrontEnd - Jorge Monroy 
+===================================================================-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>SolvingBooks | Cambia tu forma de estudiar</title>
+		<link rel="icon" href="public/images/solving_favicon.png" type="image/x-icon">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/application.css">
+		<link rel="stylesheet" href="css/curso.css">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/footer.css">
+	</head>
+	<body>
+		<!--========= NAVBAR ===============-->
+		<header class="lineElectronica">
+			<nav class="navbar" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+		    			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+		       				<span class="icon-bar"></span>
+		      				<span class="icon-bar"></span>
+		      				<span class="icon-bar"></span>
+		    			</button>
+		    			<a class="navbar-brand" href="index.html" title="SolvingBooks">
+							<img class="header_logo" src="public/images/navbar/navbar_logo.svg">
+		    			</a>
+		  			</div>
+		  			<div class="collapse navbar-collapse navbar-ex1-collapse">
+		     			<ul class="nav navbar-nav navbar-right">
+		      				<li><a href="#">INGENIERIAS</a></li>
+		      				<li><a href="#">PRECIOS</a></li>
+		      				<li><a href="#openModal">INGRESAR</a></li>
+		      				<li class="header_divisor"></li>
+		      				<li><a href="">REGISTRARSE</a></li>
+		    			</ul>
+		  			</div>
+		  		</div>
+			</nav>
+			<nav class="navbar navbar2 navbar-fixed-top lineElectronica" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+		    			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+		       				<span class="icon-bar"></span>
+		      				<span class="icon-bar"></span>
+		      				<span class="icon-bar"></span>
+		    			</button>
+		    			<a class="navbar-brand" href="index.html" title="SolvingBooks">
+							<img class="header_logo" src="public/images/navbar/navbar_logo.svg">
+		    			</a>
+		  			</div>
+		  			<div class="collapse navbar-collapse navbar-ex1-collapse">
+		     			<ul class="nav navbar-nav navbar-right">
+		      				<li><a href="#">INGENIERIAS</a></li>
+		      				<li><a href="#">PRECIOS</a></li>
+		      				<li><a href="#openModal">INGRESAR</a></li>
+		      				<li class="header_divisor"></li>
+		      				<li><a href="">REGISTRARSE</a></li>
+		    			</ul>
+		  			</div>
+		  		</div>
+			</nav>
+			<!--=================== OPEN MODAL INGRESAR ================-->
+			<div id="openModal" class="modalDialog">
+				<div>
+			    	<a class="salir" href="#close">X</a>
+			    	<form>
+			        	<h1>INGRESAR</h1>
+			        	<hr>
+			        	<h3>USUARIO</h3>
+			        	<input type="text" name="Usuario" placeholder=""/>
+			        	<h3>CONTRASEÑA</h3>
+			        	<input type="password" name="password" placeholder=""/>
+			        	<input type="checkbox"/>
+			        	<span>Recordar datos.</span>
+			        	<p><a class="btnIngresar" href="#close">INGRESAR</a></p>
+			        	<div>
+			        		<span>¿Eres nuevo en nuestra comunidad?</span>
+			        		<strong><a href="registro.html">Regístrate.</a></strong>
+			        	</div>
+		  			</form>
+		  		</div>
+			</div>
+			<!--============== FIN OPEN MODAL INGRESAR ================--> 
+		</header>
+		<!--========= FIN NAVBAR ===============-->
+
+		<section id="curso" class="degradado">
+			<!--========= PORTADA CURSOS===============-->
+			<div class="portada"></div>
+			<!--========= DESCRIPCIÓN CURSO===============-->
+			<article id="descripcion">
+				<div class="container">
+				  	<div class="row">
+				  		<div class="col-md-12">
+				  			<p id="descripcion_parrafo">En este módulo conocerás las herramientas para el análisis de los  <span id="descripcion_p_negro">circuitos eléctricos</span>, así como las características de los diferentes elementos de un circuito, además aprenderás a relacionar el comportamiento de la tensión y la corriente de acuerdo a los tipos de conexión, utilizando las leyes y teoremas que rigen los circuitos.</p>
+				  		</div>
+			  		</div>
+			  	</div>
+			</article>
+			<!--========= CONTENIDO CURSO======================================================-->
+			<section class="container" id="contenido">
+				<div class="row">
+			  		<!--========= ACORDEON ==========================================================-->
+			  		<div class="col-md-8">
+			  			<div class="panel-group" id="accordion" role="tablist">
+			  				<!-- CAPITULO 1 -->
+			  				<div class="panel panel-default">
+			  					<div class="panel-heading" role="tab" id="heading1">
+			  						<h4 class="panel-title">
+			  							<a href="#collapse1" data-toggle="collapse" data-parent="#accordion">
+			  								1. CONCEPTOS BÁSICOS <p><img src="public/images/cursos/circuitos1/cursos_clock.svg" alt=""> 38M</p>
+			  							</a>
+			  						</h4>		  						
+			  					</div>
+			  					<div id="collapse1" class="collapse in">
+			  						<div class="panel-body">
+			  							<ul>
+			  								<li><a href="video_circuitos1.html">Elementos de un circuito.<p>5m</p></a></li>
+			  								<li><a href="#">Elementos en Serie y Paralelo.<p>13m</p></a></li>
+			  							</ul>
+			  						</div>
+			  					</div>
+			  				</div>
+			  				<!-- CAPITULO 2 -->
+			  				<div class="panel panel-default">						
+			  					<div class="panel-heading" role="tab" id="heading2">
+			  						<h4 class="panel-title">
+			  							<a href="#collapse2" data-toggle="collapse" data-parent="#accordion">
+			  								2. LEYES BÁSICAS <p><img src="public/images/cursos/circuitos1/cursos_clock.svg" alt=""> 12M</p>
+			  							</a>		  							
+			  						</h4>		  						
+			  					</div>
+			  					<div id="collapse2" class="collapse">
+			  						<div class="panel-body">
+			  							<ul>
+			  								<li><a href="#">Comportamiento de capacitores e inductores en CD.<p>5m</p></a></li>
+			  								<li><a href="#">Ley de Ohm y Leyes de Kirchhoff.<p>3m</p></a></li>
+			  								<li><a href="#">Divisor de Voltaje y Corriente.<p>11m</p></a></li>
+			  								<li><a href="#">Transformaciones Estrella - Delta.<p>7m</p></a></li>
+			  							</ul>
+			  						</div>
+			  					</div>
+			  				</div>
+			  				<!-- CAPITULO 3 -->
+							<div class="panel panel-default">							
+			  					<div class="panel-heading" role="tab" id="heading3">
+			  						<h4 class="panel-title">
+			  							<a href="#collapse3" data-toggle="collapse" data-parent="#accordion">
+			  								3. MÉTODOS DE ANÁLISIS <p><img src="public/images/cursos/circuitos1/cursos_clock.svg" alt=""> 22M</p>
+			  							</a>		  							
+			  						</h4>		  						
+			  					</div>
+			  					<div id="collapse3" class="collapse">
+			  						<div class="panel-body">
+			  							<ul>
+			  								<li><a href="#">Análisis Nodal y Supernodos.<p>12m</p></a></li>
+			  								<li><a href="#">Análisis de Lazos y Superlazos.<p>10m</p></a></li>
+			  							</ul>
+			  						</div>
+			  					</div>
+			  				</div>
+			  				<!-- CAPITULO 4 -->
+							<div class="panel panel-default">
+			  					<div class="panel-heading" role="tab" id="heading4">
+			  						<h4 class="panel-title">
+			  							<a href="#collapse4" data-toggle="collapse" data-parent="#accordion">
+			  								4. TEOREMAS DE CIRCUITOS (DC y AC) <p><img src="public/images/cursos/circuitos1/cursos_clock.svg" alt=""> 29M</p>
+			  							</a>		  							
+			  						</h4>		  						
+			  					</div>
+			  					<div id="collapse4" class="collapse">
+			  						<div class="panel-body">
+			  							<ul>
+			  								<li><a href="#">Linealidad.<p>5m</p></a></li>
+			  								<li><a href="#">Superposición.<p>3m</p></a></li>
+			  								<li><a href="#">Transformación de Fuentes.<p>7m</p></a></li>
+			  								<li><a href="#">Teorema de Thevenin.<p>10m</p></a></li>
+			  								<li><a href="#">Teorema de Norton.<p>10m</p></a></li>
+			  							</ul>
+			  						</div>
+			  					</div>
+			  				</div>
+			  				<!-- CAPITULO 5 -->
+							<div class="panel panel-default">
+			  					<div class="panel-heading" role="tab" id="heading5">
+			  						<h4 class="panel-title">
+			  							<a href="#collapse5" data-toggle="collapse" data-parent="#accordion">
+			  								5. AMPLIFICADORES OPERACIONALES <p><img src="public/images/cursos/circuitos1/cursos_clock.svg" alt=""> 29M</p>
+			  							</a>		  							
+			  						</h4>		  						
+			  					</div>
+			  					<div id="collapse5" class="collapse">
+			  						<div class="panel-body">
+			  							<ul>
+			  								<li><a href="#">Amplificador operacional ideal.<p>5m</p></a></li>
+			  								<li><a href="#">Amplificador inversor.<p>3m</p></a></li>
+			  								<li><a href="#">Amplificador no inversor.<p>7m</p></a></li>
+			  								<li><a href="#">Amplificador sumador.<p>10m</p></a></li>
+			  								<li><a href="#">Amplificador diferencial.<p>10m</p></a></li>
+			  							</ul>
+			  						</div>
+			  					</div>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		<!--============================== INFORMACIÓN DEL CURSO =======================================-->
+			  		<div class="col-md-4">
+			  			<div class="row">
+			  				<div class="col-md-12">
+			  					<a href="video.html"><button>INICIAR CURSO</button></a>
+			  				</div>
+			  			</div>
+			  			<div class="row">
+			  				<div class="col-md-12">
+			  					<h1>ACERCA DEL PROFESOR</h1>
+			  				</div>
+			  			</div>
+			  			<div class="row prof">		  				
+			  				<div class="col-md-12">
+			  					<img src="public/images/cursos/circuitos1/cursos_profesor1.png" alt="Profesor">
+			  					<h3>ANGÉLICA GUERRERO</h3>
+			  				</div>
+			  			</div>
+			  			<div class="row">
+			  				<div class="col-md-12">
+			  					<ul>
+			  						<li><span class="profesorP"><span>Angélica </span>es estudiante de Ingeniera Eléctrica de la Universidad del Norte de Barranquilla. Tiene más de 1 años de experiencia como monitora de la materia Circuitos electricos en esta misma universidad. </span></li>
+			  					</ul>
+			  				</div>
+			  			</div>
+			  			<div class="row">
+			  				<div class="col-md-12">
+			  					<h1>PRE-REQUISITOS</h1>
+			  				</div>
+			  			</div>
+			  			<div class="row">
+			  				<div class="col-md-12">
+			  					<ul>
+			  						<li><span class="profesorP">Algebra y Trigonometría.</span></li>
+			  					</ul>
+			  				</div>
+			  			</div>
+			  			<div class="row">
+			  				<div class="col-md-12">
+			  					<ul>
+			  						<li><span class="profesorP">Calculo Integral.</span></li>
+			  					</ul>
+			  				</div>
+			  			</div>
+			  			<div class="row">
+			  				<div class="col-md-12">
+			  					<ul>
+			  						<li><span class="profesorP">Calculo Diferencial.</span></li>
+			  					</ul>
+			  				</div>
+			  			</div>			  						  					  			
+			  		</div>
+		  		</div>
+		  	</section>
+		</section>
+		<footer>
+	    	<div class="greenfooter">
+		    	<div class="container">
+		    		<div class="col-sm-4 col-md-4">
+		    			<ul id="lista_iz"class="hidden-xs">
+				            <li><a href="#">Crear una cuenta</li></a>
+				            <li><a href="#">¿Quienes somos?</li></a>
+				            <li><a href="#">Ingenierías</li></a>
+				            <li><a href="#">Ayuda</li></a>
+			          	</ul>
+		    		</div>
+		    		<div class="col-sm-4 col-md-4">
+		    			<div class="row">
+		    				<div class="col-xs-12 col-sm-12 col-md-12">
+				            	<a href="index.html"><div id="logofooter"><img src="public/images/footer/main_footer/footer_logo.png" alt="" /></div></a>  
+				          		<p><strong>Síguenos en</strong></p> 
+				          	</div>			          	
+				          	<div class="col-xs-12 col-sm-12 col-md-12">
+					          	<div class="SocialNetworks">
+					          		<div class="row">
+					          			<div class="col-xs-3 col-sm-3 col-md-2  col-md-offset-2">
+					                		<a href="http://www.facebook.com/SolvingBooks?fref=ts"><img src="public/images/footer/main_footer/footer_fb.png" alt="" /></a>
+					              		</div>
+					              		<div class="col-xs-3 col-sm-3 col-md-2">
+					                		<a href="https://www.youtube.com/channel/UCwGNFqQFef4ExPioeD_wHng"><img src="public/images/footer/main_footer/footer_yt.png" alt=" " /></a>
+					              		</div>
+					              		<div class="col-xs-3 col-sm-3 col-md-2 col-md-offset-0">
+					                		<a href=""><img src="public/images/footer/main_footer/footer_insta.png" alt="" /></a>
+					              		</div>
+					              		<div class="col-xs-3 col-sm-3 col-md-2">
+					                		<a href=""><img src="public/images/footer/main_footer/footer_tw.png" alt="" /></a>
+					                	</div> 
+					            	</div> 
+				          		</div>
+				          	</div>
+			    		</div>
+		    		</div>
+		    		<div class="col-sm-4 col-md-4">
+			    		<ul id="lista_dr" class="hidden-xs">
+				            <li><a href="#">Modos de pago</li></a>
+				            <li><a href="#">Trabaja con nosotros</li></a>
+				            <li><a href="#">Politica de privacidad</li></a>
+				            <li><a href="#">Condiciones de uso</li></a>
+				        </ul>
+				    </div>
+		    	</div>	
+	    	</div> 
+	    	<div class="solvingfooter">
+	    		<div class="container">
+					<p class="copy">&copy; 2015 SolvingBooks. Todos los derechos reservados.</p>
+				</div> 
+			</div>		
+		</footer>
+		<!--=================== SCRIPT SECTION =====================-->
+		<script src="http://code.jquery.com/jquery-latest.js"></script>  
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

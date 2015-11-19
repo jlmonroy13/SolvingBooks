@@ -1,0 +1,170 @@
+/*====================================================================
+www.solvingbooks.com / BackEnd - Jose Osorio / FrontEnd - Jorge Monroy 
+====================================================================*/
+
+/*================================ FOOTER ===============================*/
+
+.bluefooter {  	
+  	background-color: #4f7fad;
+}
+
+.greenfooter {  	
+  	background-color: #094A3F;
+}
+
+.brownfooter {  	
+  	background-color: #442300;
+}
+
+#lista_iz  {
+ 	border-right: 1px solid white;
+  	height: 155px;
+  	margin-top: 25px;
+  	margin-bottom: 25px;
+	padding-top: 1px; 
+}
+
+#lista_iz li {
+	list-style: none;
+	margin-top: 15px;
+	font-size: 14px;
+	text-align: right;
+	padding-right: 40px;
+}
+
+#lista_iz li a {
+ 	color: #fff;
+ 	opacity: 0.7;
+	font-family: "Aleo Light", Arial, Helvetica, sans-serif;
+	font-size: 15px;
+}
+
+#lista_iz li a:hover {
+ 	opacity: 1;
+}
+
+footer strong {
+ 	color:white;
+	font-size: 30px;
+	text-align: center;
+	font-family:'Blanch Caps Light';
+	display: block;
+}
+
+#logofooter img {
+ 	width: 70%;
+ 	margin: 35px auto 5px auto;
+ 	display: block;
+}
+
+.SocialNetworks .row img {
+ 	width: 100%;
+ 	margin-bottom: 20px;
+ 	opacity: 0.5;
+}
+
+.SocialNetworks {
+ 	margin-left: 10%;
+ 	margin-right: 10%; 
+}
+
+
+.SocialNetworks .row img:hover {
+ 	opacity: 1;
+}
+
+#lista_dr {
+ 	border-left: 1px solid white;
+ 	border-right: 0px solid white;
+	height:155px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding-top: 1px; 
+}
+
+#lista_dr li {
+ 	list-style: none;
+	margin-top: 15px;
+	text-align: left;
+}
+
+#lista_dr li a {
+ 	color: #fff;
+ 	opacity: 0.7;
+	font-family: "Aleo Light", Arial, Helvetica, sans-serif;
+	font-size: 15px;
+}
+
+#lista_dr li a:hover {
+ 	opacity: 1;
+}
+
+.solvingfooter {
+	padding-top:12px;
+  	background: -moz-linear-gradient(left,  #f0f0f0 1%, #ffffff 50%, #f0f0f0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(1%,#f0f0f0), color-stop(50%,#ffffff), color-stop(100%,#f0f0f0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #f0f0f0 1%,#ffffff 50%,#f0f0f0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #f0f0f0 1%,#ffffff 50%,#f0f0f0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #f0f0f0 1%,#ffffff 50%,#f0f0f0 100%); /* IE10+ */
+	background: linear-gradient(to right,  #f0f0f0 1%,#ffffff 50%,#f0f0f0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#f0f0f0',GradientType=1 ); /* IE6-9 */
+	
+}
+
+.solvingfooter p {
+	font-family: "Aleo Light", Arial, Helvetica, sans-serif;
+  	font-size:14px;
+ 	text-align:center;
+  	line-height: 0.2;
+  	color:#727272;
+  	line-height: 0.7;
+}
+
+.SocialNetworks .col-sm-3 {
+	padding-left: 3%;
+	padding-right: 3%;
+}
+
+/*=============================================================================
+ ==========RESPONSIVE / RESPONSIVE / RESPONSIVE / RESPONSIVE ==================
+=============================================================================*/
+
+@media (min-width: 500px) and (max-width:767px) {
+	.SocialNetworks .row img {
+	    width: 55px;
+	}
+
+	.SocialNetworks {
+	    margin-left: 30%;
+	}
+}
+
+@media (min-width: 700px) and (max-width:767px) {
+	.SocialNetworks {
+	    margin-left: 30%;
+	}
+}
+
+@media (min-width: 650px) and (max-width: 699px) {
+	.SocialNetworks {
+	    margin-left: 27%;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 649px) {
+	.SocialNetworks {
+	    margin-left: 25%;
+	}
+}
+
+@media (min-width: 550px) and (max-width: 599px) {
+	.SocialNetworks {
+	    margin-left: 23%;
+	}
+}
+
+@media (min-width: 500px) and (max-width: 549px) {
+	.SocialNetworks {
+	    margin-left: 20%;
+	}
+}

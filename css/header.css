@@ -1,0 +1,226 @@
+/*====================================================================
+www.solvingbooks.com / BackEnd - Jose Osorio / FrontEnd - Jorge Monroy 
+====================================================================*/
+
+
+/*========================== NAVBAR ================================*/
+header nav {
+	margin: 0 !important;
+}
+
+header nav .navbar-brand {
+	padding-top: 9px;
+}
+
+header .header_logo {
+	width: 165px;
+}
+
+header .collapse ul li a {
+	font-family: "Blanch caps";
+	font-size: 27px;
+	color: #000;
+}
+
+header .collapse ul li a:hover {
+	color: #5980AD;
+	background: none;
+}
+
+header .collapse ul li a:focus {
+	color: #5980AD;
+	background: none;
+	outline: none;
+}
+
+header .collapse ul .header_divisor {
+	height: 20px;
+	border-right: #000 2px solid;
+	margin-top: 15px;
+}
+
+header .icon-bar {
+	background-color: #5980AD;;
+}
+
+.blancoTransparente {
+	background-color: rgb(255,255,255);
+	border-bottom: 2px solid #4f7fad;
+}
+
+	/*============OPENMODAL======================*/
+header .modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.4);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+header .modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+header nav.navbar2 {
+	display: none;
+}
+
+header #openModal {
+	text-align: center;
+}
+
+header #openModal > div {
+	width: 370px;
+	height: 330px;
+	background-color: white;
+	margin-top: 20vh;
+	border-radius: 25px;
+	display: inline-block;
+}
+
+header #openModal > div a.salir {
+	color: #094268;
+	margin-left: 330px;
+}
+
+header #openModal > div form h1 {
+	color: #094268;
+	font-size: 3.2142em;
+	margin-bottom: 0px;
+	margin-top: -15px;
+}
+
+header #openModal hr {
+    margin-top: 0px;
+    border-top: 2px solid #094268;
+    width: 80px;
+    margin-right: 110px;
+    margin-bottom: 15px;
+}
+
+header #openModal > div form  {
+	padding: 0 39px;
+}
+
+header #openModal > div form h3 {
+	color: #000;
+	font-size: 2.0714em;
+	text-align: left;
+	margin-left: 10px;
+	margin-bottom: 0px;
+	margin-top: 8px;
+
+}
+
+header #openModal > div form input {
+	border-radius: 12px;
+	color: #0F4760;
+	font-family: "Aleo Light";
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgba(19,99,150, 0.3);
+	border: none;
+	display: block;
+	width: 291px;
+	height: 27px;
+}
+
+header #openModal form input:focus {
+	outline: none;
+}
+
+header #openModal form input[type=checkbox] {
+	height: 15px;
+	width: 15px;
+	display: inline-block;
+	margin-top: 10px;
+    margin-left: -151px;
+}
+
+header #openModal form span {
+	font-family: "Aleo Lightitalic";
+	font-size: 0.7857em;
+	color: #6D6D6D;
+}
+
+header #openModal form p a {
+	color: #fff;
+	font-family: "Blanch Caps";
+	font-size: 1.8571em;
+	background-color: #0D5880;
+	border-radius: 16px;
+	width: 91px;
+	padding: 0 19px;
+	margin-left: 180px;
+}
+
+header #openModal form div span {
+	color: #3f3f3f;
+	font-family: "Aleo Light";
+	font-size: 0.9285em;
+}
+
+header #openModal form div strong a {
+	color: #000;
+	font-family: "Aleo Light";
+	font-size: 1.0714em;
+}
+
+	/*============FIN OPENMODAL======================*/
+
+/*========================== FIN NAVBAR ===============================*/
+
+/*==== RESPONSIVE / RESPONSIVE / RESPONSIVE / RESPONSIVE / RESPONSIVE / RESPONSIVE=====*/
+
+/*====NAVBAR DIFERENTE - MENOR A 767px =====*/
+@media (max-width: 767px) {
+	header .collapse ul .header_divisor {
+		display: none;
+	}
+	footer #logofooter img {
+	    width: 248px;
+	}
+}
+
+@media (max-width: 400px) {
+	header #openModal > div {
+    	width: 294px;
+    	height: 346px;
+	}
+
+	header #openModal > div a.salir {
+	    margin-left: 264px;
+	}
+
+	header #openModal > div form {
+	    padding: 0 20px;
+	}
+
+	header #openModal hr {
+	    margin-right: 90px;
+	}
+
+	header #openModal > div form input {
+	    width: 256px;
+	}
+
+	header #openModal form p a {
+	    margin-left: 142px;
+	}
+}
+
+@media (min-width: 500px) and (max-width:767px) {
+
+	footer .SocialNetworks .row .col-md-2 {
+		width: 75px;
+	}
+}

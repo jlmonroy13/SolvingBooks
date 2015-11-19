@@ -1,0 +1,287 @@
+/*====================================================================
+www.solvingbooks.com / BackEnd - Jose Osorio / FrontEnd - Jorge Monroy 
+====================================================================*/
+
+
+/*========================== SECCIÓN FONDO ESTUDIANTES ================================*/
+
+#home article {
+  position: relative;
+}
+
+#home .bg_estudiantes{
+	background: url('../public/images/home/desktop/bg1.jpg') no-repeat center;
+	background-size: cover;
+	margin-top: 51px;
+	height: 600px;
+}
+
+#home .info_estudiantes{
+	bottom: 10%;
+	position: absolute;
+	left: 9vw;
+	margin-bottom: 60px;
+}
+
+#home .info_estudiantes .info_mini {
+	background-color: rgba(255,255,255,0.45);
+	width: 340px;
+	border-radius: 12px;
+	margin-left: 0.5em;
+}
+
+#home .info_estudiantes p:nth-child(3)  {
+	display: inline;
+	font-family: "Aleo Light";
+	font-size: 17px;
+	color: black;
+	margin-left: 2em;
+}
+
+#home .info_estudiantes .info_mini p{
+	font-family: "Aleo Lightitalic";
+	font-size: 20px;
+	color: #282525;
+	padding: 15px;
+	margin: 0;
+}
+
+#home .info_estudiantes span{
+	color: #00789A;
+}
+
+#home .info_estudiantes .boton_reg {
+	background: #00789A;
+	border-radius: 12px;
+	color: #fff;
+	font-family: "Blanch Caps";
+	font-size: 29px;
+	padding: 0 .6em .1em .6em;
+	margin-left: 0.5em;
+	display: inline;
+}
+/*========================== FIN SECCIÓN FONDO ESTUDIANTES ============================*/
+
+ /*================================ SECCIÓN INGENIERIAS ===============================*/
+
+#home #ingenierias {
+	padding-bottom: 70px;
+}
+
+#home .ing_home {
+	padding-top: 40px;
+}
+
+#home .ing_home p {
+	color: #444242;
+	padding-right: 34vw;
+	margin-bottom: 40px;
+}
+
+#home .ing_home .container .row .col-md-4 {
+	margin-bottom: 20px;
+	padding: 0;
+}
+
+#home .ing_home .container .row .col-md-4 img {
+	width: 300px;
+	opacity: 0.35;
+}
+
+#home .ing_home .container .row .primero img {
+	opacity: 1;
+}
+
+#home .ing_home .container .row .cuarto img,
+#home .ing_home .container .row .primero img {
+	float: right;
+}
+
+#home .ing_home .container .row .tercero img,
+#home .ing_home .container .row .sexto img {
+	float: left;
+}
+
+
+/*========================== FIN SECCIÓN INGENIERIAS =================================*/
+
+
+/*=============================================================================
+ ==========RESPONSIVE / RESPONSIVE / RESPONSIVE / RESPONSIVE ==================
+=============================================================================*/
+@media (max-width: 1199px) {
+	#home .ing_home .container .row .cuarto img,
+	#home .ing_home .container .row .primero img {
+		float: none;
+	}
+
+	#home .ing_home .container .row .tercero img,
+	#home .ing_home .container .row .sexto img {
+		float: none;
+	}
+}
+/*====NAVBAR DIFERENTE - MENOR A 767px =====*/
+@media (max-width: 767px) {
+
+	#home .ing_home p {
+	    text-align: center;
+	    padding: 0 2vw;
+	}
+
+	#home .ing_home h2 {
+	    text-align: center;
+	}
+
+	#home .bg_estudiantes{
+		background: url('../public/images/home/movil/bg_movil.jpg') !important;
+		background-size: cover;
+		height: 100vh;
+		margin-top: 0px;
+	}
+
+	#home .info_estudiantes {
+	    bottom: 10%;
+	    position: absolute;
+	    left: 27vw;
+	    margin-bottom: 21vh;
+	}
+
+	#home .info_estudiantes .boton_reg {
+	    margin-left: 16vw;
+	    display: block;
+	    width: 113px;
+	    margin-top: 12px;
+	}
+
+	#home .info_estudiantes .info_mini {
+	    background-color: rgba(255,255,255,0.45);
+	    width: 340px;
+	    border-radius: 12px;
+	    margin-left: 0.5em;
+	    margin-top: 26px;
+	    margin-bottom: 20px;
+	}
+
+	#home .info_estudiantes p:nth-child(3) {
+	    margin-left: 11vw;
+	}
+}
+
+@media (max-width: 650px) {
+	#home .info_estudiantes {
+	    left: 23vw;
+	}
+
+	#home .info_estudiantes p:nth-child(3) {
+	    margin-left: 13vw;
+	}
+
+	#home .info_estudiantes .boton_reg {
+	    margin-left: 19vw;
+	}
+}
+
+@media (max-width: 550px) {
+	#home .info_estudiantes {
+	    left: 18vw;
+	}
+
+	#home .info_estudiantes p:nth-child(3) {
+	    margin-left: 16vw;
+	}
+
+	#home .info_estudiantes .boton_reg {
+	    margin-left: 23vw;
+	}
+}
+
+@media (max-width: 500px) {
+	#home .info_estudiantes {
+	    left: 13vw;
+	}
+
+	#home .info_estudiantes p:nth-child(3) {
+	    margin-left: 18vw;
+	}
+
+	#home .info_estudiantes .boton_reg {
+	    margin-left: 25vw;
+	}
+}
+
+@media (max-width: 450px) {
+	#home .info_estudiantes {
+	    left: 9vw;
+	}
+}
+
+@media (max-width: 400px) {
+	#home .info_estudiantes {
+	    left: 11vw;
+	}
+
+	#home .info_estudiantes h1 {
+		font-size: 2.8571em;
+		text-align: center;
+	}
+
+	#home .info_estudiantes .info_mini {
+	    width: 287px !important;
+	}
+
+	#home .info_estudiantes .info_mini p {	
+	    font-size: 1.2142em;
+	    text-align: center;
+	}
+
+	#home .info_estudiantes p:nth-child(3) {
+	    margin-left: 14vw;
+	    font-size: 1.1428em;
+	}
+
+	#home .info_estudiantes .boton_reg {
+	    margin-left: 22vw;
+	}
+}
+
+@media (max-width: 365px) {
+	#home .info_estudiantes {
+	    left: 6vw;
+	}
+
+	#home .info_estudiantes p:nth-child(3) {
+	    margin-left: 18vw;
+	}
+
+	#home .info_estudiantes .boton_reg {
+	    margin-left: 26vw;
+	}
+
+	#home .info_estudiantes .info_mini {
+	    width: 287px !important;
+	}
+}
+
+@media (max-width: 345px) {
+	#home .info_estudiantes {
+	    left: 4vw;
+	}
+
+	#home .info_estudiantes p:nth-child(3) {
+	    margin-left: 19vw;
+	}
+
+	#home .info_estudiantes .boton_reg {
+	    margin-left: 27vw;
+	}
+
+	#home .info_estudiantes h1 {
+		font-size: 2.7857em;
+		text-align: center;
+	}
+}
+
+
+
+
+
