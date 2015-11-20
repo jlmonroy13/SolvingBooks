@@ -1,0 +1,84 @@
+.home {
+	header {
+		background-color: #fff;
+		border: none;
+		a {
+			color: #000 !important;
+			img {
+				height: 60px;
+			}
+			.to-arrow {
+				.hamburger-box {
+					background-color: #fff !important;
+					margin: 0;
+					span {
+						display: none;
+						color: #fff !important;
+					}
+					.bun, .meat {
+						background-color: #5980AD !important;
+						height: 3px;
+					}
+					.top {
+						top: 22px;
+					}
+					.bottom {
+						bottom: 23px;
+					}
+				}
+				.hamburger-box:hover {
+					.meat {
+						margin-left: 0;
+						width: 22px;
+					}
+					.top {
+					    transform: none;
+					    width: 22px;
+					    margin-left: 0;
+					}
+					.bottom {
+					    transform: none;
+					    width: 22px;
+					    margin-left: 0;
+					}
+				}
+			}
+		}
+		nav {
+			ul {
+				li {
+					padding-right: em(9px) !important;
+					a {
+						color: #000 !important;	
+						font-family: "Blanch caps";
+    					font-size: em(27px);
+    					padding-right: em(11px) !important;
+					}
+					a:hover {
+						color: #5980AD !important;
+					}			
+				}
+				li:nth-child(3) {
+					padding-right: 0;
+					margin-right: 13px !important;
+					border-right: 2px solid #000;
+					a {
+						padding-right: 7px !important;
+					}
+				}
+				.nav-link {
+					background-color: #fff !important;
+					text-align: center;
+					$mobile: new-breakpoint(max-width 859px);
+					@include media($mobile) {
+						
+					}
+					padding: 0 !important;
+					a {
+						padding: 0 !important;
+					}
+				}
+			}
+		}
+	}
+}

@@ -3,8 +3,11 @@ www.solvingbooks.com / FrontEnd-Jorge Monroy / BackEnd-Jose Osorio
 =================================================================*/
 @import "bourbon/bourbon";
 @import "neat/neat";
+@import "normalize";
 @import "base/base";
-@import "layouts/application"
+@import "refills/refills-dir";
+@import "layouts/layouts-dir";
+
 
 
 
