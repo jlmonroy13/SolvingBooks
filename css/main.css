@@ -326,6 +326,7 @@ picture {
   margin: 0;
   max-width: 100%; }
 
+/*====REFILLS _header-navigation====*/
 header.navigation {
   background-color: #333;
   border-bottom: 1px solid #1a1a1a;
@@ -552,6 +553,7 @@ header.navigation {
           box-sizing: border-box;
           display: block; } }
 
+/*====REFILLS _header-hamburger====*/
 .to-arrow {
   display: inline-block; }
 
@@ -736,6 +738,7 @@ header.navigation {
   margin-bottom: -2px;
   margin-right: -13px; }
 
+/*==========APPLICATION STYLES==================*/
 /*==========FONTS==================*/
 @font-face {
   font-family: "Blanch Caps";
@@ -791,57 +794,135 @@ header.navigation {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#f0f0f0',GradientType=1 );
   /* IE6-9 */ }
 
+/*===================HEADER STYLES==================================================*/
 .home header {
   background-color: #fff;
   border: none; }
-  .home header a {
-    color: #000 !important; }
-    .home header a img {
-      height: 60px; }
-    .home header a .to-arrow .hamburger-box {
+  .home header .navigation-wrapper #js-mobile-menu {
+    height: 60px; }
+  .home header .navigation-wrapper a img {
+    height: 60px; }
+  .home header .navigation-wrapper a .to-arrow {
+    /*Hamburger button*/ }
+    .home header .navigation-wrapper a .to-arrow .hamburger-box {
       background-color: #fff !important;
       margin: 0; }
-      .home header a .to-arrow .hamburger-box span {
+      .home header .navigation-wrapper a .to-arrow .hamburger-box span {
         display: none;
         color: #fff !important; }
-      .home header a .to-arrow .hamburger-box .bun, .home header a .to-arrow .hamburger-box .meat {
+      .home header .navigation-wrapper a .to-arrow .hamburger-box .bun, .home header .navigation-wrapper a .to-arrow .hamburger-box .meat {
         background-color: #5980AD !important;
         height: 3px; }
-      .home header a .to-arrow .hamburger-box .top {
+      .home header .navigation-wrapper a .to-arrow .hamburger-box .top {
         top: 22px; }
-      .home header a .to-arrow .hamburger-box .bottom {
+      .home header .navigation-wrapper a .to-arrow .hamburger-box .bottom {
         bottom: 23px; }
-    .home header a .to-arrow .hamburger-box:hover .meat {
+    .home header .navigation-wrapper a .to-arrow .hamburger-box:hover .meat {
       margin-left: 0;
       width: 22px; }
-    .home header a .to-arrow .hamburger-box:hover .top {
+    .home header .navigation-wrapper a .to-arrow .hamburger-box:hover .top {
       transform: none;
       width: 22px;
       margin-left: 0; }
-    .home header a .to-arrow .hamburger-box:hover .bottom {
+    .home header .navigation-wrapper a .to-arrow .hamburger-box:hover .bottom {
       transform: none;
       width: 22px;
       margin-left: 0; }
-  .home header nav ul li {
+  .home header .navigation-wrapper nav ul li {
     padding-right: 0.5625em !important; }
-    .home header nav ul li a {
+    .home header .navigation-wrapper nav ul li a {
       color: #000 !important;
       font-family: "Blanch caps";
       font-size: 1.6875em;
       padding-right: 0.6875em !important; }
-    .home header nav ul li a:hover {
+    .home header .navigation-wrapper nav ul li a:hover {
       color: #5980AD !important; }
-  .home header nav ul li:nth-child(3) {
+  .home header .navigation-wrapper nav ul li:nth-child(3) {
     padding-right: 0;
     margin-right: 13px !important;
     border-right: 2px solid #000; }
-    .home header nav ul li:nth-child(3) a {
+    @media screen and (max-width: 859px) {
+      .home header .navigation-wrapper nav ul li:nth-child(3) {
+        border-right: none; } }
+    .home header .navigation-wrapper nav ul li:nth-child(3) a {
       padding-right: 7px !important; }
-  .home header nav ul .nav-link {
+  .home header .navigation-wrapper nav ul .nav-link {
     background-color: #fff !important;
-    text-align: center;
-    padding: 0 !important; }
-    .home header nav ul .nav-link a {
-      padding: 0 !important; }
+    text-align: center; }
+    @media screen and (max-width: 859px) {
+      .home header .navigation-wrapper nav ul .nav-link {
+        padding: 0 !important; } }
+    @media screen and (max-width: 859px) {
+      .home header .navigation-wrapper nav ul .nav-link a {
+        padding: 0 !important; } }
+
+/*===================HEADER COLOR LINE==================================================*/
+.home_footer {
+  border-bottom: none; }
+  @media screen and (max-width: 859px) {
+    .home_footer .navigation-wrapper nav ul {
+      border-top: 3px solid #5980AD !important; } }
+
+.electronica_footer {
+  border-bottom: 3px solid #009E87 !important; }
+
+.electrica_footer {
+  border-bottom: 3px solid #009E87 !important; }
+
+.sistemas_footer {
+  border-bottom: 3px solid #009E87 !important; }
+
+.industrial_footer {
+  border-bottom: 3px solid #009E87 !important; }
+
+.civil_footer {
+  border-bottom: 3px solid #009E87 !important; }
+
+.mecanica_footer {
+  border-bottom: 3px solid #009E87 !important; }
+
+/*======== STYLES BODY HOME ==========*/
+.home #first_section {
+  position: relative; }
+  .home #first_section .image_slider {
+    background: url("../public/images/home/desktop/bg1.jpg") no-repeat center;
+    background-size: cover;
+    height: 91.03vh;
+    max-height: 670px; }
+  .home #first_section .info_slider {
+    position: absolute;
+    bottom: 15%;
+    left: 10.029vw; }
+    .home #first_section .info_slider h1 {
+      font-size: 2.875em;
+      font-family: "Blanch Caps";
+      font-weight: 500;
+      margin-bottom: 10px !important; }
+      .home #first_section .info_slider h1 span {
+        color: #00789A; }
+    .home #first_section .info_slider .info_mini {
+      background-color: rgba(255, 255, 255, 0.45);
+      width: 340px;
+      border-radius: 12px; }
+      .home #first_section .info_slider .info_mini p {
+        font-family: "Aleo Lightitalic";
+        font-size: 1.21875em;
+        color: #282525;
+        padding: 15px 20px;
+        margin-left: 0; }
+    .home #first_section .info_slider p {
+      font-family: "Aleo Light";
+      font-size: 1.0625em;
+      color: #000;
+      margin-left: 1.2em; }
+      .home #first_section .info_slider p .button_reg {
+        background-color: #00789A;
+        border-radius: 12px;
+        color: #fff;
+        font-family: "Blanch Caps";
+        font-size: 1.8125em;
+        padding: 0 .6em .1em .6em;
+        margin-left: 0.5em;
+        display: inline; }
 
 /*# sourceMappingURL=main.css.map */

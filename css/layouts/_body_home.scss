@@ -1,0 +1,54 @@
+/*======== STYLES BODY HOME ==========*/
+.home {
+	#first_section {
+		position: relative;
+		.image_slider {
+			background: url('../public/images/home/desktop/bg1.jpg') no-repeat center;
+			background-size: cover;
+			height: 91.03vh;
+			max-height: 670px;
+		}
+		.info_slider {
+			position: absolute;
+			bottom: 15%;
+			left: 10.029vw;
+			h1 {
+				font-size: em(46px);
+    			font-family: "Blanch Caps";
+    			font-weight: 500;
+    			margin-bottom: 10px !important;
+    			span {
+    				color: #00789A;
+    			}
+			}
+			.info_mini {
+				background-color: rgba(#fff,0.45);
+		    	width: 340px;
+		    	border-radius: 12px;
+		    	p {
+		    		font-family: "Aleo Lightitalic";
+				    font-size: em(19.5px);
+				    color: #282525;
+				    padding: 15px 20px;
+				    margin-left: 0;
+		    	}
+			}
+			p {
+				font-family: "Aleo Light";
+			    font-size: em(17px);
+			    color: #000;
+			    margin-left: 1.2em;
+			    .button_reg {
+			    	background-color: #00789A;
+				    border-radius: 12px;
+				    color: #fff;
+				    font-family: "Blanch Caps";
+				    font-size: em(29px);
+				    padding: 0 .6em .1em .6em;
+				    margin-left: 0.5em;
+				    display: inline;
+			    }
+			}
+		}
+	}
+}

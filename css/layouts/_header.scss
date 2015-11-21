@@ -1,84 +1,121 @@
+/*===================HEADER STYLES==================================================*/
 .home {
 	header {
 		background-color: #fff;
 		border: none;
-		a {
-			color: #000 !important;
-			img {
+		.navigation-wrapper {
+			#js-mobile-menu {
 				height: 60px;
 			}
-			.to-arrow {
-				.hamburger-box {
-					background-color: #fff !important;
-					margin: 0;
-					span {
-						display: none;
-						color: #fff !important;
+			a {
+				img {
+					height: 60px;
+				} 
+				.to-arrow {   /*Hamburger button*/
+					.hamburger-box {
+						background-color: #fff !important;
+						margin: 0;
+						span {
+							display: none;
+							color: #fff !important;
+						}
+						.bun, .meat {
+							background-color: #5980AD !important;
+							height: 3px;
+						}
+						.top {
+							top: 22px;
+						}
+						.bottom {
+							bottom: 23px;
+						}
 					}
-					.bun, .meat {
-						background-color: #5980AD !important;
-						height: 3px;
-					}
-					.top {
-						top: 22px;
-					}
-					.bottom {
-						bottom: 23px;
-					}
-				}
-				.hamburger-box:hover {
-					.meat {
-						margin-left: 0;
-						width: 22px;
-					}
-					.top {
-					    transform: none;
-					    width: 22px;
-					    margin-left: 0;
-					}
-					.bottom {
-					    transform: none;
-					    width: 22px;
-					    margin-left: 0;
+					.hamburger-box:hover {
+						.meat {
+							margin-left: 0;
+							width: 22px;
+						}
+						.top {
+						    transform: none;
+						    width: 22px;
+						    margin-left: 0;
+						}
+						.bottom {
+						    transform: none;
+						    width: 22px;
+						    margin-left: 0;
+						}
 					}
 				}
 			}
-		}
-		nav {
-			ul {
-				li {
-					padding-right: em(9px) !important;
-					a {
-						color: #000 !important;	
-						font-family: "Blanch caps";
-    					font-size: em(27px);
-    					padding-right: em(11px) !important;
+			nav {
+				ul {
+					li {
+						padding-right: em(9px) !important;
+						a {
+							color: #000 !important;	
+							font-family: "Blanch caps";
+	    					font-size: em(27px);
+	    					padding-right: em(11px) !important;
+						}
+						a:hover {
+							color: #5980AD !important;
+						}			
 					}
-					a:hover {
-						color: #5980AD !important;
-					}			
-				}
-				li:nth-child(3) {
-					padding-right: 0;
-					margin-right: 13px !important;
-					border-right: 2px solid #000;
-					a {
-						padding-right: 7px !important;
+					li:nth-child(3) {
+						padding-right: 0;
+						margin-right: 13px !important;
+						border-right: 2px solid #000;
+						$mobile: new-breakpoint(max-width 859px);
+						@include media($mobile) {
+							border-right: none;
+						}
+						a {
+							padding-right: 7px !important;
+						}
 					}
-				}
-				.nav-link {
-					background-color: #fff !important;
-					text-align: center;
-					$mobile: new-breakpoint(max-width 859px);
-					@include media($mobile) {
-						
-					}
-					padding: 0 !important;
-					a {
-						padding: 0 !important;
+					.nav-link {
+						background-color: #fff !important;
+						text-align: center;
+						$mobile: new-breakpoint(max-width 859px);
+						@include media($mobile) {
+							padding: 0 !important;
+						}
+						a {
+							$mobile: new-breakpoint(max-width 859px);
+							@include media($mobile) {
+								padding: 0 !important;
+							}
+						}
 					}
 				}
 			}
 		}
 	}
 }
+/*===================HEADER COLOR LINE==================================================*/
+.home_footer {
+	border-bottom: none;
+	.navigation-wrapper {
+		nav {
+			ul {
+				$mobile: new-breakpoint(max-width 859px);
+				@include media($mobile) {
+					border-top: 3px solid #5980AD !important;
+				}
+			}
+		}
+	}		
+}
+.electronica_footer { border-bottom: 3px solid #009E87 !important;}
+.electrica_footer { border-bottom: 3px solid #009E87 !important;}
+.sistemas_footer { border-bottom: 3px solid #009E87 !important;}
+.industrial_footer { border-bottom: 3px solid #009E87 !important;}
+.civil_footer { border-bottom: 3px solid #009E87 !important;}
+.mecanica_footer { border-bottom: 3px solid #009E87 !important;}
+
+
+
+
+
+
