@@ -1,0 +1,29 @@
+/*===================FOOTER STYLES==================================================*/
+.big-footer {
+	.contain-big-footer {
+		@include outer-container;
+		.flist {
+			@include span-columns(4);
+			ul {
+				li {
+					a {
+						color: #fff;
+					}
+				}
+			}
+		}
+		.logo-socialnetworks {
+			@include span-columns(4);
+			p {
+				color: #fff;
+			}
+		}
+		.left {
+			text-align: right;
+		}
+	}
+}
+/*===================FOOTER BACKGROUND COLOR========================================*/
+.home-bigfooter {
+	background-color: #4f7fad;
+}

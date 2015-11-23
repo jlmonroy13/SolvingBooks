@@ -1,17 +1,42 @@
 /*======== STYLES BODY HOME ==========*/
 .home {
-	#first_section {
+	#first-section {
 		position: relative;
-		.image_slider {
+		.image-slider {
 			background: url('../public/images/home/desktop/bg1.jpg') no-repeat center;
 			background-size: cover;
-			height: 91.03vh;
+			height: 90.7vh;
 			max-height: 670px;
+			$mobile: new-breakpoint(max-width 670px);
+			@include media($mobile) {
+				border-right: none;
+				background: url('../public/images/home/movil/bg_movil.jpg') no-repeat center;
+				background-size: cover;
+				height: 90.7vh;
+				max-height: 670px;
+			}
 		}
-		.info_slider {
+		.info-slider {
 			position: absolute;
 			bottom: 15%;
 			left: 10.029vw;
+			$mobile: new-breakpoint(max-width 670px);
+			@include media($mobile) {
+				bottom: 25%;
+				left: 25vw;
+			}
+			$mobile: new-breakpoint(max-width 570px);
+			@include media($mobile) {
+				left: 20vw;
+			}
+			$mobile: new-breakpoint(max-width 500px);
+			@include media($mobile) {
+				left: 16vw;
+			}
+			$mobile: new-breakpoint(max-width 450px);
+			@include media($mobile) {
+				left: 6vw;
+			}
 			h1 {
 				font-size: em(46px);
     			font-family: "Blanch Caps";
@@ -21,7 +46,7 @@
     				color: #00789A;
     			}
 			}
-			.info_mini {
+			.info-mini {
 				background-color: rgba(#fff,0.45);
 		    	width: 340px;
 		    	border-radius: 12px;
@@ -38,8 +63,8 @@
 			    font-size: em(17px);
 			    color: #000;
 			    margin-left: 1.2em;
-			    .button_reg {
-			    	background-color: #00789A;
+			    .button-reg {
+			    	background-color: rgba(#00789A, 0.7);
 				    border-radius: 12px;
 				    color: #fff;
 				    font-family: "Blanch Caps";
@@ -48,6 +73,95 @@
 				    margin-left: 0.5em;
 				    display: inline;
 			    }
+			    .button-reg:hover {
+			    	background-color: rgba(#00789A, 1);
+			    }
+			}
+		}
+	}
+	#our-engineering {
+		padding: 52px 0 104px 0;
+		$mobile: new-breakpoint(max-width 1125px);
+		@include media($mobile) {
+			padding: 52px 10vw 104px 10vw;
+		}
+		.contain-our-engineering {
+			@include outer-container;
+			$mobile: new-breakpoint(max-width 600px);
+			@include media($mobile) {
+				text-align: center;
+			}
+			h2 {
+			    font-size: em(44px);
+    			font-family: "Blanch Caps";
+    			font-weight: 500;
+    			margin-bottom: 0;
+			}
+			p {
+			    font-size: em(16px);
+    			font-family: "Aleo Light";
+    			color: #444242;
+    			margin-bottom: 40px;
+    			padding-right: 33vw;
+    			$mobile: new-breakpoint(max-width 900px);
+				@include media($mobile) {
+					padding-right: 5vw;	
+				}
+				$mobile: new-breakpoint(max-width 600px);
+				@include media($mobile) {
+					padding-right: 0;	
+				}
+			}
+			.img-engineering {
+				a {
+					img {
+						@include span-columns(4);
+						width: 30%;
+						$mobile: new-breakpoint(max-width 900px);
+						@include media($mobile) {
+							@include span-columns(6);
+							width: 47%;
+						}
+						$mobile: new-breakpoint(max-width 600px);
+						@include media($mobile) {
+							@include span-columns(12);
+							width: 80%;
+							margin-right: auto !important;
+							margin-left: auto !important;
+							margin-bottom: 26px;
+							float: none;
+						}
+					}
+					&:first-child img,
+					&:nth-child(2) img,
+					&:nth-child(4) img,
+					&:nth-child(5) img {
+						margin-right: 5%;
+					}
+					&:nth-child(2) img,
+					&:nth-child(3) img,
+					&:nth-child(4) img,
+					&:nth-child(5) img,
+					&:nth-child(6) img {
+						opacity: 0.3;
+					}
+					&:nth-child(1) img,
+					&:nth-child(3) img {
+						margin-bottom: 26px;
+					}
+					&:nth-child(2n+1) img {
+						$mobile: new-breakpoint(max-width 900px);
+						@include media($mobile) {
+							margin-right: 5%;
+						}
+					}
+					&:nth-child(2n) img {
+						$mobile: new-breakpoint(max-width 900px);
+						@include media($mobile) {
+							margin-right: 0;
+						}
+					}
+				}
 			}
 		}
 	}

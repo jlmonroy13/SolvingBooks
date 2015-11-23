@@ -12,7 +12,7 @@ www.solvingbooks.com / BackEnd - Jose Osorio / FrontEnd - Jorge Monroy
 	</head>
 	<body class="home">
 		<!-- NAVBAR -->
-		<header class="navigation home_footer" role="banner">
+		<header class="navigation home-header" role="banner"><!--VARIABLE BORDER COLOR (home, electronica, electrica, civil, sistemas, industrial, mecanica) -->
 			<div class="navigation-wrapper">
 				<a href="javascript:void(0)" class="logo">
 					<img src="public/images/navbar/navbar_logo.svg" alt="SolvingBooks Logo">
@@ -38,16 +38,63 @@ www.solvingbooks.com / BackEnd - Jose Osorio / FrontEnd - Jorge Monroy
 			</div>
 		</header>
 		<!-- IMAGES SLIDER SECTION -->
-		<section id="first_section">
-			<div class="image_slider"></div>
-			<article class="info_slider">
+		<section id="first-section">
+			<div class="image-slider"></div>
+			<article class="info-slider">
 				<h1>¿Qué necesitas <span>estudiar</span> hoy?</h1>
-				<div class="info_mini">
+				<div class="info-mini">
 					<p>Encuentra el curso de ingeniería que necesitas estudiar y prepárate de la mejor manera para tus exámenes.</p>
 				</div>
-				<p>¿No tienes una cuenta?<a class="button_reg" href="#">Registrate</a></p>
+				<p>¿No tienes una cuenta?<a class="button-reg" href="#">Registrate</a></p>
 			</article>
 		</section>
+		<!-- OUR ENGINEERING SECTION -->
+		<section id="our-engineering" class="gradient">
+			<div class="contain-our-engineering">
+				<h2>Conoce nuestros cursos</h2>
+				<p>Encuentra el módulo que necesitas de acuerdo a tu ingeniería, avanza a tu ritmo aprendiendo lo que realmente requieres.</p>
+				<div class="img-engineering">
+					<a href="course.html"><img src="public/images/home/desktop/home_electronica.svg" alt=""></a>
+					<a href=""><img src="public/images/home/desktop/home_mecanica.svg" alt=""></a>
+					<a href=""><img src="public/images/home/desktop/home_industrial.svg" alt=""></a>
+					<a href=""><img src="public/images/home/desktop/home_civil.svg" alt=""></a>
+					<a href=""><img src="public/images/home/desktop/home_electrica.svg" alt=""></a>
+					<a href=""><img src="public/images/home/desktop/home_sistemas.svg" alt=""></a>
+				</div>
+			</div>
+		</section>
+		<!-- FOOTER -->
+		<footer class="big-footer home-bigfooter"><!--VARIABLE BACKGROUND COLOR (home, electronica, electrica, civil, sistemas, industrial, mecanica) -->
+			<div class="contain-big-footer">
+				<div class="flist left">
+					<ul>
+						<li><a href="#">Crear una cuenta</li></a>
+			            <li><a href="#">¿Quienes somos?</li></a>
+			            <li><a href="#">Ingenierías</li></a>
+			            <li><a href="#">Ayuda</li></a>
+					</ul>
+				</div>
+				<div class="logo-socialnetworks">
+					<a href=""><img src="public/images/footer/main_footer/footer_logo.png" alt="Logo SolvingBooks"></a>
+					<p>Síguenos en</p>
+					<div class="socialnetworks">
+						<a href=""><img src="public/images/footer/main_footer/footer_fb.png" alt="Facebook"></a>
+						<a href=""><img src="public/images/footer/main_footer/footer_yt.png" alt="Youtube"></a>
+						<a href=""><img src="public/images/footer/main_footer/footer_insta.png" alt="Instragram"></a>
+						<a href=""><img src="public/images/footer/main_footer/footer_tw.png" alt="Twitter"></a>
+					</div>
+				</div>
+				<div class="flist right">
+					<ul>
+						<li><a href="#">Modos de pago</li></a>
+			            <li><a href="#">Trabaja con nosotros</li></a>
+			            <li><a href="#">Blog</li></a>
+			            <li><a href="#">Politica de privacidad y condiciones de uso</li></a>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
 		<!--=================== SCRIPT SECTION =====================-->
 		<script src="http://code.jquery.com/jquery-latest.js"></script>  
 		<script type="text/javascript" src="js/main.js"></script>

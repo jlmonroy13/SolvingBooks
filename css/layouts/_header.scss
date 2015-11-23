@@ -94,8 +94,8 @@
 	}
 }
 /*===================HEADER COLOR LINE==================================================*/
-.home_footer {
-	border-bottom: none;
+.home-header {
+	border-bottom: 3px solid #FFF !important;;
 	.navigation-wrapper {
 		nav {
 			ul {
@@ -107,12 +107,12 @@
 		}
 	}		
 }
-.electronica_footer { border-bottom: 3px solid #009E87 !important;}
-.electrica_footer { border-bottom: 3px solid #009E87 !important;}
-.sistemas_footer { border-bottom: 3px solid #009E87 !important;}
-.industrial_footer { border-bottom: 3px solid #009E87 !important;}
-.civil_footer { border-bottom: 3px solid #009E87 !important;}
-.mecanica_footer { border-bottom: 3px solid #009E87 !important;}
+.electronica-header { border-bottom: 3px solid #009E87 !important;}
+.electrica-header { border-bottom: 3px solid red !important;}
+.sistemas-header { border-bottom: 3px solid yellow !important;}
+.industrial-header { border-bottom: 3px solid pink !important;}
+.civil-header { border-bottom: 3px solid orange !important;}
+.mecanica-header { border-bottom: 3px solid purple !important;}
 
 
 
