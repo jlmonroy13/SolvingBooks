@@ -1,29 +1,107 @@
 /*===================FOOTER STYLES==================================================*/
 .big-footer {
+	padding-top: 40px;
 	.contain-big-footer {
 		@include outer-container;
+		margin-bottom: 30px;
 		.flist {
 			@include span-columns(4);
+			$mobile: new-breakpoint(max-width 600px);
+			@include media($mobile) {
+				display: none;
+			}
 			ul {
 				li {
+					margin-bottom: 10px;
 					a {
 						color: #fff;
+						opacity: 0.8;
+					    font-family: "Aleo Light", Arial, Helvetica, sans-serif;
+					    font-size: em(15px);
+					    font-weight: 500;
+					    &:hover {
+					    	opacity: 1;
+					    }
 					}
 				}
 			}
 		}
-		.logo-socialnetworks {
-			@include span-columns(4);
-			p {
-				color: #fff;
-			}
-		}
 		.left {
 			text-align: right;
+			border-right: 2px solid rgba(#fff, 0.8);
+			padding: 15px 15px 15px 0;
+		}
+		.right {
+			border-left: 2px solid rgba(#fff, 0.8);
+			padding: 15px 0 15px 15px;
+		}
+		.logo-socialnetworks {
+			@include span-columns(4);
+			text-align: center;
+			padding-top: 10px;
+			$mobile: new-breakpoint(max-width 600px);
+			@include media($mobile) {
+				@include span-columns(12);
+			}
+			a.whitelogo {
+				img {
+					width: 70%;
+					min-width: 190px;
+					max-width: 250px;
+					margin-bottom: 6px;
+					opacity: 0.8;
+					&:hover {
+						opacity: 1;
+					}
+				}
+			}
+			p {
+				color: #fff;
+				font-size: em(30px);
+			    font-family: 'Blanch Caps Light';
+			    font-weight: 800;
+			    margin-bottom: 0;
+			}
+			.socialnetworks {
+				a {
+					img {
+						@include size(36px);
+						opacity: 0.6;
+						min-width: null;
+						&:hover {
+							opacity: 1;
+						}
+					}
+					&:first-child img,
+					&:nth-child(2) img,
+					&:nth-child(3) img {
+						margin-right: 3%;
+					}
+				}
+			}
+		}
+	}
+	.copyright {
+		text-align: center;
+		padding: 10px 0;
+		p {
+			margin-bottom: 0;
+			font-family: "Aleo Light", Arial, Helvetica, sans-serif;
+		    font-size: em(14px);
+		    color: #727272;
+		    line-height: 0.7;
 		}
 	}
 }
 /*===================FOOTER BACKGROUND COLOR========================================*/
-.home-bigfooter {
-	background-color: #4f7fad;
-}
+.home-bigfooter {background-color: #4f7fad;}
+.electronica-bigfooter {background-color: #094A3F;}  
+.electrica-bigfooter {background-color: red;}  
+.mecanica-bigfooter {background-color: yellow;}  
+.civil-bigfooter {background-color: purple;}  
+.industrial-bigfooter {background-color: orange;}  
+.sistemas-bigfooter {background-color: brown;}  
+
+
+
+

@@ -1,7 +1,7 @@
 //==================================================================
 //www.solvingbooks.com / FrontEnd-Jorge Monroy / BackEnd-Jose Osorio
 //==================================================================
-// NAVIGATION HEADER
+//======== NAVIGATION HEADER =======================================
 $(document).ready(function() {
   var menuToggle = $('#js-mobile-menu').unbind();
   $('#js-navigation-menu').removeClass("show");
@@ -15,7 +15,7 @@ $(document).ready(function() {
     });
   });
 });
-// HOME TRANSITION IMAGES
+//======== HOME TRANSITION IMAGES ==================================
 $(document).ready(function(){
   var ancho = $(window).width();
   if (ancho >670) {
@@ -59,7 +59,26 @@ $(window).resize(function(){
     var image = $('.image-slider'), i =1;
     image.stop();
   }
-}); 
+});
+//=========== HOME HEADER MODAL SIGN-IN ===============================
+$(function() {
+  $("#modal-1").on("change", function() {
+    if ($(this).is(":checked")) {
+      $("body").addClass("modal-open");
+    } else {
+      $("body").removeClass("modal-open");
+    }
+  });
+
+  $(".modal-fade-screen, .modal-close").on("click", function() {
+    $(".modal-state:checked").prop("checked", false).change();
+  });
+
+  $(".modal-inner").on("click", function(e) {
+    e.stopPropagation();
+  });
+});
+
 
 
 

@@ -45,17 +45,31 @@
     			span {
     				color: #00789A;
     			}
+    			$mobile: new-breakpoint(max-width 400px);
+				@include media($mobile) {
+					font-size: em(40px);
+	    			font-family: "Blanch Caps";
+	    			font-weight: 500;
+				}
 			}
 			.info-mini {
 				background-color: rgba(#fff,0.45);
 		    	width: 340px;
 		    	border-radius: 12px;
+		    	$mobile: new-breakpoint(max-width 400px);
+				@include media($mobile) {
+					width: 320px;
+				}
 		    	p {
 		    		font-family: "Aleo Lightitalic";
 				    font-size: em(19.5px);
 				    color: #282525;
 				    padding: 15px 20px;
 				    margin-left: 0;
+				    $mobile: new-breakpoint(max-width 400px);
+					@include media($mobile) {
+						padding: 15px 10px;
+					}
 		    	}
 			}
 			p {
@@ -84,6 +98,10 @@
 		$mobile: new-breakpoint(max-width 1125px);
 		@include media($mobile) {
 			padding: 52px 10vw 104px 10vw;
+		}
+		$mobile: new-breakpoint(max-width 400px);
+		@include media($mobile) {
+			padding: 52px 10vw 50px 10vw;
 		}
 		.contain-our-engineering {
 			@include outer-container;

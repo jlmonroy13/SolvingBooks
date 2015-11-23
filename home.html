@@ -31,7 +31,34 @@ www.solvingbooks.com / BackEnd - Jose Osorio / FrontEnd - Jorge Monroy
 					<ul id="js-navigation-menu" class="navigation-menu show">
 						<li class="nav-link"><a href="javascript:void(0)">INGENIERIAS</a></li>
 						<li class="nav-link"><a href="javascript:void(0)">PRECIOS</a></li>
-						<li class="nav-link"><a href="javascript:void(0)">INGRESAR</a></li>
+						<li class="nav-link">
+							<div class="modal"> <!--======== MODAL ====================-->
+								<label for="modal-1">
+							    	<div class="modal-trigger">INGRESAR</div>
+								</label>
+							  	<input class="modal-state" id="modal-1" type="checkbox" />
+								<div class="modal-fade-screen">
+									<div class="modal-inner">
+										<div class="modal-close" for="modal-1"><p>X</p></div>
+										<form>
+								        	<h1>INGRESAR</h1>
+								        	<hr>
+								        	<label for="user-signin">USUARIO</label>
+								        	<input id="user-signin" type="text" name="usuario" placeholder=""/>
+								        	<label for="password-signin">CONTRASEÑA</label>
+								        	<input id="password-signin" type="password" name="password" placeholder=""/>
+								        	<input type="checkbox"/>
+								        	<span>Recordar datos.</span>
+								        	<p><a class="btnsignin" href="#close">INGRESAR</a></p>
+								        	<div>
+								        		<span>¿Eres nuevo en nuestra comunidad?</span>
+								        		<strong><a href="registro.html">Regístrate.</a></strong>
+								        	</div>
+							  			</form>
+									</div>
+								</div>
+							</div>
+						</li>
 						<li class="nav-link"><a href="javascript:void(0)">REGISTRARSE</a></li>
 					</ul>
 				</nav>
@@ -75,7 +102,7 @@ www.solvingbooks.com / BackEnd - Jose Osorio / FrontEnd - Jorge Monroy
 					</ul>
 				</div>
 				<div class="logo-socialnetworks">
-					<a href=""><img src="public/images/footer/main_footer/footer_logo.png" alt="Logo SolvingBooks"></a>
+					<a class="whitelogo" href=""><img src="public/images/footer/main_footer/footer_logo.png" alt="Logo SolvingBooks"></a>
 					<p>Síguenos en</p>
 					<div class="socialnetworks">
 						<a href=""><img src="public/images/footer/main_footer/footer_fb.png" alt="Facebook"></a>
@@ -89,12 +116,14 @@ www.solvingbooks.com / BackEnd - Jose Osorio / FrontEnd - Jorge Monroy
 						<li><a href="#">Modos de pago</li></a>
 			            <li><a href="#">Trabaja con nosotros</li></a>
 			            <li><a href="#">Blog</li></a>
-			            <li><a href="#">Politica de privacidad y condiciones de uso</li></a>
+			            <li><a href="#">Politica de privacidad</li></a>
 					</ul>
 				</div>
 			</div>
+			<div class="copyright gradient">
+				<p class="copy">&copy; 2015 SolvingBooks. Todos los derechos reservados.</p>
+			</div>
 		</footer>
-
 		<!--=================== SCRIPT SECTION =====================-->
 		<script src="http://code.jquery.com/jquery-latest.js"></script>  
 		<script type="text/javascript" src="js/main.js"></script>
