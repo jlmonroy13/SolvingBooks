@@ -919,112 +919,112 @@ header.navigation {
   /* IE6-9 */ }
 
 /*===================HEADER STYLES==================================================*/
-.home header {
-  background-color: #fff;
+header {
+  background-color: #fff !important;
   border: none; }
-  .home header .navigation-wrapper #js-mobile-menu {
+  header .navigation-wrapper #js-mobile-menu {
     height: 60px; }
-  .home header .navigation-wrapper a img {
+  header .navigation-wrapper a img {
     height: 60px; }
-  .home header .navigation-wrapper a .to-arrow {
+  header .navigation-wrapper a .to-arrow {
     /*Hamburger button*/ }
-    .home header .navigation-wrapper a .to-arrow .hamburger-box {
+    header .navigation-wrapper a .to-arrow .hamburger-box {
       background-color: #fff !important;
       margin: 0; }
-      .home header .navigation-wrapper a .to-arrow .hamburger-box span {
+      header .navigation-wrapper a .to-arrow .hamburger-box span {
         display: none;
         color: #fff !important; }
-      .home header .navigation-wrapper a .to-arrow .hamburger-box .bun, .home header .navigation-wrapper a .to-arrow .hamburger-box .meat {
+      header .navigation-wrapper a .to-arrow .hamburger-box .bun, header .navigation-wrapper a .to-arrow .hamburger-box .meat {
         background-color: #5980AD !important;
         height: 3px; }
-      .home header .navigation-wrapper a .to-arrow .hamburger-box .top {
+      header .navigation-wrapper a .to-arrow .hamburger-box .top {
         top: 22px; }
-      .home header .navigation-wrapper a .to-arrow .hamburger-box .bottom {
+      header .navigation-wrapper a .to-arrow .hamburger-box .bottom {
         bottom: 23px; }
-    .home header .navigation-wrapper a .to-arrow .hamburger-box:hover .meat {
+    header .navigation-wrapper a .to-arrow .hamburger-box:hover .meat {
       margin-left: 0;
       width: 22px; }
-    .home header .navigation-wrapper a .to-arrow .hamburger-box:hover .top {
+    header .navigation-wrapper a .to-arrow .hamburger-box:hover .top {
       transform: none;
       width: 22px;
       margin-left: 0; }
-    .home header .navigation-wrapper a .to-arrow .hamburger-box:hover .bottom {
+    header .navigation-wrapper a .to-arrow .hamburger-box:hover .bottom {
       transform: none;
       width: 22px;
       margin-left: 0; }
-  .home header .navigation-wrapper nav ul li {
+  header .navigation-wrapper nav ul li {
     padding-right: 0.5625em !important; }
-    .home header .navigation-wrapper nav ul li a {
+    header .navigation-wrapper nav ul li a {
       color: #000 !important;
       font-family: "Blanch caps";
       font-size: 1.6875em;
       padding-right: 0.6875em !important; }
-    .home header .navigation-wrapper nav ul li a:hover {
+    header .navigation-wrapper nav ul li a:hover {
       color: #5980AD !important; }
-  .home header .navigation-wrapper nav ul li:nth-child(3) {
+  header .navigation-wrapper nav ul li:nth-child(3) {
     padding-right: 0;
     margin-right: 13px !important;
     border-right: 2px solid #000; }
     @media screen and (max-width: 859px) {
-      .home header .navigation-wrapper nav ul li:nth-child(3) {
+      header .navigation-wrapper nav ul li:nth-child(3) {
         border-right: none; } }
-    .home header .navigation-wrapper nav ul li:nth-child(3) .modal {
+    header .navigation-wrapper nav ul li:nth-child(3) .modal {
       display: inline-block; }
-      .home header .navigation-wrapper nav ul li:nth-child(3) .modal label .modal-trigger {
+      header .navigation-wrapper nav ul li:nth-child(3) .modal label .modal-trigger {
         padding: 0;
         color: #000 !important;
         font-family: "Blanch caps";
         font-size: 1.6875em;
         font-weight: 500; }
-        .home header .navigation-wrapper nav ul li:nth-child(3) .modal label .modal-trigger:hover {
+        header .navigation-wrapper nav ul li:nth-child(3) .modal label .modal-trigger:hover {
           color: #5980AD !important; }
-      .home header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen {
+      header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen {
         background-color: rgba(0, 0, 0, 0.7); }
         @media screen and (max-width: 859px) {
-          .home header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen {
+          header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen {
             padding-top: 20%; } }
         @media screen and (max-width: 650px) {
-          .home header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen {
+          header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen {
             padding-top: 25%; } }
-        .home header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner {
+        header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner {
           width: 370px;
           height: 330px;
           border-radius: 20px;
           padding: 1em 2.5em; }
           @media screen and (max-width: 400px) {
-            .home header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner {
+            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner {
               width: 320px;
               padding: 1em; } }
-          .home header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner .modal-close {
+          header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner .modal-close {
             top: 1px;
             width: 0;
             height: 0; }
-            .home header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner .modal-close::before, .home header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner .modal-close::after {
+            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner .modal-close::before, header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner .modal-close::after {
               display: none; }
-            .home header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner .modal-close p {
+            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner .modal-close p {
               font-family: "Blanch caps";
               color: #094268;
               font-size: 1.75em;
               margin-bottom: 0; }
-          .home header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form h1 {
+          header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form h1 {
             font-size: 2.625em;
             color: #094268;
             font-family: "Blanch caps";
             font-weight: 500;
             margin-bottom: 0;
             text-align: center; }
-          .home header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form hr {
+          header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form hr {
             margin: 0 auto 2px auto;
             width: 110px;
             border-bottom: 2px solid #094268; }
-          .home header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form label {
+          header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form label {
             color: #000;
             font-size: 1.875em;
             font-family: "Blanch caps";
             margin-bottom: 0;
             font-weight: 500;
             margin-left: 10px; }
-          .home header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form input {
+          header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form input {
             border-radius: 12px;
             color: #0F4760;
             font-family: "Aleo Light";
@@ -1035,21 +1035,21 @@ header.navigation {
             height: 27px;
             margin-top: -15px;
             margin-bottom: -10px; }
-          .home header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form input[type="checkbox"] {
+          header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form input[type="checkbox"] {
             margin: 0;
             display: inline-block;
             height: 15px;
             width: 15px;
             margin-left: 10px; }
-          .home header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form span {
+          header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form span {
             font-family: "Aleo Lightitalic";
             font-size: 0.75em;
             color: #6D6D6D; }
-          .home header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form p {
+          header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form p {
             text-align: right;
             margin-top: -20px;
             margin-bottom: -5px; }
-            .home header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form p a.btnsignin {
+            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form p a.btnsignin {
               color: #fff !important;
               font-family: "Blanch Caps";
               font-size: 1.4375em;
@@ -1059,30 +1059,33 @@ header.navigation {
               width: 91px;
               padding-right: 0 !important;
               text-align: center; }
-          .home header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form div {
+          header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form div {
             height: 0;
             text-align: center; }
-            .home header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form div span {
+            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form div span {
               color: #3f3f3f;
               font-family: "Aleo Light";
               font-size: 0.75em; }
-            .home header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form div strong a {
+            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form div strong a {
               color: #000;
               font-family: "Aleo Light";
               font-size: 0.9375em; }
-  .home header .navigation-wrapper nav ul .nav-link {
+  header .navigation-wrapper nav ul .nav-link {
     background-color: #fff !important;
     text-align: center; }
     @media screen and (max-width: 859px) {
-      .home header .navigation-wrapper nav ul .nav-link {
+      header .navigation-wrapper nav ul .nav-link {
         padding: 0 !important; } }
     @media screen and (max-width: 859px) {
-      .home header .navigation-wrapper nav ul .nav-link a {
+      header .navigation-wrapper nav ul .nav-link a {
         padding: 0 !important; } }
 
 /*===================HEADER COLOR LINE==================================================*/
 .home-header {
   border-bottom: 3px solid #FFF !important; }
+
+.signup-header {
+  border-bottom: 3px solid #5980AE !important; }
 
 .electronica-header {
   border-bottom: 3px solid #009E87 !important; }
@@ -1256,6 +1259,103 @@ header.navigation {
     @media screen and (max-width: 900px) {
       .home #our-engineering .contain-our-engineering .img-engineering a:nth-child(2n) img {
         margin-right: 0; } }
+
+/*===================SIGN UP STYLES==================================================*/
+.sign-up .sign-up-form {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 0 25px 0; }
+  .sign-up .sign-up-form::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .sign-up .sign-up-form h1 {
+    font-family: "Blanch Caps";
+    font-size: 4.3125em;
+    font-weight: 500;
+    color: #5980AE;
+    margin-bottom: 5px;
+    text-align: center;
+    line-height: 0.7; }
+  .sign-up .sign-up-form p {
+    font-family: "Aleo Light";
+    font-size: 1em;
+    font-weight: 900;
+    color: #000;
+    padding: 0 26%;
+    text-align: center;
+    margin-bottom: 20px; }
+    @media screen and (max-width: 1050px) {
+      .sign-up .sign-up-form p {
+        padding: 0 10%; } }
+  .sign-up .sign-up-form form .blue-form {
+    border-radius: 20px;
+    width: 63%;
+    min-width: 330px;
+    margin: 0 auto;
+    background-color: #D9E5E8;
+    padding: 30px 5%;
+    position: relative; }
+    .sign-up .sign-up-form form .blue-form label {
+      text-align: left;
+      padding-left: 20px;
+      font-family: "Aleo Bold";
+      font-size: 1em;
+      font-weight: 500;
+      color: #000; }
+    .sign-up .sign-up-form form .blue-form input {
+      background-color: rgba(19, 99, 150, 0.3);
+      border-radius: 20px;
+      position: relative;
+      width: 100%; }
+    .sign-up .sign-up-form form .blue-form p {
+      padding: 0;
+      text-align: left;
+      padding-left: 20px;
+      font-family: "Aleo Lightitalic";
+      font-size: 0.6875em;
+      font-weight: 500;
+      color: #4F4F4F; }
+    .sign-up .sign-up-form form .blue-form .form-group {
+      display: inline-block;
+      width: 49%;
+      position: relative; }
+      @media screen and (max-width: 720px) {
+        .sign-up .sign-up-form form .blue-form .form-group {
+          width: 100%; } }
+      .sign-up .sign-up-form form .blue-form .form-group input[type="password"] {
+        width: 100%;
+        position: relative;
+        margin-bottom: 0; }
+        @media screen and (max-width: 720px) {
+          .sign-up .sign-up-form form .blue-form .form-group input[type="password"] {
+            margin-bottom: 12px; } }
+      .sign-up .sign-up-form form .blue-form .form-group label {
+        position: relative; }
+      .sign-up .sign-up-form form .blue-form .form-group #sign-up-verify-password {
+        margin-right: 0;
+        margin-left: 8px; }
+        @media screen and (max-width: 720px) {
+          .sign-up .sign-up-form form .blue-form .form-group #sign-up-verify-password {
+            margin-left: 0;
+            margin-bottom: 0; } }
+    .sign-up .sign-up-form form .blue-form #sign-up-user {
+      margin-bottom: 0; }
+    .sign-up .sign-up-form form .blue-form p {
+      position: relative;
+      margin-bottom: 5px; }
+  .sign-up .sign-up-form form input[type="submit"] {
+    border-radius: 20px;
+    background-color: #0D5880;
+    color: #FFF;
+    font-family: "Blanch Caps";
+    font-size: 1.75em;
+    font-weight: 500;
+    padding: 3px 35px;
+    float: none;
+    display: block;
+    margin: 20px auto 0 auto; }
 
 /*===================FOOTER STYLES==================================================*/
 .big-footer {

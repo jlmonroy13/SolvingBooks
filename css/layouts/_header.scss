@@ -1,199 +1,197 @@
 /*===================HEADER STYLES==================================================*/
-.home {
-	header {
-		background-color: #fff;
-		border: none;
-		.navigation-wrapper {
-			#js-mobile-menu {
+header {
+	background-color: #fff !important;
+	border: none;
+	.navigation-wrapper {
+		#js-mobile-menu {
+			height: 60px;
+		}
+		a {
+			img {
 				height: 60px;
-			}
-			a {
-				img {
-					height: 60px;
-				} 
-				.to-arrow {   /*Hamburger button*/
-					.hamburger-box {
-						background-color: #fff !important;
-						margin: 0;
-						span {
-							display: none;
-							color: #fff !important;
-						}
-						.bun, .meat {
-							background-color: #5980AD !important;
-							height: 3px;
-						}
-						.top {
-							top: 22px;
-						}
-						.bottom {
-							bottom: 23px;
-						}
+			} 
+			.to-arrow {   /*Hamburger button*/
+				.hamburger-box {
+					background-color: #fff !important;
+					margin: 0;
+					span {
+						display: none;
+						color: #fff !important;
 					}
-					.hamburger-box:hover {
-						.meat {
-							margin-left: 0;
-							width: 22px;
-						}
-						.top {
-						    transform: none;
-						    width: 22px;
-						    margin-left: 0;
-						}
-						.bottom {
-						    transform: none;
-						    width: 22px;
-						    margin-left: 0;
-						}
+					.bun, .meat {
+						background-color: #5980AD !important;
+						height: 3px;
+					}
+					.top {
+						top: 22px;
+					}
+					.bottom {
+						bottom: 23px;
+					}
+				}
+				.hamburger-box:hover {
+					.meat {
+						margin-left: 0;
+						width: 22px;
+					}
+					.top {
+					    transform: none;
+					    width: 22px;
+					    margin-left: 0;
+					}
+					.bottom {
+					    transform: none;
+					    width: 22px;
+					    margin-left: 0;
 					}
 				}
 			}
-			nav {
-				ul {
-					li {
-						padding-right: em(9px) !important;
-						a {
-							color: #000 !important;	
-							font-family: "Blanch caps";
-	    					font-size: em(27px);
-	    					padding-right: em(11px) !important;
-						}
-						a:hover {
-							color: #5980AD !important;
-						}			
+		}
+		nav {
+			ul {
+				li {
+					padding-right: em(9px) !important;
+					a {
+						color: #000 !important;	
+						font-family: "Blanch caps";
+    					font-size: em(27px);
+    					padding-right: em(11px) !important;
 					}
-					li:nth-child(3) {
-						padding-right: 0;
-						margin-right: 13px !important;
-						border-right: 2px solid #000;
-						$mobile: new-breakpoint(max-width 859px);
-						@include media($mobile) {
-							border-right: none;
-						}
-						.modal { //====== MODAL STYLES ========//
-							display: inline-block;
-							label {
-								.modal-trigger {
-									padding: 0;
-									color: #000 !important;	
-									font-family: "Blanch caps";
-    								font-size: em(27px);
-    								font-weight: 500;
-    								&:hover {
-    									color: #5980AD !important
-    								}
+					a:hover {
+						color: #5980AD !important;
+					}			
+				}
+				li:nth-child(3) {
+					padding-right: 0;
+					margin-right: 13px !important;
+					border-right: 2px solid #000;
+					$mobile: new-breakpoint(max-width 859px);
+					@include media($mobile) {
+						border-right: none;
+					}
+					.modal { //====== MODAL STYLES ========//
+						display: inline-block;
+						label {
+							.modal-trigger {
+								padding: 0;
+								color: #000 !important;	
+								font-family: "Blanch caps";
+								font-size: em(27px);
+								font-weight: 500;
+								&:hover {
+									color: #5980AD !important
 								}
 							}
-							.modal-fade-screen {
-							    background-color: rgba(0, 0, 0, 0.7);
-							    $mobile: new-breakpoint(max-width 859px);
+						}
+						.modal-fade-screen {
+						    background-color: rgba(0, 0, 0, 0.7);
+						    $mobile: new-breakpoint(max-width 859px);
+							@include media($mobile) {
+								padding-top: 20%;								
+							}
+							$mobile: new-breakpoint(max-width 650px);
+							@include media($mobile) {
+								padding-top: 25%;								
+							}
+							.modal-inner {
+								width: 370px;
+								height: 330px;
+								border-radius: 20px;
+								padding: 1em 2.5em;
+								$mobile: new-breakpoint(max-width 400px);
 								@include media($mobile) {
-									padding-top: 20%;								
+									width: 320px;
+								    padding: 1em								
 								}
-								$mobile: new-breakpoint(max-width 650px);
-								@include media($mobile) {
-									padding-top: 25%;								
-								}
-								.modal-inner {
-									width: 370px;
-									height: 330px;
-									border-radius: 20px;
-									padding: 1em 2.5em;
-									$mobile: new-breakpoint(max-width 400px);
-									@include media($mobile) {
-										width: 320px;
-									    padding: 1em								
+								.modal-close {
+									top: 1px;
+									width: 0;
+									height: 0;
+									&::before,
+									&::after {
+										display: none;
 									}
-									.modal-close {
-										top: 1px;
-										width: 0;
+									p {
+										font-family: "Blanch caps";
+										color: #094268;
+										font-size: em(28px);
+										margin-bottom: 0;
+									}
+								}
+								form {
+									h1 {
+										font-size: em(42px);
+										color: #094268;
+										font-family: "Blanch caps";
+										font-weight: 500;
+										margin-bottom: 0;
+										text-align: center;
+									}
+									hr {
+									    margin: 0 auto 2px auto;
+									    width: 110px;
+									    border-bottom: 2px solid #094268;
+									}
+									label {
+										color: #000;
+										font-size: em(30px);
+										font-family: "Blanch caps";
+										margin-bottom: 0;
+										font-weight: 500;
+										margin-left: 10px;
+									}
+									input {
+										border-radius: 12px;
+									    color: #0F4760;
+									    font-family: "Aleo Light";
+									    background-color: rgba(19,99,150, 0.3);
+									    border: none;
+									    display: block;
+									    width: 291px;
+									    height: 27px;
+									    margin-top: -15px;
+										margin-bottom: -10px;
+									}
+									input[type="checkbox"] {
+										margin: 0;
+										display: inline-block;
+										@include size(15px);
+										margin-left: 10px;
+									}
+									span {
+										font-family: "Aleo Lightitalic";
+									    font-size: em(12px);
+									    color: #6D6D6D;
+									}
+									p {
+										text-align: right;
+										margin-top: -20px;
+										margin-bottom: -5px;
+										a.btnsignin {
+										    color: #fff !important;
+										    font-family: "Blanch Caps";
+										    font-size: em(23px);
+										    font-weight: 500;
+										    background-color: #0D5880;
+										    border-radius: 16px;
+										    width: 91px;
+										    padding-right: 0 !important;
+										    text-align: center;
+										}
+									}
+									div {
 										height: 0;
-										&::before,
-										&::after {
-											display: none;
-										}
-										p {
-											font-family: "Blanch caps";
-											color: #094268;
-											font-size: em(28px);
-											margin-bottom: 0;
-										}
-									}
-									form {
-										h1 {
-											font-size: em(42px);
-											color: #094268;
-											font-family: "Blanch caps";
-											font-weight: 500;
-											margin-bottom: 0;
-											text-align: center;
-										}
-										hr {
-										    margin: 0 auto 2px auto;
-										    width: 110px;
-										    border-bottom: 2px solid #094268;
-										}
-										label {
-											color: #000;
-    										font-size: em(30px);
-    										font-family: "Blanch caps";
-    										margin-bottom: 0;
-    										font-weight: 500;
-    										margin-left: 10px;
-										}
-										input {
-											border-radius: 12px;
-										    color: #0F4760;
-										    font-family: "Aleo Light";
-										    background-color: rgba(19,99,150, 0.3);
-										    border: none;
-										    display: block;
-										    width: 291px;
-										    height: 27px;
-										    margin-top: -15px;
-    										margin-bottom: -10px;
-										}
-										input[type="checkbox"] {
-											margin: 0;
-											display: inline-block;
-											@include size(15px);
-											margin-left: 10px;
-										}
+										text-align: center;
 										span {
-											font-family: "Aleo Lightitalic";
+											color: #3f3f3f;
+										    font-family: "Aleo Light";
 										    font-size: em(12px);
-										    color: #6D6D6D;
 										}
-										p {
-											text-align: right;
-											margin-top: -20px;
-											margin-bottom: -5px;
-											a.btnsignin {
-											    color: #fff !important;
-											    font-family: "Blanch Caps";
-											    font-size: em(23px);
-											    font-weight: 500;
-											    background-color: #0D5880;
-											    border-radius: 16px;
-											    width: 91px;
-											    padding-right: 0 !important;
-											    text-align: center;
-											}
-										}
-										div {
-											height: 0;
-											text-align: center;
-											span {
-												color: #3f3f3f;
+										strong {
+											a {
+											    color: #000;
 											    font-family: "Aleo Light";
-											    font-size: em(12px);
-											}
-											strong {
-												a {
-												    color: #000;
-												    font-family: "Aleo Light";
-												    font-size: em(15px);
-												}
+											    font-size: em(15px);
 											}
 										}
 									}
@@ -201,18 +199,18 @@
 							}
 						}
 					}
-					.nav-link {
-						background-color: #fff !important;
-						text-align: center;
+				}
+				.nav-link {
+					background-color: #fff !important;
+					text-align: center;
+					$mobile: new-breakpoint(max-width 859px);
+					@include media($mobile) {
+						padding: 0 !important;
+					}
+					a {
 						$mobile: new-breakpoint(max-width 859px);
 						@include media($mobile) {
 							padding: 0 !important;
-						}
-						a {
-							$mobile: new-breakpoint(max-width 859px);
-							@include media($mobile) {
-								padding: 0 !important;
-							}
 						}
 					}
 				}
@@ -222,6 +220,7 @@
 }
 /*===================HEADER COLOR LINE==================================================*/
 .home-header { border-bottom: 3px solid #FFF !important;}
+.signup-header { border-bottom: 3px solid #5980AE !important;}
 .electronica-header { border-bottom: 3px solid #009E87 !important;}
 .electrica-header { border-bottom: 3px solid red !important;}
 .sistemas-header { border-bottom: 3px solid yellow !important;}
