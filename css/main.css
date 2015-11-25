@@ -1080,11 +1080,9 @@ header {
       header .navigation-wrapper nav ul .nav-link a {
         padding: 0 !important; } }
 
-/*===================HEADER fIXED ON TOP==================================================================*/
-.header-2 {
-  position: fixed;
-  display: none;
-  margin-top: -65px; }
+/*===================HEADER FIXED ON TOP==================================================================*/
+.header-fixed {
+  position: fixed; }
 
 /*===================HEADER COLOR LINE====================================================================*/
 .home-header {

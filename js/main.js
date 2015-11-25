@@ -69,7 +69,6 @@ $(function() {
       $("body").removeClass("modal-open");
     }
   });
-
   $(".modal-fade-screen, .modal-close").on("click", function() {
     $(".modal-state:checked").prop("checked", false).change();
   });
@@ -82,11 +81,17 @@ $(function() {
 $(window).scroll(function(){
   var body = $("body");
   var top = body.scrollTop(); // Get position of the body
-  if (top > 620) {
-    $(".header-2").fadeIn("slow");
+  if (top > 63 && top < 621) {
+    $(".home-header").fadeOut("slow");
+    $(".ghost-header").show();
   }
-  else if (top < 621) {
-    $(".header-2").fadeOut("slow");
+  if (top > 620) {
+    $(".home-header").fadeIn("slow");
+    $(".home-header").addClass("header-fixed");
+  }
+  if (top < 64) {
+    $(".home-header").fadeIn("slow");
+    $(".home-header").removeClass("header-fixed");
   }
 });
 
