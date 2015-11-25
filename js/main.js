@@ -60,7 +60,7 @@ $(window).resize(function(){
     image.stop();
   }
 });
-//=========== HOME HEADER MODAL SIGN-IN ===============================
+//=========== HEADER MODAL SIGN-IN ===============================
 $(function() {
   $("#modal-1").on("change", function() {
     if ($(this).is(":checked")) {
@@ -78,7 +78,17 @@ $(function() {
     e.stopPropagation();
   });
 });
-
+//=========== HEADER ON TOP ON SCROLL FIXED ===============================
+$(window).scroll(function(){
+  var body = $("body");
+  var top = body.scrollTop(); // Get position of the body
+  if (top > 620) {
+    $(".header-2").fadeIn("slow");
+  }
+  else if (top < 621) {
+    $(".header-2").fadeOut("slow");
+  }
+});
 
 
 

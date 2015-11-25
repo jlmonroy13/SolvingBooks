@@ -1080,7 +1080,13 @@ header {
       header .navigation-wrapper nav ul .nav-link a {
         padding: 0 !important; } }
 
-/*===================HEADER COLOR LINE==================================================*/
+/*===================HEADER fIXED ON TOP==================================================================*/
+.header-2 {
+  position: fixed;
+  display: none;
+  margin-top: -65px; }
+
+/*===================HEADER COLOR LINE====================================================================*/
 .home-header {
   border-bottom: 3px solid #FFF !important; }
 

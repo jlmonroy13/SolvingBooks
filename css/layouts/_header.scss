@@ -218,7 +218,9 @@ header {
 		}
 	}
 }
-/*===================HEADER COLOR LINE==================================================*/
+/*===================HEADER fIXED ON TOP==================================================================*/
+.header-2 { position: fixed; display: none; margin-top: -65px;}
+/*===================HEADER COLOR LINE====================================================================*/
 .home-header { border-bottom: 3px solid #FFF !important;}
 .signup-header { border-bottom: 3px solid #5980AE !important;}
 .electronica-header { border-bottom: 3px solid #009E87 !important;}
