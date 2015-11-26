@@ -5,14 +5,14 @@ www.solvingbooks.com / FrontEnd - Jorge Monroy / BackEnd - Jose Osorio
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>SolvingBooks | Registrate</title> <!-- CHANGE THE WORD AFTER "SolvingBooks |" for information about the page -->
+		<title>SolvingBooks | Cambia tu forma de estudiar</title><!-- CHANGE THE WORD AFTER "SolvingBooks |" for information about the page -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" href="public/images/solving_favicon.png" type="image/x-icon">
 		<link rel="stylesheet" href="css/main.css">
 	</head>
-	<body class="sign-up gradient">
+	<body class="engineering">
 		<!-- NAVBAR -->
-		<header class="navigation home-header" role="banner"><!--VARIABLE BORDER COLOR (home, electronica, electrica, civil, sistemas, industrial, mecanica) -->
+		<header class="navigation electronica-header" role="banner"><!--VARIABLE BORDER COLOR (home, electronica, electrica, civil, sistemas, industrial, mecanica) -->
 			<div class="navigation-wrapper">
 				<a href="home.html" class="logo">
 					<img src="public/images/navbar/navbar_logo.svg" alt="SolvingBooks Logo">
@@ -64,32 +64,43 @@ www.solvingbooks.com / FrontEnd - Jorge Monroy / BackEnd - Jose Osorio
 				</nav>
 			</div>
 		</header>
-		<!-- SIGN UP SECTION-->
-		<section class="sign-up-form">
-			<h1>¡ÚNETE A NUESTRA COMUNIDAD!</h1>
-			<p>Puedes crear una cuenta para acceder a los beneficios que proporciona hacer parte de la comunidad de SolvingBooks. Registrándote podrás acceder a todo el contenido gratuito de nuestra plataforma.</p>
-			<form action="">
-				<div class="blue-form">
-					<label for="sign-up-email">Correo Electrónico</label>
-					<input type="email" id="sign-up-email">
-					<div class="form-group">
-						<label for="sign-up-password">Contraseña</label>
-						<input type="password" name="password" id="sign-up-password">
-					</div>
-					<div class="form-group">
-						<label for="sign-up-verify-password">Verifica tu Contraseña</label>
-						<input type="password" name="password" id="sign-up-verify-password">
-					</div>
-					<p>6 caracteres como mínimo.</p>	
-					<label for="sign-up-user">Nombre de Usuario</label>
-					<input type="text" id="sign-up-user">
-					<p>Este nombre podrá ser modificado en el momento que lo desees.</p>
+		<!-- ENGINEERING-BANNER -->
+		<div class="electronica-url-banner engineering-banner"></div><!--VARIABLE IMG BANNER (electronica, electrica, civil, sistemas, industrial, mecanica) -->
+		<!-- ENGINEERING-INFORMATION -->
+		<article class="engineering-information">
+			<div class="contain-engineering-information">
+				<div class="engineering-img">
+					<img  class="icon" src="public/images/ingenierias/electronica/ingenieria_icono_Electronica.svg"><!--Change this URL for the URL of each engineering-->	
 				</div>
-				<input type="submit" value="CREAR">
-			</form>
+				<div class="engineering-inf electronica-engineering-border"><!--VARIABLE BORDER COLOR (electronica, electrica, civil, sistemas, industrial, mecanica) -->
+					<p>Por medio de estos cursos aprenderás a resolver todo tipo de problemas de ingeniería aplicados a diferentes áreas tales como el control de procesos industriales, las telecomunicaciones, la robótica, entre otros.</p>
+				</div>
+				<div class="engineering-tittle">
+					<img class="tituloImg" src="public/images/ingenierias/electronica/ingenieria_titulo_electronica.svg"><!--Change this URL for the URL of each engineering-->
+				</div>	
+			</div>
+		</article>
+		<!-- SEARCH BAR -->
+		<div class="search-bar electronica-search-bar">
+			<div class="contain-search-bar">
+				<div class="search-input">
+					<input id="search-engineering" type="search" class="form-control" placeholder="">
+				</div>
+				<div class="search-arrow">
+					<h1>ORGANIZAR</h1>
+					<input id="search-arrow-engineering" type="submit" value=""/>
+				</div>
+			</div>	
+		</div>
+		<!-- ENGINEERING COURSES -->
+		<section class="engineering-courses">
+			<div class="contain-engineering-courses">
+				<a href=""><img src="public/images/ingenierias/electronica/ingenieria_circuitos1.svg" alt=""></a>
+				<a href=""><img src="public/images/ingenierias/electronica/ingenieria_sugerencia_curso.png" alt=""></a>
+			</div>
 		</section>
 		<!-- FOOTER -->
-		<footer class="big-footer home-bigfooter"><!--VARIABLE BACKGROUND COLOR (home, electronica, electrica, civil, sistemas, industrial, mecanica) -->
+		<footer class="big-footer electronica-bigfooter"><!--VARIABLE BACKGROUND COLOR (home, electronica, electrica, civil, sistemas, industrial, mecanica) -->
 			<div class="contain-big-footer">
 				<div class="flist left">
 					<ul>

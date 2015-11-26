@@ -81,11 +81,11 @@ $(function() {
 $(window).scroll(function(){
   var body = $("body");
   var top = body.scrollTop(); // Get position of the body
-  if (top > 63 && top < 621) {
+  if (top > 63 && top < 606) {
     $(".home-header").fadeOut("slow");
     $(".ghost-header").show();
   }
-  if (top > 620) {
+  if (top > 605) {
     $(".home-header").fadeIn("slow");
     $(".home-header").addClass("header-fixed");
   }
