@@ -82,16 +82,15 @@ $(window).scroll(function(){
   var body = $("body");
   var top = body.scrollTop(); // Get position of the body
   if (top > 63 && top < 606) {
-    $(".home-header").fadeOut("slow");
-    $(".ghost-header").show();
+    $(".navigation").fadeOut("slow");
   }
   if (top > 605) {
-    $(".home-header").fadeIn("slow");
-    $(".home-header").addClass("header-fixed");
+    $(".navigation").fadeIn("slow");
+    $(".navigation").addClass("header-fixed");
   }
   if (top < 64) {
-    $(".home-header").fadeIn("slow");
-    $(".home-header").removeClass("header-fixed");
+    $(".navigation").fadeIn("slow");
+    $(".navigation").removeClass("header-fixed");
   }
 });
 

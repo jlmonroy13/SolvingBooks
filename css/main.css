@@ -1377,7 +1377,8 @@ header {
   .engineering article.engineering-information .contain-engineering-information {
     max-width: 68em;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    margin-left: 11%; }
     .engineering article.engineering-information .contain-engineering-information::after {
       clear: both;
       content: "";
@@ -1425,15 +1426,38 @@ header {
       content: "";
       display: table; }
     .engineering .search-bar .contain-search-bar .search-input {
-      display: inline-block;
-      padding-bottom: 5px; }
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 57.35098%; }
+      .engineering .search-bar .contain-search-bar .search-input:last-child {
+        margin-right: 0; }
       .engineering .search-bar .contain-search-bar .search-input input {
         height: 40px;
         width: 280px;
+        border: none;
         border-radius: 10px;
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        float: right;
+        margin-top: 10px;
+        background-image: url("../public/images/ingenierias/electronica/ingenieria_lupa.svg");
+        background-repeat: no-repeat;
+        background-position: 97% 45%;
+        background-size: 8%;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding-right: 32px;
+        padding-left: 15px;
+        font-family: "Aleo Lightitalic", Arial, Helvetica, sans-serif;
+        font-size: 1.0625em; }
     .engineering .search-bar .contain-search-bar .search-arrow {
-      display: inline-block; }
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 40.29137%;
+      padding-right: 20%;
+      padding-top: 4px; }
+      .engineering .search-bar .contain-search-bar .search-arrow:last-child {
+        margin-right: 0; }
       .engineering .search-bar .contain-search-bar .search-arrow h1 {
         font-family: "Blanch Caps";
         font-size: 2.5em;
@@ -1448,6 +1472,28 @@ header {
         margin-top: -10px;
         display: inline-block;
         background-size: 100%; }
+.engineering .engineering-courses {
+  padding: 60px 0; }
+  .engineering .engineering-courses .contain-engineering-courses {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    .engineering .engineering-courses .contain-engineering-courses::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .engineering .engineering-courses .contain-engineering-courses a {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%;
+      float: none;
+      position: relative;
+      display: inline-block; }
+      .engineering .engineering-courses .contain-engineering-courses a:last-child {
+        margin-right: 0; }
+      .engineering .engineering-courses .contain-engineering-courses a img {
+        width: 70%; }
 
 /*===================ENGINEERING BANNEER URL VARIABLES===================================================================*/
 .electronica-url-banner {

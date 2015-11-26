@@ -15,6 +15,7 @@
 		z-index: -9999;
 		.contain-engineering-information {
 			@include outer-container;
+			margin-left: 11%;
 			.engineering-img {
 				@include span-columns(2);
 				img {
@@ -45,17 +46,30 @@
 		.contain-search-bar {
 			@include outer-container;
 			.search-input {
-				display: inline-block;
-				padding-bottom: 5px;
+				@include span-columns(7);
 				input {
 					height: 40px;
 					width: 280px;
+					border: none;
 					border-radius: 10px;
 					margin-bottom: 0;
+					float: right;
+					margin-top: 10px;
+					background-image: url('../public/images/ingenierias/electronica/ingenieria_lupa.svg');
+					background-repeat: no-repeat;
+					background-position: 97% 45%;
+					background-size: 8%;
+					background-color: rgba(255,255,255,0.9);
+					padding-right: 32px;
+					padding-left: 15px;
+					font-family: "Aleo Lightitalic", Arial, Helvetica, sans-serif;
+					font-size: em(17px);
 				}
 			}
 			.search-arrow {
-				display: inline-block;
+				@include span-columns(5);
+				padding-right: 20%;
+				padding-top: 4px;
 				h1 {
 					font-family: "Blanch Caps";
     				font-size: em(40px);
@@ -71,6 +85,21 @@
 				  	margin-top: -10px;
 					display: inline-block;
 					background-size: 100%;
+				}
+			}
+		}
+	}
+	.engineering-courses {
+		padding: 60px 0;
+		.contain-engineering-courses {
+			@include outer-container;
+			a {
+				@include span-columns(3);
+				float: none;
+				position: relative;
+				display: inline-block;
+				img {
+					width: 70%;
 				}
 			}
 		}
