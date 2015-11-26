@@ -1,7 +1,7 @@
 //==================================================================
 //www.solvingbooks.com / FrontEnd-Jorge Monroy / BackEnd-Jose Osorio
 //==================================================================
-//======== NAVIGATION HEADER =======================================
+//======== NAVIGATION HEADER - REFILLS =======================================
 $(document).ready(function() {
   var menuToggle = $('#js-mobile-menu').unbind();
   $('#js-navigation-menu').removeClass("show");
@@ -60,7 +60,7 @@ $(window).resize(function(){
     image.stop();
   }
 });
-//=========== HEADER MODAL SIGN-IN ===============================
+//=========== HEADER MODAL SIGN-IN - REFILLS ===============================
 $(function() {
   $("#modal-1").on("change", function() {
     if ($(this).is(":checked")) {
@@ -93,8 +93,28 @@ $(window).scroll(function(){
     $(".navigation").removeClass("header-fixed");
   }
 });
+//=========== ENGINEERING PAGE - RESPONSIVE TITLE IN ENGINEERING INFO SECTION ===============================
+$(window).resize(function(){
+  var ancho = $(window).width();
+  if (ancho >760) {
+    $('.engineering-icon').attr("src", "public/images/ingenierias/electronica/ingenieria_icono_Electronica.svg");
+  }
+  else if (ancho < 761) {
+    $('.engineering-icon').attr("src", "public/images/ingenierias/electronica/ingenieria_titulo_electronica.svg");
+  }
+});
 
-
-
+$(document).ready(function() {
+  var ancho = $(window).width();
+  if (ancho < 761) {
+    $('.engineering-icon').attr("src", "public/images/ingenierias/electronica/ingenieria_titulo_electronica.svg");
+  }
+});
+//=========== COURSE ACCORDION CHAPTERS - REFILLS ===============================
+$('.js-accordion-trigger').bind('click', function(e){
+  jQuery(this).parent().find('.submenu').slideToggle('fast');  // apply the toggle to the ul
+  jQuery(this).parent().toggleClass('is-expanded');
+  e.preventDefault();
+});
 
 

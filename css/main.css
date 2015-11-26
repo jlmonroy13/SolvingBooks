@@ -862,6 +862,40 @@ header.navigation {
 .modal-open {
   overflow: hidden; }
 
+/*====REFILLS _course-accordion-chapters====*/
+.accordion {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  margin: 0 0 1.5em 0;
+  padding: 0; }
+  .accordion ul {
+    margin: 0;
+    padding: 0; }
+  .accordion li {
+    border-bottom: 1px solid #ddd;
+    list-style: none; }
+    .accordion li > a {
+      color: #333;
+      display: block;
+      padding: 0.75em 1.618em;
+      text-decoration: none; }
+    .accordion li:last-child {
+      border: none; }
+    .accordion li:focus, .accordion li:hover {
+      background-color: #fcfcfc; }
+  .accordion ul.submenu {
+    display: none; }
+    .accordion ul.submenu li {
+      background-color: #eaeaea; }
+      .accordion ul.submenu li:first-child {
+        border-top: 1px solid #ddd;
+        box-shadow: inset 0 1px 1px #dadada; }
+      .accordion ul.submenu li:focus, .accordion ul.submenu li:hover {
+        background-color: #efefef; }
+  .accordion .is-expanded {
+    display: block;
+    padding-bottom: 0; }
+
 /*==========APPLICATION STYLES==================*/
 /*==========FONTS==================*/
 @font-face {
@@ -1128,6 +1162,12 @@ header {
     position: absolute;
     bottom: 15%;
     left: 10.029vw; }
+    @media screen and (min-width: 1780px) {
+      .home #first-section .info-slider {
+        left: 23vw !important; } }
+    @media screen and (min-width: 1400px) {
+      .home #first-section .info-slider {
+        left: 20vw; } }
     @media screen and (max-width: 670px) {
       .home #first-section .info-slider {
         bottom: 25%;
@@ -1367,6 +1407,7 @@ header {
   width: 100%;
   height: 28vw;
   max-height: 374px;
+  min-height: 200px;
   -webkit-box-shadow: 0px 6px 12px -4px rgba(66, 66, 66, 0.58);
   -moz-box-shadow: 0px 6px 12px -4px rgba(66, 66, 66, 0.58);
   box-shadow: 0px 6px 12px -4px rgba(66, 66, 66, 0.58);
@@ -1374,15 +1415,25 @@ header {
 .engineering article.engineering-information {
   padding: 70px 0;
   z-index: -9999; }
+  @media screen and (max-width: 760px) {
+    .engineering article.engineering-information {
+      padding: 40px 0; } }
   .engineering article.engineering-information .contain-engineering-information {
     max-width: 68em;
     margin-left: auto;
     margin-right: auto;
-    margin-left: 11%; }
+    padding-left: 2%; }
     .engineering article.engineering-information .contain-engineering-information::after {
       clear: both;
       content: "";
       display: table; }
+    @media screen and (max-width: 940px) {
+      .engineering article.engineering-information .contain-engineering-information {
+        padding-left: 9%; } }
+    @media screen and (max-width: 760px) {
+      .engineering article.engineering-information .contain-engineering-information {
+        padding: 0 10%;
+        text-align: center; } }
     .engineering article.engineering-information .contain-engineering-information .engineering-img {
       float: left;
       display: block;
@@ -1390,8 +1441,26 @@ header {
       width: 14.70196%; }
       .engineering article.engineering-information .contain-engineering-information .engineering-img:last-child {
         margin-right: 0; }
+      @media screen and (max-width: 940px) {
+        .engineering article.engineering-information .contain-engineering-information .engineering-img {
+          display: none; } }
+      @media screen and (max-width: 760px) {
+        .engineering article.engineering-information .contain-engineering-information .engineering-img {
+          display: block;
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%; }
+          .engineering article.engineering-information .contain-engineering-information .engineering-img:last-child {
+            margin-right: 0; } }
       .engineering article.engineering-information .contain-engineering-information .engineering-img img {
-        width: 140px; }
+        width: 90%;
+        max-width: 140px;
+        min-height: 135px; }
+        @media screen and (max-width: 760px) {
+          .engineering article.engineering-information .contain-engineering-information .engineering-img img {
+            max-width: 350px;
+            margin-bottom: 10px; } }
     .engineering article.engineering-information .contain-engineering-information .engineering-inf {
       float: left;
       display: block;
@@ -1399,12 +1468,35 @@ header {
       width: 40.29137%; }
       .engineering article.engineering-information .contain-engineering-information .engineering-inf:last-child {
         margin-right: 0; }
+      @media screen and (max-width: 940px) {
+        .engineering article.engineering-information .contain-engineering-information .engineering-inf {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 48.82117%; }
+          .engineering article.engineering-information .contain-engineering-information .engineering-inf:last-child {
+            margin-right: 0; } }
+      @media screen and (max-width: 760px) {
+        .engineering article.engineering-information .contain-engineering-information .engineering-inf {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%; }
+          .engineering article.engineering-information .contain-engineering-information .engineering-inf:last-child {
+            margin-right: 0; } }
       .engineering article.engineering-information .contain-engineering-information .engineering-inf p {
         text-align: right;
         font-family: "Aleo Light";
         font-size: 1.125em;
         line-height: 1.3;
         padding: 5px 4%; }
+        @media screen and (max-width: 873px) {
+          .engineering article.engineering-information .contain-engineering-information .engineering-inf p {
+            padding-left: 2%; } }
+        @media screen and (max-width: 760px) {
+          .engineering article.engineering-information .contain-engineering-information .engineering-inf p {
+            text-align: left;
+            padding: 5px 4%; } }
     .engineering article.engineering-information .contain-engineering-information .engineering-tittle {
       float: left;
       display: block;
@@ -1412,8 +1504,24 @@ header {
       width: 40.29137%; }
       .engineering article.engineering-information .contain-engineering-information .engineering-tittle:last-child {
         margin-right: 0; }
+      @media screen and (max-width: 940px) {
+        .engineering article.engineering-information .contain-engineering-information .engineering-tittle {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 48.82117%; }
+          .engineering article.engineering-information .contain-engineering-information .engineering-tittle:last-child {
+            margin-right: 0; } }
+      @media screen and (max-width: 760px) {
+        .engineering article.engineering-information .contain-engineering-information .engineering-tittle {
+          display: none; } }
       .engineering article.engineering-information .contain-engineering-information .engineering-tittle img {
-        width: 350px; }
+        width: 80%;
+        max-width: 350px;
+        min-width: 300px; }
+        @media screen and (max-width: 840px) {
+          .engineering article.engineering-information .contain-engineering-information .engineering-tittle img {
+            padding-top: 20px; } }
 .engineering .search-bar {
   height: 60px;
   text-align: center; }
@@ -1432,6 +1540,14 @@ header {
       width: 57.35098%; }
       .engineering .search-bar .contain-search-bar .search-input:last-child {
         margin-right: 0; }
+      @media screen and (max-width: 640px) {
+        .engineering .search-bar .contain-search-bar .search-input {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%; }
+          .engineering .search-bar .contain-search-bar .search-input:last-child {
+            margin-right: 0; } }
       .engineering .search-bar .contain-search-bar .search-input input {
         height: 40px;
         width: 280px;
@@ -1448,7 +1564,12 @@ header {
         padding-right: 32px;
         padding-left: 15px;
         font-family: "Aleo Lightitalic", Arial, Helvetica, sans-serif;
-        font-size: 1.0625em; }
+        font-size: 1.0625em;
+        font-weight: 500; }
+        @media screen and (max-width: 640px) {
+          .engineering .search-bar .contain-search-bar .search-input input {
+            float: none;
+            margin: 10px auto 0 auto; } }
     .engineering .search-bar .contain-search-bar .search-arrow {
       float: left;
       display: block;
@@ -1458,6 +1579,9 @@ header {
       padding-top: 4px; }
       .engineering .search-bar .contain-search-bar .search-arrow:last-child {
         margin-right: 0; }
+      @media screen and (max-width: 640px) {
+        .engineering .search-bar .contain-search-bar .search-arrow {
+          display: none; } }
       .engineering .search-bar .contain-search-bar .search-arrow h1 {
         font-family: "Blanch Caps";
         font-size: 2.5em;
@@ -1483,17 +1607,39 @@ header {
       content: "";
       display: table; }
     .engineering .engineering-courses .contain-engineering-courses a {
+      margin-bottom: 30px;
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 23.23176%;
       float: none;
       position: relative;
-      display: inline-block; }
+      display: inline-block;
+      margin-right: 0;
+      text-align: center; }
       .engineering .engineering-courses .contain-engineering-courses a:last-child {
         margin-right: 0; }
+      @media screen and (max-width: 1000px) {
+        .engineering .engineering-courses .contain-engineering-courses a {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 31.76157%;
+          margin-right: 0; }
+          .engineering .engineering-courses .contain-engineering-courses a:last-child {
+            margin-right: 0; } }
+      @media screen and (max-width: 600px) {
+        .engineering .engineering-courses .contain-engineering-courses a {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 48.82117%;
+          margin-right: 0; }
+          .engineering .engineering-courses .contain-engineering-courses a:last-child {
+            margin-right: 0; } }
       .engineering .engineering-courses .contain-engineering-courses a img {
-        width: 70%; }
+        width: 70%;
+        min-width: 160px; }
 
 /*===================ENGINEERING BANNEER URL VARIABLES===================================================================*/
 .electronica-url-banner {
@@ -1557,6 +1703,60 @@ header {
 
 .mecanica-search-bar {
   background: url("../public/images/ingenierias/mecanica/ingenieria_barraBusqueda_mecanica.png") no-repeat center; }
+
+/*===================COURSE STYLES==================================================*/
+.course .course-banner {
+  background-size: cover;
+  width: 100%;
+  height: 27vw;
+  max-height: 374px;
+  -webkit-box-shadow: 0px 6px 12px -4px rgba(66, 66, 66, 0.58);
+  -moz-box-shadow: 0px 6px 12px -4px rgba(66, 66, 66, 0.58);
+  box-shadow: 0px 6px 12px -4px rgba(66, 66, 66, 0.58); }
+.course .course-description {
+  padding: 50px 0; }
+  .course .course-description .contain-course-description {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    .course .course-description .contain-course-description::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .course .course-description .contain-course-description p {
+      font-family: "Aleo Light", Arial, Helvetica, sans-serif;
+      font-size: 1em;
+      font-weight: 500;
+      color: #000;
+      text-align: center; }
+      .course .course-description .contain-course-description p span {
+        font-family: "Aleo Bold";
+        font-size: 1.125em;
+        color: #000; }
+.course .course-content .course-chapters {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%; }
+  .course .course-content .course-chapters:last-child {
+    margin-right: 0; }
+.course .course-content .course-information {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  .course .course-content .course-information:last-child {
+    margin-right: 0; }
+
+/*===================ENGINEERING BANNEER URL VARIABLES===================================================================*/
+.circuitos1-url-banner {
+  background: url("../public/images/cursos/circuitos1/cursos_portada_circuitos1.jpg") no-repeat center; }
+
+.circuitos2-url-banner {
+  background: url("../public/images/cursos/circuitos2/cursos_portada_circuitos2.jpg") no-repeat center; }
+
+.maquinas-url-banner {
+  background: url("../public/images/cursos/maquinas/cursos_portada_maquinas.jpg") no-repeat center; }
 
 /*===================FOOTER STYLES==================================================*/
 .big-footer {

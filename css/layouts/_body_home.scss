@@ -20,6 +20,14 @@
 			position: absolute;
 			bottom: 15%;
 			left: 10.029vw;
+			$mobile: new-breakpoint(min-width 1780px);
+			@include media($mobile) {
+				left: 23vw !important;
+			}
+			$mobile: new-breakpoint(min-width 1400px);
+			@include media($mobile) {
+				left: 20vw;
+			}
 			$mobile: new-breakpoint(max-width 670px);
 			@include media($mobile) {
 				bottom: 25%;

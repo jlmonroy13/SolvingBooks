@@ -1,0 +1,42 @@
+/*===================COURSE STYLES==================================================*/
+.course {
+	.course-banner {
+		background-size: cover;
+		width: 100%;
+		height: 27vw;
+		max-height: 374px;
+		-webkit-box-shadow: 0px 6px 12px -4px rgba(66,66,66,0.58);
+		-moz-box-shadow: 0px 6px 12px -4px rgba(66,66,66,0.58);
+		box-shadow: 0px 6px 12px -4px rgba(66,66,66,0.58);
+	}
+	.course-description {
+		padding: 50px 0;
+		.contain-course-description {
+			@include outer-container;
+			p {
+				font-family: "Aleo Light", Arial, Helvetica, sans-serif;
+				font-size: em(16px);
+				font-weight: 500;
+				color: #000;
+				text-align: center;
+				span {
+					font-family: "Aleo Bold";
+					font-size: em(18px);
+					color: #000;
+				}
+			}
+		}
+	}
+	.course-content {
+		.course-chapters {
+			@include span-columns(8);
+		}
+		.course-information {
+			@include span-columns(4);
+		}
+	}
+}
+/*===================ENGINEERING BANNEER URL VARIABLES===================================================================*/
+.circuitos1-url-banner{ background: url("../public/images/cursos/circuitos1/cursos_portada_circuitos1.jpg") no-repeat center;}
+.circuitos2-url-banner{ background: url("../public/images/cursos/circuitos2/cursos_portada_circuitos2.jpg") no-repeat center;}
+.maquinas-url-banner{ background: url("../public/images/cursos/maquinas/cursos_portada_maquinas.jpg") no-repeat center;}
