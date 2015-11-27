@@ -28,6 +28,7 @@
 		}
 	}
 	.course-content {
+		padding-bottom: 50px;
 		.contain-course-content {
 			@include outer-container;
 			ul.course-chapters {
@@ -72,9 +73,6 @@
 							border-bottom: none !important;
 							box-shadow: none !important;
 							background-color: #fff;
-							&:hover {
-							    background-color: rgba(70,188,176, 0.19);
-							}
 							a {
 								border-top: none !important;
 								font-family: "Aleo Light", Arial, Helvetica, sans-serif;
@@ -102,6 +100,79 @@
 			}
 			.course-information {
 				@include span-columns(5);
+				text-align: center;
+				padding: 0 0 0 6%;
+				a { 
+					button {
+						background-color: transparent;
+						background-size: 100%;
+						background-repeat: no-repeat;
+						display: inline;
+						text-align: center;
+						border-radius: 12px;
+						border: none;
+						margin-top: 14px;
+					    padding: 4px 63px 7px;
+						max-height: 52px;
+						outline: none;
+						font-family: "Blanch Caps", Arial, Helvetica, sans-serif;
+						font-size: em(40px);
+						font-weight: 500;
+						color: #000;
+						margin-bottom: 15px;
+						&:hover {
+							color: #fff;
+						}	
+					}
+				}
+				h1 {
+					text-align: left;
+					font-family: "Blanch Caps", Arial, Helvetica, sans-serif;
+				    font-size: em(38px);
+				    font-weight: 500;
+				    color: #052b28;
+				}
+				div {
+					display: inline-block;
+					&:nth-child(3) {
+						margin-right: 6%;
+					}
+					h3 {
+						font-family: "Blanch Caps", Arial, Helvetica, sans-serif;
+				    	font-size: em(27px);
+				    	font-weight: 500;
+				    	color: #868686;
+				    	margin-bottom: -8px;
+					}
+					span {
+						font-family: "Aleo Light", Arial, Helvetica, sans-serif;
+						font-size: em(15px);
+				    	font-weight: 600;
+					}
+				}
+				ul {
+					list-style: disc;
+					padding-left: 8%;
+					margin-bottom: 10px;
+					li {
+						font-size: em(21px);
+						text-align: left;
+						line-height: 0.3;
+						margin-top: 15px;
+						span {
+							font-size: em(13px);
+							font-weight: 400;
+							color: #000;
+							line-height: normal;
+							span {
+								font-size: em(16px);
+								font-weight: 600;
+								color: #000;
+								line-height: normal;
+							}
+						}
+					}
+				}
 			}
 		}  
 	}
@@ -111,15 +182,45 @@
 .circuitos2-url-banner{ background: url("../public/images/cursos/circuitos2/cursos_portada_circuitos2.jpg") no-repeat center;}
 .maquinas-url-banner{ background: url("../public/images/cursos/maquinas/cursos_portada_maquinas.jpg") no-repeat center;}
 /*===================CHAPTERS ACCORDION BACKGROUND COLORS VARIABLES=========================================================*/
-.circuitos1-chapter_title { background-color: #27b193;}
-.circuitos2-chapter_title { background-color: orange;}
-.maquinas-chapter_title { background-color: blue;}
-.electronica-chapter_title { background-color: pink;}
-.comunicaciones-chapter_title { background-color: red;}
-
-
-
-
-
-
+.electronica-course-chapter_title { background-color: #27b193;}
+.electrica-course-chapter_title { background-color: orange;}
+.sistemas-course-chapter_title { background-color: blue;}
+.industrial-course-chapter_title { background-color: pink;}
+.civil-course-chapter_title { background-color: red;}
+.mecanica-course-chapter_title { background-color: yellow;}
+/*===================SUBCHAPTERS ACCORDION BACKGROUND HOVER COLORS VARIABLES=================================================*/
+.electronica-course-subchapter:hover { background-color: rgba(70,188,176, 0.19) !important;}
+.electrica-course-subchapter:hover { background-color: orange !important;}
+.sistemas-course-subchapter:hover { background-color: blue !important;}
+.industrial-course-subchapter:hover { background-color: pink !important;}
+.civil-course-subchapter:hover { background-color: red !important;}
+.mecanica-course-subchapter:hover { background-color: yellow !important;}
+/*===================BUTTON START COURSE BACKGROUND IMAGE URL VARIABLES======================================================*/
+.electronica-start-course { background-image: url('../public/images/ingenierias/electronica/electronica_cursos_boton_iniciar.svg');}
+.electrica-start-course { background-image: url('../public/images/ingenierias/electrica/electrica_cursos_boton_iniciar.svg');}
+.sistemas-start-course { background-image: url('../public/images/ingenierias/sistemas/sistemas_cursos_boton_iniciar.svg');}
+.industrial-start-course { background-image: url('../public/images/ingenierias/industrial/industrial_cursos_boton_iniciar.svg');}
+.civil-start-course { background-image: url('../public/images/ingenierias/civil/civil_cursos_boton_iniciar.svg');}
+.mecanica-start-course { background-image: url('../public/images/ingenierias/mecanica/mecanica_cursos_boton_iniciar.svg');}
+/*===================BORDER BOTTOM COLOR ABOUT PROFESOR TITLE VARIABLES======================================================*/
+.electronica-about-professor { border-bottom: 2px solid #46bcb0;}
+.electrica-about-professor { border-bottom: 2px solid orange;}
+.sistemas-about-professor { border-bottom: 2px solid blue;}
+.industrial-about-professor { border-bottom: 2px solid pink;}
+.civil-about-professor { border-bottom: 2px solid red;}
+.mecanica-about-professor { border-bottom: 2px solid yellow;}
+/*===================PROFESSOR ROLL COLOR TITLE VARIABLES======================================================================*/
+.electronica-roll-professor { color: #8C0D37;}
+.electrica-roll-professor { color: orange;}
+.sistemas-roll-professor { color: blue;}
+.industrial-roll-professor { color: pink;}
+.civil-roll-professor { color: red;}
+.mecanica-roll-professor { color: yellow;}
+/*===================POINTS LISTS COLOR VARIABLES======================================================================*/
+.electronica-points-lists-course { color: #46bcb0;}
+.electrica-points-lists-course { color: orange;}
+.sistemas-points-lists-course { color: blue;}
+.industrial-points-lists-course { color: pink;}
+.civil-points-lists-course { color: red;}
+.mecanica-points-lists-course { color: yellow;}
 
