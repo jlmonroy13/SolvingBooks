@@ -3,7 +3,7 @@
 	.course-banner {
 		background-size: cover;
 		width: 100%;
-		height: 27vw;
+		height: 40vw;
 		max-height: 374px;
 		-webkit-box-shadow: 0px 6px 12px -4px rgba(66,66,66,0.58);
 		-moz-box-shadow: 0px 6px 12px -4px rgba(66,66,66,0.58);
@@ -11,8 +11,16 @@
 	}
 	.course-description {
 		padding: 40px 0;
+		$mobile: new-breakpoint(max-width 1100px);
+		@include media($mobile) {
+			padding: 40px 0 20px;
+		}
 		.contain-course-description {
 			@include outer-container;
+			$mobile: new-breakpoint(max-width 1100px);
+			@include media($mobile) {
+				padding: 0 5%;
+			}
 			p {
 				font-family: "Aleo Light", Arial, Helvetica, sans-serif;
 				font-size: em(16px);
@@ -31,10 +39,18 @@
 		padding-bottom: 50px;
 		.contain-course-content {
 			@include outer-container;
+			$mobile: new-breakpoint(max-width 1120px);
+			@include media($mobile) {
+				padding: 0 4%;
+			}
 			ul.course-chapters {
 				@include span-columns(7);
 				border: none;
 				background-color: transparent !important;
+				$mobile: new-breakpoint(max-width 940px);
+				@include media($mobile) {
+					@include span-columns(12);
+				}
 				li.chapter {
 					background-color: transparent !important;
 					border: none;
@@ -47,6 +63,10 @@
     					color: #fff;
     					font-weight: 500;
     					line-height: 1;
+    					$mobile: new-breakpoint(max-width 450px);
+						@include media($mobile) {
+							font-size: em(24px);
+						}
 						p {
 							margin-bottom: 0;
 							display: inline-block;
@@ -102,6 +122,10 @@
 				@include span-columns(5);
 				text-align: center;
 				padding: 0 0 0 6%;
+				$mobile: new-breakpoint(max-width 940px);
+				@include media($mobile) {
+					@include span-columns(12);
+				}
 				a { 
 					button {
 						background-color: transparent;
@@ -159,12 +183,14 @@
 						text-align: left;
 						line-height: 0.3;
 						margin-top: 15px;
+						font-family: "Aleo Light", Arial, Helvetica, sans-serif;
 						span {
 							font-size: em(13px);
 							font-weight: 400;
 							color: #000;
 							line-height: normal;
 							span {
+								font-family: "Aleo Bold", Arial, Helvetica, sans-serif;
 								font-size: em(16px);
 								font-weight: 600;
 								color: #000;

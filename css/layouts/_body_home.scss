@@ -6,6 +6,7 @@
 			background: url('../public/images/home/desktop/bg1.jpg') no-repeat center;
 			background-size: cover;
 			height: 90.7vh;
+			min-height: 450px;
 			max-height: 670px;
 			$mobile: new-breakpoint(max-width 670px);
 			@include media($mobile) {

@@ -1,0 +1,67 @@
+/*===================OUR-ENGINEERING STYLES==================================================*/
+.our-engineering {
+	.our-engineering-title {
+		@include outer-container;
+		padding: 60px 0 40px;
+		h1 {
+			font-family: "Blanch Caps";
+			font-size: em(65px);
+			font-weight: 500;
+			color: #5980AD;
+			line-height: 0.7;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		p {
+			font-family: "Aleo Light";
+			font-size: em(18px);
+			font-weight: 500;
+			color: #000;
+			text-align: center;
+		}
+
+	}
+	.our-engineering-content {
+		@include outer-container;
+		.engineering-box {
+			@include span-columns(6);
+			margin: 0 0 30px;
+			border: 1px solid #DFDFDF;
+			border-radius: 20px;
+			background-color: #fff;
+			padding-right: 1%;
+			img {
+				@include span-columns(4);
+			}
+			.engineering-box-info {
+				@include span-columns(8);
+				padding-top: 10px;
+				h4 {
+					font-family: "Blanch Caps";
+    				font-size: em(30px);
+    				font-weight: 500;
+    				color: #000;
+    				margin: 0;
+				}
+				p {
+					font-family: "Aleo Light";
+    				font-size: em(12px);
+    				font-weight: 500;
+				}
+				a {
+					button {
+						font-family: "Aleo Bold";
+	    				font-size: em(13px);
+	    				font-weight: 500;
+	    				border-radius: 20px;
+	    				padding: 6px 20px;
+	    				float: right;
+					}
+				}
+			}
+			&:nth-child(2n+1) {
+				margin-right: 2%;
+			}
+		}
+	}
+}

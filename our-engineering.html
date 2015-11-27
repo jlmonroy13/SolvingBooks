@@ -1,0 +1,160 @@
+<!--================================================================== 
+www.solvingbooks.com / FrontEnd - Jorge Monroy / BackEnd - Jose Osorio
+===================================================================-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>SolvingBooks | Ingenierias</title> <!-- CHANGE THE WORD AFTER "SolvingBooks |" for information about the page -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="public/images/solving_favicon.png" type="image/x-icon">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body class="our-engineering gradient">
+		<!-- NAVBAR -->
+		<header class="navigation signup-header" role="banner"><!--VARIABLE BORDER COLOR (home, signup, electronica, electrica, civil, sistemas, industrial, mecanica) -->
+			<div class="navigation-wrapper">
+				<a href="home.html" class="logo">
+					<img src="public/images/navbar/navbar_logo.svg" alt="SolvingBooks Logo">
+				</a>
+				<a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
+					<div class="to-arrow">
+						<div class="hamburger-box">
+							<span>Menu</span>
+							<div class="bun top"></div>
+							<div class="meat"></div>
+							<div class="bun bottom"></div>
+						</div>
+					</div>
+				</a>
+				<nav role="navigation">
+					<ul id="js-navigation-menu" class="navigation-menu show">
+						<li class="nav-link"><a href="our-engineering.html">INGENIERIAS</a></li>
+						<li class="nav-link"><a href="javascript:void(0)">PRECIOS</a></li>
+						<li class="nav-link">
+							<div class="modal"> <!--======== MODAL ====================-->
+								<label for="modal-1">
+							    	<div class="modal-trigger">INGRESAR</div>
+								</label>
+							  	<input class="modal-state" id="modal-1" type="checkbox" />
+								<div class="modal-fade-screen">
+									<div class="modal-inner">
+										<div class="modal-close" for="modal-1"><p>X</p></div>
+										<form>
+								        	<h1>INGRESAR</h1>
+								        	<hr>
+								        	<label for="user-signin">USUARIO</label>
+								        	<input id="user-signin" type="text" name="usuario" placeholder=""/>
+								        	<label for="password-signin">CONTRASEÑA</label>
+								        	<input id="password-signin" type="password" name="password" placeholder=""/>
+								        	<input type="checkbox"/>
+								        	<span>Recordar datos.</span>
+								        	<p><a class="btnsignin" href="#close">INGRESAR</a></p>
+								        	<div>
+								        		<span>¿Eres nuevo en nuestra comunidad?</span>
+								        		<strong><a href="registro.html">Regístrate.</a></strong>
+								        	</div>
+							  			</form>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-link"><a href="signup.html">REGISTRARSE</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!-- SIGN UP SECTION-->
+		<article class="our-engineering-title">
+			<h1>ENCUENTRA EL CURSO QUE NECESITAS DE ACUERDO A TU INGENIERÍA</h1>
+			<p>Ingresa a la Ingeniería de tu elección y descubre todos los cursos que tenemos preparados para ti, adquirirás de manera fácil y sencilla todos los conocimientos y habilidades que necesitas para pasar sin problema todos tus exámenes.</p>
+		</article>
+		<section class="our-engineering-content">
+			<div class="engineering-box">
+				<img src="public/images/ingenierias/electronica.png" alt="">
+				<div class="engineering-box-info">
+					<h4>ELECTRÓNICA</h4>
+					<p>Por medio de estos cursos aprenderás a resolver todo tipo de problemas de ingeniería aplicados a diferentes áreas tales como el control de procesos industriales, las telecomunicaciones, la robótica, entre otros.</p>
+					<a href=""><button>ver contenido</button></a>
+				</div>
+			</div>
+			<div class="engineering-box">
+				<img src="public/images/ingenierias/mecanica.png" alt="">
+				<div class="engineering-box-info">
+					<h4>MECÁNICA</h4>
+					<p>Con estos cursos aprenderás a resolver problemas de ingeniería sobre el diseño y análisis de sistemas mecánicos a nivel estático y dinámico, el análisis de sistemas termodinámicos y de turbo máquinas, el control de procesos industriales y materiales de ingeniería.</p>
+					<a href=""><button>ver contenido</button></a>
+				</div>
+			</div>
+			<div class="engineering-box">
+				<img src="public/images/ingenierias/civil.png" alt="">
+				<div class="engineering-box-info">
+					<h4>CIVIL</h4>
+					<p>Aquí aprenderás a emplear conocimientos de cálculo, mecánica, hidráulica y física en el diseño, construcción y mantenimiento de las infraestructuras emplazadas en el entorno, tales como carreteras, ferrocarriles, puentes, canales, puertos y otras construcciones.</p>
+					<a href=""><button>ver contenido</button></a>
+				</div>
+			</div>
+			<div class="engineering-box">
+				<img src="public/images/ingenierias/industrial.png" alt="">
+				<div class="engineering-box-info">
+					<h4>INDUSTRIAL</h4>
+					<p>Ingresando a este módulo aprenderás de la optimización de los recursos humanos, técnicos, informativos así como el manejo y gestión óptimos de los sistemas de transformación de bienes y servicios.</p>
+					<a href=""><button>ver contenido</button></a>
+				</div>
+			</div>
+			<div class="engineering-box">
+				<img src="public/images/ingenierias/sistemas.png" alt="">
+				<div class="engineering-box-info">
+					<h4>SISTEMAS</h4>
+					<p>Por medio de estos cursos aprenderás desde conceptos básicos hasta avanzados relacionados con todo tipo de sistemas de información así como el desarrollo de sistemas cognitivos sencillos y complejos.</p>
+					<a href=""><button>ver contenido</button></a>
+				</div>
+			</div>
+			<div class="engineering-box">
+				<img src="public/images/ingenierias/electrica.png" alt="">
+				<div class="engineering-box-info">
+					<h4>ELÉCTRICA</h4>
+					<p>En estos cursos conocerás el estudio y las aplicaciones de la electricidad, que en conjunto con conocimientos de ciencias como física y  matemáticas sirven para diseñar sistemas y equipos que permiten generar, transportar, distribuir y utilizar la energía eléctrica.</p>
+					<a href=""><button>ver contenido</button></a>
+				</div>
+			</div>
+		</section>
+		<!-- FOOTER -->
+		<footer class="big-footer home-bigfooter"><!--VARIABLE BACKGROUND COLOR (home, electronica, electrica, civil, sistemas, industrial, mecanica) -->
+			<div class="contain-big-footer">
+				<div class="flist left">
+					<ul>
+						<li><a href="signup.html">Crear una cuenta</li></a>
+			            <li><a href="#">¿Quienes somos?</li></a>
+			            <li><a href="#">Ingenierías</li></a>
+			            <li><a href="#">Ayuda</li></a>
+					</ul>
+				</div>
+				<div class="logo-socialnetworks">
+					<a class="whitelogo" href="home.html"><img src="public/images/footer/main_footer/footer_logo.png" alt="Logo SolvingBooks"></a>
+					<p>Síguenos en</p>
+					<div class="socialnetworks">
+						<a href="https://www.facebook.com/SolvingBooks" target="_blank"><img src="public/images/footer/main_footer/footer_fb.png" alt="Facebook"></a>
+						<a href="https://www.youtube.com/channel/UCwGNFqQFef4ExPioeD_wHng" target="_blank"><img src="public/images/footer/main_footer/footer_yt.png" alt="Youtube"></a>
+						<a href="https://www.instagram.com/solvingbooks/" target="_blank"><img src="public/images/footer/main_footer/footer_insta.png" alt="Instragram"></a>
+						<a href="https://twitter.com/solvingbooks" target="_blank"><img src="public/images/footer/main_footer/footer_tw.png" alt="Twitter"></a>
+					</div>
+				</div>
+				<div class="flist right">
+					<ul>
+						<li><a href="#">Modos de pago</li></a>
+			            <li><a href="#">Trabaja con nosotros</li></a>
+			            <li><a href="#">Blog</li></a>
+			            <li><a href="#">Politica de privacidad</li></a>
+					</ul>
+				</div>
+			</div>
+			<div class="copyright gradient">
+				<p class="copy">&copy; 2015 SolvingBooks. Todos los derechos reservados.</p>
+			</div>
+		</footer>
+		<!--=================== SCRIPT SECTION =====================-->
+		<script src="http://code.jquery.com/jquery-latest.js"></script>  
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>  
