@@ -1416,6 +1416,9 @@ header {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (max-width: 1040px) {
+    .our-engineering .our-engineering-title {
+      padding: 60px 2% 40px; } }
   .our-engineering .our-engineering-title h1 {
     font-family: "Blanch Caps";
     font-size: 4.0625em;
@@ -1433,11 +1436,18 @@ header {
 .our-engineering .our-engineering-content {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding-bottom: 50px; }
   .our-engineering .our-engineering-content::after {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (max-width: 1040px) {
+    .our-engineering .our-engineering-content {
+      padding: 0 14%; } }
+  @media screen and (max-width: 700px) {
+    .our-engineering .our-engineering-content {
+      padding: 0 2%; } }
   .our-engineering .our-engineering-content .engineering-box {
     float: left;
     display: block;
@@ -1447,43 +1457,120 @@ header {
     border: 1px solid #DFDFDF;
     border-radius: 20px;
     background-color: #fff;
-    padding-right: 1%; }
+    padding-right: 1%;
+    position: relative; }
     .our-engineering .our-engineering-content .engineering-box:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 1040px) {
+      .our-engineering .our-engineering-content .engineering-box {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        .our-engineering .our-engineering-content .engineering-box:last-child {
+          margin-right: 0; } }
     .our-engineering .our-engineering-content .engineering-box img {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 31.76157%; }
+      width: 31.76157%;
+      margin-right: 0;
+      opacity: 0.9;
+      max-width: 165px; }
       .our-engineering .our-engineering-content .engineering-box img:last-child {
         margin-right: 0; }
+      .our-engineering .our-engineering-content .engineering-box img:hover {
+        opacity: 1; }
+      @media screen and (max-width: 540px) {
+        .our-engineering .our-engineering-content .engineering-box img {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%;
+          float: none;
+          text-align: center;
+          margin: 10px auto !important;
+          border-radius: 20px; }
+          .our-engineering .our-engineering-content .engineering-box img:last-child {
+            margin-right: 0; } }
     .our-engineering .our-engineering-content .engineering-box .engineering-box-info {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 65.88078%;
-      padding-top: 10px; }
+      padding-top: 8px;
+      margin-right: 0;
+      margin-left: 2.1%; }
       .our-engineering .our-engineering-content .engineering-box .engineering-box-info:last-child {
         margin-right: 0; }
+      @media screen and (max-width: 540px) {
+        .our-engineering .our-engineering-content .engineering-box .engineering-box-info {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%; }
+          .our-engineering .our-engineering-content .engineering-box .engineering-box-info:last-child {
+            margin-right: 0; } }
       .our-engineering .our-engineering-content .engineering-box .engineering-box-info h4 {
         font-family: "Blanch Caps";
         font-size: 1.875em;
         font-weight: 500;
         color: #000;
         margin: 0; }
+        @media screen and (max-width: 540px) {
+          .our-engineering .our-engineering-content .engineering-box .engineering-box-info h4 {
+            font-size: 2.5em; } }
       .our-engineering .our-engineering-content .engineering-box .engineering-box-info p {
         font-family: "Aleo Light";
-        font-size: 0.75em;
-        font-weight: 500; }
-      .our-engineering .our-engineering-content .engineering-box .engineering-box-info a button {
+        font-size: 0.8125em;
+        font-weight: 600; }
+    .our-engineering .our-engineering-content .engineering-box:nth-child(2n+1) {
+      margin-right: 2%; }
+    .our-engineering .our-engineering-content .engineering-box a.engineering-box-button {
+      position: absolute;
+      bottom: 5px;
+      right: 20px; }
+      .our-engineering .our-engineering-content .engineering-box a.engineering-box-button button {
         font-family: "Aleo Bold";
         font-size: 0.8125em;
         font-weight: 500;
         border-radius: 20px;
         padding: 6px 20px;
         float: right; }
-    .our-engineering .our-engineering-content .engineering-box:nth-child(2n+1) {
-      margin-right: 2%; }
+        @media screen and (max-width: 540px) {
+          .our-engineering .our-engineering-content .engineering-box a.engineering-box-button button {
+            display: none; } }
+    .our-engineering .our-engineering-content .engineering-box:nth-child(n+2) {
+      opacity: 0.5; }
+  .our-engineering .our-engineering-content .electronica-engineering-box p {
+    color: #063332; }
+  .our-engineering .our-engineering-content .electronica-engineering-box .engineering-box-button button {
+    background-color: #108b80; }
+    .our-engineering .our-engineering-content .electronica-engineering-box .engineering-box-button button:hover {
+      background-color: #fff;
+      color: #108b80;
+      border-color: #108b80;
+      border: 2px solid; }
+  .our-engineering .our-engineering-content .mecanica-engineering-box p {
+    color: #332806; }
+  .our-engineering .our-engineering-content .mecanica-engineering-box .engineering-box-button button {
+    background-color: #E59200; }
+  .our-engineering .our-engineering-content .civil-engineering-box p {
+    color: #33061E; }
+  .our-engineering .our-engineering-content .civil-engineering-box .engineering-box-button button {
+    background-color: #98264E; }
+  .our-engineering .our-engineering-content .industrial-engineering-box p {
+    color: #331406; }
+  .our-engineering .our-engineering-content .industrial-engineering-box .engineering-box-button button {
+    background-color: #AA340F; }
+  .our-engineering .our-engineering-content .sistemas-engineering-box p {
+    color: #1B0633; }
+  .our-engineering .our-engineering-content .sistemas-engineering-box .engineering-box-button button {
+    background-color: #4B2A6B; }
+  .our-engineering .our-engineering-content .electrica-engineering-box p {
+    color: #062E33; }
+  .our-engineering .our-engineering-content .electrica-engineering-box .engineering-box-button button {
+    background-color: #0D5460; }
 
 /*===================ENGINEERING STYLES==================================================*/
 .engineering .engineering-banner {

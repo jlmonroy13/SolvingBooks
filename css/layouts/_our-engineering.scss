@@ -3,6 +3,10 @@
 	.our-engineering-title {
 		@include outer-container;
 		padding: 60px 0 40px;
+		$mobile: new-breakpoint(max-width 1040px);
+		@include media($mobile) {
+			padding: 60px 2% 40px;
+		}
 		h1 {
 			font-family: "Blanch Caps";
 			font-size: em(65px);
@@ -19,10 +23,18 @@
 			color: #000;
 			text-align: center;
 		}
-
 	}
 	.our-engineering-content {
 		@include outer-container;
+		padding-bottom: 50px;
+		$mobile: new-breakpoint(max-width 1040px);
+		@include media($mobile) {
+			padding: 0 14%;
+		}
+		$mobile: new-breakpoint(max-width 700px);
+		@include media($mobile) {
+			padding: 0 2%;
+		}
 		.engineering-box {
 			@include span-columns(6);
 			margin: 0 0 30px;
@@ -30,38 +42,144 @@
 			border-radius: 20px;
 			background-color: #fff;
 			padding-right: 1%;
+			position: relative;
+			$mobile: new-breakpoint(max-width 1040px);
+			@include media($mobile) {
+				@include span-columns(12);
+			}
 			img {
 				@include span-columns(4);
+				margin-right: 0;
+				opacity: 0.9;
+				max-width: 165px;
+				&:hover {
+					opacity: 1;
+				}
+				$mobile: new-breakpoint(max-width 540px);
+				@include media($mobile) {
+					@include span-columns(12);
+					float: none;
+				    text-align: center;
+				    margin: 10px auto !important;
+				    border-radius: 20px;
+				}
 			}
 			.engineering-box-info {
 				@include span-columns(8);
-				padding-top: 10px;
+				padding-top: 8px;
+				margin-right: 0;
+				margin-left: 2.1%;
+				$mobile: new-breakpoint(max-width 540px);
+				@include media($mobile) {
+					@include span-columns(12);
+				}
 				h4 {
 					font-family: "Blanch Caps";
     				font-size: em(30px);
     				font-weight: 500;
     				color: #000;
     				margin: 0;
+    				$mobile: new-breakpoint(max-width 540px);
+					@include media($mobile) {
+						font-size: em(40px);
+					}
 				}
 				p {
 					font-family: "Aleo Light";
-    				font-size: em(12px);
-    				font-weight: 500;
+    				font-size: em(13px);
+    				font-weight: 600;
 				}
-				a {
-					button {
-						font-family: "Aleo Bold";
-	    				font-size: em(13px);
-	    				font-weight: 500;
-	    				border-radius: 20px;
-	    				padding: 6px 20px;
-	    				float: right;
-					}
-				}
+				
 			}
 			&:nth-child(2n+1) {
 				margin-right: 2%;
 			}
+			a.engineering-box-button {
+				position: absolute;
+				bottom: 5px;
+				right: 20px;
+				button {
+					font-family: "Aleo Bold";
+    				font-size: em(13px);
+    				font-weight: 500;
+    				border-radius: 20px;
+    				padding: 6px 20px;
+    				float: right;
+    				$mobile: new-breakpoint(max-width 540px);
+					@include media($mobile) {
+						display: none;
+					}
+				}
+			}
+			&:nth-child(n+2) {
+				opacity: 0.5;
+			}
+		}//ENGINEERING COLORS
+		.electronica-engineering-box {
+			p {
+				color: #063332;
+			}
+			.engineering-box-button {
+				button {
+					background-color: #108b80;
+					&:hover {
+						background-color: #fff;
+						color: #108b80;
+						border-color: #108b80;
+						border: 2px solid;
+					}
+				}
+			}
 		}
+		.mecanica-engineering-box{
+			p {
+				color: #332806;
+			}
+			.engineering-box-button {
+				button {
+					background-color: #E59200;
+				}
+			}
+		}
+		.civil-engineering-box {
+			p {
+				color: #33061E;
+			}
+			.engineering-box-button {
+				button {
+					background-color: #98264E;
+				}
+			}
+		}
+		.industrial-engineering-box {
+			p {
+				color: #331406;
+			}
+			.engineering-box-button {
+				button {
+					background-color: #AA340F;
+				}
+			}
+		}
+		.sistemas-engineering-box {
+			p {
+				color: #1B0633;
+			}
+			.engineering-box-button {
+				button {
+					background-color: #4B2A6B;
+				}
+			}
+		}
+		.electrica-engineering-box {
+			p {
+				color: #062E33;
+			}
+			.engineering-box-button {
+				button {
+					background-color: #0D5460;
+				}
+			}
+		}	
 	}
 }
