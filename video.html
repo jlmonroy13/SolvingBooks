@@ -1,661 +1,106 @@
 <!--================================================================== 
-www.solvingbooks.com / BackEnd - Jose Osorio / FrontEnd - Jorge Monroy 
+www.solvingbooks.com / FrontEnd - Jorge Monroy / BackEnd - Jose Osorio
 ===================================================================-->
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>SolvingBooks | Cambia tu forma de estudiar</title>
+		<title>SolvingBooks | Circuitos Electricos 1</title><!-- CHANGE THE WORD AFTER "SolvingBooks |" for information about the page -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" href="public/images/solving_favicon.png" type="image/x-icon">
-		<script src="http://code.jquery.com/jquery-latest.js"></script>  
-		<link rel="stylesheet" href="css/normalize.css">
-
-		<script src="mejs/mediaelement-and-player.min.js"></script>
-		<script src="js/custom.js"></script>
-
-	    <link rel="stylesheet" href="mejs/mediaelementplayer.min.css"/>
-	    <link rel="stylesheet" href="mejs/mejs-skins.css">
-
-		<link rel="stylesheet" href="css/application.css">
-		<link rel="stylesheet" href="css/video.css">
-		<link rel="stylesheet" href="css/header.css">
-		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/main.css">
 	</head>
-	<body>
-		<!--========= NAVBAR ===============-->
-		<header class="lineElectronica">
-			<nav class="navbar" role="navigation">
-				<div class="container">
-					<div class="navbar-header">
-		    			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-		       				<span class="icon-bar"></span>
-		      				<span class="icon-bar"></span>
-		      				<span class="icon-bar"></span>
-		    			</button>
-		    			<a class="navbar-brand" href="home.html" title="SolvingBooks">
-							<img class="header_logo" src="public/images/navbar/navbar_logo.svg">
-		    			</a>
-		  			</div>
-		  			<div class="collapse navbar-collapse navbar-ex1-collapse">
-		     			<ul class="nav navbar-nav navbar-right">
-		      				<li><a href="#">INGENIERIAS</a></li>
-		      				<li><a href="#">PRECIOS</a></li>
-		      				<li><a href="#openModal">INGRESAR</a></li>
-		      				<li class="header_divisor"></li>
-		      				<li><a href="">REGISTRARSE</a></li>
-		    			</ul>
-		  			</div>
-		  		</div>
-			</nav>
-			<nav class="navbar navbar2 navbar-fixed-top lineElectronica" role="navigation">
-				<div class="container">
-					<div class="navbar-header">
-		    			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-		       				<span class="icon-bar"></span>
-		      				<span class="icon-bar"></span>
-		      				<span class="icon-bar"></span>
-		    			</button>
-		    			<a class="navbar-brand" href="home.html" title="SolvingBooks">
-							<img class="header_logo" src="public/images/navbar/navbar_logo.svg">
-		    			</a>
-		  			</div>
-		  			<div class="collapse navbar-collapse navbar-ex1-collapse">
-		     			<ul class="nav navbar-nav navbar-right">
-		      				<li><a href="#">INGENIERIAS</a></li>
-		      				<li><a href="#">PRECIOS</a></li>
-		      				<li><a href="#openModal">INGRESAR</a></li>
-		      				<li class="header_divisor"></li>
-		      				<li><a href="">REGISTRARSE</a></li>
-		    			</ul>
-		  			</div>
-		  		</div>
-			</nav>
-			<!--=================== OPEN MODAL INGRESAR ================-->
-			<div id="openModal" class="modalDialog">
-				<div>
-			    	<a class="salir" href="#close">X</a>
-			    	<form>
-			        	<h1>INGRESAR</h1>
-			        	<hr>
-			        	<h3>USUARIO</h3>
-			        	<input type="text" name="Usuario" placeholder=""/>
-			        	<h3>CONTRASEÑA</h3>
-			        	<input type="password" name="password" placeholder=""/>
-			        	<input type="checkbox"/>
-			        	<span>Recordar datos.</span>
-			        	<p><a class="btnIngresar" href="#close">INGRESAR</a></p>
-			        	<div>
-			        		<span>¿Eres nuevo en nuestra comunidad?</span>
-			        		<strong><a href="registro.html">Regístrate.</a></strong>
-			        	</div>
-		  			</form>
-		  		</div>
+	<body class="video">
+		<!-- NAVBAR -->
+		<header class="navigation electronica-header" role="banner"><!--VARIABLE BORDER COLOR (home, electronica, electrica, civil, sistemas, industrial, mecanica) -->
+			<div class="navigation-wrapper">
+				<a href="home.html" class="logo">
+					<img src="public/images/navbar/navbar_logo.svg" alt="SolvingBooks Logo">
+				</a>
+				<a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
+					<div class="to-arrow">
+						<div class="hamburger-box">
+							<span>Menu</span>
+							<div class="bun top"></div>
+							<div class="meat"></div>
+							<div class="bun bottom"></div>
+						</div>
+					</div>
+				</a>
+				<nav role="navigation">
+					<ul id="js-navigation-menu" class="navigation-menu show">
+						<li class="nav-link"><a href="our-engineering.html">INGENIERIAS</a></li>
+						<li class="nav-link"><a href="javascript:void(0)">PRECIOS</a></li>
+						<li class="nav-link">
+							<div class="modal"> <!--======== MODAL ====================-->
+								<label for="modal-1">
+							    	<div class="modal-trigger">INGRESAR</div>
+								</label>
+							  	<input class="modal-state" id="modal-1" type="checkbox" />
+								<div class="modal-fade-screen">
+									<div class="modal-inner">
+										<div class="modal-close" for="modal-1"><p>X</p></div>
+										<form>
+								        	<h1>INGRESAR</h1>
+								        	<hr>
+								        	<label for="user-signin">USUARIO</label>
+								        	<input id="user-signin" type="text" name="usuario" placeholder=""/>
+								        	<label for="password-signin">CONTRASEÑA</label>
+								        	<input id="password-signin" type="password" name="password" placeholder=""/>
+								        	<input type="checkbox"/>
+								        	<span>Recordar datos.</span>
+								        	<p><a class="btnsignin" href="#close">INGRESAR</a></p>
+								        	<div>
+								        		<span>¿Eres nuevo en nuestra comunidad?</span>
+								        		<strong><a href="registro.html">Regístrate.</a></strong>
+								        	</div>
+							  			</form>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-link"><a href="signup.html">REGISTRARSE</a></li>
+					</ul>
+				</nav>
 			</div>
-			<!--============== FIN OPEN MODAL INGRESAR ================--> 
 		</header>
-		<!--========= FIN NAVBAR ===============-->
 
-		<section id="page_video" class="degradado">
-			<!--========= INICIO SECCIÓN MULTIMEDIA ===============-->
-			<div role="tabpanel">
-				<!--=============== BARRA DE VIDEOS =================-->
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">				
-							<div id="barra_progreso" class="nav nav-tabs" role="tablist">
-								<ul>
-									<li class="contenido" role="presentation">
-										<a href="#videouno" aria-controls="videouno" data-toggle="tab" role="tab">
-											<img  src="public/images/reproductor/electronica/video.svg" alt="">
-										</a>
-										<span class="contenido-tooltip"><h6>RESISTENCIA PARALELO</h6><em>4:55</em></span>
-									</li>
-
-									<li class="separador"></li>
-
-									<li class="contenido" role="presentation">
-										<a href="#videodos" aria-controls="videouno" data-toggle="tab" role="tab">
-											<img src="public/images/reproductor/electronica/video.svg" alt="">
-										</a>
-										<span class="contenido-tooltip"><h6>RESISTENCIA PARALELO</h6><em>4:55</em></span>
-									</li>
-
-									<li class="separador"></li>
-
-									<li class="contenido" role="presentation">
-										<a href="#ejercicio1" aria-controls="ejercicio1" data-toggle="tab" role="tab">
-											<img src="public/images/reproductor/electronica/quiz.svg" alt="">
-										</a>
-										<span class="contenido-tooltip"><h6>RESISTENCIA PARALELO</h6><em>4:55</em></span>
-									</li>
-
-									<li class="separador"></li>
-
-									<li class="contenido" role="presentation">
-										<a href="#videotres" aria-controls="videouno" data-toggle="tab" role="tab">
-											<img src="public/images/reproductor/electronica/video.svg" alt="">
-										</a>
-										<span class="contenido-tooltip"><h6>RESISTENCIA PARALELO</h6><em>4:55</em></span>
-									</li>
-
-									<li class="separador"></li>
-
-									<li class="contenido" role="presentation">
-										<a href="#ejercicio2" aria-controls="ejercicio1" data-toggle="tab" role="tab">
-											<img src="public/images/reproductor/electronica/quiz.svg" alt="">
-										</a>
-										<span class="contenido-tooltip"><h6>RESISTENCIA PARALELO</h6><em>4:55</em></span>
-									</li>
-
-									<li class="separador"></li>
-
-									<li class="contenido" role="presentation">
-										<a href="#videocuatro" aria-controls="videouno" data-toggle="tab" role="tab">
-											<img src="public/images/reproductor/electronica/video.svg" alt="">
-										</a>
-										<span class="contenido-tooltip"><h6>RESISTENCIA PARALELO</h6><em>4:55</em></span>
-									</li>
-
-									<li class="separador"></li>
-
-									<li class="contenido" role="presentation">
-										<a href="#ejercicio3" aria-controls="ejercicio1" data-toggle="tab" role="tab">
-											<img src="public/images/reproductor/electronica/quiz.svg" alt="">
-										</a>
-										<span class="contenido-tooltip"><h6>RESISTENCIA PARALELO</h6><em>4:55</em></span>
-									</li>
-
-									<li class="separador"></li>
-
-									<li class="contenido" role="presentation">
-										<a href="#videocinco" aria-controls="videouno" data-toggle="tab" role="tab">
-											<img src="public/images/reproductor/electronica/video.svg" alt="">
-										</a>
-										<span class="contenido-tooltip"><h6>RESISTENCIA PARALELO</h6><em>4:55</em></span>
-									</li>
-
-									<li class="separador"></li>
-
-									<li class="contenido" role="presentation">
-										<a href="#ejercicio4" aria-controls="ejercicio1" data-toggle="tab" role="tab">
-											<img src="public/images/reproductor/electronica/quiz.svg" alt="">
-										</a>
-										<span class="contenido-tooltip"><h6>RESISTENCIA PARALELO</h6><em>4:55</em></span>
-									</li>
-
-									<li class="separador"></li>
-
-									<li class="contenido" role="presentation">
-										<a href="#ejercicio4" aria-controls="ejercicio1" data-toggle="tab" role="tab">
-											<img src="public/images/reproductor/electronica/quiz.svg" alt="">
-										</a>
-										<span class="contenido-tooltip"><h6>RESISTENCIA PARALELO</h6><em>4:55</em></span>
-									</li>
-
-									<li class="separador"></li>
-
-									<li class="contenido" role="presentation">
-										<a href="#ejercicio4" aria-controls="ejercicio1" data-toggle="tab" role="tab">
-											<img src="public/images/reproductor/electronica/quiz.svg" alt="">
-										</a>
-										<span class="contenido-tooltip"><h6>RESISTENCIA PARALELO</h6><em>4:55</em></span>
-									</li>
-
-									<li class="separador"></li>
-
-									<li class="contenido" role="presentation">
-										<a href="#ejercicio4" aria-controls="ejercicio1" data-toggle="tab" role="tab">
-											<img src="public/images/reproductor/electronica/quiz.svg" alt="">
-										</a>
-										<span class="contenido-tooltip"><h6>RESISTENCIA PARALELO</h6><em>4:55</em></span>
-									</li>
-								</ul>
-							</div>
-						</div>
+		<!-- FOOTER -->
+		<footer class="big-footer electronica-bigfooter"><!--VARIABLE BACKGROUND COLOR (home, electronica, electrica, civil, sistemas, industrial, mecanica) -->
+			<div class="contain-big-footer">
+				<div class="flist left">
+					<ul>
+						<li><a href="signup.html">Crear una cuenta</li></a>
+			            <li><a href="#">¿Quienes somos?</li></a>
+			            <li><a href="#">Ingenierías</li></a>
+			            <li><a href="#">Ayuda</li></a>
+					</ul>
+				</div>
+				<div class="logo-socialnetworks">
+					<a class="whitelogo" href="home.html"><img src="public/images/footer/main_footer/footer_logo.png" alt="Logo SolvingBooks"></a>
+					<p>Síguenos en</p>
+					<div class="socialnetworks">
+						<a href="https://www.facebook.com/SolvingBooks" target="_blank"><img src="public/images/footer/main_footer/footer_fb.png" alt="Facebook"></a>
+						<a href="https://www.youtube.com/channel/UCwGNFqQFef4ExPioeD_wHng" target="_blank"><img src="public/images/footer/main_footer/footer_yt.png" alt="Youtube"></a>
+						<a href="https://www.instagram.com/solvingbooks/" target="_blank"><img src="public/images/footer/main_footer/footer_insta.png" alt="Instragram"></a>
+						<a href="https://twitter.com/solvingbooks" target="_blank"><img src="public/images/footer/main_footer/footer_tw.png" alt="Twitter"></a>
 					</div>
 				</div>
-				<!--=============== FIN BARRA DE VIDEOS =================-->
-				<!--======================= ESPACIO VIDEO =====================================-->
-				<div class="container tab-content" id="video">
-					<!--======== VIDEO 1 =========-->
-					<div role="tabpanel" class="row tab-pane active" id="videouno">
-						<div class="col-md-12 area_video">
-							<video class="mejs-cncMateriales" controls width="100%" height="100%" style="width:100%;height:100%;">
-								<source type="video/mp4" src="http://res.cloudinary.com/solvingbooks/video/upload/v1443455574/Contenido_-_Circuitos_El%C3%A9ctricos_rv7kmy.mp4">
-							</video>
-							<div class="col-md-12 nextVideo">
-								<div class="row">
-									<div class="col-md-6 col-sm-6 col-xs-6 primeric">
-										<a class="verNuevamente" href="#video"><img src="public/images/reproductor/electronica/replay.svg" alt=""></a>
-										<p class="hidden-xs">Ver nuevamente</p>
-									</div>
-									<div class="col-md-6 col-sm-6 col-xs-6 segundoic">
-										<a class="continuar" href="#videodos" aria-controls="videouno" data-toggle="tab" role="tab"><img src="public/images/reproductor/electronica/continuar.svg" alt=""></a>
-										<p class="hidden-xs">Continuar</p>
-									</div>
-								</div>
-							</div>
-						</div>				
-					</div>
-					<!--======== VIDEO 2 =========-->
-					<div role="tabpanel" class="row tab-pane" id="videodos">
-						<div class="col-md-12 area_video">
-							<video class="mejs-cncMateriales" controls width="100%" height="100%" style="width:100%;height:100%;">
-								<source type="video/mp4" src="http://res.cloudinary.com/solvingbooks/video/upload/v1443456109/Ejercicio_1_-_Carga_y_Corriente_jp2dfv.mp4">
-							</video>
-							<div class="col-md-12 nextVideo">
-								<div class="row">
-									<div class="col-md-6 col-sm-12 col-xs-12 primeric">
-										<a class="verNuevamente" href="#video"><img src="public/images/reproductor/electronica/replay.svg" alt=""></a>
-										<p>Ver nuevamente</p>
-									</div>
-									<div class="col-md-6 col-sm-12 col-xs-12 segundoic">
-										<a class="continuar" href="#ejercicio1" aria-controls="ejercicio1" data-toggle="tab" role="tab"><img src="public/images/reproductor/electronica/continuar.svg" alt=""></a>
-										<p>Continuar</p>
-									</div>
-								</div>
-							</div>
-						</div>				
-					</div>
-					<!--======== EJERCICIO 1 =========-->
-					<div role="tabpanel" class="row tab-pane exercise" id="ejercicio1" >
-						<div class="col-xs-12 col-sm-8 col-md-8 questions">
-							<h1>PREGUNTA 1 <span>DE 1</span></h1>
-							<p>Si nos piden calcular la corriente que fluye a traves de un elemento y nos dan la función de la carga, debemos: </p>
-							<span id="opcion">*Opción múltiple. Única respuesta.</span>
-
-							<div class="row preguntas" id="opcionA">
-								<a href="#"><div class="col-xs-1 col-sm-1 col-md-1">
-									<h3>A</h3>
-								</div>
-								<div class="col-xs-11 col-sm-11 col-md-11">
-									<p>Graficar la función de la carga y obtener su valor máximo, de esta forma calculamos la corriente.</p>
-								</div></a>
-							</div>
-							<a href="#"><div class="row preguntas">
-								<div class="col-xs-1 col-sm-1 col-md-1">
-									<h3>B</h3>
-								</div>
-								<div class="col-xs-11 col-sm-11 col-md-11">
-									<p>Derivamos la función de la carga con respecto al tiempo y de esta forma calculamos la corriente.</p>
-								</div>
-							</div></a>
-							<a href="#"><div class="row preguntas">
-								<div class="col-xs-1 col-sm-1 col-md-1">
-									<h3>C</h3>
-								</div>
-								<div class="col-xs-11 col-sm-11 col-md-11">
-									<p>Integramos la función de la carga con respecto al tiempo y de esta forma calculamos la corriente.</p>
-								</div>
-							</div></a>
-						</div>
-						<div class="hidden-xs col-sm-4 col-md-4 help">
-							<button><a href="#">Ayuda</a></button>
-						</div>	
-						<div class="row">
-							<div class="col-xs-12 col-sm-12 col-md-12">
-								<div class="boteje">
-									<button class="hidden-md hidden-sm hidden-lg"><a href="#">Ayuda</a></button>
-									<button><a href="#">Anterior</a></button>
-									<button class="verificar"><a href="#">Verificar</a></button>
-									<button><a href="#">Siguiente</a></button>
-								</div>
-							</div>
-						</div>							
-					</div>
-					<!--======== VIDEO 3 =========-->
-					<div role="tabpanel" class="row tab-pane" id="videotres">
-						<div class="col-md-12 area_video">
-							<video class="mejs-cncMateriales" controls width="100%" height="100%" style="width:100%;height:100%;">
-								<source type="video/mp4" src="http://res.cloudinary.com/solvingbooks/video/upload/v1443456463/Ejercicio_2_-_Carga_y_Corriente_k5qeg2.mp4">
-							</video>
-							<div class="col-md-12 nextVideo">
-								<div class="row">
-									<div class="col-md-6 col-sm-12 col-xs-12 primeric">
-										<a class="verNuevamente" href="#video"><img src="public/images/reproductor/electronica/replay.svg" alt=""></a>
-										<p>Ver nuevamente</p>
-									</div>
-									<div class="col-md-6 col-sm-12 col-xs-12 segundoic">
-										<a class="continuar" href="#ejercicio2" aria-controls="ejercicio2" data-toggle="tab" role="tab"><img src="public/images/reproductor/electronica/continuar.svg" alt=""></a>
-										<p>Continuar</p>
-									</div>
-								</div>
-							</div>
-						</div>				
-					</div>
-					<!--======== EJERCICIO 2 =========-->
-					<div role="tabpanel" class="row tab-pane exercise" id="ejercicio1" >
-						<div class="col-xs-12 col-sm-8 col-md-8 questions">
-							<h1>PREGUNTA 1 <span>DE 1</span></h1>
-							<p>Si nos piden calcular la corriente que fluye a traves de un elemento y nos dan la función de la carga, debemos: </p>
-							<span id="opcion">*Opción múltiple. Única respuesta.</span>
-
-							<div class="row preguntas" id="opcionA">
-								<a href="#"><div class="col-xs-1 col-sm-1 col-md-1">
-									<h3>A</h3>
-								</div>
-								<div class="col-xs-11 col-sm-11 col-md-11">
-									<p>Graficar la función de la carga y obtener su valor máximo, de esta forma calculamos la corriente.</p>
-								</div></a>
-							</div>
-							<a href="#"><div class="row preguntas">
-								<div class="col-xs-1 col-sm-1 col-md-1">
-									<h3>B</h3>
-								</div>
-								<div class="col-xs-11 col-sm-11 col-md-11">
-									<p>Derivamos la función de la carga con respecto al tiempo y de esta forma calculamos la corriente.</p>
-								</div>
-							</div></a>
-							<a href="#"><div class="row preguntas">
-								<div class="col-xs-1 col-sm-1 col-md-1">
-									<h3>C</h3>
-								</div>
-								<div class="col-xs-11 col-sm-11 col-md-11">
-									<p>Integramos la función de la carga con respecto al tiempo y de esta forma calculamos la corriente.</p>
-								</div>
-							</div></a>
-						</div>
-						<div class="hidden-xs col-sm-4 col-md-4 help">
-							<button><a href="#">Ayuda</a></button>
-						</div>	
-						<div class="row">
-							<div class="col-xs-12 col-sm-12 col-md-12">
-								<div class="boteje">
-									<button class="hidden-md hidden-sm hidden-lg"><a href="#">Ayuda</a></button>
-									<button><a href="#">Anterior</a></button>
-									<button class="verificar"><a href="#">Verificar</a></button>
-									<button><a href="#">Siguiente</a></button>
-								</div>
-							</div>
-						</div>							
-					</div>
-					<!--======== VIDEO 4 =========-->
-					<div role="tabpanel" class="row tab-pane" id="videocuatro">
-						<div class="col-md-12 area_video">
-							<video class="mejs-cncMateriales" controls width="100%" height="100%" style="width:100%;height:100%;">
-								<source type="video/mp4" src="http://res.cloudinary.com/solvingbooks/video/upload/v1443456324/Ejercicio_3_-_Carga_y_Corriente_odcf6o.mp4">
-							</video>
-							<div class="col-md-12 nextVideo">
-								<div class="row">
-									<div class="col-md-6 col-sm-12 col-xs-12 primeric">
-										<a class="verNuevamente" href="#video"><img src="public/images/reproductor/electronica/replay.svg" alt=""></a>
-										<p>Ver nuevamente</p>
-									</div>
-									<div class="col-md-6 col-sm-12 col-xs-12 segundoic">
-										<a class="continuar" href="#ejercicio3" aria-controls="ejercicio3" data-toggle="tab" role="tab"><img src="public/images/reproductor/electronica/continuar.svg" alt=""></a>
-										<p>Continuar</p>
-									</div>
-								</div>
-							</div>
-						</div>				
-					</div>
-					<!--======== EJERCICIO 3 =========-->
-					<div role="tabpanel" class="row tab-pane exercise" id="ejercicio1" >
-						<div class="col-xs-12 col-sm-8 col-md-8 questions">
-							<h1>PREGUNTA 1 <span>DE 1</span></h1>
-							<p>Si nos piden calcular la corriente que fluye a traves de un elemento y nos dan la función de la carga, debemos: </p>
-							<span id="opcion">*Opción múltiple. Única respuesta.</span>
-
-							<div class="row preguntas" id="opcionA">
-								<a href="#"><div class="col-xs-1 col-sm-1 col-md-1">
-									<h3>A</h3>
-								</div>
-								<div class="col-xs-11 col-sm-11 col-md-11">
-									<p>Graficar la función de la carga y obtener su valor máximo, de esta forma calculamos la corriente.</p>
-								</div></a>
-							</div>
-							<a href="#"><div class="row preguntas">
-								<div class="col-xs-1 col-sm-1 col-md-1">
-									<h3>B</h3>
-								</div>
-								<div class="col-xs-11 col-sm-11 col-md-11">
-									<p>Derivamos la función de la carga con respecto al tiempo y de esta forma calculamos la corriente.</p>
-								</div>
-							</div></a>
-							<a href="#"><div class="row preguntas">
-								<div class="col-xs-1 col-sm-1 col-md-1">
-									<h3>C</h3>
-								</div>
-								<div class="col-xs-11 col-sm-11 col-md-11">
-									<p>Integramos la función de la carga con respecto al tiempo y de esta forma calculamos la corriente.</p>
-								</div>
-							</div></a>
-						</div>
-						<div class="hidden-xs col-sm-4 col-md-4 help">
-							<button><a href="#">Ayuda</a></button>
-						</div>	
-						<div class="row">
-							<div class="col-xs-12 col-sm-12 col-md-12">
-								<div class="boteje">
-									<button class="hidden-md hidden-sm hidden-lg"><a href="#">Ayuda</a></button>
-									<button><a href="#">Anterior</a></button>
-									<button class="verificar"><a href="#">Verificar</a></button>
-									<button><a href="#">Siguiente</a></button>
-								</div>
-							</div>
-						</div>							
-					</div>
-					<!--======== VIDEO 5 =========-->
-					<div role="tabpanel" class="row tab-pane" id="videocinco">
-						<div class="col-md-12 area_video">
-							<video class="mejs-cncMateriales" controls width="100%" height="100%" style="width:100%;height:100%;">
-								<source type="video/mp4" src="http://res.cloudinary.com/solvingbooks/video/upload/v1443456572/Ejercicio_4_-_Carga_y_Corriente_sz3kom.mp4">
-							</video>
-							<div class="col-md-12 nextVideo">
-								<div class="row">
-									<div class="col-md-6 col-sm-12 col-xs-12 primeric">
-										<a class="verNuevamente" href="#video"><img src="public/images/reproductor/electronica/replay.svg" alt=""></a>
-										<p>Ver nuevamente</p>
-									</div>
-									<div class="col-md-6 col-sm-12 col-xs-12 segundoic">
-										<a class="continuar" href="#ejercicio4" aria-controls="ejercicio4" data-toggle="tab" role="tab"><img src="public/images/reproductor/electronica/continuar.svg" alt=""></a>
-										<p>Continuar</p>
-									</div>
-								</div>
-							</div>
-						</div>				
-					</div>
-					<!--======== EJERCICIO 4 =========-->
-					<div role="tabpanel" class="row tab-pane exercise" id="ejercicio1" >
-						<div class="col-xs-12 col-sm-8 col-md-8 questions">
-							<h1>PREGUNTA 1 <span>DE 1</span></h1>
-							<p>Si nos piden calcular la corriente que fluye a traves de un elemento y nos dan la función de la carga, debemos: </p>
-							<span id="opcion">*Opción múltiple. Única respuesta.</span>
-
-							<div class="row preguntas" id="opcionA">
-								<a href="#"><div class="col-xs-1 col-sm-1 col-md-1">
-									<h3>A</h3>
-								</div>
-								<div class="col-xs-11 col-sm-11 col-md-11">
-									<p>Graficar la función de la carga y obtener su valor máximo, de esta forma calculamos la corriente.</p>
-								</div></a>
-							</div>
-							<a href="#"><div class="row preguntas">
-								<div class="col-xs-1 col-sm-1 col-md-1">
-									<h3>B</h3>
-								</div>
-								<div class="col-xs-11 col-sm-11 col-md-11">
-									<p>Derivamos la función de la carga con respecto al tiempo y de esta forma calculamos la corriente.</p>
-								</div>
-							</div></a>
-							<a href="#"><div class="row preguntas">
-								<div class="col-xs-1 col-sm-1 col-md-1">
-									<h3>C</h3>
-								</div>
-								<div class="col-xs-11 col-sm-11 col-md-11">
-									<p>Integramos la función de la carga con respecto al tiempo y de esta forma calculamos la corriente.</p>
-								</div>
-							</div></a>
-						</div>
-						<div class="hidden-xs col-sm-4 col-md-4 help">
-							<button><a href="#">Ayuda</a></button>
-						</div>	
-						<div class="row">
-							<div class="col-xs-12 col-sm-12 col-md-12">
-								<div class="boteje">
-									<button class="hidden-md hidden-sm hidden-lg"><a href="#">Ayuda</a></button>
-									<button><a href="#">Anterior</a></button>
-									<button class="verificar"><a href="#">Verificar</a></button>
-									<button><a href="#">Siguiente</a></button>
-								</div>
-							</div>
-						</div>							
-					</div>
-				</div>
-				<!--======================= FIN ESPACIO VIDEO =====================================-->
-			</div>
-			<!--=========================== FIN SECCIÓN MULTIMEDIA ====================================-->
-			<div class="container titulovideo">
-				<div class="row">
-					<div class="col-md-12">
-						<h3>CARGA Y CORRIENTE</h3>
-						<p>Por Selvio Pérez</p>
-					</div>
+				<div class="flist right">
+					<ul>
+						<li><a href="#">Modos de pago</li></a>
+			            <li><a href="#">Trabaja con nosotros</li></a>
+			            <li><a href="#">Blog</li></a>
+			            <li><a href="#">Politica de privacidad</li></a>
+					</ul>
 				</div>
 			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div role="tabpanel">
-							<!--///////////////////MENU//////////////////////////////-->
-							<ul class="nav nav-tabs" role="tablist">
-								<li role="presentation" class="active"><a href="#Foro" aria-controls="Foro" data-toggle="tab" role="tab">Foro</a></li>
-								<li role="presentation"><a href="#NotasDelProfesor" aria-controls="NotasDelProfesor" data-toggle="tab" role="tab">Notas del Profesor</a></li>
-								<li role="presentation"><a href="#Descargables" aria-controls="Descargables" data-toggle="tab" role="tab">Descargables</a></li>
-							</ul>
-							<!--///////////////////CONTENIDO DEL MENU//////////////////////////////-->
-							<div class="tab-content">
-								<div role="tabpanel" class="tab-pane active" id="Foro">
-									<div class="nuevoComentario">
-										<div class="row">
-											<div class="col-md-3 col-ms-12 col-xs-12">
-												<h4>¿Sigues con dudas?</h4>
-												<p>Compartelas y deja que otros</p>
-												<p>estudiantes, o incluso uno de</p>
-												<p>nuestros profesores las resuelva.</p>
-											</div>	
-											<div class="col-md-9 col-ms-12 col-xs-12">
-												<textarea placeholder="Escribe tus dudas y/o comentarios"></textarea>
-												<button><a href="#"></a>COMENTAR</button>
-											</div>
-										</div>
-									</div>
-									<div id="comentarioViejo">
-										<div class="row">
-											<!-- comentario viejo 1 -->
-											<div class="col-md-12 oldcomment">
-												<ul>
-													<li><h5>Rachel [<span>Hace 1 Semanas</span>]</h5></li>
-												</ul>
-												<p>Los felicito por este excelente video!!. Me gustaría aclarar una duda, siempre para resolver este tipo de ejercicios tengo que aplicar la derivada de un producto? </p>
-												<div class="botResp">
-													<span><a href="#comentarioViejo" class="responder">Responder</a></span>
-													<span><a href="#comentarioViejo" class="denunciar">Denunciar</a></span>
-												</div>
-												<div class="espacioComentario">
-													<textarea placeholder="Responde a este comentario"></textarea>
-													<div class="btnlft">
-														<span><a href="#comentarioViejo" class="cerrarComent">Cerrar[X]</a></span>
-														<button><a href="#"></a>COMENTAR</button>
-													</div>
-												</div>
-												<div class="historialComent">
-													<h5>Jlmonroy [<span>Hace 6 días</span>]</h5>
-													<p>No siempre tienes que aplicar la derivada de un producto, debes aplicar la regla de la derivada que aplique a la función de la carga que te estan dando, en este caso en la función de la carga hay dos terminos multiplicandose por tanto se usa en este caso la derivada de un producto.</p>
-													<h5>Selvio [<span>Hace 6 días</span>]</h5>
-													<p>Muy acertada tu respuesta @Jlmonroy y gracias por participar en nuestros foros. @Rachel si tienes alguna duda con las reglas de las derivadas, te invito a que repases estos temas en nuestro curso de Calculo Diferencial.</p>
-												</div>
-											</div>
-											<!-- comentario viejo 2 -->
-											<div class="col-md-12 oldcommen
-											">
-												<ul>
-													<li><h5>José [<span>Hace 4 Semanas</span>]</h5></li>
-												</ul>
-												<p>Los felicito por este excelente video!!. Me gustaría aclarar una duda, siempre para resolver este tipo de ejercicios tengo que aplicar la derivada de un producto? </p>
-												<div class="botResp">
-													<span><a href="#comentarioViejo" class="responder">Responder</a></span>
-													<span><a href="#comentarioViejo" class="denunciar">Denunciar</a></span>
-												</div>
-												<div class="espacioComentario">
-													<textarea placeholder="Responde a este comentario"></textarea>
-													<div class="btnlft">
-														<span><a href="#comentarioViejo" class="cerrarComent">Cerrar[X]</a></span>
-														<button><a href="#"></a>COMENTAR</button>
-													</div>
-												</div>
-												<div class="historialComent">
-													<h5>Jlmonroy [<span>Hace 6 días</span>]</h5>
-													<p>No siempre tienes que aplicar la derivada de un producto, debes aplicar la regla de la derivada que aplique a la función de la carga que te estan dando, en este caso en la función de la carga hay dos terminos multiplicandose por tanto se usa en este caso la derivada de un producto.</p>
-													<h5>Selvio [<span>Hace 6 días</span>]</h5>
-													<p>Muy acertada tu respuesta @Jlmonroy y gracias por participar en nuestros foros. @Rachel si tienes alguna duda con las reglas de las derivadas, te invito a que repases estos temas en nuestro curso de Calculo Diferencial.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div role="tabpanel" class="tab-pane" id="NotasDelProfesor">
-									<h3>FÓRMULAS</h3>
-									<ul>
-										<li><span>i = dq/dt</span></li>
-									</ul>
-									<h3>GLOSARIO</h3>
-									<ul>
-										<li><span><span>Corriente Eléctrica: </span>Es la velocidad de cambio de la carga respecto al tiempo (Derivada de la carga con respecto al tiempo).</span></li>
-										<li><span><span>Carga Eléctrica: </span>Integral de la corriente con respecto al tiempo.</span></li>
-									</ul>
-								</div>
-
-								<div role="tabpanel" class="tab-pane" id="Descargables">
-									<div class="media">
-										<div class="media-left">
-											<a href="#"><img src="public/images/reproductor/electronica/pdf.svg" alt=""></a>
-										</div>
-										<div class="media-body">
-											<p>Gráficas y formulas auxiliares</p>
-											<p>.pdf</p>
-											<p>2MB</p>
-										</div>
-									</div>
-									<div class="media">
-										<div class="media-left">
-											<a href="#"><img src="public/images/reproductor/electronica/mov.svg" alt=""></a>
-										</div>
-										<div class="media-body">
-											<p>Ejercicios Propuestos Carga y Corriente</p>
-											<p>.docx</p>
-											<p>1MB</p>
-										</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</div>				
-		</section>
-		<footer>
-	    	<div class="container" id="footer_video">
-				<div class="row">
-					<div class="col-md-5 col-ms-12 col-xs-12">
-						<a href="#"><img src="public/images/footer/video_footer/electronica/tw.svg" alt="Twitter SolvingBooks"></a>
-						<a href="#"><img src="public/images/footer/video_footer/electronica/ig.svg" alt="Instagram SolvingBooks"></a>
-						<a href="#"><img src="public/images/footer/video_footer/electronica/yt.svg" alt="Youtube SolvingBooks"></a>
-						<a href="#"><img src="public/images/footer/video_footer/electronica/fb.svg" alt="Facebook SolvingBooks"></a>
-						<a href="#"><img src="public/images/footer/video_footer/electronica/in.svg" alt="LinkedIn SolvingBooks"></a>
-					</div>
-					<div class="col-md-7 col-ms-12 col-xs-12">
-						<span>© 2015 SolvingBooks.</span>
-						<span>Todos los derechos reservados.</span>
-					</div>
-				</div>
-			</div>	
+			<div class="copyright gradient">
+				<p class="copy">&copy; 2015 SolvingBooks. Todos los derechos reservados.</p>
+			</div>
 		</footer>
 		<!--=================== SCRIPT SECTION =====================-->
-		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>  
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
-</html>
+</html>  
