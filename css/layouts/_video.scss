@@ -1,0 +1,19 @@
+/*===================VIDEO STYLES==================================================*/
+.video {
+	.multimedia-space {
+		padding: 30px 0;
+		.container-multimedia-space {
+			@include outer-container;
+			ul.accordion-tabs-minimal {
+				border-top-right-radius: 12px;
+				border-top-left-radius: 12px;
+				border: 1px solid #000;
+				li.tab-header-and-content {
+					.tab-content {
+						height: 485px;
+					}
+				}
+			}
+		}	
+	}
+}
