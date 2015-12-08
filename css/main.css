@@ -896,50 +896,6 @@ header.navigation {
     display: block;
     padding-bottom: 0; }
 
-/*====REFILLS _video-tabs-accordion====*/
-.accordion-tabs-minimal {
-  line-height: 1.5;
-  padding: 0; }
-  .accordion-tabs-minimal::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .accordion-tabs-minimal li.tab-header-and-content {
-    list-style: none; }
-    @media screen and (min-width: 40em) {
-      .accordion-tabs-minimal li.tab-header-and-content {
-        display: inline; } }
-  .accordion-tabs-minimal a.tab-link {
-    background-color: #fff;
-    border-top: 1px solid #ddd;
-    color: #333;
-    display: block;
-    padding: 0.75em 1.618em;
-    text-decoration: none; }
-    @media screen and (min-width: 40em) {
-      .accordion-tabs-minimal a.tab-link {
-        display: inline-block;
-        border-top: 0; } }
-    .accordion-tabs-minimal a.tab-link:hover {
-      color: #477dca; }
-    .accordion-tabs-minimal a.tab-link:focus {
-      outline: none; }
-    .accordion-tabs-minimal a.tab-link.is-active {
-      border-bottom: 0; }
-      @media screen and (min-width: 40em) {
-        .accordion-tabs-minimal a.tab-link.is-active {
-          border: 1px solid #ddd;
-          border-bottom-color: #fff;
-          margin-bottom: -1px; } }
-  .accordion-tabs-minimal .tab-content {
-    display: none;
-    padding: 1.5em 1.618em;
-    width: 100%; }
-    @media screen and (min-width: 40em) {
-      .accordion-tabs-minimal .tab-content {
-        border-top: 1px solid #ddd;
-        float: left; } }
-
 /*==========APPLICATION STYLES==================*/
 /*==========FONTS==================*/
 @font-face {
@@ -2241,22 +2197,133 @@ header {
   color: yellow; }
 
 /*===================VIDEO STYLES==================================================*/
-.video .multimedia-space {
-  padding: 30px 0; }
-  .video .multimedia-space .container-multimedia-space {
-    max-width: 68em;
-    margin-left: auto;
-    margin-right: auto; }
-    .video .multimedia-space .container-multimedia-space::after {
-      clear: both;
-      content: "";
-      display: table; }
-    .video .multimedia-space .container-multimedia-space ul.accordion-tabs-minimal {
+.video .multimedia {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px 0; }
+  .video .multimedia::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media (max-width: 1100px) {
+    .video .multimedia {
+      margin: 0 2%; } }
+  .video .multimedia .tabs {
+    /*----- Tabs -----*/
+    width: 100%;
+    display: inline-block; }
+    .video .multimedia .tabs .multimedia-bar {
+      height: 54px;
+      background-color: #718980;
       border-top-right-radius: 12px;
       border-top-left-radius: 12px;
-      border: 1px solid #000; }
-      .video .multimedia-space .container-multimedia-space ul.accordion-tabs-minimal li.tab-header-and-content .tab-content {
-        height: 485px; }
+      position: relative;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 0px;
+      border-bottom: none;
+      padding: 15px 2% 0; }
+      .video .multimedia .tabs .multimedia-bar ul.tab-links {
+        text-align: center;
+        display: table;
+        width: 100%;
+        border-radius: 4px 4px 0 0;
+        -webkit-transition-delay: 0.5s;
+        transition-delay: 0.5s;
+        -webkit-transition: -webkit-transform 0.3s ease;
+        transition: transform 0.3s ease;
+        box-sizing: border-box;
+        list-style: none;
+        vertical-align: baseline; }
+        .video .multimedia .tabs .multimedia-bar ul.tab-links li.content {
+          width: 23px;
+          position: relative;
+          display: table-cell;
+          box-sizing: border-box;
+          vertical-align: baseline; }
+          .video .multimedia .tabs .multimedia-bar ul.tab-links li.content a {
+            position: relative;
+            width: 23px;
+            display: block;
+            height: 60px; }
+        .video .multimedia .tabs .multimedia-bar ul.tab-links li.active a img {
+          opacity: 0.5; }
+          .video .multimedia .tabs .multimedia-bar ul.tab-links li.active a img:hover {
+            opacity: 1; }
+        .video .multimedia .tabs .multimedia-bar ul.tab-links li.separator {
+          position: relative;
+          display: table-cell;
+          box-sizing: border-box;
+          vertical-align: baseline; }
+          .video .multimedia .tabs .multimedia-bar ul.tab-links li.separator:before {
+            content: "";
+            position: absolute;
+            background: #fff;
+            top: 11px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            color: #fff;
+            opacity: 0.1;
+            border-radius: 2px;
+            box-sizing: border-box;
+            margin: 0 10px; }
+    .video .multimedia .tabs .tab-content {
+      /*----- Content of Tabs -----*/
+      background: red;
+      height: 470px; }
+      .video .multimedia .tabs .tab-content .tab {
+        display: none; }
+      .video .multimedia .tabs .tab-content .tab.active {
+        display: block;
+        position: relative;
+        height: 470px; }
+
+.video .mejs-container-fullscreen .mejs-circuitos,
+.video .mejs-container-fullscreen {
+  max-height: 100% !important; }
+
+.video .mejs-container-fullscreen .mejs-inner {
+  height: 100% !important; }
+
+.video .mejs-container-fullscreen .mejs-controls {
+  position: absolute !important;
+  bottom: 0px !important; }
+
+.video .mejs-circuitos {
+  background-color: #2A2D2D;
+  max-height: 450px;
+  height: 100vw;
+  min-height: 200px; }
+
+.video .mejs-circuitos .mejs-mediaelement {
+  position: relative; }
+
+/*CONTROLES REPRODUCTOR*/
+.video .mejs-circuitos .mejs-controls {
+  position: relative;
+  bottom: 5px; }
+
+.video .mejs-circuitos .mejs-controls .mejs-time-rail .mejs-time-total {
+  background: #043a30;
+  border-radius: 14px; }
+
+.video .mejs-circuitos .mejs-controls .mejs-time-rail .mejs-time-current {
+  background: #3A8380;
+  border-radius: 14px; }
+
+.video .mejs-circuitos .mejs-controls .mejs-time-rail .mejs-time-loaded {
+  background: #043a30;
+  border-radius: 14px; }
+
+.video .mejs-circuitos .mejs-controls .mejs-time-rail .mejs-time-total .mejs-time-float {
+  border: none;
+  background: none;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
+  font-family: "Aleo Bold", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #fff; }
 
 /*===================FOOTER STYLES==================================================*/
 .big-footer {

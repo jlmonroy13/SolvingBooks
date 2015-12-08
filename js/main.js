@@ -117,23 +117,18 @@ $('.js-accordion-trigger').bind('click', function(e){
   e.preventDefault();
 });
 //=========== VIDEO PAGE - TABS ACCORDION VIDEOS AND EXCERCISES ===============================
-$(document).ready(function () {
-  $('.accordion-tabs-minimal').each(function(index) {
-    $(this).children('li').first().children('a').addClass('is-active').next().addClass('is-open').show();
-  });
-  $('.accordion-tabs-minimal').on('click', 'li > a.tab-link', function(event) {
-    if (!$(this).hasClass('is-active')) {
-      event.preventDefault();
-      var accordionTabs = $(this).closest('.accordion-tabs-minimal');
-      accordionTabs.find('.is-open').removeClass('is-open').hide();
-
-      $(this).next().toggleClass('is-open').toggle();
-      accordionTabs.find('.is-active').removeClass('is-active');
-      $(this).addClass('is-active');
-    } else {
-      event.preventDefault();
-    }
-  });
+jQuery(document).ready(function() {
+    jQuery('.tabs .tab-links a').on('click', function(e)  {
+        var currentAttrValue = jQuery(this).attr('href');
+ 
+        // Show/Hide Tabs
+        jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
+ 
+        // Change/remove current tab to active
+        jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+ 
+        e.preventDefault();
+    });
 });
 
 

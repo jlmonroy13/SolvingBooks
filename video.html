@@ -8,6 +8,13 @@ www.solvingbooks.com / FrontEnd - Jorge Monroy / BackEnd - Jose Osorio
 		<title>SolvingBooks | Circuitos Electricos 1</title><!-- CHANGE THE WORD AFTER "SolvingBooks |" for information about the page -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" href="public/images/solving_favicon.png" type="image/x-icon">
+
+		<script src="http://code.jquery.com/jquery-latest.js"></script>  
+		<script src="mejs/mediaelement-and-player.min.js"></script>
+		<script src="js/custom.js"></script>
+		<link rel="stylesheet" href="mejs/mediaelementplayer.css" />
+		<link rel="stylesheet" href="mejs/mejs-skins.css">
+
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body class="video">
@@ -64,85 +71,107 @@ www.solvingbooks.com / FrontEnd - Jorge Monroy / BackEnd - Jose Osorio
 				</nav>
 			</div>
 		</header>
-		<!-- VIDEO SECTION -->
-		<section class="multimedia-space gradient">
-			<div class="container-multimedia-space">
-				<ul class="accordion-tabs-minimal">
-					<li class="tab-header-and-content">
-						<a href="#" class="tab-link">
-							<img src="public/images/reproductor/electronica/video.svg" alt="">
-						</a>
-						<div class="tab-content">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt pellentesque lorem, id suscipit dolor rutrum id. Morbi facilisis porta volutpat. Fusce adipiscing, mauris quis congue tincidunt, sapien purus suscipit odio, quis dictum odio tortor in sem. Ut sit amet libero nec orci mattis fringilla. Praesent eu ipsum in sapien tincidunt molestie sed ut magna. Nam accumsan dui at orci rhoncus pharetra tincidunt elit ullamcorper. Sed ac mauris ipsum. Nullam imperdiet sapien id purus pretium id aliquam mi ullamcorper.</p>
-						</div>
-					</li>
-					<li class="tab-header-and-content">
-						<a href="#" class="tab-link">Another Tab</a>
-						<div class="tab-content">
-						<p>Ut laoreet augue et neque pretium non sagittis nibh pulvinar. Etiam ornare tincidunt orci quis ultrices. Pellentesque ac sapien ac purus gravida ullamcorper. Duis rhoncus sodales lacus, vitae adipiscing tellus pharetra sed. Praesent bibendum lacus quis metus condimentum ac accumsan orci vulputate. Aenean fringilla massa vitae metus facilisis congue. Morbi placerat eros ac sapien semper pulvinar. Vestibulum facilisis, ligula a molestie venenatis, metus justo ullamcorper ipsum, congue aliquet dolor tortor eu neque. Sed imperdiet, nibh ut vestibulum tempor, nibh dui volutpat lacus, vel gravida magna justo sit amet quam. Quisque tincidunt ligula at nisl imperdiet sagittis. Morbi rutrum tempor arcu, non ultrices sem semper a. Aliquam quis sem mi.</p>
-						</div>
-					</li>
-					<li class="tab-header-and-content">
-						<a href="#" class="tab-link">Third</a>
-						<div class="tab-content">
-						<p>Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero, viverra vel vestibulum in, porttitor ut sapien. Phasellus tempor lorem id justo ornare tincidunt. Nulla faucibus, purus eu placerat fermentum, velit mi iaculis nunc, bibendum tincidunt ipsum justo eu mauris. Nulla facilisi. Vestibulum vel lectus ac purus tempus suscipit nec sit amet eros. Nullam fringilla, enim eu lobortis dapibus, quam magna tincidunt nibh, sit amet imperdiet dolor justo congue turpis.</p>    
-						</div>
-					</li>
-					<li class="tab-header-and-content">
-						<a href="#" class="tab-link">Last Item</a>
-						<div class="tab-content">
-						<p>Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus dui urna.</p>
-						</div>
-					</li>
-					<li class="tab-header-and-content">
-						<a href="#" class="tab-link is-active">Tab Item</a>
-						<div class="tab-content">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt pellentesque lorem, id suscipit dolor rutrum id. Morbi facilisis porta volutpat. Fusce adipiscing, mauris quis congue tincidunt, sapien purus suscipit odio, quis dictum odio tortor in sem. Ut sit amet libero nec orci mattis fringilla. Praesent eu ipsum in sapien tincidunt molestie sed ut magna. Nam accumsan dui at orci rhoncus pharetra tincidunt elit ullamcorper. Sed ac mauris ipsum. Nullam imperdiet sapien id purus pretium id aliquam mi ullamcorper.</p>
-						</div>
-					</li>
-					<li class="tab-header-and-content">
-						<a href="#" class="tab-link">Another Tab</a>
-						<div class="tab-content">
-						<p>Ut laoreet augue et neque pretium non sagittis nibh pulvinar. Etiam ornare tincidunt orci quis ultrices. Pellentesque ac sapien ac purus gravida ullamcorper. Duis rhoncus sodales lacus, vitae adipiscing tellus pharetra sed. Praesent bibendum lacus quis metus condimentum ac accumsan orci vulputate. Aenean fringilla massa vitae metus facilisis congue. Morbi placerat eros ac sapien semper pulvinar. Vestibulum facilisis, ligula a molestie venenatis, metus justo ullamcorper ipsum, congue aliquet dolor tortor eu neque. Sed imperdiet, nibh ut vestibulum tempor, nibh dui volutpat lacus, vel gravida magna justo sit amet quam. Quisque tincidunt ligula at nisl imperdiet sagittis. Morbi rutrum tempor arcu, non ultrices sem semper a. Aliquam quis sem mi.</p>
-						</div>
-					</li>
-					<li class="tab-header-and-content">
-						<a href="#" class="tab-link">Third</a>
-						<div class="tab-content">
-						<p>Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero, viverra vel vestibulum in, porttitor ut sapien. Phasellus tempor lorem id justo ornare tincidunt. Nulla faucibus, purus eu placerat fermentum, velit mi iaculis nunc, bibendum tincidunt ipsum justo eu mauris. Nulla facilisi. Vestibulum vel lectus ac purus tempus suscipit nec sit amet eros. Nullam fringilla, enim eu lobortis dapibus, quam magna tincidunt nibh, sit amet imperdiet dolor justo congue turpis.</p>    
-						</div>
-					</li>
-					<li class="tab-header-and-content">
-						<a href="#" class="tab-link">Last Item</a>
-						<div class="tab-content">
-						<p>Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus dui urna.</p>
-						</div>
-					</li>
-					<li class="tab-header-and-content">
-						<a href="#" class="tab-link">Third</a>
-						<div class="tab-content">
-						<p>Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero, viverra vel vestibulum in, porttitor ut sapien. Phasellus tempor lorem id justo ornare tincidunt. Nulla faucibus, purus eu placerat fermentum, velit mi iaculis nunc, bibendum tincidunt ipsum justo eu mauris. Nulla facilisi. Vestibulum vel lectus ac purus tempus suscipit nec sit amet eros. Nullam fringilla, enim eu lobortis dapibus, quam magna tincidunt nibh, sit amet imperdiet dolor justo congue turpis.</p>    
-						</div>
-					</li>
-					<li class="tab-header-and-content">
-						<a href="#" class="tab-link">Last Item</a>
-						<div class="tab-content">
-						<p>Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus dui urna.</p>
-						</div>
-					</li>
-					<li class="tab-header-and-content">
-						<a href="#" class="tab-link">Third</a>
-						<div class="tab-content">
-						<p>Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero, viverra vel vestibulum in, porttitor ut sapien. Phasellus tempor lorem id justo ornare tincidunt. Nulla faucibus, purus eu placerat fermentum, velit mi iaculis nunc, bibendum tincidunt ipsum justo eu mauris. Nulla facilisi. Vestibulum vel lectus ac purus tempus suscipit nec sit amet eros. Nullam fringilla, enim eu lobortis dapibus, quam magna tincidunt nibh, sit amet imperdiet dolor justo congue turpis.</p>    
-						</div>
-					</li>
-					<li class="tab-header-and-content">
-						<a href="#" class="tab-link">Last Item</a>
-						<div class="tab-content">
-						<p>Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus dui urna.</p>
-						</div>
-					</li>
-				</ul>
+		<!-- MULTIMEDIA -->
+		<section class="multimedia">
+			<div class="tabs">
+				<div class="multimedia-bar">
+				    <ul class="tab-links"> <!-- MULTIMEDIA BAR -->
+				        <li class="active content">
+				        	<a href="#tab1">
+				        		<img  src="public/images/reproductor/electronica/video.svg" alt="">
+				        	</a>
+				        </li>
+				        <li class="separator"></li>
+				        <li class="content">
+				        	<a href="#tab2">
+								<img  src="public/images/reproductor/electronica/video.svg" alt="">
+				        	</a>
+				        </li>
+				        <li class="separator"></li>
+				        <li class="content">
+				        	<a href="#tab3">
+				        		<img  src="public/images/reproductor/electronica/video.svg" alt="">
+				        	</a>
+				        </li>
+				        <li class="separator"></li>
+				        <li class="content">
+				        	<a href="#tab4">
+				        		<img  src="public/images/reproductor/electronica/video.svg" alt="">
+				        	</a>
+				        </li>
+				        <li class="separator"></li>
+				        <li class="content">
+				        	<a href="#tab5">
+								<img  src="public/images/reproductor/electronica/video.svg" alt="">
+				        	</a>
+				        </li>
+				        <li class="separator"></li>
+				        <li class="content">
+				        	<a href="#tab6">
+				        		<img  src="public/images/reproductor/electronica/video.svg" alt="">
+				        	</a>
+				        </li>
+				        <li class="separator"></li>
+				        <li class="content">
+				        	<a href="#tab7">
+				        		<img  src="public/images/reproductor/electronica/video.svg" alt="">
+				        	</a>
+				        </li>
+				        <li class="separator"></li>
+				        <li class="content">
+				        	<a href="#tab8">
+								<img  src="public/images/reproductor/electronica/video.svg" alt="">
+				        	</a>
+				        </li>
+				        <li class="separator"></li>
+				        <li class="content">
+				        	<a href="#tab9">
+				        		<img  src="public/images/reproductor/electronica/video.svg" alt="">
+				        	</a>
+				        </li>
+				        <li class="separator"></li>
+				        <li class="content">
+				        	<a href="#tab10">
+				        		<img  src="public/images/reproductor/electronica/video.svg" alt="">
+				        	</a>
+				        </li>
+				        <li class="separator"></li>
+				        <li class="content">
+				        	<a href="#tab11">
+				        		<img  src="public/images/reproductor/electronica/video.svg" alt="">
+				        	</a>
+				        </li>
+				        <li class="separator"></li>
+				        <li class="content">
+				        	<a href="#tab12">
+				        		<img  src="public/images/reproductor/electronica/video.svg" alt="">
+				        	</a>
+				        </li>
+				    </ul>
+			 	</div>
+			    <div class="tab-content">
+			        <div id="tab1" class="tab active">
+						<!-- Video -->
+						<video class="mejs-circuitos" controls width="100%" height="100%" style="width:100%;height:100%;">
+							<source type="video/mp4" src="http://res.cloudinary.com/solvingbooks/video/upload/v1443455574/Contenido_-_Circuitos_El%C3%A9ctricos_rv7kmy.mp4">
+						</video>
+			        </div>
+			 
+			        <div id="tab2" class="tab">
+			            <p>Tab #2 content goes here!</p>
+			            <p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis. In hac habitasse platea dictumst. Ut euismod tempus hendrerit. Morbi ut adipiscing nisi. Etiam rutrum sodales gravida! Aliquam tellus orci, iaculis vel.</p>
+			        </div>
+			 
+			        <div id="tab3" class="tab">
+			            <p>Tab #3 content goes here!</p>
+			            <p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum ri.</p>
+			        </div>
+			 
+			        <div id="tab4" class="tab">
+			            <p>Tab #4 content goes here!</p>
+			            <p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis. In hac habitasse platea dictumst. Ut euismod tempus hendrerit. Morbi ut adipiscing nisi. Etiam rutrum sodales gravida! Aliquam tellus orci, iaculis vel.</p>
+			        </div>
+			    </div>
 			</div>
 		</section>
 		<!-- FOOTER -->
@@ -180,7 +209,7 @@ www.solvingbooks.com / FrontEnd - Jorge Monroy / BackEnd - Jose Osorio
 			</div>
 		</footer>
 		<!--=================== SCRIPT SECTION =====================-->
-		<script src="http://code.jquery.com/jquery-latest.js"></script>  
+		
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>  
