@@ -2246,11 +2246,14 @@ header {
             position: relative;
             width: 23px;
             display: block;
-            height: 60px; }
-        .video .multimedia .tabs .multimedia-bar ul.tab-links li.active a img {
-          opacity: 0.5; }
-          .video .multimedia .tabs .multimedia-bar ul.tab-links li.active a img:hover {
-            opacity: 1; }
+            height: 60px;
+            background: url("../public/images/reproductor/electronica/video.svg") no-repeat; }
+        .video .multimedia .tabs .multimedia-bar ul.tab-links li.active a {
+          background: url("../public/images/reproductor/electronica/visto.svg") no-repeat; }
+        .video .multimedia .tabs .multimedia-bar ul.tab-links li.question a {
+          background: url("../public/images/reproductor/electronica/quiz.svg") no-repeat; }
+        .video .multimedia .tabs .multimedia-bar ul.tab-links li.question.active a {
+          background: url("../public/images/reproductor/electronica/resuelto.svg") no-repeat; }
         .video .multimedia .tabs .multimedia-bar ul.tab-links li.separator {
           position: relative;
           display: table-cell;
@@ -2259,71 +2262,68 @@ header {
           .video .multimedia .tabs .multimedia-bar ul.tab-links li.separator:before {
             content: "";
             position: absolute;
-            background: #fff;
+            background: #FFF;
             top: 11px;
             left: 0;
             right: 0;
             height: 2px;
-            color: #fff;
+            color: #FFF;
             opacity: 0.1;
             border-radius: 2px;
             box-sizing: border-box;
             margin: 0 10px; }
     .video .multimedia .tabs .tab-content {
       /*----- Content of Tabs -----*/
-      background: red;
-      height: 470px; }
+      background: transparent;
+      height: 480px; }
       .video .multimedia .tabs .tab-content .tab {
-        display: none; }
+        display: none;
+        position: relative;
+        height: 480px; }
+        .video .multimedia .tabs .tab-content .tab .mejs-video {
+          background-color: #2A2D2D;
+          max-height: 450px;
+          height: 100vw;
+          min-height: 200px; }
+          .video .multimedia .tabs .tab-content .tab .mejs-video .mejs-inner .mejs-mediaelement {
+            position: relative; }
+          .video .multimedia .tabs .tab-content .tab .mejs-video .mejs-inner .mejs-controls {
+            /*CONTROLES REPRODUCTOR*/
+            position: relative;
+            bottom: 7px; }
+            .video .multimedia .tabs .tab-content .tab .mejs-video .mejs-inner .mejs-controls .mejs-time-rail {
+              width: 932px; }
+              .video .multimedia .tabs .tab-content .tab .mejs-video .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total {
+                background: #043a30;
+                border-radius: 14px;
+                width: 928px; }
+                .video .multimedia .tabs .tab-content .tab .mejs-video .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total .mejs-time-current {
+                  background: #3A8380;
+                  border-radius: 14px; }
+                .video .multimedia .tabs .tab-content .tab .mejs-video .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total .mejs-time-loaded {
+                  background: #043a30;
+                  border-radius: 14px; }
+                .video .multimedia .tabs .tab-content .tab .mejs-video .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total .mejs-time-float {
+                  border: none;
+                  background: none;
+                  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
+                  font-family: "Aleo Bold", Arial, Helvetica, sans-serif;
+                  font-size: 13px;
+                  color: #fff; }
+        .video .multimedia .tabs .tab-content .tab .mejs-container-fullscreen {
+          max-height: 100% !important; }
+          .video .multimedia .tabs .tab-content .tab .mejs-container-fullscreen .mejs-video {
+            max-height: 100% !important; }
+          .video .multimedia .tabs .tab-content .tab .mejs-container-fullscreen .mejs-inner {
+            height: 100% !important; }
+            .video .multimedia .tabs .tab-content .tab .mejs-container-fullscreen .mejs-inner .mejs-controls {
+              position: absolute !important;
+              bottom: 0px !important;
+              background: -webkit-linear-gradient(top, rgba(50, 50, 50, 0.7), rgba(0, 0, 0, 0.7)); }
       .video .multimedia .tabs .tab-content .tab.active {
         display: block;
         position: relative;
-        height: 470px; }
-
-.video .mejs-container-fullscreen .mejs-circuitos,
-.video .mejs-container-fullscreen {
-  max-height: 100% !important; }
-
-.video .mejs-container-fullscreen .mejs-inner {
-  height: 100% !important; }
-
-.video .mejs-container-fullscreen .mejs-controls {
-  position: absolute !important;
-  bottom: 0px !important; }
-
-.video .mejs-circuitos {
-  background-color: #2A2D2D;
-  max-height: 450px;
-  height: 100vw;
-  min-height: 200px; }
-
-.video .mejs-circuitos .mejs-mediaelement {
-  position: relative; }
-
-/*CONTROLES REPRODUCTOR*/
-.video .mejs-circuitos .mejs-controls {
-  position: relative;
-  bottom: 5px; }
-
-.video .mejs-circuitos .mejs-controls .mejs-time-rail .mejs-time-total {
-  background: #043a30;
-  border-radius: 14px; }
-
-.video .mejs-circuitos .mejs-controls .mejs-time-rail .mejs-time-current {
-  background: #3A8380;
-  border-radius: 14px; }
-
-.video .mejs-circuitos .mejs-controls .mejs-time-rail .mejs-time-loaded {
-  background: #043a30;
-  border-radius: 14px; }
-
-.video .mejs-circuitos .mejs-controls .mejs-time-rail .mejs-time-total .mejs-time-float {
-  border: none;
-  background: none;
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
-  font-family: "Aleo Bold", Arial, Helvetica, sans-serif;
-  font-size: 13px;
-  color: #fff; }
+        height: 480px; }
 
 /*===================FOOTER STYLES==================================================*/
 .big-footer {
