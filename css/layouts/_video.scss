@@ -184,7 +184,7 @@
 		        .tab {
 		        	display:none;
 		        	position: relative;
-		        	height: 480px;
+		        	min-height: 480px;
 					.mejs-video {  // MEJS PLAYER
 						background-color: #2A2D2D;
 						max-height: 450px;
@@ -242,7 +242,91 @@
 		        .tab.active {
 		        	display: block;
 		        	position: relative;
-		        	height: 480px;
+		        	min-height: 480px;
+		        }
+		        .tab.exercise {
+		        	background-color: #f9fafa;
+		        	padding: 20px 0;
+		        	padding-right: 2%;
+		        	h3 {
+		        		font-family:"Blanch Caps";
+		        		font-size: 3.2142em;
+		        		color: #BC0D37;
+		        		margin: 0;
+		        		padding: 0 5%;
+		        		span {
+		        			font-size: 0.7em;
+		        		}
+		        	}
+		        	.exercise-content {
+		        		margin-top: 5px;
+		        		margin-bottom: 50px;
+		        		p {
+		        			font-family: "Aleo Bold", Arial, Helvetica, sans-serif;
+		        			font-size: 1.2142em;
+		        			padding: 0 5%;
+		        			line-height: 1;
+		        		}
+		        		.answer {
+		        			    margin-bottom: 2%;
+							    display: flex;
+							    align-items: center;
+							    margin-left: 5%;
+		        			.letter {
+								border-radius: 12px;
+								border: 1px solid #ebedef;
+								height: 50px;
+								width: 50px;
+								display: inline-block;
+								margin-right: 1%;
+								background-color: #f3f5f6;
+								p {
+									font-family:"Blanch Caps";
+		        					font-size: 3.2142em;
+		        					text-align: center;
+									vertical-align: middle;
+									line-height: 50px; 
+								}
+		        			}
+		        			.possible-answer {
+								border-radius: 12px;
+								border: 1px solid #ebedef;
+								min-height: 50px;
+								width: 70%;
+								display: inline-block;
+								background-color: #f3f5f6;
+								p {
+			        				font-family: "Aleo Regular", Arial, Helvetica, sans-serif;
+			        				font-size: 1.1428em;
+									vertical-align: middle;
+									line-height: 1; 
+									padding-left: 10px;
+									padding-right: 0;
+									margin: 14px 0;
+								}
+		        			}
+		        		}
+		        	}
+		        	.exercise-next {
+		        		background-color: #718980;
+		        		position: absolute;
+		        		bottom: 0;
+		        		width: 100%;
+		        		text-align: center;
+		        		min-height: 54px;
+		        		padding: 10px 0;
+		        		button {
+		        			font-family: "Aleo Regular", Arial, Helvetica, sans-serif;
+		        			color: #0F5953;
+		        			background-color: transparent;
+		        			border: 2px solid #0F5953;
+		        			border-radius: 20px;
+		        		}
+		        		.ex-check {
+		        			background-color: #0F5953;
+		        			color: #718980;
+		        		}
+		        	}
 		        }
     		}
 		}

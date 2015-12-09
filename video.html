@@ -17,7 +17,7 @@ www.solvingbooks.com / FrontEnd - Jorge Monroy / BackEnd - Jose Osorio
 
 		<link rel="stylesheet" href="css/main.css">
 	</head>
-	<body class="video">
+	<body class="video gradient">
 		<!-- NAVBAR -->
 		<header class="navigation electronica-header" role="banner"><!--VARIABLE BORDER COLOR (home, electronica, electrica, civil, sistemas, industrial, mecanica) -->
 			<div class="navigation-wrapper">
@@ -140,7 +140,7 @@ www.solvingbooks.com / FrontEnd - Jorge Monroy / BackEnd - Jose Osorio
 			 	</div>
 			 	<!-- MULTIMEDIA CONTENT -->
 			    <div class="tab-content">
-			        <div id="tab1" class="tab active"> <!-- CONTENT 1 -->
+			        <div id="tab1" class="tab "> <!-- CONTENT 1 -->
 						<!-- VIDEO --> 
 						<video class="mejs-video" controls width="100%" height="100%" style="width:100%;height:100%;">
 							<source type="video/mp4" src="http://res.cloudinary.com/solvingbooks/video/upload/v1443455574/Contenido_-_Circuitos_El%C3%A9ctricos_rv7kmy.mp4">
@@ -152,10 +152,33 @@ www.solvingbooks.com / FrontEnd - Jorge Monroy / BackEnd - Jose Osorio
 							<source type="video/mp4" src="http://res.cloudinary.com/solvingbooks/video/upload/v1443456109/Ejercicio_1_-_Carga_y_Corriente_jp2dfv.mp4">
 						</video>
 			        </div>
-			        <div id="tab3" class="tab exercise"> <!-- CONTENT 3 -->
+			        <div id="tab3" class="tab exercise active"> <!-- CONTENT 3 -->
 						<!-- EXERCISE -->
 			            <h3>PREGUNTA 1 <span>DE 1</span></h3>
-			            <p>El ensayo de tensión sólo es útil para identificar propiedades mecánicas y no otras como térmicas, eléctricas o magnéticas del material, porque:</p>
+			            <div class="exercise-content">
+				            <p>La tensión a través de un tostador de 1.1 kW que produce una corriente de 10A es de:</p>
+				            <div class="a-answer answer">
+				            	<div class="letter"><p>A</p></div>
+				            	<div class="possible-answer"><p>La tensión a través de un tostador de 1.1 kW que produce una corriente de 10A es de.</p></div>
+				            </div>
+				            <div class="b-answer answer">
+				            	<div class="letter"><p>B</p></div>
+				            	<div class="possible-answer"><p>1100 V.</p></div>
+				            </div>
+				            <div class="c-answer answer">
+				            	<div class="letter"><p>C</p></div>
+				            	<div class="possible-answer"><p>110 V.</p></div>
+				            </div>
+				            <div class="d-answer answer">
+				            	<div class="letter"><p>D</p></div>
+				            	<div class="possible-answer"><p>11 V.</p></div>
+				            </div>
+				        </div>
+				        <div class="exercise-next">
+				        	<button class="ex-preview">Anterior</button>
+				        	<button class="ex-check">Calificar</button>
+				        	<button class="ex-next">Siguiente</button>
+				        </div>    
 			        </div>
 			        <div id="tab4" class="tab"> <!-- CONTENT 4 -->
 			        	<!-- VIDEO -->
