@@ -2242,12 +2242,92 @@ header {
           display: table-cell;
           box-sizing: border-box;
           vertical-align: baseline; }
+          .video .multimedia .tabs .multimedia-bar ul.tab-links li.content:hover .content-tooltip {
+            visibility: visible;
+            opacity: 1;
+            -webkit-transform: translate(-50%, -3px);
+            -ms-transform: translate(-50%, -3px);
+            transform: translate(-50%, -3px); }
+          .video .multimedia .tabs .multimedia-bar ul.tab-links li.content:first-child .content-tooltip {
+            left: 85px; }
+            @media (max-width: 790px) {
+              .video .multimedia .tabs .multimedia-bar ul.tab-links li.content:first-child .content-tooltip {
+                left: 36px; } }
+            .video .multimedia .tabs .multimedia-bar ul.tab-links li.content:first-child .content-tooltip:before {
+              left: 22px; }
+          .video .multimedia .tabs .multimedia-bar ul.tab-links li.content:last-child .content-tooltip {
+            left: auto;
+            right: -135px; }
+            @media (max-width: 790px) {
+              .video .multimedia .tabs .multimedia-bar ul.tab-links li.content:last-child .content-tooltip {
+                left: auto;
+                right: -58px; } }
+            .video .multimedia .tabs .multimedia-bar ul.tab-links li.content:last-child .content-tooltip:before {
+              left: auto;
+              right: 42px; }
+              @media (max-width: 790px) {
+                .video .multimedia .tabs .multimedia-bar ul.tab-links li.content:last-child .content-tooltip:before {
+                  left: auto;
+                  right: 6px; } }
           .video .multimedia .tabs .multimedia-bar ul.tab-links li.content a {
             position: relative;
             width: 23px;
             display: block;
             height: 60px;
             background: url("../public/images/reproductor/electronica/video.svg") no-repeat; }
+          .video .multimedia .tabs .multimedia-bar ul.tab-links li.content .content-tooltip {
+            position: absolute;
+            background: #fff;
+            text-align: center;
+            padding: 10px 10px;
+            width: 190px;
+            z-index: 1000;
+            border-radius: 6px;
+            visibility: hidden;
+            opacity: 0;
+            -webkit-transition: -webkit-transform 0.3s ease, opacity 0.3s ease;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.08), 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 0 rgba(0, 0, 0, 0.08);
+            -webkit-transform: translate(-50%, -10px);
+            -ms-transform: translate(-50%, -10px);
+            transform: translate(-50%, -10px);
+            left: 50%;
+            top: 100%;
+            display: block;
+            box-sizing: border-box;
+            vertical-align: baseline; }
+            @media (max-width: 790px) {
+              .video .multimedia .tabs .multimedia-bar ul.tab-links li.content .content-tooltip {
+                width: 100px; } }
+            .video .multimedia .tabs .multimedia-bar ul.tab-links li.content .content-tooltip h6 {
+              color: #3A8380;
+              font-family: "Aleo Bold";
+              font-size: 0.7857em;
+              font-weight: 500;
+              margin: 0; }
+            .video .multimedia .tabs .multimedia-bar ul.tab-links li.content .content-tooltip em {
+              color: #000;
+              font-family: "Aleo Lightitalic";
+              font-size: 0.7857em;
+              font-weight: 500; }
+            .video .multimedia .tabs .multimedia-bar ul.tab-links li.content .content-tooltip:before {
+              position: absolute;
+              z-index: 1001;
+              content: "";
+              background: #fff;
+              width: 10px;
+              height: 10px;
+              bottom: 100%;
+              -webkit-transform-origin: center center;
+              -ms-transform-origin: center center;
+              transform-origin: center center;
+              box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.05);
+              -webkit-transform: translate(-50%, 50%) rotate(45deg);
+              -ms-transform: translate(-50%, 50%) rotate(45deg);
+              transform: translate(-50%, 50%) rotate(45deg);
+              left: 50%;
+              border-radius: 3px 0 0 0;
+              box-sizing: border-box; }
         .video .multimedia .tabs .multimedia-bar ul.tab-links li.active a {
           background: url("../public/images/reproductor/electronica/visto.svg") no-repeat; }
         .video .multimedia .tabs .multimedia-bar ul.tab-links li.question a {
@@ -2292,11 +2372,11 @@ header {
             position: relative;
             bottom: 7px; }
             .video .multimedia .tabs .tab-content .tab .mejs-video .mejs-inner .mejs-controls .mejs-time-rail {
-              width: 932px; }
+              width: 942px; }
               .video .multimedia .tabs .tab-content .tab .mejs-video .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total {
                 background: #043a30;
                 border-radius: 14px;
-                width: 928px; }
+                width: 932px; }
                 .video .multimedia .tabs .tab-content .tab .mejs-video .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total .mejs-time-current {
                   background: #3A8380;
                   border-radius: 14px; }
