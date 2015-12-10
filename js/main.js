@@ -130,6 +130,34 @@ jQuery(document).ready(function() {
         e.preventDefault();
     });
 });
+//===========OCULTAR VIDEO DESPUES DE TERMINADO ==========================================
+$(document).ready(function(){
+  $('video').on('ended',function(){
+      $('.mejs-video').fadeOut();
+      $('.nextVideo').fadeIn();
+  });
+
+  $(".verNuevamente").click(function(){
+    $('.nextVideo').fadeOut();
+    $('.mejs-video').fadeIn();
+  });
+
+  $(".continuar").click(function(){
+    $('.nextVideo').fadeOut();
+    $('.mejs-video').fadeIn();
+  });
+  jQuery('.tab .nextVideo .segundoic .continuar').on('click', function(e)  {
+        var currentAttrValue = jQuery(this).attr('href');
+ 
+        // Show/Hide Tabs
+        jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
+ 
+        // Change/remove current tab to active
+        jQuery(currentAttrValue).addClass('active').siblings().removeClass('active');
+ 
+        e.preventDefault();
+    });
+});
 
 
 
