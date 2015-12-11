@@ -906,7 +906,7 @@ header.navigation {
     display: table; }
   .accordion-tabs-minimal li.tab-header-and-content {
     list-style: none; }
-    @media screen and (min-width: 40em) {
+    @media screen and (min-width: 6.25em) {
       .accordion-tabs-minimal li.tab-header-and-content {
         display: inline; } }
   .accordion-tabs-minimal a.tab-link {
@@ -916,7 +916,7 @@ header.navigation {
     display: block;
     padding: 0.75em 1.618em;
     text-decoration: none; }
-    @media screen and (min-width: 40em) {
+    @media screen and (min-width: 6.25em) {
       .accordion-tabs-minimal a.tab-link {
         display: inline-block;
         border-top: 0; } }
@@ -926,7 +926,7 @@ header.navigation {
       outline: none; }
     .accordion-tabs-minimal a.tab-link.is-active {
       border-bottom: 0; }
-      @media screen and (min-width: 40em) {
+      @media screen and (min-width: 6.25em) {
         .accordion-tabs-minimal a.tab-link.is-active {
           border: 1px solid #ddd;
           border-bottom-color: #fff;
@@ -935,7 +935,7 @@ header.navigation {
     display: none;
     padding: 1.5em 1.618em;
     width: 100%; }
-    @media screen and (min-width: 40em) {
+    @media screen and (min-width: 6.25em) {
       .accordion-tabs-minimal .tab-content {
         border-top: 1px solid #ddd;
         float: left; } }
@@ -2252,7 +2252,7 @@ header {
     display: table; }
   @media (max-width: 1100px) {
     .video .multimedia {
-      margin: 0 2%; } }
+      margin: 0 3%; } }
   .video .multimedia .tabs {
     /*----- Tabs -----*/
     width: 100%;
@@ -2389,12 +2389,10 @@ header {
             margin: 0 10px; }
     .video .multimedia .tabs .tab-content {
       /*----- Content of Tabs -----*/
-      background: transparent;
-      height: 480px; }
+      background: transparent; }
       .video .multimedia .tabs .tab-content .tab {
         display: none;
-        position: relative;
-        min-height: 480px; }
+        position: relative; }
         .video .multimedia .tabs .tab-content .tab .mejs-video {
           background-color: #2A2D2D;
           max-height: 450px;
@@ -2480,7 +2478,7 @@ header {
       .video .multimedia .tabs .tab-content .tab.active {
         display: block;
         position: relative;
-        min-height: 480px; }
+        background-color: red; }
       .video .multimedia .tabs .tab-content .tab.exercise {
         background-color: #f9fafa;
         padding: 20px 0;
@@ -2556,6 +2554,9 @@ header {
               background-color: rgba(255, 255, 255, 0.5); }
           .video .multimedia .tabs .tab-content .tab.exercise .exercise-next .ex-check:hover {
             color: #fff; }
+@media (max-width: 1100px) {
+  .video .tools {
+    margin: 0 3%; } }
 .video .tools .tools-container {
   max-width: 68em;
   margin-left: auto;
@@ -2564,6 +2565,55 @@ header {
     clear: both;
     content: "";
     display: table; }
+  .video .tools .tools-container h2 {
+    font-family: "Blanch Caps";
+    font-size: 3.1428em;
+    margin-top: 5px;
+    margin-bottom: -10px; }
+  .video .tools .tools-container span {
+    font-family: "Aleo Regular", Arial, Helvetica, sans-serif;
+    color: #727272;
+    font-size: 1em;
+    padding-left: 20px; }
+  .video .tools .tools-container ul.accordion-tabs-minimal {
+    margin-top: 35px;
+    background-color: #718980;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    min-height: 48px; }
+    .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child {
+      margin-left: 20px; }
+      .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child a {
+        max-width: 100px; }
+    .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:nth-child(2) a {
+      max-width: 228px; }
+    .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:last-child a {
+      max-width: 188px;
+      min-width: 130px; }
+    .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content a {
+      font-family: "Aleo Bold";
+      font-size: 1.2857em;
+      background-color: transparent;
+      padding: 5px;
+      text-align: center;
+      margin-top: 7px;
+      border-top-right-radius: 12px;
+      border-top-left-radius: 12px;
+      border: none;
+      margin-right: 0;
+      margin-left: 0;
+      width: 28%; }
+      .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content a:hover {
+        color: #F2F2F2; }
+    .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content a.is-active {
+      background-color: #F2F2F2; }
+      .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content a.is-active:hover {
+        color: #000; }
+    .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content .tab-content {
+      border: none;
+      padding-left: 0;
+      background-color: #F2F2F2;
+      padding-left: 20px; }
 
 /*===================MULTIMEDIA BAR BACKGROUND COLOR ====================================================================*/
 .electronica-bar {

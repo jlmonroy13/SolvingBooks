@@ -4,7 +4,7 @@
 		@include outer-container;
 		padding: 25px 0;
 		@media (max-width: 1100px) {
-			margin: 0 2%;
+			margin: 0 3%;
 		}
 		.tabs { /*----- Tabs -----*/
 			width:100%;
@@ -80,7 +80,6 @@
 						    width: 23px;
 						    display: block;
 						    height: 60px;
-						    // background: url("../public/images/reproductor/electronica/video.svg") no-repeat; 
 				        }
 				        .content-tooltip {
 				        	position: absolute;
@@ -139,21 +138,6 @@
 						    }
 				        }
 	    			}
-	    			// li.active {
-	    			// 	a {
-						  //   background: url("../public/images/reproductor/electronica/visto.svg") no-repeat; 
-	    			// 	}
-	    			// }
-	    			// li.question {
-	    			// 	a {
-						  //   background: url("../public/images/reproductor/electronica/quiz.svg") no-repeat; 
-	    			// 	}
-	    			// }
-	    			// li.question.active {
-	    			// 	a {
-						  //   background: url("../public/images/reproductor/electronica/resuelto.svg") no-repeat; 
-	    			// 	}
-	    			// }
 	    			li.separator {
 	    				position: relative;
 					    display: table-cell;
@@ -178,11 +162,9 @@
     		}
     		.tab-content { /*----- Content of Tabs -----*/
 		        background: transparent;
-		        height: 480px;
 		        .tab {
 		        	display:none;
 		        	position: relative;
-		        	min-height: 480px;
 					.mejs-video {  // MEJS PLAYER
 						background-color: #2A2D2D;
 						max-height: 450px;
@@ -293,7 +275,7 @@
 		        .tab.active {
 		        	display: block;
 		        	position: relative;
-		        	min-height: 480px;
+		        	background-color: red;
 		        }
 		        .tab.exercise {
 		        	background-color: #f9fafa;
@@ -302,7 +284,6 @@
 		        	h3 {
 		        		font-family:"Blanch Caps";
 		        		font-size: 3.2142em;
-		        		// color: #BC0D37;
 		        		margin: 0;
 		        		padding: 0 5%;
 		        		span {
@@ -381,19 +362,14 @@
 		        		padding: 10px 0;
 		        		button {
 		        			font-family: "Aleo Regular", Arial, Helvetica, sans-serif;
-		        			// color: #0F5953;
 		        			background-color: transparent;
-		        			// border: 2px solid #0F5953;
 		        			border-radius: 20px;
 		        			&:hover {
 		        				background-color: rgba(255,255,255,0.5);
 		        			}
 		        		}
 		        		.ex-check {
-		        			// background-color: #0F5953;
-		        			// color: #718980;
 		        			&:hover {
-		        				// background-color: #0F5953;
 		        				color: #fff;
 		        			}
 		        		}
@@ -403,8 +379,78 @@
 		}
 	}
 	.tools {
+		@media (max-width: 1100px) {
+			margin: 0 3%;
+		}
 		.tools-container {
 			@include outer-container;
+			h2 {
+				font-family:"Blanch Caps";
+				font-size: 3.1428em;
+				margin-top: 5px;
+    			margin-bottom: -10px;
+			}
+			span {
+				font-family: "Aleo Regular", Arial, Helvetica, sans-serif;
+				color:#727272;
+				font-size: 1em;
+				padding-left: 20px;
+			}
+			ul.accordion-tabs-minimal {
+				margin-top: 35px;
+			    background-color: #718980;
+			    border-top-right-radius: 12px;
+			    border-top-left-radius: 12px;
+			    min-height: 48px;
+				li.tab-header-and-content {
+					&:first-child {
+						margin-left: 20px;
+						a {
+							max-width: 100px;
+						}
+					}
+					&:nth-child(2) {
+						a {
+							max-width: 228px;
+						}
+					}
+					&:last-child {
+						a {
+							max-width: 188px;
+							min-width: 130px;
+						}
+					}
+					a {
+						font-family: "Aleo Bold";
+						font-size: 1.2857em;
+						background-color: transparent;
+						padding: 5px;
+						text-align: center;
+						margin-top: 7px;
+						border-top-right-radius: 12px;
+			    		border-top-left-radius: 12px;
+			    		border: none;
+			    		margin-right: 0;
+			    		margin-left: 0;
+			    		width: 28%;
+			    		&:hover {
+							color: #F2F2F2;
+			    		}
+					}
+					a.is-active {
+						background-color: #F2F2F2;
+						&:hover {
+							color: #000;
+			    		} 
+					}
+					.tab-content {
+						border: none;
+						padding-left: 0;
+						background-color: #F2F2F2;
+						padding-left: 20px;
+					}
+				}
+			}
 		}
 	}
 }
