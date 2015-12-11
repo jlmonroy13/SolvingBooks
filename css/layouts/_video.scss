@@ -249,22 +249,43 @@
 						background-color: #2a2d2d;
 						padding: 18% 0 0 0;
 						position: relative;
+						text-align: center;
+						@media (max-width: 800px) {
+							padding: 28% 0 0 0;
+						}
 						.primeric {
-							@include span-columns(6);
-							text-align: right;
+							display: inline-block;
+							text-align: center;
+							margin-right: 30px;
+							position: relative;
 							a {
+								position: relative;
 								img {
-									width: 10%;
+									position: relative;
+									width: 70%;
 								}
+							}
+							p {
+								color: #fff;
+								font-family: "Aleo Bold", Arial, Helvetica, sans-serif;
+								font-size: 13px;
 							}
 						}
 						.segundoic {
-							@include span-columns(6);
-							text-align: left;
+							display: inline-block;
+							text-align: center;
+							position: relative;
 							a {
+								position: relative;
 								img {
-									width: 10%;
+									position: relative;
+									width: 100%;
 								}
+							}
+							p {
+								color: #fff;
+								font-family: "Aleo Bold", Arial, Helvetica, sans-serif;
+								font-size: 13px;
 							}
 						}
 		        	}
@@ -379,6 +400,11 @@
 		        	}
 		        }
     		}
+		}
+	}
+	.tools {
+		.tools-container {
+			@include outer-container;
 		}
 	}
 }

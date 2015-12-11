@@ -896,6 +896,50 @@ header.navigation {
     display: block;
     padding-bottom: 0; }
 
+/*====REFILLS _video-tabas-tools====*/
+.accordion-tabs-minimal {
+  line-height: 1.5;
+  padding: 0; }
+  .accordion-tabs-minimal::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .accordion-tabs-minimal li.tab-header-and-content {
+    list-style: none; }
+    @media screen and (min-width: 40em) {
+      .accordion-tabs-minimal li.tab-header-and-content {
+        display: inline; } }
+  .accordion-tabs-minimal a.tab-link {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    color: #333;
+    display: block;
+    padding: 0.75em 1.618em;
+    text-decoration: none; }
+    @media screen and (min-width: 40em) {
+      .accordion-tabs-minimal a.tab-link {
+        display: inline-block;
+        border-top: 0; } }
+    .accordion-tabs-minimal a.tab-link:hover {
+      color: #477dca; }
+    .accordion-tabs-minimal a.tab-link:focus {
+      outline: none; }
+    .accordion-tabs-minimal a.tab-link.is-active {
+      border-bottom: 0; }
+      @media screen and (min-width: 40em) {
+        .accordion-tabs-minimal a.tab-link.is-active {
+          border: 1px solid #ddd;
+          border-bottom-color: #fff;
+          margin-bottom: -1px; } }
+  .accordion-tabs-minimal .tab-content {
+    display: none;
+    padding: 1.5em 1.618em;
+    width: 100%; }
+    @media screen and (min-width: 40em) {
+      .accordion-tabs-minimal .tab-content {
+        border-top: 1px solid #ddd;
+        float: left; } }
+
 /*==========APPLICATION STYLES==================*/
 /*==========FONTS==================*/
 @font-face {
@@ -2401,27 +2445,38 @@ header {
           min-height: 200px;
           background-color: #2a2d2d;
           padding: 18% 0 0 0;
-          position: relative; }
+          position: relative;
+          text-align: center; }
+          @media (max-width: 800px) {
+            .video .multimedia .tabs .tab-content .tab .nextVideo {
+              padding: 28% 0 0 0; } }
           .video .multimedia .tabs .tab-content .tab .nextVideo .primeric {
-            float: left;
-            display: block;
-            margin-right: 2.35765%;
-            width: 48.82117%;
-            text-align: right; }
-            .video .multimedia .tabs .tab-content .tab .nextVideo .primeric:last-child {
-              margin-right: 0; }
-            .video .multimedia .tabs .tab-content .tab .nextVideo .primeric a img {
-              width: 10%; }
+            display: inline-block;
+            text-align: center;
+            margin-right: 30px;
+            position: relative; }
+            .video .multimedia .tabs .tab-content .tab .nextVideo .primeric a {
+              position: relative; }
+              .video .multimedia .tabs .tab-content .tab .nextVideo .primeric a img {
+                position: relative;
+                width: 70%; }
+            .video .multimedia .tabs .tab-content .tab .nextVideo .primeric p {
+              color: #fff;
+              font-family: "Aleo Bold", Arial, Helvetica, sans-serif;
+              font-size: 13px; }
           .video .multimedia .tabs .tab-content .tab .nextVideo .segundoic {
-            float: left;
-            display: block;
-            margin-right: 2.35765%;
-            width: 48.82117%;
-            text-align: left; }
-            .video .multimedia .tabs .tab-content .tab .nextVideo .segundoic:last-child {
-              margin-right: 0; }
-            .video .multimedia .tabs .tab-content .tab .nextVideo .segundoic a img {
-              width: 10%; }
+            display: inline-block;
+            text-align: center;
+            position: relative; }
+            .video .multimedia .tabs .tab-content .tab .nextVideo .segundoic a {
+              position: relative; }
+              .video .multimedia .tabs .tab-content .tab .nextVideo .segundoic a img {
+                position: relative;
+                width: 100%; }
+            .video .multimedia .tabs .tab-content .tab .nextVideo .segundoic p {
+              color: #fff;
+              font-family: "Aleo Bold", Arial, Helvetica, sans-serif;
+              font-size: 13px; }
       .video .multimedia .tabs .tab-content .tab.active {
         display: block;
         position: relative;
@@ -2501,6 +2556,14 @@ header {
               background-color: rgba(255, 255, 255, 0.5); }
           .video .multimedia .tabs .tab-content .tab.exercise .exercise-next .ex-check:hover {
             color: #fff; }
+.video .tools .tools-container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .video .tools .tools-container::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 /*===================MULTIMEDIA BAR BACKGROUND COLOR ====================================================================*/
 .electronica-bar {
