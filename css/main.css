@@ -2478,7 +2478,7 @@ header {
       .video .multimedia .tabs .tab-content .tab.active {
         display: block;
         position: relative;
-        background-color: red; }
+        background-color: transparent; }
       .video .multimedia .tabs .tab-content .tab.exercise {
         background-color: #f9fafa;
         padding: 20px 0;
@@ -2538,6 +2538,8 @@ header {
               background-color: #fff; }
             .video .multimedia .tabs .tab-content .tab.exercise .exercise-content a:hover .answer .possible-answer {
               background-color: #fff; }
+          .video .multimedia .tabs .tab-content .tab.exercise .exercise-content a:last-child .answer {
+            margin-bottom: 70px; }
         .video .multimedia .tabs .tab-content .tab.exercise .exercise-next {
           background-color: #718980;
           position: absolute;
@@ -2583,13 +2585,73 @@ header {
     min-height: 48px; }
     .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child {
       margin-left: 20px; }
+      @media (max-width: 430px) {
+        .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child {
+          margin-left: 10px; } }
       .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child a {
         max-width: 100px; }
+      .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .add-comment {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .add-comment:last-child {
+          margin-right: 0; }
+        .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .add-comment .text-add-comment {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 23.23176%; }
+          .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .add-comment .text-add-comment:last-child {
+            margin-right: 0; }
+          .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .add-comment .text-add-comment h4 {
+            font-family: "Aleo Bold";
+            font-size: 1.1428em; }
+          .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .add-comment .text-add-comment p {
+            font-family: "Aleo Light";
+            font-size: 1.1428em; }
+        .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .add-comment .textarea-comment {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 65.88078%; }
+          .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .add-comment .textarea-comment:last-child {
+            margin-right: 0; }
+        .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .add-comment hr {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%; }
+          .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .add-comment hr:last-child {
+            margin-right: 0; }
+      .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .old-comments {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .old-comments:last-child {
+          margin-right: 0; }
     .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:nth-child(2) a {
       max-width: 228px; }
     .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:last-child a {
       max-width: 188px;
       min-width: 130px; }
+    .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:last-child .tab-content .media .media-left {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 14.70196%; }
+      .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:last-child .tab-content .media .media-left:last-child {
+        margin-right: 0; }
+      .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:last-child .tab-content .media .media-left a img {
+        width: 50%; }
+    .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:last-child .tab-content .media .media-body {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%; }
+      .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:last-child .tab-content .media .media-body:last-child {
+        margin-right: 0; }
     .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content a {
       font-family: "Aleo Bold";
       font-size: 1.2857em;

@@ -275,7 +275,7 @@
 		        .tab.active {
 		        	display: block;
 		        	position: relative;
-		        	background-color: red;
+		        	background-color: transparent;
 		        }
 		        .tab.exercise {
 		        	background-color: #f9fafa;
@@ -350,6 +350,11 @@
 			        				}
 			        			}
 			        		}
+			        	}
+			        	a:last-child {
+			        		.answer {
+			        			margin-bottom: 70px;
+			        		}
 			        	}	
 		        	}
 		        	.exercise-next {
@@ -405,8 +410,39 @@
 				li.tab-header-and-content {
 					&:first-child {
 						margin-left: 20px;
+						@media (max-width: 430px) {
+							margin-left: 10px;
+						}
 						a {
 							max-width: 100px;
+						}
+						.tab-content {
+							.add-comment {
+								@include span-columns(12);
+								.text-add-comment {
+									@include span-columns(3);
+									h4 {
+										font-family: "Aleo Bold";
+										font-size: 1.1428em;
+									}
+									p {
+										font-family:"Aleo Light";
+										font-size: 1.1428em;
+									}
+								}
+								.textarea-comment {
+									@include span-columns(8);
+								}
+								hr {
+									@include span-columns(12);
+								}
+							}
+							hr {
+
+							}
+							.old-comments {
+								@include span-columns(12);
+							}
 						}
 					}
 					&:nth-child(2) {
@@ -418,6 +454,21 @@
 						a {
 							max-width: 188px;
 							min-width: 130px;
+						}
+						.tab-content {
+							.media {
+								.media-left {
+									@include span-columns(2);
+									a {
+										img {
+											width: 50%;
+										}
+									}
+								}
+								.media-body {
+									@include span-columns(10);
+								}
+							}
 						}
 					}
 					a {
