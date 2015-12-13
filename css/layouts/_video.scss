@@ -381,9 +381,9 @@
 		        	}
 		        }
     		}
-		}
+		}//========= MULTIMEDIA (VIDEOS AND INTERACTIVES QUESTIONS) ===================
 	}
-	.tools {
+	 	.tools {  //========= TOOLS (FORO, NOTAS, DESCARGABLES) ===================
 		@media (max-width: 1100px) {
 			margin: 0 3%;
 		}
@@ -401,14 +401,14 @@
 				font-size: 1em;
 				padding-left: 20px;
 			}
-			ul.accordion-tabs-minimal {
+			ul.accordion-tabs-minimal { //========= HEAD UL TOOLS ===================
 				margin-top: 35px;
-			    background-color: #718980;
+			    // background-color: #718980;
 			    border-top-right-radius: 12px;
 			    border-top-left-radius: 12px;
 			    min-height: 48px;
 				li.tab-header-and-content {
-					&:first-child {
+					&:first-child { //============== FORO FORO FORO FORO FORO  =========================
 						margin-left: 20px;
 						@media (max-width: 430px) {
 							margin-left: 10px;
@@ -417,10 +417,14 @@
 							max-width: 100px;
 						}
 						.tab-content {
-							.add-comment {
+							.add-comment { //============== FIRST COMMENT AREA  =========================
 								@include span-columns(12);
 								.text-add-comment {
 									@include span-columns(4);
+									$mobile: new-breakpoint(max-width 700px);
+									@include media($mobile) {
+										display: none;
+									}
 									h4 {
 										font-family: "Aleo Bold";
 										font-size: 1.1428em;
@@ -435,6 +439,10 @@
 								.textarea-comment {
 									@include span-columns(8);
 									margin-right: 0;
+									$mobile: new-breakpoint(max-width 700px);
+									@include media($mobile) {
+										@include span-columns(12);
+									}
 									textarea {
 										height: 100px;
     									border-radius: 20px;
@@ -453,17 +461,89 @@
 								}
 								hr {
 									@include span-columns(12);
-									border-bottom: 3px solid #ddd;
+									// border-bottom: 3px solid #ddd;
 									margin-top: 10px;
 								}
 							}
-							.old-comments {
+							#all-old-comments { //========= ALL COMMENTS ===================
 								@include span-columns(12);
-								.structure-old-comment {
-									padding-left: 20px;
-									ul {
-										list-style-type: disc;
-										li {
+								overflow: auto;
+								height: 450px;
+								padding-right: 10px;
+								.old-comments {
+									@include span-columns(12);
+									.structure-old-comment {
+										padding-left: 20px;
+										ul {
+											list-style-type: disc;
+											li {
+												h5 {
+													font-family: "Aleo Bold";
+													font-size: 1.1428em;
+													margin-bottom: 0;
+													span {
+														font-family:"Aleo BoldItalic";
+														padding: 0 5px !important;
+														font-size: 0.9em;
+													}
+												}
+											}
+										}
+										p {
+											color: #2d2d2d;
+											font-family:"Aleo Light";
+											font-size: 1em;
+											margin-bottom: 0;
+											line-height: 1.3;
+										}
+										.botResp {
+											padding-left: 10px;
+											margin-bottom: 10px;
+											a {
+												font-family: "Aleo Light", Arial, Helvetica, sans-serif;
+											    font-size: 0.8571em;
+											    color: #8e8e8e;
+											    &:hover {
+											    	text-decoration: underline;
+											    }
+											}
+										}
+										.response-over-response {
+											padding-left: 20px;
+											margin-top: 10px;
+											position: relative;
+											margin-bottom: 40px;
+											display: none;
+											textarea {
+												height: 75px;
+		    									border-radius: 20px;
+		    									border: none;
+		    									font-family:"Aleo Light";
+												font-size: 1em;
+												padding: 10px 15px;
+											}
+											.btnlft {
+												position: absolute;
+												right: 0;
+												a{
+													font-family: "Aleo Light", Arial, Helvetica, sans-serif;
+												    font-size: 0.8571em;
+												    color: #8e8e8e;
+												    &:hover {
+												    	text-decoration: underline;
+												    }
+												}
+												button {
+													font-family:"Blanch Caps";
+													font-size: 1.4285em;
+													padding: 0 20px 3px;
+													border-radius: 20px;
+												}
+											}
+										}
+										.historialcomment {
+											padding-left: 20px;
+											// border-left: 3px solid #ccc;
 											h5 {
 												font-family: "Aleo Bold";
 												font-size: 1.1428em;
@@ -474,86 +554,56 @@
 													font-size: 0.9em;
 												}
 											}
-										}
-									}
-									p {
-										color: #2d2d2d;
-										font-family:"Aleo Light";
-										font-size: 1em;
-										margin-bottom: 0;
-										line-height: 1.3;
-									}
-									.botResp {
-										padding-left: 10px;
-										margin-bottom: 10px;
-										a {
-											font-family: "Aleo Light", Arial, Helvetica, sans-serif;
-										    font-size: 0.8571em;
-										    color: #8e8e8e;
-										    &:hover {
-										    	text-decoration: underline;
-										    }
-										}
-									}
-									.response-over-response {
-										padding-left: 20px;
-										margin-top: 10px;
-										position: relative;
-										margin-bottom: 40px;
-										display: none;
-										textarea {
-											height: 75px;
-	    									border-radius: 20px;
-	    									border: none;
-	    									font-family:"Aleo Light";
-											font-size: 1em;
-											padding: 10px 15px;
-										}
-										.btnlft {
-											position: absolute;
-											right: 0;
-											a{
-												font-family: "Aleo Light", Arial, Helvetica, sans-serif;
-											    font-size: 0.8571em;
-											    color: #8e8e8e;
-											    &:hover {
-											    	text-decoration: underline;
-											    }
-											}
-											button {
-												font-family:"Blanch Caps";
-												font-size: 1.4285em;
-												padding: 0 20px 3px;
-												border-radius: 20px;
+											p {
+												margin-bottom: 20px;
 											}
 										}
 									}
-									.historialcomment {
-										padding-left: 20px;
-										h5 {
-											font-family: "Aleo Bold";
-											font-size: 1.1428em;
-											margin-bottom: 0;
-											span {
-												font-family:"Aleo BoldItalic";
-												padding: 0 5px !important;
-												font-size: 0.9em;
-											}
-										}
-										p {
-											margin-bottom: 20px;
-										}
-									}
-								}
-								hr {
-									border-bottom: 3px solid #ddd;
+									// hr {
+									// 	border-bottom: 3px solid #ddd;
+									// }
 								}
 							}
 						}
 					}
-					&:nth-child(2) {
+					&:nth-child(2) { //========= NOTAS NOTAS NOTAS NOTAS NOTAS NOTAS =============================
 						a {
 							max-width: 130px; 
+						}
+						.tab-content {
+							h3 {
+								font-family:"Blanch Caps";
+								font-size: 2.5em;
+								margin-bottom: 0;
+								color: #052828;
+							}
+							hr {
+								// border-bottom: 1px solid #27b193;
+							    margin: 0 0 20px 0;
+    							width: 160px;
+							}
+							ul {
+								list-style-type: disc;
+								    margin-left: 20px;
+								li {
+									margin-bottom: 15px;
+									// color: #27b193;
+									font-size: 1.4285em;
+									line-height: 1.2;
+									span {
+										font-family: "Aleo Light", Arial, Helvetica, sans-serif;
+								    	font-size: 18px;
+								    	color: #000;
+								    	padding-left: 0;
+								    	span {
+								    		font-family:"Aleo Bold";
+								    		color: #000;
+								    		padding-left: 0;
+								    		font-size: 0.99em;
+								    	}
+									}
+								}
+							}
 						}
 					}
 					&:last-child {
@@ -695,11 +745,97 @@ li.content.question.active .mecanica-circle { background: url("../public/images/
 .industrial-mejs.tab.exercise .exercise-next .ex-check:hover { background-color: pink;}
 .civil-mejs.tab.exercise .exercise-next .ex-check:hover { background-color: orange;}
 .mecanica-mejs.tab.exercise .exercise-next .ex-check:hover { background-color: purple;}
-/*===================BACKGROUND BUTTON-2:HOVER COLOR INTERACTIVE QUESTIONS===========================================================*/
-// .electronica-mejs.tab.exercise .exercise-content { background-color: #0F5953;}
-// .electrica-mejs.tab.exercise .exercise-content { background-color: red;}
-// .sistemas-mejs.tab.exercise .exercise-content { background-color: yellow;}
-// .industrial-mejs.tab.exercise .exercise-content { background-color: pink;}
-// .civil-mejs.tab.exercise .exercise-content { background-color: orange;}
-// .mecanica-mejs.tab.exercise .exercise-content { background-color: purple;}        
+/*===================BACKGROUND COLOR UL LIST FOR TOOLS ==============================================================================*/
+.electronica-tools .tools-container .accordion-tabs-minimal { background-color: #718980;}
+.electrica-tools .tools-container .accordion-tabs-minimal { background-color: red;}
+.sistemas-tools .tools-container .accordion-tabs-minimal { background-color: yellow;}
+.industrial-tools .tools-container .accordion-tabs-minimal { background-color: pink;}
+.civil-tools .tools-container .accordion-tabs-minimal { background-color: orange;}
+.mecanica-tools .tools-container .accordion-tabs-minimal { background-color: purple;} 
+/*===================BACKGROUND COLOR "COMENTAR" BUTTON IN FORO SECTION===========================================================*/
+.electronica-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content button { background-color: #27b193;}
+.electrica-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content button { background-color: red;}
+.sistemas-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content button { background-color: yellow;}
+.industrial-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content button { background-color: pink;}
+.civil-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content button { background-color: orange;}
+.mecanica-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content button { background-color: purple;}      
+/*===================BACKGROUND COLOR TEXTAREA COMMENT IN FORO SECTION===========================================================*/
+.electronica-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content textarea { background-color: rgba(#2b9e88,0.1);}
+.electrica-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content textarea { background-color: red;}
+.sistemas-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content textarea { background-color: yellow;}
+.industrial-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content textarea { background-color: pink;}
+.civil-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content textarea { background-color: orange;}
+.mecanica-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content textarea { background-color: purple;} 
+/*===================BACKGROUND COLOR LINE BETWEEN COMMENTS===========================================================*/
+.electronica-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content hr { border-bottom: 3px solid rgba(#27B193,0.3);}
+.electrica-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content hr { border-bottom: 3px solid rgba(red,0.3);}
+.sistemas-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content hr { border-bottom: 3px solid rgba(yellow,0.3);}
+.industrial-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content hr { border-bottom: 3px solid rgba(pink,0.3);}
+.civil-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content hr { border-bottom: 3px solid rgba(orange,0.3);}
+.mecanica-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content hr { border-bottom: 3px solid rgba(purple,0.3);} 
+/*===================COLOR BORDER LEFT LINE OF HISTORIAL COMMENTS===========================================================*/
+.electronica-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content .historialcomment { border-left: 2px solid #052B24;}
+.electrica-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content .historialcomment { border-left: 2px solid red;}
+.sistemas-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content .historialcomment { border-left: 2px solid yellow;}
+.industrial-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content .historialcomment { border-left: 2px solid pink;}
+.civil-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content .historialcomment { border-left: 2px solid orange;}
+.mecanica-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content .historialcomment { border-left: 2px solid purple;} 
+/*===================COLOR TEXT TITTLE USERS COMMENTS===========================================================*/
+.electronica-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content h5 { color: #052B24;}
+.electrica-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content h5 { color: red;}
+.sistemas-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content h5 { color: yellow;}
+.industrial-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content h5 { color: pink;}
+.civil-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content h5 { color: orange;}
+.mecanica-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content h5 { color: purple;}
+/*===================COLOR TEXT TITTLE USERS COMMENTS===========================================================*/
+.electronica-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content h5 span { color: #052B24;}
+.electrica-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content h5 span { color: red;}
+.sistemas-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content h5 span { color: yellow;}
+.industrial-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content h5 span { color: pink;}
+.civil-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content h5 span { color: orange;}
+.mecanica-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content h5 span { color: purple;} 
+ /*===================BACKGROUND COLOR LINE ABOVE NOTAS TITILES===========================================================*/
+.electronica-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content.notes hr { border-bottom: 1px solid #27b193;}
+.electrica-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content.notes hr { border-bottom: 1px solid red;}
+.sistemas-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content.notes hr { border-bottom: 1px solid yellow;}
+.industrial-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content.notes hr { border-bottom: 1px solid pink;}
+.civil-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content.notes hr { border-bottom: 1px solid orange;}
+.mecanica-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content.notes hr { border-bottom: 1px solid purple;}
+/*===================POINT COLOR UL ITEMS NOTAS SECTION ===========================================================*/
+.electronica-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content.notes ul li { color: #27b193;}
+.electrica-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content.notes ul li { color: red;}
+.sistemas-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content.notes ul li { color: yellow;}
+.industrial-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content.notes ul li { color: pink;}
+.civil-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content.notes ul li { color: orange;}
+.mecanica-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content.notes ul li { color: purple;} 
+/*================================= SCROLL COLORS =================================================*/
+#all-old-comments.electronica-all-old-comments::-webkit-scrollbar{ width: 8px; background-color: transparent; } 
+
+#all-old-comments.electronica-all-old-comments::-webkit-scrollbar-thumb{ background-color:#27b193; border-radius:10px;}
+#all-old-comments.electrica-all-old-comments::-webkit-scrollbar-thumb{ background-color:red; border-radius:10px;}
+#all-old-comments.sistemas-all-old-comments::-webkit-scrollbar-thumb{ background-color:yellow; border-radius:10px;}
+#all-old-comments.industrial-all-old-comments::-webkit-scrollbar-thumb{ background-color:pink; border-radius:10px;}
+#all-old-comments.civil-all-old-comments::-webkit-scrollbar-thumb{ background-color:orange; border-radius:10px;}
+#all-old-comments.mecanica-all-old-comments::-webkit-scrollbar-thumb{ background-color:purple; border-radius:10px;}
+
+#all-old-comments.electronica-all-old-comments::-webkit-scrollbar-thumb:hover{ background-color:#718980; border:1px solid #333333;}
+#all-old-comments.electrica-all-old-comments::-webkit-scrollbar-thumb:hover{ background-color:red; border:1px solid red;}
+#all-old-comments.sistemas-all-old-comments::-webkit-scrollbar-thumb:hover{ background-color:yellow; border:1px solid yellow;}
+#all-old-comments.industrial-all-old-comments::-webkit-scrollbar-thumb:hover{ background-color:pink; border:1px solid pink;}
+#all-old-comments.civil-all-old-comments::-webkit-scrollbar-thumb:hover{ background-color:orange; border:1px solid orange;}
+#all-old-comments.mecanica-all-old-comments::-webkit-scrollbar-thumb:hover{ background-color:purple; border:1px solid purple;}
+
+#all-old-comments.electronica-all-old-comments::-webkit-scrollbar-thumb:active{ background-color: #718980; border: 1px solid #718980;} 
+#all-old-comments.electrica-all-old-comments::-webkit-scrollbar-thumb:active{ background-color:red; border:1px solid red;}
+#all-old-comments.sistemas-all-old-comments::-webkit-scrollbar-thumb:active{ background-color:yellow; border:1px solid yellow;}
+#all-old-comments.industrial-all-old-comments::-webkit-scrollbar-thumb:active{ background-color:pink; border:1px solid pink;}
+#all-old-comments.civil-all-old-comments::-webkit-scrollbar-thumb:active{ background-color:orange; border:1px solid orange;}
+#all-old-comments.mecanica-all-old-comments::-webkit-scrollbar-thumb:active{ background-color:purple; border:1px solid purple;}
+
+#all-old-comments.electronica-all-old-comments::-webkit-scrollbar-track{ border:1px gray solid; border-radius:10px; -webkit-box-shadow:0 0 6px gray inset} 
+
+
+
+
+
 

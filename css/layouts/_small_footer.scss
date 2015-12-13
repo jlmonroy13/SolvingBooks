@@ -1,26 +1,60 @@
 
 .small-footer {
+	padding: 0 3%;
 	.small-footer-container {
 		@include outer-container;
 		position: relative;
 		display: flex;
     	align-items: center;
+    	padding-top: 5px;
 		a {
 			img {
-				@include size(30px);
-				margin-right: 5px;
+				@include size(25px);
+				margin-right: 10px;
 			}
 		}
 		.text-smallfooter {
 			position: absolute;
 			right: 0;
+			@media (max-width: 540px) {
+				position: relative;
+				text-align: center;
+				margin-left: 10%;
+			}
+			@media (max-width: 425px) {
+				margin-left: 4%;
+			}
 			span {
 				font-size: 0.8571em;
     			font-family: "Aleo Light", Arial, Helvetica, sans-serif;
+    			@media (max-width: 540px) {
+					display: block;
+				}
 				&:last-child {
 					margin-left: 50px;
+					@media (max-width: 540px) {
+						margin-left: 0;
+					}
 				}
 			}
 		}
 	}
 }
+//================== BORDER TOP COLOR FOR SMALL FOOTER ================================
+.electronica-smallfooter .small-footer-container { border-top: 3px solid #27b193};
+.electrica-smallfooter .small-footer-container { border: 3px solid red;}
+.sistemas-smallfooter .small-footer-container { border: 3px solid yellow;}
+.industrial-smallfooter .small-footer-container { border: 3px solid pink;}
+.civil-smallfooter .small-footer-container { border: 3px solid orange;}
+.mecanica-smallfooter .small-footer-container { border: 3px solid purple;}
+//================== TEXT COLOR COPYRIGHTS FOR SMALL FOOTER ================================
+.electronica-smallfooter .small-footer-container .text-smallfooter span { color: #27b193};
+.electrica-smallfooter .small-footer-container .text-smallfooter span { color: red;}
+.sistemas-smallfooter .small-footer-container .text-smallfooter span { color: yellow;}
+.industrial-smallfooter .small-footer-container .text-smallfooter span { color: pink;}
+.civil-smallfooter .small-footer-container .text-smallfooter span { color: orange;}
+.mecanica-smallfooter .small-footer-container .text-smallfooter span { color: purple;}
+
+
+
+

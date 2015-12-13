@@ -17,7 +17,7 @@ www.solvingbooks.com / FrontEnd - Jorge Monroy / BackEnd - Jose Osorio
 
 		<link rel="stylesheet" href="css/main.css">
 	</head>
-	<body class="video gradient">
+	<body>
 		<!-- NAVBAR -->
 		<header class="navigation electronica-header" role="banner"><!--VARIABLE BORDER COLOR (home, electronica, electrica, civil, sistemas, industrial, mecanica) -->
 			<div class="navigation-wrapper">
@@ -71,510 +71,524 @@ www.solvingbooks.com / FrontEnd - Jorge Monroy / BackEnd - Jose Osorio
 				</nav>
 			</div>
 		</header>
-		<!-- MULTIMEDIA -->
-		<section class="multimedia">
-			<div class="tabs">
-				<div class="multimedia-bar electronica-bar"><!--VARIABLE BCKG COLOR BAR (home, electronica, electrica, civil, sistemas, industrial, mecanica) -->
-					<!-- MULTIMEDIA BAR -->
-				    <ul class="tab-links"> <!-- if you want that a selector will be a question, add the class question to the <li> -->
-				        <li class="active content"> <!-- 1 multimedia selector -->
-				        	<a href="#tab1" class="electronica-circle"></a>
-				        	<span class="content-tooltip electronica-tooltip"><h6>CONTENIDO</h6><em>0:28</em></span>
-				        </li>
-				        <li class="separator"></li>
-				        <li class="content"> <!-- 2 multimedia selector --> 
-				        	<a href="#tab2" class="electronica-circle"></a>
-				        	<span class="content-tooltip electronica-tooltip"><h6>CORRIENTE</h6><em>2:55</em></span>
-				        </li>
-				        <li class="separator"></li>
-				        <li class="content question"> <!-- 3 multimedia selector -->
-				        	<a href="#tab3" class="electronica-circle"></a>
-				        	<span class="content-tooltip electronica-tooltip"><h6>CORRIENTE</h6><em>1 Pregunta</em></span>
-				        </li>
-				        <li class="separator"></li>
-				        <li class="content"> <!-- 4 multimedia selector -->
-				        	<a href="#tab4" class="electronica-circle"></a>
-				        	<span class="content-tooltip electronica-tooltip"><h6>CARGA</h6><em>4:55</em></span>
-				        </li>
-				        <li class="separator"></li>
-				        <li class="content question"> <!-- 5 multimedia selector -->
-				        	<a href="#tab5" class="electronica-circle"></a>
-				        	<span class="content-tooltip electronica-tooltip"><h6>CARGA</h6><em>1 Pregunta</em></span>
-				        </li>
-				        <li class="separator"></li>
-				        <li class="content"> <!-- 6 multimedia selector -->
-				        	<a href="#tab6" class="electronica-circle"></a>
-				        	<span class="content-tooltip electronica-tooltip"><h6>CARGA EN INTERVALOS DE TIEMPO</h6><em>4:55</em></span>
-				        </li>
-				        <li class="separator"></li>
-				        <li class="content question"> <!-- 7 multimedia selector -->
-				        	<a href="#tab7" class="electronica-circle"></a>
-				        	<span class="content-tooltip electronica-tooltip"><h6>CARGA EN INTERVALOS DE TIEMPO</h6><em>1 Pregunta</em></span>
-				        </li>
-				        <li class="separator"></li>
-				        <li class="content"> <!-- 8 multimedia selector -->
-				        	<a href="#tab8" class="electronica-circle"></a>
-				        	<span class="content-tooltip electronica-tooltip"><h6>CARGA - GRÁFICA</h6><em>4:55</em></span>
-				        </li>
-				        <li class="separator"></li>
-				        <li class="content question"> <!-- 9 multimedia selector -->
-				        	<a href="#tab9" class="electronica-circle"></a>
-				        	<span class="content-tooltip electronica-tooltip"><h6>CARGA - GRÁFICA</h6><em>1 Pregunta</em></span>
-				        </li>
-				        <li class="separator"></li>
-				        <li class="content"> <!-- 10 multimedia selector -->
-				        	<a href="#tab10" class="electronica-circle"></a>
-				        	<span class="content-tooltip electronica-tooltip"><h6>RESISTENCIA PARALELO</h6><em>4:55</em></span>
-				        </li>
-				        <li class="separator"></li>
-				        <li class="content question"> <!-- 11 multimedia selector -->
-				        	<a href="#tab11" class="electronica-circle"></a>
-				        	<span class="content-tooltip electronica-tooltip"><h6>RESISTENCIA PARALELO</h6><em>4:55</em></span>
-				        </li>
-				        <li class="separator"></li>
-				        <li class="content question"> <!-- 12 multimedia selector -->
-				        	<a href="#tab12" class="electronica-circle"></a>
-				        	<span class="content-tooltip electronica-tooltip"><h6>RESISTENCIA PARALELO</h6><em>4:55</em></span>
-				        </li>
-				    </ul>
-			 	</div>
-			 	<!-- MULTIMEDIA CONTENT -->
-			    <div class="tab-content" id="videoin"> 
-			        <div id="tab1" class="tab active electronica-mejs"> <!-- CONTENT 1 -->
-						<!-- VIDEO --> 
-						<video class="mejs-video" controls width="100%" height="100%" style="width:100%;height:100%;">
-							<source type="video/mp4" src="http://res.cloudinary.com/solvingbooks/video/upload/v1443455574/Contenido_-_Circuitos_El%C3%A9ctricos_rv7kmy.mp4">
-						</video>
-						<div class="nextVideo">
-							<div class="primeric">
-								<a class="verNuevamente" href="#videoin"><img src="public/images/reproductor/electronica/replay.svg" alt=""></a>
-								<p class="hidden-xs">Ver nuevamente</p>
-							</div>
-							<div class="segundoic">
-								<a class="continuar" href="#tab2"><img src="public/images/reproductor/electronica/continuar.svg" alt=""></a>
-								<p class="hidden-xs">Continuar</p>
-							</div>
-						</div>
-			        </div>
-			        <div id="tab2" class="electronica-mejs tab"> <!-- CONTENT 2 -->
-			            <!-- VIDEO -->
-						<video class="mejs-video" controls width="100%" height="100%" style="width:100%;height:100%;">
-							<source type="video/mp4" src="http://res.cloudinary.com/solvingbooks/video/upload/v1443456109/Ejercicio_1_-_Carga_y_Corriente_jp2dfv.mp4">
-						</video>
-						<div class="nextVideo">
-							<div class="primeric">
-								<a class="verNuevamente" href="#videoin"><img src="public/images/reproductor/electronica/replay.svg" alt=""></a>
-								<p class="hidden-xs">Ver nuevamente</p>
-							</div>
-							<div class="segundoic">
-								<a class="continuar" href="#tab3"><img src="public/images/reproductor/electronica/continuar.svg" alt=""></a>
-								<p class="hidden-xs">Continuar</p>
-							</div>
-						</div>
-			        </div>
-			        <div id="tab3" class="electronica-mejs tab exercise"> <!-- CONTENT 3 -->
-						<!-- EXERCISE -->
-			            <h3>PREGUNTA 1 <span>DE 1</span></h3>
-			            <div class="exercise-content">
-				            <p>La tensión a través de un tostador de 1.1 kW que produce una corriente de 10A es de:</p>
-				            <a href="#">
-					            <div class="a-answer answer">
-					            	<div class="letter"><p>A</p></div>
-					            	<div class="possible-answer"><p>La tensión a través de un tostador de 1.1 kW que produce una corriente de 10A es de.</p></div>
-					            </div>
-					        </a>
-					        <a href="#">
-					            <div class="b-answer answer">
-					            	<div class="letter"><p>B</p></div>
-					            	<div class="possible-answer"><p>1100 V.</p></div>
-					            </div>
-					        </a>
-					        <a href="#">
-					            <div class="c-answer answer">
-					            	<div class="letter"><p>C</p></div>
-					            	<div class="possible-answer"><p>110 V.</p></div>
-					            </div>
-					        </a>
-					        <a href="#">
-					            <div class="d-answer answer">
-					            	<div class="letter"><p>D</p></div>
-					            	<div class="possible-answer"><p>11 V.</p></div>
-					            </div>
-					        </a>
-				        </div>
-				        <div class="exercise-next">
-				        	<button class="ex-preview">Anterior</button>
-				        	<button class="ex-check">Calificar</button>
-				        	<button class="ex-next">Siguiente</button>
-				        </div>    
-			        </div>
-			        <div id="tab4" class="electronica-mejs tab"> <!-- CONTENT 4 -->
-			        	<!-- VIDEO -->
-			            <video class="mejs-video" controls width="100%" height="100%" style="width:100%;height:100%;">
-							<source type="video/mp4" src="http://res.cloudinary.com/solvingbooks/video/upload/v1443456463/Ejercicio_2_-_Carga_y_Corriente_k5qeg2.mp4">
-						</video>
-						<div class="nextVideo">
-							<div class="primeric">
-								<a class="verNuevamente" href="#videoin"><img src="public/images/reproductor/electronica/replay.svg" alt=""></a>
-								<p class="hidden-xs">Ver nuevamente</p>
-							</div>
-							<div class="segundoic">
-								<a class="continuar" href="#tab5"><img src="public/images/reproductor/electronica/continuar.svg" alt=""></a>
-								<p class="hidden-xs">Continuar</p>
-							</div>
-						</div>
-			        </div>
-			        <div id="tab5" class="electronica-mejs tab exercise"> <!-- CONTENT 5 -->
-			           	<!-- EXERCISE -->
-			            <h3>PREGUNTA 1 <span>DE 1</span></h3>
-			            <div class="exercise-content">
-				            <p>La tensión a través de un tostador de 1.1 kW que produce una corriente de 10A es de:</p>
-				            <a href="#">
-					            <div class="a-answer answer">
-					            	<div class="letter"><p>A</p></div>
-					            	<div class="possible-answer"><p>La tensión a través de un tostador de 1.1 kW que produce una corriente de 10A es de.</p></div>
-					            </div>
-					        </a>
-					        <a href="#">
-					            <div class="b-answer answer">
-					            	<div class="letter"><p>B</p></div>
-					            	<div class="possible-answer"><p>1100 V.</p></div>
-					            </div>
-					        </a>
-					        <a href="#">
-					            <div class="c-answer answer">
-					            	<div class="letter"><p>C</p></div>
-					            	<div class="possible-answer"><p>110 V.</p></div>
-					            </div>
-					        </a>
-					        <a href="#">
-					            <div class="d-answer answer">
-					            	<div class="letter"><p>D</p></div>
-					            	<div class="possible-answer"><p>11 V.</p></div>
-					            </div>
-					        </a>
-				        </div>
-				        <div class="exercise-next">
-				        	<button class="ex-preview">Anterior</button>
-				        	<button class="ex-check">Calificar</button>
-				        	<button class="ex-next">Siguiente</button>
-				        </div> 
-			        </div>
-			        <div id="tab6" class="electronica-mejs tab"> <!-- CONTENT 6 -->
-			            <!-- VIDEO -->
-						<video class="mejs-video" controls width="100%" height="100%" style="width:100%;height:100%;">
-							<source type="video/mp4" src="http://res.cloudinary.com/solvingbooks/video/upload/v1443456324/Ejercicio_3_-_Carga_y_Corriente_odcf6o.mp4">
-						</video>
-						<div class="nextVideo">
-							<div class="primeric">
-								<a class="verNuevamente" href="#videoin"><img src="public/images/reproductor/electronica/replay.svg" alt=""></a>
-								<p class="hidden-xs">Ver nuevamente</p>
-							</div>
-							<div class="segundoic">
-								<a class="continuar" href="#tab7"><img src="public/images/reproductor/electronica/continuar.svg" alt=""></a>
-								<p class="hidden-xs">Continuar</p>
-							</div>
-						</div>
-			        </div>
-			        <div id="tab7" class="electronica-mejs tab exercise"> <!-- CONTENT 7 -->
-						<!-- EXERCISE -->
-			            <h3>PREGUNTA 1 <span>DE 1</span></h3>
-			            <div class="exercise-content">
-				            <p>La tensión a través de un tostador de 1.1 kW que produce una corriente de 10A es de:</p>
-				            <a href="#">
-					            <div class="a-answer answer">
-					            	<div class="letter"><p>A</p></div>
-					            	<div class="possible-answer"><p>La tensión a través de un tostador de 1.1 kW que produce una corriente de 10A es de.</p></div>
-					            </div>
-					        </a>
-					        <a href="#">
-					            <div class="b-answer answer">
-					            	<div class="letter"><p>B</p></div>
-					            	<div class="possible-answer"><p>1100 V.</p></div>
-					            </div>
-					        </a>
-					        <a href="#">
-					            <div class="c-answer answer">
-					            	<div class="letter"><p>C</p></div>
-					            	<div class="possible-answer"><p>110 V.</p></div>
-					            </div>
-					        </a>
-					        <a href="#">
-					            <div class="d-answer answer">
-					            	<div class="letter"><p>D</p></div>
-					            	<div class="possible-answer"><p>11 V.</p></div>
-					            </div>
-					        </a>
-				        </div>
-				        <div class="exercise-next">
-				        	<button class="ex-preview">Anterior</button>
-				        	<button class="ex-check">Calificar</button>
-				        	<button class="ex-next">Siguiente</button>
-				        </div> 
-			        </div>
-			        <div id="tab8" class="electronica-mejs tab"> <!-- CONTENT 8 -->
-			        	<!-- VIDEO -->
-						<video class="mejs-video" controls width="100%" height="100%" style="width:100%;height:100%;">
-							<source type="video/mp4" src="http://res.cloudinary.com/solvingbooks/video/upload/v1443456572/Ejercicio_4_-_Carga_y_Corriente_sz3kom.mp4">
-						</video>
-						<div class="nextVideo">
-							<div class="primeric">
-								<a class="verNuevamente" href="#videoin"><img src="public/images/reproductor/electronica/replay.svg" alt=""></a>
-								<p class="hidden-xs">Ver nuevamente</p>
-							</div>
-							<div class="segundoic">
-								<a class="continuar" href="#tab9"><img src="public/images/reproductor/electronica/continuar.svg" alt=""></a>
-								<p class="hidden-xs">Continuar</p>
-							</div>
-						</div>
-			        </div>
-			        <div id="tab9" class="electronica-mejs tab exercise"> <!-- CONTENT 9 -->
-						<!-- EXERCISE -->
-			            <h3>PREGUNTA 1 <span>DE 1</span></h3>
-			            <div class="exercise-content">
-				            <p>La tensión a través de un tostador de 1.1 kW que produce una corriente de 10A es de:</p>
-				            <a href="#">
-					            <div class="a-answer answer">
-					            	<div class="letter"><p>A</p></div>
-					            	<div class="possible-answer"><p>La tensión a través de un tostador de 1.1 kW que produce una corriente de 10A es de.</p></div>
-					            </div>
-					        </a>
-					        <a href="#">
-					            <div class="b-answer answer">
-					            	<div class="letter"><p>B</p></div>
-					            	<div class="possible-answer"><p>1100 V.</p></div>
-					            </div>
-					        </a>
-					        <a href="#">
-					            <div class="c-answer answer">
-					            	<div class="letter"><p>C</p></div>
-					            	<div class="possible-answer"><p>110 V.</p></div>
-					            </div>
-					        </a>
-					        <a href="#">
-					            <div class="d-answer answer">
-					            	<div class="letter"><p>D</p></div>
-					            	<div class="possible-answer"><p>11 V.</p></div>
-					            </div>
-					        </a>
-				        </div>
-				        <div class="exercise-next">
-				        	<button class="ex-preview">Anterior</button>
-				        	<button class="ex-check">Calificar</button>
-				        	<button class="ex-next">Siguiente</button>
-				        </div> 
-			        </div>
-			        <div id="tab10" class="electronica-mejs tab"> <!-- CONTENT 10 -->
-			            <!-- VIDEO -->
-						<video class="mejs-video" controls width="100%" height="100%" style="width:100%;height:100%;">
-							<source type="video/mp4" src="http://res.cloudinary.com/solvingbooks/video/upload/v1443456109/Ejercicio_1_-_Carga_y_Corriente_jp2dfv.mp4">
-						</video>
-						<div class="nextVideo">
-							<div class="primeric">
-								<a class="verNuevamente" href="#videoin"><img src="public/images/reproductor/electronica/replay.svg" alt=""></a>
-								<p class="hidden-xs">Ver nuevamente</p>
-							</div>
-							<div class="segundoic">
-								<a class="continuar" href="#tab11"><img src="public/images/reproductor/electronica/continuar.svg" alt=""></a>
-								<p class="hidden-xs">Continuar</p>
-							</div>
-						</div>
-			        </div>
-			        <div id="tab11" class="electronica-mejs tab exercise"> <!-- CONTENT 11 -->
-						<!-- EXERCISE -->
-			            <h3>PREGUNTA 1 <span>DE 1</span></h3>
-			            <div class="exercise-content">
-				            <p>La tensión a través de un tostador de 1.1 kW que produce una corriente de 10A es de:</p>
-				            <a href="#">
-					            <div class="a-answer answer">
-					            	<div class="letter"><p>A</p></div>
-					            	<div class="possible-answer"><p>La tensión a través de un tostador de 1.1 kW que produce una corriente de 10A es de.</p></div>
-					            </div>
-					        </a>
-					        <a href="#">
-					            <div class="b-answer answer">
-					            	<div class="letter"><p>B</p></div>
-					            	<div class="possible-answer"><p>1100 V.</p></div>
-					            </div>
-					        </a>
-					        <a href="#">
-					            <div class="c-answer answer">
-					            	<div class="letter"><p>C</p></div>
-					            	<div class="possible-answer"><p>110 V.</p></div>
-					            </div>
-					        </a>
-					        <a href="#">
-					            <div class="d-answer answer">
-					            	<div class="letter"><p>D</p></div>
-					            	<div class="possible-answer"><p>11 V.</p></div>
-					            </div>
-					        </a>
-				        </div>
-				        <div class="exercise-next">
-				        	<button class="ex-preview">Anterior</button>
-				        	<button class="ex-check">Calificar</button>
-				        	<button class="ex-next">Siguiente</button>
-				        </div> 
-			        </div>
-			        <div id="tab12" class="electronica-mejs tab exercise"> <!-- CONTENT 12 -->
-			        	<!-- EXERCISE -->
-			            <h3>PREGUNTA 1 <span>DE 1</span></h3>
-			            <div class="exercise-content">
-				            <p>La tensión a través de un tostador de 1.1 kW que produce una corriente de 10A es de:</p>
-				            <a href="#">
-					            <div class="a-answer answer">
-					            	<div class="letter"><p>A</p></div>
-					            	<div class="possible-answer"><p>500 V.</p></div>
-					            </div>
-					        </a>
-					        <a href="#">
-					            <div class="b-answer answer">
-					            	<div class="letter"><p>B</p></div>
-					            	<div class="possible-answer"><p>1100 V.</p></div>
-					            </div>
-					        </a>
-					        <a href="#">
-					            <div class="c-answer answer">
-					            	<div class="letter"><p>C</p></div>
-					            	<div class="possible-answer"><p>110 V.</p></div>
-					            </div>
-					        </a>
-					        <a href="#">
-					            <div class="d-answer answer">
-					            	<div class="letter"><p>D</p></div>
-					            	<div class="possible-answer"><p>11 V.</p></div>
-					            </div>
-					        </a>
-				        </div>
-				        <div class="exercise-next">
-				        	<button class="ex-preview">Anterior</button>
-				        	<button class="ex-check">Calificar</button>
-				        	<button class="ex-next">Siguiente</button>
-				        </div> 
-			        </div>
-			    </div>
-			</div>
-		</section>
-		<section class="tools">
-			<div class="tools-container">
-				<h2>CONCEPTOS BÁSICOS</h2>
-				<span>Por Selvio Pérez y Angélica Guerrero.</span>
-				<ul class="accordion-tabs-minimal">
-					<li class="tab-header-and-content">
-						<a href="#" class="tab-link is-active">Foro</a>
-						<div class="tab-content">
-							<div class="add-comment">
-								<div class="text-add-comment">
-									<h4>¿Sigues con dudas?</h4>
-									<p>Compartelas y deja que otros estudiantes, o incluso uno de nuestros profesores las resuelva.</p>
+		<div class="video gradient">
+			<!-- MULTIMEDIA -->
+			<section class="multimedia">
+				<div class="tabs">
+					<div class="multimedia-bar electronica-bar"><!--VARIABLE BCKG COLOR BAR (home, electronica, electrica, civil, sistemas, industrial, mecanica) -->
+						<!-- MULTIMEDIA BAR -->
+					    <ul class="tab-links"> <!-- if you want that a selector will be a question, add the class question to the <li> -->
+					        <li class="active content"> <!-- 1 multimedia selector -->
+					        	<a href="#tab1" class="electronica-circle"></a>
+					        	<span class="content-tooltip electronica-tooltip"><h6>CONTENIDO</h6><em>0:28</em></span>
+					        </li>
+					        <li class="separator"></li>
+					        <li class="content"> <!-- 2 multimedia selector --> 
+					        	<a href="#tab2" class="electronica-circle"></a>
+					        	<span class="content-tooltip electronica-tooltip"><h6>CORRIENTE</h6><em>2:55</em></span>
+					        </li>
+					        <li class="separator"></li>
+					        <li class="content question"> <!-- 3 multimedia selector -->
+					        	<a href="#tab3" class="electronica-circle"></a>
+					        	<span class="content-tooltip electronica-tooltip"><h6>CORRIENTE</h6><em>1 Pregunta</em></span>
+					        </li>
+					        <li class="separator"></li>
+					        <li class="content"> <!-- 4 multimedia selector -->
+					        	<a href="#tab4" class="electronica-circle"></a>
+					        	<span class="content-tooltip electronica-tooltip"><h6>CARGA</h6><em>4:55</em></span>
+					        </li>
+					        <li class="separator"></li>
+					        <li class="content question"> <!-- 5 multimedia selector -->
+					        	<a href="#tab5" class="electronica-circle"></a>
+					        	<span class="content-tooltip electronica-tooltip"><h6>CARGA</h6><em>1 Pregunta</em></span>
+					        </li>
+					        <li class="separator"></li>
+					        <li class="content"> <!-- 6 multimedia selector -->
+					        	<a href="#tab6" class="electronica-circle"></a>
+					        	<span class="content-tooltip electronica-tooltip"><h6>CARGA EN INTERVALOS DE TIEMPO</h6><em>4:55</em></span>
+					        </li>
+					        <li class="separator"></li>
+					        <li class="content question"> <!-- 7 multimedia selector -->
+					        	<a href="#tab7" class="electronica-circle"></a>
+					        	<span class="content-tooltip electronica-tooltip"><h6>CARGA EN INTERVALOS DE TIEMPO</h6><em>1 Pregunta</em></span>
+					        </li>
+					        <li class="separator"></li>
+					        <li class="content"> <!-- 8 multimedia selector -->
+					        	<a href="#tab8" class="electronica-circle"></a>
+					        	<span class="content-tooltip electronica-tooltip"><h6>CARGA - GRÁFICA</h6><em>4:55</em></span>
+					        </li>
+					        <li class="separator"></li>
+					        <li class="content question"> <!-- 9 multimedia selector -->
+					        	<a href="#tab9" class="electronica-circle"></a>
+					        	<span class="content-tooltip electronica-tooltip"><h6>CARGA - GRÁFICA</h6><em>1 Pregunta</em></span>
+					        </li>
+					        <li class="separator"></li>
+					        <li class="content"> <!-- 10 multimedia selector -->
+					        	<a href="#tab10" class="electronica-circle"></a>
+					        	<span class="content-tooltip electronica-tooltip"><h6>RESISTENCIA PARALELO</h6><em>4:55</em></span>
+					        </li>
+					        <li class="separator"></li>
+					        <li class="content question"> <!-- 11 multimedia selector -->
+					        	<a href="#tab11" class="electronica-circle"></a>
+					        	<span class="content-tooltip electronica-tooltip"><h6>RESISTENCIA PARALELO</h6><em>4:55</em></span>
+					        </li>
+					        <li class="separator"></li>
+					        <li class="content question"> <!-- 12 multimedia selector -->
+					        	<a href="#tab12" class="electronica-circle"></a>
+					        	<span class="content-tooltip electronica-tooltip"><h6>RESISTENCIA PARALELO</h6><em>4:55</em></span>
+					        </li>
+					    </ul>
+				 	</div>
+				 	<!-- MULTIMEDIA CONTENT -->
+				    <div class="tab-content" id="videoin"> 
+				        <div id="tab1" class="tab active electronica-mejs"> <!-- CONTENT 1 -->
+							<!-- VIDEO --> 
+							<video class="mejs-video" controls width="100%" height="100%" style="width:100%;height:100%;">
+								<source type="video/mp4" src="http://res.cloudinary.com/solvingbooks/video/upload/v1443455574/Contenido_-_Circuitos_El%C3%A9ctricos_rv7kmy.mp4">
+							</video>
+							<div class="nextVideo">
+								<div class="primeric">
+									<a class="verNuevamente" href="#videoin"><img src="public/images/reproductor/electronica/replay.svg" alt=""></a>
+									<p class="hidden-xs">Ver nuevamente</p>
 								</div>
-								<div class="textarea-comment">
-									<textarea placeholder="Escribe tus dudas y/o comentarios"></textarea>
-									<button>COMENTAR</button>
+								<div class="segundoic">
+									<a class="continuar" href="#tab2"><img src="public/images/reproductor/electronica/continuar.svg" alt=""></a>
+									<p class="hidden-xs">Continuar</p>
 								</div>
-								<hr>
 							</div>
-							<div class="old-comments">
-								<!-- First old comment -->
-								<div class="structure-old-comment">
-									<ul>
-										<li><h5>Rachel [<span>Hace 1 Semanas</span>]</h5></li>
-									</ul>
-									<p>Los felicito por este excelente video!!. Me gustaría aclarar una duda, siempre para resolver este tipo de ejercicios tengo que aplicar la derivada de un producto? </p>
-									<div class="botResp">
-										<a href="#old-comments" class="open-textarea">Responder</a>
-										<a href="#old-comments">Denunciar</a>
+				        </div>
+				        <div id="tab2" class="electronica-mejs tab"> <!-- CONTENT 2 -->
+				            <!-- VIDEO -->
+							<video class="mejs-video" controls width="100%" height="100%" style="width:100%;height:100%;">
+								<source type="video/mp4" src="http://res.cloudinary.com/solvingbooks/video/upload/v1443456109/Ejercicio_1_-_Carga_y_Corriente_jp2dfv.mp4">
+							</video>
+							<div class="nextVideo">
+								<div class="primeric">
+									<a class="verNuevamente" href="#videoin"><img src="public/images/reproductor/electronica/replay.svg" alt=""></a>
+									<p class="hidden-xs">Ver nuevamente</p>
+								</div>
+								<div class="segundoic">
+									<a class="continuar" href="#tab3"><img src="public/images/reproductor/electronica/continuar.svg" alt=""></a>
+									<p class="hidden-xs">Continuar</p>
+								</div>
+							</div>
+				        </div>
+				        <div id="tab3" class="electronica-mejs tab exercise"> <!-- CONTENT 3 -->
+							<!-- EXERCISE -->
+				            <h3>PREGUNTA 1 <span>DE 1</span></h3>
+				            <div class="exercise-content">
+					            <p>La tensión a través de un tostador de 1.1 kW que produce una corriente de 10A es de:</p>
+					            <a href="#">
+						            <div class="a-answer answer">
+						            	<div class="letter"><p>A</p></div>
+						            	<div class="possible-answer"><p>La tensión a través de un tostador de 1.1 kW que produce una corriente de 10A es de.</p></div>
+						            </div>
+						        </a>
+						        <a href="#">
+						            <div class="b-answer answer">
+						            	<div class="letter"><p>B</p></div>
+						            	<div class="possible-answer"><p>1100 V.</p></div>
+						            </div>
+						        </a>
+						        <a href="#">
+						            <div class="c-answer answer">
+						            	<div class="letter"><p>C</p></div>
+						            	<div class="possible-answer"><p>110 V.</p></div>
+						            </div>
+						        </a>
+						        <a href="#">
+						            <div class="d-answer answer">
+						            	<div class="letter"><p>D</p></div>
+						            	<div class="possible-answer"><p>11 V.</p></div>
+						            </div>
+						        </a>
+					        </div>
+					        <div class="exercise-next">
+					        	<button class="ex-check">Calificar</button>
+					        	<button class="ex-next">Siguiente</button>
+					        </div>    
+				        </div>
+				        <div id="tab4" class="electronica-mejs tab"> <!-- CONTENT 4 -->
+				        	<!-- VIDEO -->
+				            <video class="mejs-video" controls width="100%" height="100%" style="width:100%;height:100%;">
+								<source type="video/mp4" src="http://res.cloudinary.com/solvingbooks/video/upload/v1443456463/Ejercicio_2_-_Carga_y_Corriente_k5qeg2.mp4">
+							</video>
+							<div class="nextVideo">
+								<div class="primeric">
+									<a class="verNuevamente" href="#videoin"><img src="public/images/reproductor/electronica/replay.svg" alt=""></a>
+									<p class="hidden-xs">Ver nuevamente</p>
+								</div>
+								<div class="segundoic">
+									<a class="continuar" href="#tab5"><img src="public/images/reproductor/electronica/continuar.svg" alt=""></a>
+									<p class="hidden-xs">Continuar</p>
+								</div>
+							</div>
+				        </div>
+				        <div id="tab5" class="electronica-mejs tab exercise"> <!-- CONTENT 5 -->
+				           	<!-- EXERCISE -->
+				            <h3>PREGUNTA 1 <span>DE 1</span></h3>
+				            <div class="exercise-content">
+					            <p>La tensión a través de un tostador de 1.1 kW que produce una corriente de 10A es de:</p>
+					            <a href="#">
+						            <div class="a-answer answer">
+						            	<div class="letter"><p>A</p></div>
+						            	<div class="possible-answer"><p>La tensión a través de un tostador de 1.1 kW que produce una corriente de 10A es de.</p></div>
+						            </div>
+						        </a>
+						        <a href="#">
+						            <div class="b-answer answer">
+						            	<div class="letter"><p>B</p></div>
+						            	<div class="possible-answer"><p>1100 V.</p></div>
+						            </div>
+						        </a>
+						        <a href="#">
+						            <div class="c-answer answer">
+						            	<div class="letter"><p>C</p></div>
+						            	<div class="possible-answer"><p>110 V.</p></div>
+						            </div>
+						        </a>
+						        <a href="#">
+						            <div class="d-answer answer">
+						            	<div class="letter"><p>D</p></div>
+						            	<div class="possible-answer"><p>11 V.</p></div>
+						            </div>
+						        </a>
+					        </div>
+					        <div class="exercise-next">
+					        	<button class="ex-check">Calificar</button>
+					        	<button class="ex-next">Siguiente</button>
+					        </div> 
+				        </div>
+				        <div id="tab6" class="electronica-mejs tab"> <!-- CONTENT 6 -->
+				            <!-- VIDEO -->
+							<video class="mejs-video" controls width="100%" height="100%" style="width:100%;height:100%;">
+								<source type="video/mp4" src="http://res.cloudinary.com/solvingbooks/video/upload/v1443456324/Ejercicio_3_-_Carga_y_Corriente_odcf6o.mp4">
+							</video>
+							<div class="nextVideo">
+								<div class="primeric">
+									<a class="verNuevamente" href="#videoin"><img src="public/images/reproductor/electronica/replay.svg" alt=""></a>
+									<p class="hidden-xs">Ver nuevamente</p>
+								</div>
+								<div class="segundoic">
+									<a class="continuar" href="#tab7"><img src="public/images/reproductor/electronica/continuar.svg" alt=""></a>
+									<p class="hidden-xs">Continuar</p>
+								</div>
+							</div>
+				        </div>
+				        <div id="tab7" class="electronica-mejs tab exercise"> <!-- CONTENT 7 -->
+							<!-- EXERCISE -->
+				            <h3>PREGUNTA 1 <span>DE 1</span></h3>
+				            <div class="exercise-content">
+					            <p>La tensión a través de un tostador de 1.1 kW que produce una corriente de 10A es de:</p>
+					            <a href="#">
+						            <div class="a-answer answer">
+						            	<div class="letter"><p>A</p></div>
+						            	<div class="possible-answer"><p>La tensión a través de un tostador de 1.1 kW que produce una corriente de 10A es de.</p></div>
+						            </div>
+						        </a>
+						        <a href="#">
+						            <div class="b-answer answer">
+						            	<div class="letter"><p>B</p></div>
+						            	<div class="possible-answer"><p>1100 V.</p></div>
+						            </div>
+						        </a>
+						        <a href="#">
+						            <div class="c-answer answer">
+						            	<div class="letter"><p>C</p></div>
+						            	<div class="possible-answer"><p>110 V.</p></div>
+						            </div>
+						        </a>
+						        <a href="#">
+						            <div class="d-answer answer">
+						            	<div class="letter"><p>D</p></div>
+						            	<div class="possible-answer"><p>11 V.</p></div>
+						            </div>
+						        </a>
+					        </div>
+					        <div class="exercise-next">
+					        	<button class="ex-check">Calificar</button>
+					        	<button class="ex-next">Siguiente</button>
+					        </div> 
+				        </div>
+				        <div id="tab8" class="electronica-mejs tab"> <!-- CONTENT 8 -->
+				        	<!-- VIDEO -->
+							<video class="mejs-video" controls width="100%" height="100%" style="width:100%;height:100%;">
+								<source type="video/mp4" src="http://res.cloudinary.com/solvingbooks/video/upload/v1443456572/Ejercicio_4_-_Carga_y_Corriente_sz3kom.mp4">
+							</video>
+							<div class="nextVideo">
+								<div class="primeric">
+									<a class="verNuevamente" href="#videoin"><img src="public/images/reproductor/electronica/replay.svg" alt=""></a>
+									<p class="hidden-xs">Ver nuevamente</p>
+								</div>
+								<div class="segundoic">
+									<a class="continuar" href="#tab9"><img src="public/images/reproductor/electronica/continuar.svg" alt=""></a>
+									<p class="hidden-xs">Continuar</p>
+								</div>
+							</div>
+				        </div>
+				        <div id="tab9" class="electronica-mejs tab exercise"> <!-- CONTENT 9 -->
+							<!-- EXERCISE -->
+				            <h3>PREGUNTA 1 <span>DE 1</span></h3>
+				            <div class="exercise-content">
+					            <p>La tensión a través de un tostador de 1.1 kW que produce una corriente de 10A es de:</p>
+					            <a href="#">
+						            <div class="a-answer answer">
+						            	<div class="letter"><p>A</p></div>
+						            	<div class="possible-answer"><p>La tensión a través de un tostador de 1.1 kW que produce una corriente de 10A es de.</p></div>
+						            </div>
+						        </a>
+						        <a href="#">
+						            <div class="b-answer answer">
+						            	<div class="letter"><p>B</p></div>
+						            	<div class="possible-answer"><p>1100 V.</p></div>
+						            </div>
+						        </a>
+						        <a href="#">
+						            <div class="c-answer answer">
+						            	<div class="letter"><p>C</p></div>
+						            	<div class="possible-answer"><p>110 V.</p></div>
+						            </div>
+						        </a>
+						        <a href="#">
+						            <div class="d-answer answer">
+						            	<div class="letter"><p>D</p></div>
+						            	<div class="possible-answer"><p>11 V.</p></div>
+						            </div>
+						        </a>
+					        </div>
+					        <div class="exercise-next">
+					        	<button class="ex-check">Calificar</button>
+					        	<button class="ex-next">Siguiente</button>
+					        </div> 
+				        </div>
+				        <div id="tab10" class="electronica-mejs tab"> <!-- CONTENT 10 -->
+				            <!-- VIDEO -->
+							<video class="mejs-video" controls width="100%" height="100%" style="width:100%;height:100%;">
+								<source type="video/mp4" src="http://res.cloudinary.com/solvingbooks/video/upload/v1443456109/Ejercicio_1_-_Carga_y_Corriente_jp2dfv.mp4">
+							</video>
+							<div class="nextVideo">
+								<div class="primeric">
+									<a class="verNuevamente" href="#videoin"><img src="public/images/reproductor/electronica/replay.svg" alt=""></a>
+									<p class="hidden-xs">Ver nuevamente</p>
+								</div>
+								<div class="segundoic">
+									<a class="continuar" href="#tab11"><img src="public/images/reproductor/electronica/continuar.svg" alt=""></a>
+									<p class="hidden-xs">Continuar</p>
+								</div>
+							</div>
+				        </div>
+				        <div id="tab11" class="electronica-mejs tab exercise"> <!-- CONTENT 11 -->
+							<!-- EXERCISE -->
+				            <h3>PREGUNTA 1 <span>DE 1</span></h3>
+				            <div class="exercise-content">
+					            <p>La tensión a través de un tostador de 1.1 kW que produce una corriente de 10A es de:</p>
+					            <a href="#">
+						            <div class="a-answer answer">
+						            	<div class="letter"><p>A</p></div>
+						            	<div class="possible-answer"><p>La tensión a través de un tostador de 1.1 kW que produce una corriente de 10A es de.</p></div>
+						            </div>
+						        </a>
+						        <a href="#">
+						            <div class="b-answer answer">
+						            	<div class="letter"><p>B</p></div>
+						            	<div class="possible-answer"><p>1100 V.</p></div>
+						            </div>
+						        </a>
+						        <a href="#">
+						            <div class="c-answer answer">
+						            	<div class="letter"><p>C</p></div>
+						            	<div class="possible-answer"><p>110 V.</p></div>
+						            </div>
+						        </a>
+						        <a href="#">
+						            <div class="d-answer answer">
+						            	<div class="letter"><p>D</p></div>
+						            	<div class="possible-answer"><p>11 V.</p></div>
+						            </div>
+						        </a>
+					        </div>
+					        <div class="exercise-next">
+					        	<button class="ex-check">Calificar</button>
+					        	<button class="ex-next">Siguiente</button>
+					        </div> 
+				        </div>
+				        <div id="tab12" class="electronica-mejs tab exercise"> <!-- CONTENT 12 -->
+				        	<!-- EXERCISE -->
+				            <h3>PREGUNTA 1 <span>DE 1</span></h3>
+				            <div class="exercise-content">
+					            <p>La tensión a través de un tostador de 1.1 kW que produce una corriente de 10A es de:</p>
+					            <a href="#">
+						            <div class="a-answer answer">
+						            	<div class="letter"><p>A</p></div>
+						            	<div class="possible-answer"><p>500 V.</p></div>
+						            </div>
+						        </a>
+						        <a href="#">
+						            <div class="b-answer answer">
+						            	<div class="letter"><p>B</p></div>
+						            	<div class="possible-answer"><p>1100 V.</p></div>
+						            </div>
+						        </a>
+						        <a href="#">
+						            <div class="c-answer answer">
+						            	<div class="letter"><p>C</p></div>
+						            	<div class="possible-answer"><p>110 V.</p></div>
+						            </div>
+						        </a>
+						        <a href="#">
+						            <div class="d-answer answer">
+						            	<div class="letter"><p>D</p></div>
+						            	<div class="possible-answer"><p>11 V.</p></div>
+						            </div>
+						        </a>
+					        </div>
+					        <div class="exercise-next">
+					        	<button class="ex-check">Calificar</button>
+					        	<button class="ex-next">Siguiente</button>
+					        </div> 
+				        </div>
+				    </div>
+				</div>
+			</section>
+			<!-- TOOLS (FORO, NOTAS, DESCARGABLES) -->
+			<section class="tools electronica-tools">
+				<div class="tools-container">
+					<h2>CONCEPTOS BÁSICOS</h2>
+					<span>Por Selvio Pérez y Angélica Guerrero.</span>
+					<ul class="accordion-tabs-minimal">
+						<li class="tab-header-and-content">
+							<!--================= FORO SECTION =================================-->
+							<a href="#" class="tab-link is-active">Foro</a>
+							<div class="tab-content">
+								<div class="add-comment">
+									<div class="text-add-comment">
+										<h4>¿Sigues con dudas?</h4>
+										<p>Compartelas y deja que otros estudiantes, o incluso uno de nuestros profesores las resuelva.</p>
 									</div>
-									<div class="response-over-response">
-										<textarea placeholder="Responde a este comentario"></textarea>
-										<div class="btnlft">
-											<a href="#old-comments" class="close-textarea">Cerrar [X]</a>
-											<button>COMENTAR</button>
+									<div class="textarea-comment">
+										<textarea placeholder="Escribe tus dudas y/o comentarios"></textarea>
+										<button>COMENTAR</button>
+									</div>
+									<hr>
+								</div>
+								<div id="all-old-comments" class="electronica-all-old-comments">
+									<div class="old-comments">
+										<!-- First old comment -->
+										<div class="structure-old-comment">
+											<ul>
+												<li><h5>Rachel [<span>Hace 1 Semanas</span>]</h5></li>
+											</ul>
+											<p>Los felicito por este excelente video!!. Me gustaría aclarar una duda, siempre para resolver este tipo de ejercicios tengo que aplicar la derivada de un producto? </p>
+											<div class="botResp">
+												<a href="#old-comments" class="open-textarea">Responder</a>
+												<a href="#old-comments">Denunciar</a>
+											</div>
+											<div class="response-over-response">
+												<textarea placeholder="Responde a este comentario"></textarea>
+												<div class="btnlft">
+													<a href="#old-comments" class="close-textarea">Cerrar [X]</a>
+													<button>COMENTAR</button>
+												</div>
+											</div>
+											<div class="historialcomment">
+												<h5>Jlmonroy [<span>Hace 6 días</span>]</h5>
+												<p>No siempre tienes que aplicar la derivada de un producto, debes aplicar la regla de la derivada que aplique a la función de la carga que te estan dando, en este caso en la función de la carga hay dos terminos multiplicandose por tanto se usa en este caso la derivada de un producto.</p>
+												<h5>Selvio [<span>Hace 6 días</span>]</h5>
+												<p>Muy acertada tu respuesta @Jlmonroy y gracias por participar en nuestros foros. @Rachel si tienes alguna duda con las reglas de las derivadas, te invito a que repases estos temas en nuestro curso de Calculo Diferencial.</p>
+											</div>
+										</div>
+										<hr>
+									</div>
+									<div class="old-comments">
+										<div class="structure-old-comment">
+											<ul>
+												<li><h5>Jose [<span>Hace 4 Semanas</span>]</h5></li>
+											</ul>
+											<p>Los felicito por este excelente video!!. Me gustaría aclarar una duda, siempre para resolver este tipo de ejercicios tengo que aplicar la derivada de un producto? </p>
+											<div class="botResp">
+												<a href="#old-comments" class="open-textarea">Responder</a>
+												<a href="#old-comments">Denunciar</a>
+											</div>
+											<div class="response-over-response">
+												<textarea placeholder="Responde a este comentario"></textarea>
+												<div class="btnlft">
+													<a href="#old-comments" class="close-textarea">Cerrar[X]</a>
+													<button>COMENTAR</button>
+												</div>
+											</div>
+											<div class="historialcomment">
+												<h5>Angélica [<span>Hace 6 días</span>]</h5>
+												<p>No siempre tienes que aplicar la derivada de un producto, debes aplicar la regla de la derivada que aplique a la función de la carga que te estan dando, en este caso en la función de la carga hay dos terminos multiplicandose por tanto se usa en este caso la derivada de un producto.</p>
+											</div>
 										</div>
 									</div>
-									<div class="historialcomment">
-										<h5>Jlmonroy [<span>Hace 6 días</span>]</h5>
-										<p>No siempre tienes que aplicar la derivada de un producto, debes aplicar la regla de la derivada que aplique a la función de la carga que te estan dando, en este caso en la función de la carga hay dos terminos multiplicandose por tanto se usa en este caso la derivada de un producto.</p>
-										<h5>Selvio [<span>Hace 6 días</span>]</h5>
-										<p>Muy acertada tu respuesta @Jlmonroy y gracias por participar en nuestros foros. @Rachel si tienes alguna duda con las reglas de las derivadas, te invito a que repases estos temas en nuestro curso de Calculo Diferencial.</p>
+								</div>
+							</div>
+						</li>
+						<li class="tab-header-and-content">
+							<!--================= NOTAS SECTION =================================-->
+							<a href="#" class="tab-link">Notas</a>
+							<div class="tab-content notes">
+								<h3>FÓRMULAS</h3>
+								<hr>
+								<ul>
+									<li><span>i = dq/dt</span></li>
+									<li><span>v = dw/dq</span></li>
+									<li><span>p = dw/dt = vi</span></li>
+								</ul>
+								<h3>GLOSARIO</h3>
+								<hr>
+								<ul>
+									<li><span>Un <span>circuito eléctrico</span> consta de elementos eléctricos conectados entre si.</span></li>
+									<li><span>El <span>Sistema Internacional de Unidades (SI)</span> es el lenguaje internacional de medición. De las seis unidades principales pueden derivarse las unidades de las demás cantidades físicas.</span></li>
+									<li><span>La <span>corriente</span> es la velocidad de cambio del flujo de la carga. (i = dq/dt).</span></li>
+									<li><span>La <span>tensión</span> es la energía necesaria para mover 1 C de carga por un elemento. (v = dw/dq).</span></li>
+									<li><span>La <span>potencia</span> es la energía suministrada o absorbida por unidad de tiempo. También es el producto entre la tensión y la corriente. (p = dw/dt = vi).</span></li>
+									<li><span>De acuerdo con la <span>convención pasiva de los signos,</span> la potencia adopta signo positivo cuando la corriente entra por la polaridad positiva de la tensión a lo largo de un elemento.</span></li>
+									<li><span>Una <span>fuente de tensión ideal</span> produce una diferencia de potencial especifica entre sus terminales sin importar a que se conecte. Una <span>fuente de corriente ideal</span> produce una corriente especifica a través de sus terminales sin importar a que se conecte</span></li>
+									<li><span>Una <span>fuente de tensión ideal</span> produce una diferencia de potencial especifica entre sus terminales sin importar a que se conecte. Una <span>fuente de corriente ideal</span> produce una corriente especifica a través de sus terminales sin importar a que se conecte</span></li>
+									<li><span>Una <span>fuente de tensión y corriente</span> pueden ser <span>dependientes o independientes.</span> Una <span>fuente dependiente</span> es aquella cuyo valor depende de otra variable del circuito.</span></li>
+								</ul>
+							</div>
+						</li>
+						<li class="tab-header-and-content">
+							<!--================= DESCARGABLES SECTION =================================-->
+							<a href="#" class="tab-link">Descargables</a>
+							<div class="tab-content">
+								<div class="media">
+									<div class="media-left">
+										<a href="#"><img src="public/images/reproductor/electronica/pdf.svg" alt=""></a>
+									</div>
+									<div class="media-body">
+										<p>Gráficas y formulas auxiliares</p>
+										<p>.pdf</p>
+										<p>2MB</p>
 									</div>
 								</div>
 								<hr>
-							</div>
-							<div class="old-comments">
-								<div class="structure-old-comment">
-									<ul>
-										<li><h5>Jose [<span>Hace 4 Semanas</span>]</h5></li>
-									</ul>
-									<p>Los felicito por este excelente video!!. Me gustaría aclarar una duda, siempre para resolver este tipo de ejercicios tengo que aplicar la derivada de un producto? </p>
-									<div class="botResp">
-										<a href="#old-comments" class="open-textarea">Responder</a>
-										<a href="#old-comments">Denunciar</a>
+								<div class="media">
+									<div class="media-left">
+										<a href="#"><img src="public/images/reproductor/electronica/mov.svg" alt=""></a>
 									</div>
-									<div class="response-over-response">
-										<textarea placeholder="Responde a este comentario"></textarea>
-										<div class="btnlft">
-											<a href="#old-comments" class="close-textarea">Cerrar[X]</a>
-											<button>COMENTAR</button>
-										</div>
+									<div class="media-body">
+										<p>Ejercicios Propuestos Carga y Corriente</p>
+										<p>.docx</p>
+										<p>1MB</p>
 									</div>
-									<div class="historialcomment">
-										<h5>Angélica [<span>Hace 6 días</span>]</h5>
-										<p>No siempre tienes que aplicar la derivada de un producto, debes aplicar la regla de la derivada que aplique a la función de la carga que te estan dando, en este caso en la función de la carga hay dos terminos multiplicandose por tanto se usa en este caso la derivada de un producto.</p>
-									</div>
-								</div>
+								</div>  
 							</div>
-						</div>
-					</li>
-					<li class="tab-header-and-content">
-						<a href="#" class="tab-link">Notas</a>
-						<div class="tab-content">
-							<h3>FÓRMULAS</h3>
-							<ul>
-								<li><span>i = dq/dt</span></li>
-							</ul>
-							<h3>GLOSARIO</h3>
-							<ul>
-								<li><span><span>Corriente Eléctrica: </span>Es la velocidad de cambio de la carga respecto al tiempo (Derivada de la carga con respecto al tiempo).</span></li>
-								<li><span><span>Carga Eléctrica: </span>Integral de la corriente con respecto al tiempo.</span></li>
-							</ul>
-						</div>
-					</li>
-					<li class="tab-header-and-content">
-						<a href="#" class="tab-link">Descargables</a>
-						<div class="tab-content">
-							<div class="media">
-								<div class="media-left">
-									<a href="#"><img src="public/images/reproductor/electronica/pdf.svg" alt=""></a>
-								</div>
-								<div class="media-body">
-									<p>Gráficas y formulas auxiliares</p>
-									<p>.pdf</p>
-									<p>2MB</p>
-								</div>
-							</div>
-							<div class="media">
-								<div class="media-left">
-									<a href="#"><img src="public/images/reproductor/electronica/mov.svg" alt=""></a>
-								</div>
-								<div class="media-body">
-									<p>Ejercicios Propuestos Carga y Corriente</p>
-									<p>.docx</p>
-									<p>1MB</p>
-								</div>
-							</div>  
-						</div>
-					</li>
-				</ul>
-			</div>
-		</section>			
+						</li>
+					</ul>
+				</div>
+			</section>	
+		</div>		
 		<!-- FOOTER -->
-		<footer class="small-footer electronica-smallfooter"><!--VARIABLE BACKGROUND COLOR (home, electronica, electrica, civil, sistemas, industrial, mecanica) -->
+		<footer class="small-footer electronica-smallfooter gradient"><!--VARIABLE BACKGROUND COLOR (home, electronica, electrica, civil, sistemas, industrial, mecanica) -->
 			<div class="small-footer-container">
-				<a href="#" target="_blank"><img src="public/images/footer/video_footer/electronica/tw.svg" alt="Twitter SolvingBooks"></a>
-				<a href="#" target="_blank"><img src="public/images/footer/video_footer/electronica/ig.svg" alt="Instagram SolvingBooks"></a>
-				<a href="#" target="_blank"><img src="public/images/footer/video_footer/electronica/yt.svg" alt="Youtube SolvingBooks"></a>
-				<a href="#" target="_blank"><img src="public/images/footer/video_footer/electronica/fb.svg" alt="Facebook SolvingBooks"></a>
+				<a href="https://twitter.com/solvingbooks" target="_blank"><img src="public/images/footer/video_footer/electronica/tw.svg" alt="Twitter SolvingBooks"></a>
+				<a href="https://www.instagram.com/solvingbooks/" target="_blank"><img src="public/images/footer/video_footer/electronica/ig.svg" alt="Instagram SolvingBooks"></a>
+				<a href="https://www.youtube.com/channel/UCwGNFqQFef4ExPioeD_wHng" target="_blank"><img src="public/images/footer/video_footer/electronica/yt.svg" alt="Youtube SolvingBooks"></a>
+				<a href="https://www.facebook.com/SolvingBooks" target="_blank"><img src="public/images/footer/video_footer/electronica/fb.svg" alt="Facebook SolvingBooks"></a>
 				<div class="text-smallfooter">
 					<span>© 2015 SolvingBooks.</span><span>Todos los derechos reservados.</span>
 				</div>
