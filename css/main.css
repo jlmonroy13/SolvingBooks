@@ -2601,7 +2601,7 @@ header {
           float: left;
           display: block;
           margin-right: 2.35765%;
-          width: 23.23176%; }
+          width: 31.76157%; }
           .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .add-comment .text-add-comment:last-child {
             margin-right: 0; }
           .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .add-comment .text-add-comment h4 {
@@ -2609,19 +2609,37 @@ header {
             font-size: 1.1428em; }
           .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .add-comment .text-add-comment p {
             font-family: "Aleo Light";
-            font-size: 1.1428em; }
+            font-size: 1.1428em;
+            padding-right: 6%;
+            line-height: 1.3; }
         .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .add-comment .textarea-comment {
           float: left;
           display: block;
           margin-right: 2.35765%;
-          width: 65.88078%; }
+          width: 65.88078%;
+          margin-right: 0; }
           .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .add-comment .textarea-comment:last-child {
             margin-right: 0; }
+          .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .add-comment .textarea-comment textarea {
+            height: 100px;
+            border-radius: 20px;
+            border: none;
+            font-family: "Aleo Light";
+            font-size: 1.0714em;
+            padding: 15px; }
+          .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .add-comment .textarea-comment button {
+            font-family: "Blanch Caps";
+            font-size: 2.071em;
+            padding: 0 30px 3px;
+            border-radius: 20px;
+            float: right; }
         .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .add-comment hr {
           float: left;
           display: block;
           margin-right: 2.35765%;
-          width: 100%; }
+          width: 100%;
+          border-bottom: 3px solid #ddd;
+          margin-top: 10px; }
           .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .add-comment hr:last-child {
             margin-right: 0; }
       .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .old-comments {
@@ -2631,8 +2649,76 @@ header {
         width: 100%; }
         .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .old-comments:last-child {
           margin-right: 0; }
+        .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .old-comments .structure-old-comment {
+          padding-left: 20px; }
+          .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .old-comments .structure-old-comment ul {
+            list-style-type: disc; }
+            .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .old-comments .structure-old-comment ul li h5 {
+              font-family: "Aleo Bold";
+              font-size: 1.1428em;
+              margin-bottom: 0; }
+              .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .old-comments .structure-old-comment ul li h5 span {
+                font-family: "Aleo BoldItalic";
+                padding: 0 5px !important;
+                font-size: 0.9em; }
+          .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .old-comments .structure-old-comment p {
+            color: #2d2d2d;
+            font-family: "Aleo Light";
+            font-size: 1em;
+            margin-bottom: 0;
+            line-height: 1.3; }
+          .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .old-comments .structure-old-comment .botResp {
+            padding-left: 10px;
+            margin-bottom: 10px; }
+            .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .old-comments .structure-old-comment .botResp a {
+              font-family: "Aleo Light", Arial, Helvetica, sans-serif;
+              font-size: 0.8571em;
+              color: #8e8e8e; }
+              .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .old-comments .structure-old-comment .botResp a:hover {
+                text-decoration: underline; }
+          .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .old-comments .structure-old-comment .response-over-response {
+            padding-left: 20px;
+            margin-top: 10px;
+            position: relative;
+            margin-bottom: 40px;
+            display: none; }
+            .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .old-comments .structure-old-comment .response-over-response textarea {
+              height: 75px;
+              border-radius: 20px;
+              border: none;
+              font-family: "Aleo Light";
+              font-size: 1em;
+              padding: 10px 15px; }
+            .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .old-comments .structure-old-comment .response-over-response .btnlft {
+              position: absolute;
+              right: 0; }
+              .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .old-comments .structure-old-comment .response-over-response .btnlft a {
+                font-family: "Aleo Light", Arial, Helvetica, sans-serif;
+                font-size: 0.8571em;
+                color: #8e8e8e; }
+                .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .old-comments .structure-old-comment .response-over-response .btnlft a:hover {
+                  text-decoration: underline; }
+              .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .old-comments .structure-old-comment .response-over-response .btnlft button {
+                font-family: "Blanch Caps";
+                font-size: 1.4285em;
+                padding: 0 20px 3px;
+                border-radius: 20px; }
+          .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .old-comments .structure-old-comment .historialcomment {
+            padding-left: 20px; }
+            .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .old-comments .structure-old-comment .historialcomment h5 {
+              font-family: "Aleo Bold";
+              font-size: 1.1428em;
+              margin-bottom: 0; }
+              .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .old-comments .structure-old-comment .historialcomment h5 span {
+                font-family: "Aleo BoldItalic";
+                padding: 0 5px !important;
+                font-size: 0.9em; }
+            .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .old-comments .structure-old-comment .historialcomment p {
+              margin-bottom: 20px; }
+        .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:first-child .tab-content .old-comments hr {
+          border-bottom: 3px solid #ddd; }
     .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:nth-child(2) a {
-      max-width: 228px; }
+      max-width: 130px; }
     .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:last-child a {
       max-width: 188px;
       min-width: 130px; }
@@ -3028,5 +3114,29 @@ li.content.question.active .mecanica-circle {
 
 .sistemas-bigfooter {
   background-color: brown; }
+
+.small-footer .small-footer-container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: flex;
+  align-items: center; }
+  .small-footer .small-footer-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .small-footer .small-footer-container a img {
+    height: 30px;
+    width: 30px;
+    margin-right: 5px; }
+  .small-footer .small-footer-container .text-smallfooter {
+    position: absolute;
+    right: 0; }
+    .small-footer .small-footer-container .text-smallfooter span {
+      font-size: 0.8571em;
+      font-family: "Aleo Light", Arial, Helvetica, sans-serif; }
+      .small-footer .small-footer-container .text-smallfooter span:last-child {
+        margin-left: 50px; }
 
 /*# sourceMappingURL=main.css.map */

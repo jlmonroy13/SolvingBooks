@@ -177,6 +177,15 @@ $(document).ready(function(){
         e.preventDefault();
     });
 });
+//================ FADE IN AND FADE OUT COMMENT OVER COMMENT ON VIDEO PAGE ====================
+$(document).ready(function(){
+  $(".open-textarea").click(function(){
+    $('.response-over-response').fadeIn();
+  });
+  $(".close-textarea").click(function(){
+    $('.response-over-response').fadeOut();
+  });
+});
 
 
 

@@ -1,0 +1,26 @@
+
+.small-footer {
+	.small-footer-container {
+		@include outer-container;
+		position: relative;
+		display: flex;
+    	align-items: center;
+		a {
+			img {
+				@include size(30px);
+				margin-right: 5px;
+			}
+		}
+		.text-smallfooter {
+			position: absolute;
+			right: 0;
+			span {
+				font-size: 0.8571em;
+    			font-family: "Aleo Light", Arial, Helvetica, sans-serif;
+				&:last-child {
+					margin-left: 50px;
+				}
+			}
+		}
+	}
+}

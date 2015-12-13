@@ -420,7 +420,7 @@
 							.add-comment {
 								@include span-columns(12);
 								.text-add-comment {
-									@include span-columns(3);
+									@include span-columns(4);
 									h4 {
 										font-family: "Aleo Bold";
 										font-size: 1.1428em;
@@ -428,26 +428,132 @@
 									p {
 										font-family:"Aleo Light";
 										font-size: 1.1428em;
+										padding-right: 6%;
+										line-height: 1.3;
 									}
 								}
 								.textarea-comment {
 									@include span-columns(8);
+									margin-right: 0;
+									textarea {
+										height: 100px;
+    									border-radius: 20px;
+    									border: none;
+    									font-family:"Aleo Light";
+										font-size: 1.0714em;
+										padding: 15px;
+									}
+									button {
+										font-family:"Blanch Caps";
+										font-size: 2.071em;
+										padding: 0 30px 3px;
+										border-radius: 20px;
+										float: right;
+									}
 								}
 								hr {
 									@include span-columns(12);
+									border-bottom: 3px solid #ddd;
+									margin-top: 10px;
 								}
-							}
-							hr {
-
 							}
 							.old-comments {
 								@include span-columns(12);
+								.structure-old-comment {
+									padding-left: 20px;
+									ul {
+										list-style-type: disc;
+										li {
+											h5 {
+												font-family: "Aleo Bold";
+												font-size: 1.1428em;
+												margin-bottom: 0;
+												span {
+													font-family:"Aleo BoldItalic";
+													padding: 0 5px !important;
+													font-size: 0.9em;
+												}
+											}
+										}
+									}
+									p {
+										color: #2d2d2d;
+										font-family:"Aleo Light";
+										font-size: 1em;
+										margin-bottom: 0;
+										line-height: 1.3;
+									}
+									.botResp {
+										padding-left: 10px;
+										margin-bottom: 10px;
+										a {
+											font-family: "Aleo Light", Arial, Helvetica, sans-serif;
+										    font-size: 0.8571em;
+										    color: #8e8e8e;
+										    &:hover {
+										    	text-decoration: underline;
+										    }
+										}
+									}
+									.response-over-response {
+										padding-left: 20px;
+										margin-top: 10px;
+										position: relative;
+										margin-bottom: 40px;
+										display: none;
+										textarea {
+											height: 75px;
+	    									border-radius: 20px;
+	    									border: none;
+	    									font-family:"Aleo Light";
+											font-size: 1em;
+											padding: 10px 15px;
+										}
+										.btnlft {
+											position: absolute;
+											right: 0;
+											a{
+												font-family: "Aleo Light", Arial, Helvetica, sans-serif;
+											    font-size: 0.8571em;
+											    color: #8e8e8e;
+											    &:hover {
+											    	text-decoration: underline;
+											    }
+											}
+											button {
+												font-family:"Blanch Caps";
+												font-size: 1.4285em;
+												padding: 0 20px 3px;
+												border-radius: 20px;
+											}
+										}
+									}
+									.historialcomment {
+										padding-left: 20px;
+										h5 {
+											font-family: "Aleo Bold";
+											font-size: 1.1428em;
+											margin-bottom: 0;
+											span {
+												font-family:"Aleo BoldItalic";
+												padding: 0 5px !important;
+												font-size: 0.9em;
+											}
+										}
+										p {
+											margin-bottom: 20px;
+										}
+									}
+								}
+								hr {
+									border-bottom: 3px solid #ddd;
+								}
 							}
 						}
 					}
 					&:nth-child(2) {
 						a {
-							max-width: 228px;
+							max-width: 130px; 
 						}
 					}
 					&:last-child {
