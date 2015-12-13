@@ -11,6 +11,10 @@
 			img {
 				@include size(25px);
 				margin-right: 10px;
+				opacity: 0.6;
+				&:hover {
+					opacity: 1;
+				}
 			}
 		}
 		.text-smallfooter {

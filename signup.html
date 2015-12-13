@@ -10,7 +10,7 @@ www.solvingbooks.com / FrontEnd - Jorge Monroy / BackEnd - Jose Osorio
 		<link rel="icon" href="public/images/solving_favicon.png" type="image/x-icon">
 		<link rel="stylesheet" href="css/main.css">
 	</head>
-	<body class="sign-up gradient">
+	<body>
 		<!-- NAVBAR -->
 		<header class="navigation signup-header" role="banner"><!--VARIABLE BORDER COLOR (home, signup, electronica, electrica, civil, sistemas, industrial, mecanica) -->
 			<div class="navigation-wrapper">
@@ -64,30 +64,32 @@ www.solvingbooks.com / FrontEnd - Jorge Monroy / BackEnd - Jose Osorio
 				</nav>
 			</div>
 		</header>
-		<!-- SIGN UP SECTION-->
-		<section class="sign-up-form">
-			<h1>¡ÚNETE A NUESTRA COMUNIDAD!</h1>
-			<p>Puedes crear una cuenta para acceder a los beneficios que proporciona hacer parte de la comunidad de SolvingBooks. Registrándote podrás acceder a todo el contenido gratuito de nuestra plataforma.</p>
-			<form action="">
-				<div class="blue-form">
-					<label for="sign-up-email">Correo Electrónico</label>
-					<input type="email" id="sign-up-email">
-					<div class="form-group">
-						<label for="sign-up-password">Contraseña</label>
-						<input type="password" name="password" id="sign-up-password">
+		<div class="sign-up gradient">
+			<!-- SIGN UP SECTION-->
+			<section class="sign-up-form">
+				<h1>¡ÚNETE A NUESTRA COMUNIDAD!</h1>
+				<p>Puedes crear una cuenta para acceder a los beneficios que proporciona hacer parte de la comunidad de SolvingBooks. Registrándote podrás acceder a todo el contenido gratuito de nuestra plataforma.</p>
+				<form action="">
+					<div class="blue-form">
+						<label for="sign-up-email">Correo Electrónico</label>
+						<input type="email" id="sign-up-email">
+						<div class="form-group">
+							<label for="sign-up-password">Contraseña</label>
+							<input type="password" name="password" id="sign-up-password">
+						</div>
+						<div class="form-group">
+							<label for="sign-up-verify-password">Verifica tu Contraseña</label>
+							<input type="password" name="password" id="sign-up-verify-password">
+						</div>
+						<p>6 caracteres como mínimo.</p>	
+						<label for="sign-up-user">Nombre de Usuario</label>
+						<input type="text" id="sign-up-user">
+						<p>Este nombre podrá ser modificado en el momento que lo desees.</p>
 					</div>
-					<div class="form-group">
-						<label for="sign-up-verify-password">Verifica tu Contraseña</label>
-						<input type="password" name="password" id="sign-up-verify-password">
-					</div>
-					<p>6 caracteres como mínimo.</p>	
-					<label for="sign-up-user">Nombre de Usuario</label>
-					<input type="text" id="sign-up-user">
-					<p>Este nombre podrá ser modificado en el momento que lo desees.</p>
-				</div>
-				<input type="submit" value="CREAR">
-			</form>
-		</section>
+					<input type="submit" value="CREAR">
+				</form>
+			</section>
+		</div>
 		<!-- FOOTER -->
 		<footer class="big-footer home-bigfooter"><!--VARIABLE BACKGROUND COLOR (home, electronica, electrica, civil, sistemas, industrial, mecanica) -->
 			<div class="contain-big-footer">

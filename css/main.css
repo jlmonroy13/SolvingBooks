@@ -2768,17 +2768,42 @@ header {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 14.70196%; }
+      width: 6.17215%; }
       .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:last-child .tab-content .media .media-left:last-child {
         margin-right: 0; }
       .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:last-child .tab-content .media .media-left a img {
-        width: 50%; }
+        width: 100%;
+        min-width: 52px; }
     .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:last-child .tab-content .media .media-body {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 82.94039%; }
+      width: 91.4702%; }
       .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:last-child .tab-content .media .media-body:last-child {
+        margin-right: 0; }
+      @media (max-width: 850px) {
+        .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:last-child .tab-content .media .media-body {
+          margin-right: 1px !important; } }
+      .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:last-child .tab-content .media .media-body p {
+        margin: 0;
+        color: #000;
+        line-height: 1.2; }
+        .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:last-child .tab-content .media .media-body p:first-child {
+          font-family: "Aleo Bold";
+          font-size: 1.1428em; }
+        .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:last-child .tab-content .media .media-body p:nth-child(2) {
+          font-family: "Aleo Light";
+          font-size: 1.1428em; }
+        .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:last-child .tab-content .media .media-body p:last-child {
+          font-family: "Aleo Light";
+          color: #999;
+          font-size: 0.8571em; }
+    .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:last-child .tab-content hr {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content:last-child .tab-content hr:last-child {
         margin-right: 0; }
     .video .tools .tools-container ul.accordion-tabs-minimal li.tab-header-and-content a {
       font-family: "Aleo Bold";
@@ -3216,6 +3241,25 @@ li.content.question.active .mecanica-circle {
 .mecanica-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content.notes ul li {
   color: purple; }
 
+/*===================BACKGROUND COLOR LINE DESCARGABLES===========================================================*/
+.electronica-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content.downloads hr {
+  border-bottom: 2px solid #27b193; }
+
+.electrica-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content.downloads hr {
+  border-bottom: 2px solid red; }
+
+.sistemas-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content.downloads hr {
+  border-bottom: 2px solid yellow; }
+
+.industrial-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content.downloads hr {
+  border-bottom: 2px solid pink; }
+
+.civil-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content.downloads hr {
+  border-bottom: 2px solid orange; }
+
+.mecanica-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content.downloads hr {
+  border-bottom: 2px solid purple; }
+
 /*================================= SCROLL COLORS =================================================*/
 #all-old-comments.electronica-all-old-comments::-webkit-scrollbar {
   width: 8px;
@@ -3426,7 +3470,10 @@ li.content.question.active .mecanica-circle {
     .small-footer .small-footer-container a img {
       height: 25px;
       width: 25px;
-      margin-right: 10px; }
+      margin-right: 10px;
+      opacity: 0.6; }
+      .small-footer .small-footer-container a img:hover {
+        opacity: 1; }
     .small-footer .small-footer-container .text-smallfooter {
       position: absolute;
       right: 0; }
