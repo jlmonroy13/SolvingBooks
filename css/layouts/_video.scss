@@ -281,6 +281,7 @@
 		        	// background-color: #f9fafa;
 		        	padding: 20px 0;
 		        	padding-right: 2%;
+		        	position: relative;
 		        	h3 {
 		        		font-family:"Blanch Caps";
 		        		font-size: 3.2142em;
@@ -299,6 +300,44 @@
 		        			padding: 0 5%;
 		        			line-height: 1;
 		        			margin-bottom: 30px;
+		        		}
+		        		.content-with-image {
+		        			display: inline-block;
+		        			width: 100%;
+			        		.secondpart {
+			        			@include span-columns(7);
+			        			margin-right: 0;
+			        			@media (max-width: 943px) {
+			        				@include span-columns(12);
+			        			}
+			        			.possible-answer {
+			        				width: 70%;
+			        				@media (max-width: 400px) {
+				        				width: 55%;
+				        			}
+			        			}
+			        		}
+			        		.firstpart {
+			        			@include span-columns(5);
+			        			position: relative;
+			        			@media (max-width: 943px) {
+			        				@include span-columns(12);
+			        				margin-right: 0;
+			        			}
+			        			img {
+			        				width: 90%;
+			        				position: relative;
+									margin-top: 50px;
+									margin-left: 50px;
+			        				min-width: 320px;
+			        				@media (max-width: 943px) {
+				        				width: 40%;
+				        				display: block;
+				        				margin: 0 auto;
+				        				margin-bottom: 40px;
+				        			}
+			        			}
+		        			}
 		        		}
 		        		a {
 		        			color: #000;
@@ -327,7 +366,7 @@
 									border-radius: 12px;
 									border: none;
 									min-height: 50px;
-									width: 70%;
+									width: 50%;
 									display: inline-block;
 									// background-color: #f3f5f6;
 									p {
@@ -933,30 +972,35 @@ li.content.question.answered .mecanica-circle { background: url("../public/image
 .civil-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content.downloads hr { border-bottom: 2px solid orange;}
 .mecanica-tools .tools-container .accordion-tabs-minimal .tab-header-and-content .tab-content.downloads hr { border-bottom: 2px solid purple;}
 /*================================= SCROLL COLORS =================================================*/
-#all-old-comments.electronica-all-old-comments::-webkit-scrollbar{ width: 8px; background-color: transparent; } 
+#all-old-comments.electronica-all-old-comments::-webkit-scrollbar{ width: 8px; background-color: rgb(103,138,129); } 
+#all-old-comments.electrica-all-old-comments::-webkit-scrollbar{ width: 8px; background-color: red;}
+#all-old-comments.sistemas-all-old-comments::-webkit-scrollbar{ width: 8px; background-color: yellow;}
+#all-old-comments.industrial-all-old-comments::-webkit-scrollbar{ width: 8px; background-color: pink;}
+#all-old-comments.civil-all-old-comments::-webkit-scrollbar{ width: 8px; background-color: orange;}
+#all-old-comments.mecanica-all-old-comments::-webkit-scrollbar{ width: 8px; background-color: purple;}
 
-#all-old-comments.electronica-all-old-comments::-webkit-scrollbar-thumb{ background-color:#27b193; border-radius:10px;}
+#all-old-comments.electronica-all-old-comments::-webkit-scrollbar-thumb{ background-color:#0D3F33; border-radius:10px;}
 #all-old-comments.electrica-all-old-comments::-webkit-scrollbar-thumb{ background-color:red; border-radius:10px;}
 #all-old-comments.sistemas-all-old-comments::-webkit-scrollbar-thumb{ background-color:yellow; border-radius:10px;}
 #all-old-comments.industrial-all-old-comments::-webkit-scrollbar-thumb{ background-color:pink; border-radius:10px;}
 #all-old-comments.civil-all-old-comments::-webkit-scrollbar-thumb{ background-color:orange; border-radius:10px;}
 #all-old-comments.mecanica-all-old-comments::-webkit-scrollbar-thumb{ background-color:purple; border-radius:10px;}
 
-#all-old-comments.electronica-all-old-comments::-webkit-scrollbar-thumb:hover{ background-color:#718980; border:1px solid #333333;}
-#all-old-comments.electrica-all-old-comments::-webkit-scrollbar-thumb:hover{ background-color:red; border:1px solid red;}
-#all-old-comments.sistemas-all-old-comments::-webkit-scrollbar-thumb:hover{ background-color:yellow; border:1px solid yellow;}
-#all-old-comments.industrial-all-old-comments::-webkit-scrollbar-thumb:hover{ background-color:pink; border:1px solid pink;}
-#all-old-comments.civil-all-old-comments::-webkit-scrollbar-thumb:hover{ background-color:orange; border:1px solid orange;}
-#all-old-comments.mecanica-all-old-comments::-webkit-scrollbar-thumb:hover{ background-color:purple; border:1px solid purple;}
+// #all-old-comments.electronica-all-old-comments::-webkit-scrollbar-thumb:hover{ background-color:#0D3F33;}
+// #all-old-comments.electrica-all-old-comments::-webkit-scrollbar-thumb:hover{ background-color:red;}
+// #all-old-comments.sistemas-all-old-comments::-webkit-scrollbar-thumb:hover{ background-color:yellow;}
+// #all-old-comments.industrial-all-old-comments::-webkit-scrollbar-thumb:hover{ background-color:pink;}
+// #all-old-comments.civil-all-old-comments::-webkit-scrollbar-thumb:hover{ background-color:orange;}
+// #all-old-comments.mecanica-all-old-comments::-webkit-scrollbar-thumb:hover{ background-color:purple;}
 
-#all-old-comments.electronica-all-old-comments::-webkit-scrollbar-thumb:active{ background-color: #718980; border: 1px solid #718980;} 
-#all-old-comments.electrica-all-old-comments::-webkit-scrollbar-thumb:active{ background-color:red; border:1px solid red;}
-#all-old-comments.sistemas-all-old-comments::-webkit-scrollbar-thumb:active{ background-color:yellow; border:1px solid yellow;}
-#all-old-comments.industrial-all-old-comments::-webkit-scrollbar-thumb:active{ background-color:pink; border:1px solid pink;}
-#all-old-comments.civil-all-old-comments::-webkit-scrollbar-thumb:active{ background-color:orange; border:1px solid orange;}
-#all-old-comments.mecanica-all-old-comments::-webkit-scrollbar-thumb:active{ background-color:purple; border:1px solid purple;}
+// #all-old-comments.electronica-all-old-comments::-webkit-scrollbar-thumb:active{ background-color: #718980; border: 1px solid #718980;} 
+// #all-old-comments.electrica-all-old-comments::-webkit-scrollbar-thumb:active{ background-color:red; border:1px solid red;}
+// #all-old-comments.sistemas-all-old-comments::-webkit-scrollbar-thumb:active{ background-color:yellow; border:1px solid yellow;}
+// #all-old-comments.industrial-all-old-comments::-webkit-scrollbar-thumb:active{ background-color:pink; border:1px solid pink;}
+// #all-old-comments.civil-all-old-comments::-webkit-scrollbar-thumb:active{ background-color:orange; border:1px solid orange;}
+// #all-old-comments.mecanica-all-old-comments::-webkit-scrollbar-thumb:active{ background-color:purple; border:1px solid purple;}
 
-#all-old-comments.electronica-all-old-comments::-webkit-scrollbar-track{ border:1px gray solid; border-radius:10px; -webkit-box-shadow:0 0 6px gray inset} 
+// #all-old-comments.electronica-all-old-comments::-webkit-scrollbar-track{ border:1px rgb(103,138,129) solid; border-radius:10px; -webkit-box-shadow:0 0 6px rgb(103,138,129) inset} 
 
 
 
