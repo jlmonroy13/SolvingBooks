@@ -1116,7 +1116,7 @@ header {
             margin-left: 10px; }
             header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form1 label span {
               font-family: "Aleo Lightitalic";
-              color: #103159;
+              color: red;
               font-size: 16px;
               margin-left: 10px; }
           header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form1 input {
@@ -1586,6 +1586,10 @@ header {
       font-size: 1em;
       font-weight: 500;
       color: #000; }
+      .sign-up .sign-up-form form .blue-form label span {
+        font-family: "Aleo Lightitalic";
+        color: red;
+        font-size: 12px; }
     .sign-up .sign-up-form form .blue-form input {
       background-color: rgba(19, 99, 150, 0.3);
       border-radius: 20px;
@@ -2669,7 +2673,6 @@ header {
         position: relative;
         background-color: transparent; }
       .video .multimedia .tabs .tab-content .tab.exercise {
-        background-color: #f9fafa;
         padding: 20px 0;
         padding-right: 2%; }
         .video .multimedia .tabs .tab-content .tab.exercise h3 {
@@ -2683,25 +2686,25 @@ header {
           margin-top: 5px;
           margin-bottom: 50px; }
           .video .multimedia .tabs .tab-content .tab.exercise .exercise-content p {
-            font-family: "Aleo Bold", Arial, Helvetica, sans-serif;
-            font-size: 1.2142em;
+            font-family: "Aleo Light";
+            font-size: 1.125em;
             padding: 0 5%;
-            line-height: 1; }
+            line-height: 1;
+            margin-bottom: 30px; }
           .video .multimedia .tabs .tab-content .tab.exercise .exercise-content a {
             color: #000; }
             .video .multimedia .tabs .tab-content .tab.exercise .exercise-content a .answer {
-              margin-bottom: 2%;
+              margin-bottom: 10px;
               display: flex;
               align-items: center;
               margin-left: 5%; }
               .video .multimedia .tabs .tab-content .tab.exercise .exercise-content a .answer .letter {
                 border-radius: 12px;
-                border: 1px solid #ebedef;
+                border: none;
                 height: 50px;
                 width: 50px;
                 display: inline-block;
-                margin-right: 1%;
-                background-color: #f3f5f6; }
+                margin-right: 1%; }
                 .video .multimedia .tabs .tab-content .tab.exercise .exercise-content a .answer .letter p {
                   font-family: "Blanch Caps";
                   font-size: 3.2142em;
@@ -2710,19 +2713,23 @@ header {
                   line-height: 50px; }
               .video .multimedia .tabs .tab-content .tab.exercise .exercise-content a .answer .possible-answer {
                 border-radius: 12px;
-                border: 1px solid #ebedef;
+                border: none;
                 min-height: 50px;
                 width: 70%;
-                display: inline-block;
-                background-color: #f3f5f6; }
+                display: inline-block; }
                 .video .multimedia .tabs .tab-content .tab.exercise .exercise-content a .answer .possible-answer p {
-                  font-family: "Aleo Regular", Arial, Helvetica, sans-serif;
-                  font-size: 1.1428em;
+                  font-family: "Aleo Light";
+                  font-size: 1em;
                   vertical-align: middle;
                   line-height: 1;
                   padding-left: 10px;
                   padding-right: 0;
                   margin: 14px 0; }
+              .video .multimedia .tabs .tab-content .tab.exercise .exercise-content a .answer span {
+                font-family: "Aleo Lightitalic";
+                color: #fff;
+                font-size: 0.9375em;
+                margin-left: 10px; }
             .video .multimedia .tabs .tab-content .tab.exercise .exercise-content a:hover .answer .letter {
               background-color: #fff; }
             .video .multimedia .tabs .tab-content .tab.exercise .exercise-content a:hover .answer .possible-answer {
@@ -2739,12 +2746,7 @@ header {
           padding: 10px 0; }
           .video .multimedia .tabs .tab-content .tab.exercise .exercise-next button {
             font-family: "Aleo Regular", Arial, Helvetica, sans-serif;
-            background-color: transparent;
             border-radius: 20px; }
-            .video .multimedia .tabs .tab-content .tab.exercise .exercise-next button:hover {
-              background-color: rgba(255, 255, 255, 0.5); }
-          .video .multimedia .tabs .tab-content .tab.exercise .exercise-next .ex-check:hover {
-            color: #fff; }
 @media (max-width: 1100px) {
   .video .tools {
     margin: 0 3%; } }
@@ -3021,7 +3023,7 @@ header {
 
 /*===================MULTIMEDIA BAR BACKGROUND COLOR ====================================================================*/
 .electronica-bar {
-  background-color: #718980 !important; }
+  background-color: #678a81 !important; }
 
 .electrica-bar {
   background-color: red !important; }
@@ -3078,21 +3080,40 @@ li.content .mecanica-circle {
 
 /*===================IMAGE CIRCLE BAR MULTIMEDIA ACTIVE VIDEO=======================================================*/
 li.content.active .electronica-circle {
-  background: url("../public/images/reproductor/electronica/visto.svg") no-repeat; }
+  background: url("../public/images/reproductor/electronica/viendo.svg") no-repeat; }
 
 li.content.active .electrica-circle {
-  background: url("../public/images/reproductor/electrica/visto.svg") no-repeat; }
+  background: url("../public/images/reproductor/electrica/viendo.svg") no-repeat; }
 
 li.content.active .sistemas-circle {
-  background: url("../public/images/reproductor/sistemas/visto.svg") no-repeat; }
+  background: url("../public/images/reproductor/sistemas/viendo.svg") no-repeat; }
 
 li.content.active .industrial-circle {
-  background: url("../public/images/reproductor/industrial/visto.svg") no-repeat; }
+  background: url("../public/images/reproductor/industrial/viendo.svg") no-repeat; }
 
 li.content.active .civil-circle {
-  background: url("../public/images/reproductor/civil/visto.svg") no-repeat; }
+  background: url("../public/images/reproductor/civil/viendo.svg") no-repeat; }
 
 li.content.active .mecanica-circle {
+  background: url("../public/images/reproductor/mecanica/viendo.svg") no-repeat; }
+
+/*===================IMAGE CIRCLE BAR MULTIMEDIA WATCHED VIDEO=======================================================*/
+li.content.watched .electronica-circle {
+  background: url("../public/images/reproductor/electronica/visto.svg") no-repeat; }
+
+li.content.watched .electrica-circle {
+  background: url("../public/images/reproductor/electrica/visto.svg") no-repeat; }
+
+li.content.watched .sistemas-circle {
+  background: url("../public/images/reproductor/sistemas/visto.svg") no-repeat; }
+
+li.content.watched .industrial-circle {
+  background: url("../public/images/reproductor/industrial/visto.svg") no-repeat; }
+
+li.content.watched .civil-circle {
+  background: url("../public/images/reproductor/civil/visto.svg") no-repeat; }
+
+li.content.watched .mecanica-circle {
   background: url("../public/images/reproductor/mecanica/visto.svg") no-repeat; }
 
 /*===================IMAGE CIRCLE BAR MULTIMEDIA NO-ACTIVE QUESTION=======================================================*/
@@ -3116,21 +3137,40 @@ li.content.question .mecanica-circle {
 
 /*===================IMAGE CIRCLE BAR MULTIMEDIA ACTIVE QUESTION=======================================================*/
 li.content.question.active .electronica-circle {
-  background: url("../public/images/reproductor/electronica/resuelto.svg") no-repeat; }
+  background: url("../public/images/reproductor/electronica/resolviendo.svg") no-repeat; }
 
 li.content.question.active .electrica-circle {
-  background: url("../public/images/reproductor/electrica/resuelto.svg") no-repeat; }
+  background: url("../public/images/reproductor/electrica/resolviendo.svg") no-repeat; }
 
 li.content.question.active .sistemas-circle {
-  background: url("../public/images/reproductor/sistemas/resuelto.svg") no-repeat; }
+  background: url("../public/images/reproductor/sistemas/resolviendo.svg") no-repeat; }
 
 li.content.question.active .industrial-circle {
-  background: url("../public/images/reproductor/industrial/resuelto.svg") no-repeat; }
+  background: url("../public/images/reproductor/industrial/resolviendo.svg") no-repeat; }
 
 li.content.question.active .civil-circle {
-  background: url("../public/images/reproductor/civil/resuelto.svg") no-repeat; }
+  background: url("../public/images/reproductor/civil/resolviendo.svg") no-repeat; }
 
 li.content.question.active .mecanica-circle {
+  background: url("../public/images/reproductor/mecanica/resolviendo.svg") no-repeat; }
+
+/*===================IMAGE CIRCLE BAR MULTIMEDIA ANSWERED QUESTION=======================================================*/
+li.content.question.answered .electronica-circle {
+  background: url("../public/images/reproductor/electronica/resuelto.svg") no-repeat; }
+
+li.content.question.answered .electrica-circle {
+  background: url("../public/images/reproductor/electrica/resuelto.svg") no-repeat; }
+
+li.content.question.answered .sistemas-circle {
+  background: url("../public/images/reproductor/sistemas/resuelto.svg") no-repeat; }
+
+li.content.question.answered .industrial-circle {
+  background: url("../public/images/reproductor/industrial/resuelto.svg") no-repeat; }
+
+li.content.question.answered .civil-circle {
+  background: url("../public/images/reproductor/civil/resuelto.svg") no-repeat; }
+
+li.content.question.answered .mecanica-circle {
   background: url("../public/images/reproductor/mecanica/resuelto.svg") no-repeat; }
 
 /*===================PROGRESS BAR BUFFER VIDEO COLORS===========================================================================*/
@@ -3171,9 +3211,28 @@ li.content.question.active .mecanica-circle {
 .mecanica-mejs .mejs-time-total .mejs-time-loaded {
   background: purple !important; }
 
+/*===================BACKGROUND COLOR INTERACTIVE QUESTIONS===========================================================================*/
+.electronica-mejs.tab.exercise {
+  background-color: #13544C !important; }
+
+.electrica-mejs.tab.exercise {
+  background-color: red !important; }
+
+.sistemas-mejs.tab.exercise {
+  background-color: yellow !important; }
+
+.industrial-mejs.tab.exercise {
+  background-color: pink !important; }
+
+.civil-mejs.tab.exercise {
+  background-color: orange !important; }
+
+.mecanica-mejs.tab.exercise {
+  background-color: purple !important; }
+
 /*===================PREGUNTA 1 DE 1 TITLE COLOR INTERACTIVE QUESTIONS===========================================================*/
 .electronica-mejs.tab.exercise h3 {
-  color: #BC0D37; }
+  color: #FFB100; }
 
 .electrica-mejs.tab.exercise h3 {
   color: red !important; }
@@ -3190,74 +3249,264 @@ li.content.question.active .mecanica-circle {
 .mecanica-mejs.tab.exercise h3 {
   color: purple !important; }
 
+/*===================PROBLEM STATMENT COLOR FOR INTERACTIVE QUESTIONS===========================================================*/
+.electronica-mejs.tab.exercise p {
+  color: #FFF; }
+
+.electrica-mejs.tab.exercise p {
+  color: red !important; }
+
+.sistemas-mejs.tab.exercise p {
+  color: yellow !important; }
+
+.industrial-mejs.tab.exercise p {
+  color: pink !important; }
+
+.civil-mejs.tab.exercise p {
+  color: orange !important; }
+
+.mecanica-mejs.tab.exercise p {
+  color: purple !important; }
+
+/*===================BACKGROUND COLOR ANSEWRS INTERACTIVE QUESTIONS===========================================================================*/
+.electronica-mejs.tab.exercise .answer .letter {
+  background-color: rgba(30, 30, 30, 0.1) !important; }
+
+.electrica-mejs.tab.exercise .answer .letter {
+  background-color: red !important; }
+
+.sistemas-mejs.tab.exercise .answer .letter {
+  background-color: yellow !important; }
+
+.industrial-mejs.tab.exercise .answer .letter {
+  background-color: pink !important; }
+
+.civil-mejs.tab.exercise .answer .letter {
+  background-color: orange !important; }
+
+.mecanica-mejs.tab.exercise .answer .letter {
+  background-color: purple !important; }
+
+.electronica-mejs.tab.exercise .answer .possible-answer {
+  background-color: rgba(30, 30, 30, 0.1) !important; }
+
+.electrica-mejs.tab.exercise .answer .possible-answer {
+  background-color: red !important; }
+
+.sistemas-mejs.tab.exercise .answer .possible-answer {
+  background-color: yellow !important; }
+
+.industrial-mejs.tab.exercise .answer .possible-answer {
+  background-color: pink !important; }
+
+.civil-mejs.tab.exercise .answer .possible-answer {
+  background-color: orange !important; }
+
+.mecanica-mejs.tab.exercise .answer .possible-answer {
+  background-color: purple !important; }
+
+/*===================BACKGROUND COLOR ANSEWRS HOVER INTERACTIVE QUESTIONS===========================================================================*/
+.electronica-mejs.tab.exercise .answer:hover .letter {
+  background-color: #093F37 !important; }
+
+.electrica-mejs.tab.exercise .answer:hover .letter {
+  background-color: red !important; }
+
+.sistemas-mejs.tab.exercise .answer:hover .letter {
+  background-color: yellow !important; }
+
+.industrial-mejs.tab.exercise .answer:hover .letter {
+  background-color: pink !important; }
+
+.civil-mejs.tab.exercise .answer:hover .letter {
+  background-color: orange !important; }
+
+.mecanica-mejs.tab.exercise .answer:hover .letter {
+  background-color: purple !important; }
+
+.electronica-mejs.tab.exercise .answer:hover .possible-answer {
+  background-color: #093F37 !important; }
+
+.electrica-mejs.tab.exercise .answer:hover .possible-answer {
+  background-color: red !important; }
+
+.sistemas-mejs.tab.exercise .answer:hover .possible-answer {
+  background-color: yellow !important; }
+
+.industrial-mejs.tab.exercise .answer:hover .possible-answer {
+  background-color: pink !important; }
+
+.civil-mejs.tab.exercise .answer:hover .possible-answer {
+  background-color: orange !important; }
+
+.mecanica-mejs.tab.exercise .answer:hover .possible-answer {
+  background-color: purple !important; }
+
+/*===================BACKGROUND COLOR ANSEWRS ACTIVE INTERACTIVE QUESTIONS===========================================================================*/
+.electronica-mejs.tab.exercise .answer:active .letter {
+  background-color: #FFB100 !important; }
+
+.electrica-mejs.tab.exercise .answer:active .letter {
+  background-color: red !important; }
+
+.sistemas-mejs.tab.exercise .answer:active .letter {
+  background-color: yellow !important; }
+
+.industrial-mejs.tab.exercise .answer:active .letter {
+  background-color: pink !important; }
+
+.civil-mejs.tab.exercise .answer:active .letter {
+  background-color: orange !important; }
+
+.mecanica-mejs.tab.exercise .answer:active .letter {
+  background-color: purple !important; }
+
+.electronica-mejs.tab.exercise .answer:active .possible-answer {
+  background-color: #FFB100 !important; }
+
+.electrica-mejs.tab.exercise .answer:active .possible-answer {
+  background-color: red !important; }
+
+.sistemas-mejs.tab.exercise .answer:active .possible-answer {
+  background-color: yellow !important; }
+
+.industrial-mejs.tab.exercise .answer:active .possible-answer {
+  background-color: pink !important; }
+
+.civil-mejs.tab.exercise .answer:active .possible-answer {
+  background-color: orange !important; }
+
+.mecanica-mejs.tab.exercise .answer:active .possible-answer {
+  background-color: purple !important; }
+
+.electronica-mejs.tab.exercise .answer:active .letter p {
+  color: #000 !important; }
+
+.electrica-mejs.tab.exercise .answer:active .letter p {
+  color: red !important; }
+
+.sistemas-mejs.tab.exercise .answer:active .letter p {
+  color: yellow !important; }
+
+.industrial-mejs.tab.exercise .answer:active .letter p {
+  color: pink !important; }
+
+.civil-mejs.tab.exercise .answer:active .letter p {
+  color: orange !important; }
+
+.mecanica-mejs.tab.exercise .answer:active .letter p {
+  color: purple !important; }
+
+.electronica-mejs.tab.exercise .answer:active .possible-answer p {
+  color: #000 !important; }
+
+.electrica-mejs.tab.exercise .answer:active .possible-answer p {
+  color: red !important; }
+
+.sistemas-mejs.tab.exercise .answer:active .possible-answer p {
+  color: yellow !important; }
+
+.industrial-mejs.tab.exercise .answer:active .possible-answer p {
+  color: pink !important; }
+
+.civil-mejs.tab.exercise .answer:active .possible-answer p {
+  color: orange !important; }
+
+.mecanica-mejs.tab.exercise .answer:active .possible-answer p {
+  color: purple !important; }
+
+/*===================TEXT COLOR ANSEWRS INTERACTIVE QUESTIONS===========================================================================*/
+.electronica-mejs.tab.exercise .answer .letter p {
+  color: #98D8CF !important; }
+
+.electrica-mejs.tab.exercise .answer .letter p {
+  color: red !important; }
+
+.sistemas-mejs.tab.exercise .answer .letter p {
+  color: yellow !important; }
+
+.industrial-mejs.tab.exercise .answer .letter p {
+  color: pink !important; }
+
+.civil-mejs.tab.exercise .answer .letter p {
+  color: orange !important; }
+
+.mecanica-mejs.tab.exercise .answer .letter p {
+  color: purple !important; }
+
+.electronica-mejs.tab.exercise .answer .possible-answer p {
+  color: #98D8CF !important; }
+
+.electrica-mejs.tab.exercise .answer .possible-answer p {
+  color: red !important; }
+
+.sistemas-mejs.tab.exercise .answer .possible-answer p {
+  color: yellow !important; }
+
+.industrial-mejs.tab.exercise .answer .possible-answer p {
+  color: pink !important; }
+
+.civil-mejs.tab.exercise .answer .possible-answer p {
+  color: orange !important; }
+
+.mecanica-mejs.tab.exercise .answer .possible-answer p {
+  color: purple !important; }
+
 /*===================BACKGROUND BUTTON COLOR INTERACTIVE QUESTIONS===================================================================*/
 .electronica-mejs.tab.exercise .exercise-next button {
-  color: #0F5953;
-  border: 2px solid #0F5953; }
+  color: #02161E;
+  border: 2px solid #02161E;
+  background-color: transparent; }
 
 .electrica-mejs.tab.exercise .exercise-next button {
   color: red !important;
-  border: 2px solid red; }
+  border: 2px solid red;
+  background-color: transparent; }
 
 .sistemas-mejs.tab.exercise .exercise-next button {
   color: yellow !important;
-  border: 2px solid yellow; }
+  border: 2px solid yellow;
+  background-color: transparent; }
 
 .industrial-mejs.tab.exercise .exercise-next button {
   color: pink !important;
-  border: 2px solid pink; }
+  border: 2px solid pink;
+  background-color: transparent; }
 
 .civil-mejs.tab.exercise .exercise-next button {
   color: orange !important;
-  border: 2px solid orange; }
+  border: 2px solid orange;
+  background-color: transparent; }
 
 .mecanica-mejs.tab.exercise .exercise-next button {
   color: purple !important;
-  border: 2px solid purple; }
+  border: 2px solid purple;
+  background-color: transparent; }
 
-/*===================BACKGROUND BUTTON-2 COLOR INTERACTIVE QUESTIONS=================================================================*/
-.electronica-mejs.tab.exercise .exercise-next .ex-check {
-  color: #718980;
-  background-color: #0F5953 !important; }
+/*===================BACKGROUND BUTTON HOVER COLOR INTERACTIVE QUESTIONS===========================================================*/
+.electronica-mejs.tab.exercise .exercise-next button:hover {
+  background-color: #02161E;
+  color: #678a81; }
 
-.electrica-mejs.tab.exercise .exercise-next .ex-check {
-  color: red !important;
-  background-color: red !important; }
+.electrica-mejs.tab.exercise .exercise-next button:hover {
+  background-color: red;
+  color: red; }
 
-.sistemas-mejs.tab.exercise .exercise-next .ex-check {
-  color: yellow !important;
-  background-color: yellow !important; }
+.sistemas-mejs.tab.exercise .exercise-next button:hover {
+  background-color: yellow;
+  color: yellow; }
 
-.industrial-mejs.tab.exercise .exercise-next .ex-check {
-  color: pink !important;
-  background-color: pink !important; }
+.industrial-mejs.tab.exercise .exercise-next button:hover {
+  background-color: pink;
+  color: pink; }
 
-.civil-mejs.tab.exercise .exercise-next .ex-check {
-  color: orange !important;
-  background-color: orange !important; }
+.civil-mejs.tab.exercise .exercise-next button:hover {
+  background-color: orange;
+  color: orange; }
 
-.mecanica-mejs.tab.exercise .exercise-next .ex-check {
-  color: purple !important;
-  background-color: purple !important; }
-
-/*===================BACKGROUND BUTTON-2:HOVER COLOR INTERACTIVE QUESTIONS===========================================================*/
-.electronica-mejs.tab.exercise .exercise-next .ex-check:hover {
-  background-color: #0F5953; }
-
-.electrica-mejs.tab.exercise .exercise-next .ex-check:hover {
-  background-color: red; }
-
-.sistemas-mejs.tab.exercise .exercise-next .ex-check:hover {
-  background-color: yellow; }
-
-.industrial-mejs.tab.exercise .exercise-next .ex-check:hover {
-  background-color: pink; }
-
-.civil-mejs.tab.exercise .exercise-next .ex-check:hover {
-  background-color: orange; }
-
-.mecanica-mejs.tab.exercise .exercise-next .ex-check:hover {
-  background-color: purple; }
+.mecanica-mejs.tab.exercise .exercise-next button:hover {
+  background-color: purple;
+  color: purple; }
 
 /*===================BACKGROUND COLOR UL LIST FOR TOOLS ==============================================================================*/
 .electronica-tools .tools-container .accordion-tabs-minimal {

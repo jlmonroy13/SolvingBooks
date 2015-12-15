@@ -41,6 +41,11 @@
 					font-size: em(16px);
 					font-weight: 500;
 					color: #000;
+					span {
+						font-family: "Aleo Lightitalic";
+					    color: red;
+					    font-size: 12px;
+					}
 				}
 				input {
 					background-color: rgba(#136396, 0.3);
