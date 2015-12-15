@@ -47,20 +47,66 @@ www.solvingbooks.com / FrontEnd - Jorge Monroy / BackEnd - Jose Osorio
 								<div class="modal-fade-screen">
 									<div class="modal-inner">
 										<div class="modal-close" for="modal-1"><p>X</p></div>
-										<form>
+										<form class="form1">
 								        	<h1>INGRESAR</h1>
 								        	<hr>
-								        	<label for="user-signin">USUARIO</label>
+								        	<label for="user-signin">USUARIO <span>Inválido</span></label>
 								        	<input id="user-signin" type="text" name="usuario" placeholder=""/>
-								        	<label for="password-signin">CONTRASEÑA</label>
+								        	<label for="password-signin">CONTRASEÑA <span>Inválido</span></label>
 								        	<input id="password-signin" type="password" name="password" placeholder=""/>
 								        	<input type="checkbox"/>
 								        	<span>Recordar datos.</span>
-								        	<p><a class="btnsignin" href="#close">INGRESAR</a></p>
+								        	<button>INGRESAR</button>
+								        	<hr>
 								        	<div>
 								        		<span>¿Eres nuevo en nuestra comunidad?</span>
-								        		<strong><a href="registro.html">Regístrate.</a></strong>
+								        		<strong><a href="signup.html">Regístrate.</a></strong>
+								        		<a href="#modal" class="forget-password">¿Olvidaste tu contraseña?</a>
 								        	</div>
+							  			</form>
+							  			<form class="form2">
+								        	<h1>RECUPERA TU CUENTA</h1>
+								        	<hr>
+								        	<p>Deja en el campo el correo de tu cuenta y sigue las instrucciones.</p>
+								        	<input type="email" id="sign-up-email2">
+								        	<div class="buttons-next-cancel">
+									        	<a href="#" class="cancel-forget-password">CANCELAR</a>
+									        	<a href="#" class="next-forget-password">SIGUIENTE</a>
+								        	</div>
+								        	<hr>
+							  			</form>
+							  			<form class="form3">
+								        	<h1>RECUPERA TU CUENTA</h1>
+								        	<hr>
+								        	<p>Hemos enviado un código de confrimación a tu correo.</p>
+								        	<input type="text" id="code">
+								        	<div class="buttons-next-cancel">
+									        	<a href="#" class="cancel-forget-password">CANCELAR</a>
+									        	<a href="#" class="next-forget-password2">SIGUIENTE</a>
+								        	</div>
+								        	<hr>
+							  			</form>
+							  			<form class="form4">
+								        	<h1>RECUPERA TU CUENTA</h1>
+								        	<hr>
+								        	<label for="password-signin2">NUEVA CONTRASEÑA</label>
+								        	<input id="password-signin3" type="password" name="password" placeholder=""/>
+								        	<label for="password-signin">VERIFICAR<span>Las contraseñas no coinciden</span></label>
+								        	<input id="password-signin" type="password" name="password" placeholder=""/>
+								        	<div class="buttons-next-cancel">
+									        	<a href="#" class="cancel-forget-password">CANCELAR</a>
+									        	<a href="#" class="next-forget-password3">SIGUIENTE</a>
+								        	</div>
+								        	<hr>
+							  			</form>
+							  			<form class="form5">
+								        	<h1>RECUPERA TU CUENTA</h1>
+								        	<hr>
+								        	<p>Tu contraseña se ha reestablecida con éxito.</p>
+								        	<div class="buttons-next-cancel">
+									        	<a href="#" class="cancel-forget-password">OK</a>
+								        	</div>
+								        	<hr>
 							  			</form>
 									</div>
 								</div>
@@ -560,7 +606,7 @@ www.solvingbooks.com / FrontEnd - Jorge Monroy / BackEnd - Jose Osorio
 										<a href="#"><img src="public/images/reproductor/electronica/pdf.svg" alt=""></a>
 									</div>
 									<div class="media-body">
-										<p>Gráficas y formulas auxiliares</p>
+										<p>Gráficas y fórmulas auxiliares</p>
 										<p>.pdf</p>
 										<p>2MB</p>
 									</div>
@@ -571,7 +617,7 @@ www.solvingbooks.com / FrontEnd - Jorge Monroy / BackEnd - Jose Osorio
 										<a href="#"><img src="public/images/reproductor/electronica/mov.svg" alt=""></a>
 									</div>
 									<div class="media-body">
-										<p>Ejercicios Propuestos Carga y Corriente</p>
+										<p>Ejercicios propuestos Carga y Corriente</p>
 										<p>.docx</p>
 										<p>1MB</p>
 									</div>

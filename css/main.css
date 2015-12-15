@@ -1069,14 +1069,18 @@ header {
             padding-top: 10vh; } }
         header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner {
           width: 370px;
-          height: 330px;
+          height: 328px;
           max-height: 100% !important;
           border-radius: 20px;
-          padding: 1em 2.5em; }
+          padding: 1em 2.5em;
+          overflow: hidden !important; }
           @media screen and (max-width: 400px) {
             header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner {
               width: 320px;
               padding: 1em; } }
+          @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
+            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner {
+              overflow: scroll; } }
           header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner .modal-close {
             top: 1px;
             width: 0;
@@ -1088,25 +1092,34 @@ header {
               color: #094268;
               font-size: 1.75em;
               margin-bottom: 0; }
-          header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form h1 {
+          header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form1 h1 {
             font-size: 2.625em;
             color: #094268;
             font-family: "Blanch caps";
             font-weight: 500;
             margin-bottom: 0;
             text-align: center; }
-          header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form hr {
+          header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form1 hr {
             margin: 0 auto 2px auto;
-            width: 110px;
-            border-bottom: 2px solid #094268; }
-          header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form label {
+            width: 100%;
+            border-bottom: 1px solid rgba(19, 99, 150, 0.3); }
+            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form1 hr:nth-child(10) {
+              margin-top: 10px;
+              border-bottom: 1px solid rgba(19, 99, 150, 0.3);
+              width: 100%; }
+          header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form1 label {
             color: #000;
             font-size: 1.875em;
             font-family: "Blanch caps";
             margin-bottom: 0;
             font-weight: 500;
             margin-left: 10px; }
-          header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form input {
+            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form1 label span {
+              font-family: "Aleo Lightitalic";
+              color: #103159;
+              font-size: 16px;
+              margin-left: 10px; }
+          header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form1 input {
             border-radius: 12px;
             color: #0F4760;
             font-family: "Aleo Light";
@@ -1116,42 +1129,217 @@ header {
             width: 291px;
             height: 27px;
             margin-top: -15px;
-            margin-bottom: -10px; }
-          header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form input[type="checkbox"] {
+            margin-bottom: -10px;
+            padding: 0 5%; }
+          header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form1 input[type="checkbox"] {
             margin: 0;
             display: inline-block;
             height: 15px;
             width: 15px;
             margin-left: 10px; }
-          header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form span {
+          header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form1 span {
             font-family: "Aleo Lightitalic";
             font-size: 0.75em;
             color: #6D6D6D; }
-          header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form p {
-            text-align: right;
-            margin-top: -20px;
-            margin-bottom: -5px; }
-            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form p a.btnsignin {
-              color: #fff !important;
-              font-family: "Blanch Caps";
-              font-size: 1.4375em;
-              font-weight: 500;
-              background-color: #0D5880;
-              border-radius: 16px;
-              width: 91px;
-              padding-right: 0 !important;
-              text-align: center; }
-          header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form div {
-            height: 0;
-            text-align: center; }
-            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form div span {
+          header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form1 button {
+            display: block;
+            margin: -30px 0 0 auto;
+            padding: 3px 25px;
+            font-family: "Blanch Caps";
+            font-size: 1.4375em;
+            background-color: #0D5880;
+            color: #fff !important;
+            border-radius: 16px; }
+          header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form1 div {
+            text-align: center;
+            line-height: 1.2; }
+            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form1 div span {
               color: #3f3f3f;
               font-family: "Aleo Light";
               font-size: 0.75em; }
-            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form div strong a {
+            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form1 div strong a {
               color: #000;
-              font-family: "Aleo Light";
+              font-family: "Aleo Bold";
               font-size: 0.9375em; }
+            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form1 div a {
+              font-family: "Aleo Light";
+              font-size: 0.75em; }
+              header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form1 div a:hover {
+                color: #0D5880;
+                text-decoration: underline; }
+          header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form2 {
+            display: none; }
+            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form2 h1 {
+              font-size: 2.625em;
+              color: #094268;
+              font-family: "Blanch caps";
+              font-weight: 500;
+              margin-bottom: 0;
+              text-align: center; }
+            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form2 hr {
+              margin: 0 auto 2px auto;
+              width: 100%;
+              border-bottom: 1px solid rgba(19, 99, 150, 0.3);
+              margin-top: 10px; }
+            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form2 p {
+              margin-top: 50px;
+              font-family: "Aleo Light";
+              text-align: center;
+              font-size: 0.9285em;
+              line-height: 1.1; }
+            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form2 input {
+              width: 100%;
+              height: 27px;
+              border-radius: 12px;
+              color: #0F4760;
+              font-family: "Aleo Light";
+              background-color: rgba(19, 99, 150, 0.3);
+              padding: 0 5%; }
+            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form2 .buttons-next-cancel {
+              text-align: center;
+              margin-bottom: 40px; }
+              header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form2 .buttons-next-cancel a {
+                margin: -20px 0 0 auto;
+                padding: 0 !important;
+                font-family: "Blanch Caps";
+                font-size: 1.4375em;
+                background-color: #0D5880;
+                color: #fff !important;
+                border-radius: 16px;
+                line-height: 1.3;
+                width: 100px; }
+                header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form2 .buttons-next-cancel a:first-child {
+                  margin-right: 10px; }
+          header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form3 {
+            display: none; }
+            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form3 h1 {
+              font-size: 2.625em;
+              color: #094268;
+              font-family: "Blanch caps";
+              font-weight: 500;
+              margin-bottom: 0;
+              text-align: center; }
+            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form3 hr {
+              margin: 0 auto 2px auto;
+              width: 100%;
+              border-bottom: 1px solid rgba(19, 99, 150, 0.3);
+              margin-top: 10px; }
+            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form3 p {
+              margin-top: 50px;
+              font-family: "Aleo Light";
+              text-align: center;
+              font-size: 0.9285em;
+              line-height: 1.1; }
+            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form3 input {
+              width: 50%;
+              height: 27px;
+              border-radius: 12px;
+              color: #0F4760;
+              font-family: "Aleo Light";
+              background-color: rgba(19, 99, 150, 0.3);
+              padding: 0 5%;
+              margin: 0 auto 12px auto; }
+            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form3 .buttons-next-cancel {
+              text-align: center;
+              margin-bottom: 40px; }
+              header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form3 .buttons-next-cancel a {
+                margin: -20px 0 0 auto;
+                padding: 0 !important;
+                font-family: "Blanch Caps";
+                font-size: 1.4375em;
+                background-color: #0D5880;
+                color: #fff !important;
+                border-radius: 16px;
+                line-height: 1.3;
+                width: 100px; }
+                header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form3 .buttons-next-cancel a:first-child {
+                  margin-right: 10px; }
+          header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form4 {
+            display: none; }
+            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form4 h1 {
+              font-size: 2.625em;
+              color: #094268;
+              font-family: "Blanch caps";
+              font-weight: 500;
+              margin-bottom: 0;
+              text-align: center; }
+            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form4 hr {
+              margin: 0 auto 2px auto;
+              width: 100%;
+              border-bottom: 1px solid rgba(19, 99, 150, 0.3);
+              margin-top: 10px; }
+            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form4 label {
+              color: #000;
+              font-size: 1.875em;
+              font-family: "Blanch caps";
+              margin-bottom: 0;
+              font-weight: 500;
+              margin-left: 10px; }
+              header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form4 label span {
+                font-family: "Aleo Lightitalic";
+                color: #103159;
+                font-size: 14px;
+                margin-left: 10px; }
+            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form4 input {
+              border-radius: 12px;
+              color: #0F4760;
+              font-family: "Aleo Light";
+              background-color: rgba(19, 99, 150, 0.3);
+              border: none;
+              display: block;
+              width: 291px;
+              height: 27px;
+              margin-top: -15px;
+              margin-bottom: -10px;
+              padding: 0 5%; }
+            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form4 .buttons-next-cancel {
+              text-align: center;
+              margin-top: 30px; }
+              header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form4 .buttons-next-cancel a {
+                margin: -20px 0 0 auto;
+                padding: 0 !important;
+                font-family: "Blanch Caps";
+                font-size: 1.4375em;
+                background-color: #0D5880;
+                color: #fff !important;
+                border-radius: 16px;
+                line-height: 1.3;
+                width: 100px; }
+                header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form4 .buttons-next-cancel a:first-child {
+                  margin-right: 10px; }
+          header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form5 {
+            display: none; }
+            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form5 h1 {
+              font-size: 2.625em;
+              color: #094268;
+              font-family: "Blanch caps";
+              font-weight: 500;
+              margin-bottom: 0;
+              text-align: center; }
+            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form5 hr {
+              margin: 0 auto 2px auto;
+              width: 100%;
+              border-bottom: 1px solid rgba(19, 99, 150, 0.3);
+              margin-top: 10px; }
+            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form5 p {
+              margin-top: 70px;
+              font-family: "Aleo Light";
+              text-align: center;
+              font-size: 0.9285em;
+              line-height: 1.1; }
+            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form5 .buttons-next-cancel {
+              text-align: center;
+              margin-bottom: 60px; }
+              header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form5 .buttons-next-cancel a {
+                margin: -20px 0 0 auto;
+                padding: 0 !important;
+                font-family: "Blanch Caps";
+                font-size: 1.4375em;
+                background-color: #0D5880;
+                color: #fff !important;
+                border-radius: 16px;
+                line-height: 1.3;
+                width: 100px; }
   header .navigation-wrapper nav ul .nav-link {
     background-color: #fff !important;
     text-align: center; }
@@ -1254,7 +1442,8 @@ header {
         font-size: 1.21875em;
         color: #282525;
         padding: 15px 20px;
-        margin-left: 0; }
+        margin-left: 0;
+        line-height: 1.1; }
         @media screen and (max-width: 400px) {
           .home #first-section .info-slider .info-mini p {
             padding: 15px 10px; } }

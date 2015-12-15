@@ -186,6 +186,51 @@ $(document).ready(function(){
     $('.response-over-response').fadeOut();
   });
 });
+//================ FADE IN AND FADE OUT MODAL SIGN-IN FORGET PASSWORD ====================
+$(document).ready(function(){
+  $(".forget-password").click(function(){
+    $('.form1').fadeOut();
+    $('.form3').fadeOut();
+    $('.form4').fadeOut();
+    $('.form5').fadeOut();
+    $('.form2').fadeIn();
+  });
+  $(".next-forget-password").click(function(){
+    $('.form2').fadeOut();
+    $('.form1').fadeOut();
+    $('.form4').fadeOut();
+    $('.form5').fadeOut();
+    $('.form3').fadeIn("slow");
+  });
+  $(".next-forget-password2").click(function(){
+    $('.form1').fadeOut();
+    $('.form2').fadeOut();
+    $('.form3').fadeOut();
+    $('.form5').fadeOut();
+    $('.form4').fadeIn("slow");
+  });
+  $(".next-forget-password3").click(function(){
+    $('.form1').fadeOut();
+    $('.form2').fadeOut();
+    $('.form3').fadeOut();
+    $('.form4').fadeOut();
+    $('.form5').fadeIn("slow");
+  });
+  $(".modal-close").click(function(){
+    $('.form2').fadeOut();
+    $('.form3').fadeOut();
+    $('.form4').fadeOut();
+    $('.form5').fadeOut();
+    $('.form1').fadeIn();
+  });
+  $(".cancel-forget-password").click(function(){
+    $('.form2').fadeOut();
+    $('.form3').fadeOut();
+    $('.form4').fadeOut();
+    $('.form5').fadeOut();
+    $('.form1').fadeIn();
+  });
+});
 
 
 
