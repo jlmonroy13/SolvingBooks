@@ -1072,7 +1072,8 @@ header {
           height: 330px;
           max-height: 100% !important;
           border-radius: 20px;
-          padding: 1em 2.5em; }
+          padding: 1em 2.5em;
+          overflow: hidden !important; }
           @media screen and (max-width: 400px) {
             header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner {
               width: 320px;
@@ -1142,7 +1143,6 @@ header {
               padding-right: 0 !important;
               text-align: center; }
           header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form div {
-            height: 0;
             text-align: center; }
             header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form div span {
               color: #3f3f3f;

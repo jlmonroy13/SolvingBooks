@@ -103,6 +103,7 @@ header {
 								max-height: 100% !important;
 								border-radius: 20px;
 								padding: 1em 2.5em;
+								overflow: hidden !important;
 								$mobile: new-breakpoint(max-width 400px);
 								@include media($mobile) {
 									width: 320px;
@@ -185,7 +186,7 @@ header {
 										}
 									}
 									div {
-										height: 0;
+										// height: 0;
 										text-align: center;
 										span {
 											color: #3f3f3f;
