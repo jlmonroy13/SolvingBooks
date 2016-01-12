@@ -3801,6 +3801,88 @@ li.content.question.answered .mecanica-circle {
   background-color: purple;
   border-radius: 10px; }
 
+/*===================PRICES STYLES==================================================*/
+.prices {
+  padding: 60px 0; }
+  .prices .subscribe {
+    background-color: #45709A; }
+    .prices .subscribe .subscribe-content {
+      max-width: 68em;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 20px; }
+      .prices .subscribe .subscribe-content::after {
+        clear: both;
+        content: "";
+        display: table; }
+      .prices .subscribe .subscribe-content h2 {
+        color: #fff;
+        font-size: 5em;
+        font-family: "Blanch Caps";
+        font-weight: 100;
+        text-align: center;
+        margin: 0; }
+      .prices .subscribe .subscribe-content > p {
+        color: #000;
+        font-size: 1.3125em;
+        font-family: "Aleo BoldItalic";
+        text-align: center;
+        padding: 0 30%; }
+      .prices .subscribe .subscribe-content .discount {
+        background-color: #fff;
+        display: inline-block;
+        border-radius: 0.75em;
+        width: 278px; }
+        .prices .subscribe .subscribe-content .discount h1 {
+          color: #12344C;
+          font-size: 6.5625em;
+          font-family: "Blanch Caps";
+          font-weight: 100;
+          margin: 0 0 -20px 0;
+          text-align: center; }
+        .prices .subscribe .subscribe-content .discount > p {
+          color: #596C84;
+          font-size: 1em;
+          font-family: "Aleo Light";
+          text-align: center; }
+          .prices .subscribe .subscribe-content .discount > p:last-child {
+            color: #000;
+            font-size: 0.8125em;
+            font-family: "Aleo Light";
+            text-align: center;
+            font-weight: 700;
+            padding: 0 15%;
+            margin-top: 15px; }
+        .prices .subscribe .subscribe-content .discount .months {
+          display: block;
+          width: 164px;
+          margin: 0 auto;
+          text-align: center;
+          border: 2px solid #00344F;
+          border-radius: 1.25em;
+          background-color: #00344F; }
+          .prices .subscribe .subscribe-content .discount .months span {
+            position: relative;
+            display: inline-block;
+            font-size: 1.5em;
+            font-family: "Blanch Caps"; }
+            .prices .subscribe .subscribe-content .discount .months span:first-child {
+              width: 50%;
+              color: #fff;
+              border-bottom-left-radius: 1.25em;
+              border-top-left-radius: 1.25em; }
+            .prices .subscribe .subscribe-content .discount .months span:last-child {
+              width: 50%;
+              background-color: #fff;
+              border-bottom-right-radius: 1.25em;
+              border-top-right-radius: 1.25em; }
+      .prices .subscribe .subscribe-content .features {
+        display: inline-block; }
+        .prices .subscribe .subscribe-content .features .list {
+          background-color: #fff;
+          display: inline-block;
+          border-radius: 0.75em; }
+
 /*===================FOOTER STYLES==================================================*/
 .big-footer {
   padding-top: 40px; }
