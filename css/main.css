@@ -3805,7 +3805,8 @@ li.content.question.answered .mecanica-circle {
 .prices {
   padding: 60px 0; }
   .prices .subscribe {
-    background-color: #45709A; }
+    background-color: #45709A;
+    padding: 0 20px 50px 20px; }
     .prices .subscribe .subscribe-content {
       max-width: 68em;
       margin-left: auto;
@@ -3821,67 +3822,158 @@ li.content.question.answered .mecanica-circle {
         font-family: "Blanch Caps";
         font-weight: 100;
         text-align: center;
-        margin: 0; }
+        margin: 0;
+        line-height: 0.8;
+        margin-bottom: 20px; }
       .prices .subscribe .subscribe-content > p {
         color: #000;
         font-size: 1.3125em;
         font-family: "Aleo BoldItalic";
         text-align: center;
-        padding: 0 30%; }
-      .prices .subscribe .subscribe-content .discount {
-        background-color: #fff;
-        display: inline-block;
-        border-radius: 0.75em;
-        width: 278px; }
-        .prices .subscribe .subscribe-content .discount h1 {
-          color: #12344C;
-          font-size: 6.5625em;
-          font-family: "Blanch Caps";
-          font-weight: 100;
-          margin: 0 0 -20px 0;
-          text-align: center; }
-        .prices .subscribe .subscribe-content .discount > p {
-          color: #596C84;
-          font-size: 1em;
-          font-family: "Aleo Light";
-          text-align: center; }
-          .prices .subscribe .subscribe-content .discount > p:last-child {
-            color: #000;
-            font-size: 0.8125em;
-            font-family: "Aleo Light";
-            text-align: center;
-            font-weight: 700;
-            padding: 0 15%;
-            margin-top: 15px; }
-        .prices .subscribe .subscribe-content .discount .months {
-          display: block;
-          width: 164px;
-          margin: 0 auto;
-          text-align: center;
-          border: 2px solid #00344F;
-          border-radius: 1.25em;
-          background-color: #00344F; }
-          .prices .subscribe .subscribe-content .discount .months span {
-            position: relative;
-            display: inline-block;
-            font-size: 1.5em;
-            font-family: "Blanch Caps"; }
-            .prices .subscribe .subscribe-content .discount .months span:first-child {
-              width: 50%;
-              color: #fff;
-              border-bottom-left-radius: 1.25em;
-              border-top-left-radius: 1.25em; }
-            .prices .subscribe .subscribe-content .discount .months span:last-child {
-              width: 50%;
-              background-color: #fff;
-              border-bottom-right-radius: 1.25em;
-              border-top-right-radius: 1.25em; }
-      .prices .subscribe .subscribe-content .features {
-        display: inline-block; }
-        .prices .subscribe .subscribe-content .features .list {
+        padding: 0 30%;
+        margin-bottom: 30px; }
+        @media (max-width: 930px) {
+          .prices .subscribe .subscribe-content > p {
+            padding: 0 10%; } }
+      .prices .subscribe .subscribe-content .blocks {
+        text-align: center; }
+        .prices .subscribe .subscribe-content .blocks .discount {
           background-color: #fff;
           display: inline-block;
-          border-radius: 0.75em; }
+          border-radius: 0.75em;
+          width: 278px; }
+          @media (max-width: 722px) {
+            .prices .subscribe .subscribe-content .blocks .discount {
+              margin-bottom: 20px; } }
+          .prices .subscribe .subscribe-content .blocks .discount h1 {
+            color: #12344C;
+            font-size: 6.5625em;
+            font-family: "Blanch Caps";
+            font-weight: 100;
+            margin: 0 0 -20px 0;
+            text-align: center;
+            margin-top: 10px; }
+          .prices .subscribe .subscribe-content .blocks .discount > p {
+            color: #596C84;
+            font-size: 1em;
+            font-family: "Aleo Light";
+            text-align: center; }
+            .prices .subscribe .subscribe-content .blocks .discount > p:last-child {
+              color: #000;
+              font-size: 0.8125em;
+              font-family: "Aleo Light";
+              text-align: center;
+              font-weight: 700;
+              padding: 0 15%;
+              margin-top: 15px;
+              margin-bottom: 40px; }
+          .prices .subscribe .subscribe-content .blocks .discount .months {
+            display: block;
+            width: 164px;
+            margin: 0 auto;
+            text-align: center;
+            border: 2px solid #00344F;
+            border-radius: 1.25em;
+            background-color: #00344F; }
+            .prices .subscribe .subscribe-content .blocks .discount .months span {
+              position: relative;
+              display: inline-block;
+              font-size: 1.5em;
+              font-family: "Blanch Caps"; }
+              .prices .subscribe .subscribe-content .blocks .discount .months span:first-child {
+                width: 50%;
+                color: #fff;
+                border-bottom-left-radius: 1.25em;
+                border-top-left-radius: 1.25em; }
+              .prices .subscribe .subscribe-content .blocks .discount .months span:last-child {
+                width: 50%;
+                background-color: #fff;
+                border-bottom-right-radius: 1.25em;
+                border-top-right-radius: 1.25em; }
+        .prices .subscribe .subscribe-content .blocks .features {
+          display: inline-block;
+          margin-left: 2%; }
+          .prices .subscribe .subscribe-content .blocks .features .list {
+            background-color: #fff;
+            display: inline-block;
+            border-radius: 0.75em;
+            padding: 30px 20px;
+            text-align: left;
+            margin-bottom: 18px; }
+            .prices .subscribe .subscribe-content .blocks .features .list p {
+              color: #000;
+              font-size: 1em;
+              font-family: "Aleo Light";
+              margin: 0;
+              padding: 15px 0;
+              border-bottom: 1px solid #A7CEE4; }
+              .prices .subscribe .subscribe-content .blocks .features .list p:last-child {
+                padding-bottom: 0;
+                border-bottom: none; }
+              .prices .subscribe .subscribe-content .blocks .features .list p:first-child {
+                padding-top: 0; }
+              .prices .subscribe .subscribe-content .blocks .features .list p span {
+                background: url("../public/images/prices-check.svg") no-repeat;
+                display: inline-block;
+                height: 13px;
+                width: 19px;
+                margin-right: 10px; }
+          .prices .subscribe .subscribe-content .blocks .features .button-features {
+            text-align: center; }
+            .prices .subscribe .subscribe-content .blocks .features .button-features a {
+              font-size: 1.75em;
+              font-family: "Blanch Caps";
+              color: #fff;
+              border-radius: 20px;
+              padding: 0 20px; }
+              @media (max-width: 400px) {
+                .prices .subscribe .subscribe-content .blocks .features .button-features a {
+                  display: block; } }
+              .prices .subscribe .subscribe-content .blocks .features .button-features a:first-child {
+                background-color: #E8AC03;
+                margin-right: 10px; }
+                .prices .subscribe .subscribe-content .blocks .features .button-features a:first-child:hover {
+                  color: #000; }
+                @media (max-width: 400px) {
+                  .prices .subscribe .subscribe-content .blocks .features .button-features a:first-child {
+                    width: 140px;
+                    margin: auto; } }
+              .prices .subscribe .subscribe-content .blocks .features .button-features a:last-child {
+                background-color: #1B4466; }
+                .prices .subscribe .subscribe-content .blocks .features .button-features a:last-child:hover {
+                  color: #000; }
+                @media (max-width: 400px) {
+                  .prices .subscribe .subscribe-content .blocks .features .button-features a:last-child {
+                    width: 210px;
+                    margin: 10px auto; } }
+  .prices .faq {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px; }
+    .prices .faq::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .prices .faq h2 {
+      color: #23456D;
+      font-size: 4.3125em;
+      font-family: "Blanch Caps";
+      font-weight: 100;
+      margin-bottom: 40px;
+      line-height: 0.8; }
+    .prices .faq .faquestion {
+      border-bottom: 1px solid #757575;
+      padding: 20px 20px 0 20px; }
+      .prices .faq .faquestion h6 {
+        font-family: "Aleo Bold";
+        font-size: 1em;
+        color: #000; }
+      .prices .faq .faquestion p {
+        font-family: "Aleo Light";
+        font-size: 1em;
+        color: #000;
+        margin-bottom: 30px; }
 
 /*===================FOOTER STYLES==================================================*/
 .big-footer {
