@@ -1141,25 +1141,6 @@ header {
             font-family: "Aleo Lightitalic";
             font-size: 0.75em;
             color: #6D6D6D; }
-<<<<<<< HEAD
-          header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form p {
-            text-align: right;
-            margin-top: -20px;
-            margin-bottom: -5px; }
-            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form p a.btnsignin {
-              color: #fff !important;
-              font-family: "Blanch Caps";
-              font-size: 1.4375em;
-              font-weight: 500;
-              background-color: #0D5880;
-              border-radius: 16px;
-              width: 91px;
-              padding-right: 0 !important;
-              text-align: center; }
-          header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form div {
-            text-align: center; }
-            header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form div span {
-=======
           header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form1 button {
             display: block;
             margin: -30px 0 0 auto;
@@ -1173,7 +1154,6 @@ header {
             text-align: center;
             line-height: 1.2; }
             header .navigation-wrapper nav ul li:nth-child(3) .modal .modal-fade-screen .modal-inner form.form1 div span {
->>>>>>> d2ba9236a8b11897d49b6d64f203290e25036c64
               color: #3f3f3f;
               font-family: "Aleo Light";
               font-size: 0.75em; }
