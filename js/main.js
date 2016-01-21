@@ -78,21 +78,21 @@ $(function() {
   });
 });
 //=========== HEADER ON TOP ON SCROLL FIXED ===============================
-$(window).scroll(function(){
-  var body = $("body");
-  var top = body.scrollTop(); // Get position of the body
-  if (top > 63 && top < 606) {
-    $(".navigation").fadeOut("slow");
-  }
-  if (top > 605) {
-    $(".navigation").fadeIn("slow");
-    $(".navigation").addClass("header-fixed");
-  }
-  if (top < 64) {
-    $(".navigation").fadeIn("slow");
-    $(".navigation").removeClass("header-fixed");
-  }
-});
+// $(window).scroll(function(){
+//   var body = $("body");
+//   var top = body.scrollTop(); // Get position of the body
+//   if (top > 63 && top < 606) {
+//     $(".navigation").fadeOut("slow");
+//   }
+//   if (top > 605) {
+//     $(".navigation").fadeIn("slow");
+//     $(".navigation").addClass("header-fixed");
+//   }
+//   if (top < 64) {
+//     $(".navigation").fadeIn("slow");
+//     $(".navigation").removeClass("header-fixed");
+//   }
+// });
 //=========== ENGINEERING PAGE - RESPONSIVE TITLE IN ENGINEERING INFO SECTION ===============================
 $(window).resize(function(){
   var ancho = $(window).width();

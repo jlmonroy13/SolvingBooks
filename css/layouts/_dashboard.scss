@@ -1,0 +1,189 @@
+/*===================DASHBOARD STYLES========================================================*/
+.dashboard {
+	padding-top: 80px;
+	.user-info {
+		margin-bottom: 40px;
+		@include outer-container;
+		.dashboard-photo {
+			@include span-columns(1);
+			display: inline-block;
+			@include size(133px);
+			background: url("../public/images/dashboard-photo.jpg") no-repeat;
+			background-size: cover;
+			border-radius: 12px;
+			border: 5px solid #4D6C99;
+		}
+		.dashboard-info {
+			@include span-columns(6);
+			background-color: rgba(#4D6C99, 0.19);
+			border-radius: 12px;
+			padding: 5px 20px 10px 20px;
+			position: relative;
+			h2 {
+				font-size: em(64px);
+				font-family: "Blanch Caps";
+				font-weight: 500;
+				color: #08143A;
+				margin-bottom: 0;
+				margin-top: -10px;
+				display: inline-block;
+			}
+			a {
+				border: 1px solid #4D6C99;
+				border-radius: 10px;
+				font-size: em(15px);
+				font-family:"Aleo Regular";
+				font-weight: 500;
+				color: #4D6C99;
+				padding: 2px 15px;
+				float: right;
+			    margin-top: 21px;
+			    &:hover {
+			    	background-color: #4D6C99;
+			    	color: #fff;
+			    }
+			}
+			hr {
+			    border-bottom: 1px solid #15344C;
+			    margin: -5px -20px 15px 0;
+			}
+			p {
+				font-size: em(18px);
+				font-family:"Aleo Regular";
+				font-weight: 500;
+				color: #000;
+				margin-bottom: -10px;
+			}
+			span {
+				font-size: em(13px);
+				font-family:"Aleo Light";
+				font-weight: 800;
+				color: #000;
+			}
+		}
+		.dashboard-account {
+			@include span-columns(4);
+			background-color: rgba(#4D6C99, 0.19);
+			border-radius: 12px;
+		    padding: 20px 20px 10px 20px;
+			h3 {
+				font-size: em(20px);
+				font-family:"Aleo Bold";
+				font-weight: 500;
+				margin-bottom: 5px;
+			}
+			p {
+				font-size: em(13px);
+				font-family:"Aleo Light";
+				font-weight: 800;
+				color: #000;
+			}
+			a {
+				font-size: em(24px);
+				font-family: "Blanch Caps";
+				font-weight: 500;
+				color: #fff;
+				background-color: #4D6C99;
+				border: 1px solid #4D6C99;
+			    border-radius: 15px;
+			    float: right;
+			    padding: 0px 10px;
+			    line-height: 1.1;
+			    &:hover {
+			    	background-color: transparent;
+			    	color: #4D6C99;
+			    }
+			}
+		}
+	}
+	.dashboard-activity {
+		@include outer-container;
+	    padding-right: 25px;
+		ul {
+			border-top-right-radius: 12px;
+		    border-top-left-radius: 12px;
+		    min-height: 48px;
+		    background-color: #4D6C99;
+		    li {
+		    	&:first-child {
+		    		margin-left: 20px;
+		    	}
+		    	>a {
+	    			font-family: "Aleo Bold";
+					font-size: 1.2857em;
+					font-weight: 500;
+					background-color: transparent;
+					padding: 5px;
+					text-align: center;
+					margin-top: 7px;
+					border-top-right-radius: 12px;
+		    		border-top-left-radius: 12px;
+		    		border: none !important;
+		    		margin-right: 0;
+		    		margin-left: 0;
+		    		width: 25%;
+		    		color: #fff;
+		    		&:hover {
+						color: #333;
+		    		}
+				}
+				a.is-active {
+					background-color: #F2F2F2;
+					color: #333;
+					&:hover {
+						color: #000;
+		    		} 
+				}
+				.tab-content {
+					border: none;
+					padding-left: 0;
+					background-color: #F2F2F2;
+					padding-left: 20px;
+				}
+				.recently-viewed {
+					padding-right: 0;
+					.scroll {
+						max-height: 70vh;
+						overflow-y: auto;
+						.rows-courses {
+							border-bottom: 1px solid black;
+							vertical-align: middle;
+							margin-right: 25px;
+							span {
+								display: inline-block;
+								vertical-align: middle;
+								@include size(66px);
+								background: url("../public/images/cursos/circuitos1/dashboard-circuitos1.svg");
+							}
+							p {
+								display: inline-block;
+								vertical-align: middle;
+								margin-bottom: 0;
+							}
+							a {
+								display: inline-block;
+								vertical-align: middle;
+								float: right;
+								font-size: em(24px);
+								font-family: "Blanch Caps";
+								font-weight: 500;
+								color: #fff;
+								background-color: #4D6C99;
+								border: 1px solid #4D6C99;
+							    border-radius: 15px;
+							    padding: 0px 12px;
+							    line-height: 1.1;
+						        margin-top: 10px;
+							    &:hover {
+							    	background-color: transparent;
+							    	color: #4D6C99;
+							    }
+
+							}
+						}
+					}
+				}
+		    }
+		}
+	}
+}

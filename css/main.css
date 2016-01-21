@@ -1643,6 +1643,192 @@ header {
     display: block;
     margin: 20px auto 0 auto; }
 
+/*===================DASHBOARD STYLES========================================================*/
+.dashboard {
+  padding-top: 80px; }
+  .dashboard .user-info {
+    margin-bottom: 40px;
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    .dashboard .user-info::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .dashboard .user-info .dashboard-photo {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 6.17215%;
+      display: inline-block;
+      height: 133px;
+      width: 133px;
+      background: url("../public/images/dashboard-photo.jpg") no-repeat;
+      background-size: cover;
+      border-radius: 12px;
+      border: 5px solid #4D6C99; }
+      .dashboard .user-info .dashboard-photo:last-child {
+        margin-right: 0; }
+    .dashboard .user-info .dashboard-info {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      background-color: rgba(77, 108, 153, 0.19);
+      border-radius: 12px;
+      padding: 5px 20px 10px 20px;
+      position: relative; }
+      .dashboard .user-info .dashboard-info:last-child {
+        margin-right: 0; }
+      .dashboard .user-info .dashboard-info h2 {
+        font-size: 4em;
+        font-family: "Blanch Caps";
+        font-weight: 500;
+        color: #08143A;
+        margin-bottom: 0;
+        margin-top: -10px;
+        display: inline-block; }
+      .dashboard .user-info .dashboard-info a {
+        border: 1px solid #4D6C99;
+        border-radius: 10px;
+        font-size: 0.9375em;
+        font-family: "Aleo Regular";
+        font-weight: 500;
+        color: #4D6C99;
+        padding: 2px 15px;
+        float: right;
+        margin-top: 21px; }
+        .dashboard .user-info .dashboard-info a:hover {
+          background-color: #4D6C99;
+          color: #fff; }
+      .dashboard .user-info .dashboard-info hr {
+        border-bottom: 1px solid #15344C;
+        margin: -5px -20px 15px 0; }
+      .dashboard .user-info .dashboard-info p {
+        font-size: 1.125em;
+        font-family: "Aleo Regular";
+        font-weight: 500;
+        color: #000;
+        margin-bottom: -10px; }
+      .dashboard .user-info .dashboard-info span {
+        font-size: 0.8125em;
+        font-family: "Aleo Light";
+        font-weight: 800;
+        color: #000; }
+    .dashboard .user-info .dashboard-account {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      background-color: rgba(77, 108, 153, 0.19);
+      border-radius: 12px;
+      padding: 20px 20px 10px 20px; }
+      .dashboard .user-info .dashboard-account:last-child {
+        margin-right: 0; }
+      .dashboard .user-info .dashboard-account h3 {
+        font-size: 1.25em;
+        font-family: "Aleo Bold";
+        font-weight: 500;
+        margin-bottom: 5px; }
+      .dashboard .user-info .dashboard-account p {
+        font-size: 0.8125em;
+        font-family: "Aleo Light";
+        font-weight: 800;
+        color: #000; }
+      .dashboard .user-info .dashboard-account a {
+        font-size: 1.5em;
+        font-family: "Blanch Caps";
+        font-weight: 500;
+        color: #fff;
+        background-color: #4D6C99;
+        border: 1px solid #4D6C99;
+        border-radius: 15px;
+        float: right;
+        padding: 0px 10px;
+        line-height: 1.1; }
+        .dashboard .user-info .dashboard-account a:hover {
+          background-color: transparent;
+          color: #4D6C99; }
+  .dashboard .dashboard-activity {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 25px; }
+    .dashboard .dashboard-activity::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .dashboard .dashboard-activity ul {
+      border-top-right-radius: 12px;
+      border-top-left-radius: 12px;
+      min-height: 48px;
+      background-color: #4D6C99; }
+      .dashboard .dashboard-activity ul li:first-child {
+        margin-left: 20px; }
+      .dashboard .dashboard-activity ul li > a {
+        font-family: "Aleo Bold";
+        font-size: 1.2857em;
+        font-weight: 500;
+        background-color: transparent;
+        padding: 5px;
+        text-align: center;
+        margin-top: 7px;
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+        border: none !important;
+        margin-right: 0;
+        margin-left: 0;
+        width: 25%;
+        color: #fff; }
+        .dashboard .dashboard-activity ul li > a:hover {
+          color: #333; }
+      .dashboard .dashboard-activity ul li a.is-active {
+        background-color: #F2F2F2;
+        color: #333; }
+        .dashboard .dashboard-activity ul li a.is-active:hover {
+          color: #000; }
+      .dashboard .dashboard-activity ul li .tab-content {
+        border: none;
+        padding-left: 0;
+        background-color: #F2F2F2;
+        padding-left: 20px; }
+      .dashboard .dashboard-activity ul li .recently-viewed {
+        padding-right: 0; }
+        .dashboard .dashboard-activity ul li .recently-viewed .scroll {
+          max-height: 70vh;
+          overflow-y: auto; }
+          .dashboard .dashboard-activity ul li .recently-viewed .scroll .rows-courses {
+            border-bottom: 1px solid black;
+            vertical-align: middle;
+            margin-right: 25px; }
+            .dashboard .dashboard-activity ul li .recently-viewed .scroll .rows-courses span {
+              display: inline-block;
+              vertical-align: middle;
+              height: 66px;
+              width: 66px;
+              background: url("../public/images/cursos/circuitos1/dashboard-circuitos1.svg"); }
+            .dashboard .dashboard-activity ul li .recently-viewed .scroll .rows-courses p {
+              display: inline-block;
+              vertical-align: middle;
+              margin-bottom: 0; }
+            .dashboard .dashboard-activity ul li .recently-viewed .scroll .rows-courses a {
+              display: inline-block;
+              vertical-align: middle;
+              float: right;
+              font-size: 1.5em;
+              font-family: "Blanch Caps";
+              font-weight: 500;
+              color: #fff;
+              background-color: #4D6C99;
+              border: 1px solid #4D6C99;
+              border-radius: 15px;
+              padding: 0px 12px;
+              line-height: 1.1;
+              margin-top: 10px; }
+              .dashboard .dashboard-activity ul li .recently-viewed .scroll .rows-courses a:hover {
+                background-color: transparent;
+                color: #4D6C99; }
+
 /*===================OUR-ENGINEERING STYLES==================================================*/
 .our-engineering .our-engineering-title {
   max-width: 68em;
