@@ -1646,6 +1646,12 @@ header {
 /*===================DASHBOARD STYLES========================================================*/
 .dashboard {
   padding-top: 80px; }
+  @media (max-width: 1130px) {
+    .dashboard {
+      padding: 80px 3% 0 3%; } }
+  @media (max-width: 400px) {
+    .dashboard {
+      padding-top: 40px; } }
   .dashboard .user-info {
     margin-bottom: 40px;
     max-width: 68em;
@@ -1659,101 +1665,163 @@ header {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 6.17215%;
-      display: inline-block;
-      height: 133px;
-      width: 133px;
-      background: url("../public/images/dashboard-photo.jpg") no-repeat;
-      background-size: cover;
-      border-radius: 12px;
-      border: 5px solid #4D6C99; }
+      width: 14.70196%; }
       .dashboard .user-info .dashboard-photo:last-child {
         margin-right: 0; }
+      @media (max-width: 1100px) {
+        .dashboard .user-info .dashboard-photo {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%;
+          text-align: center;
+          margin-bottom: 10px; }
+          .dashboard .user-info .dashboard-photo:last-child {
+            margin-right: 0; } }
+      .dashboard .user-info .dashboard-photo .photo-bckg {
+        display: inline-block;
+        height: 157px;
+        width: 157px;
+        background: url("../public/images/dashboard-photo.jpg") no-repeat;
+        background-size: cover;
+        border-radius: 12px;
+        border: 5px solid #4D6C99; }
+        @media (max-width: 1100px) {
+          .dashboard .user-info .dashboard-photo .photo-bckg {
+            height: 127px;
+            width: 127px; } }
     .dashboard .user-info .dashboard-info {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 48.82117%;
-      background-color: rgba(77, 108, 153, 0.19);
-      border-radius: 12px;
-      padding: 5px 20px 10px 20px;
-      position: relative; }
+      width: 48.82117%; }
       .dashboard .user-info .dashboard-info:last-child {
         margin-right: 0; }
-      .dashboard .user-info .dashboard-info h2 {
-        font-size: 4em;
-        font-family: "Blanch Caps";
-        font-weight: 500;
-        color: #08143A;
-        margin-bottom: 0;
-        margin-top: -10px;
-        display: inline-block; }
-      .dashboard .user-info .dashboard-info a {
-        border: 1px solid #4D6C99;
-        border-radius: 10px;
-        font-size: 0.9375em;
-        font-family: "Aleo Regular";
-        font-weight: 500;
-        color: #4D6C99;
-        padding: 2px 15px;
-        float: right;
-        margin-top: 21px; }
-        .dashboard .user-info .dashboard-info a:hover {
-          background-color: #4D6C99;
-          color: #fff; }
-      .dashboard .user-info .dashboard-info hr {
-        border-bottom: 1px solid #15344C;
-        margin: -5px -20px 15px 0; }
-      .dashboard .user-info .dashboard-info p {
-        font-size: 1.125em;
-        font-family: "Aleo Regular";
-        font-weight: 500;
-        color: #000;
-        margin-bottom: -10px; }
-      .dashboard .user-info .dashboard-info span {
-        font-size: 0.8125em;
-        font-family: "Aleo Light";
-        font-weight: 800;
-        color: #000; }
+      @media (max-width: 1100px) {
+        .dashboard .user-info .dashboard-info {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%; }
+          .dashboard .user-info .dashboard-info:last-child {
+            margin-right: 0; } }
+      .dashboard .user-info .dashboard-info .info {
+        background-color: rgba(77, 108, 153, 0.19);
+        border-radius: 12px;
+        padding: 10px 20px 30px 20px;
+        position: relative; }
+        @media (max-width: 1100px) {
+          .dashboard .user-info .dashboard-info .info {
+            width: 65%;
+            margin: 0 auto; } }
+        @media (max-width: 900px) {
+          .dashboard .user-info .dashboard-info .info {
+            width: 80%; } }
+        @media (max-width: 500px) {
+          .dashboard .user-info .dashboard-info .info {
+            width: 92%; } }
+        .dashboard .user-info .dashboard-info .info h2 {
+          font-size: 4em;
+          font-family: "Blanch Caps";
+          font-weight: 500;
+          color: #08143A;
+          margin-bottom: 0;
+          margin-top: -10px;
+          display: inline-block; }
+        .dashboard .user-info .dashboard-info .info a {
+          border: 1px solid #4D6C99;
+          border-radius: 10px;
+          font-size: 0.9375em;
+          font-family: "Aleo Regular";
+          font-weight: 500;
+          color: #4D6C99;
+          padding: 2px 15px;
+          float: right;
+          margin-top: 21px; }
+          .dashboard .user-info .dashboard-info .info a:hover {
+            background-color: #4D6C99;
+            color: #fff; }
+        .dashboard .user-info .dashboard-info .info hr {
+          border-bottom: 1px solid #15344C;
+          margin: -5px -20px 15px 0; }
+        .dashboard .user-info .dashboard-info .info p {
+          font-size: 1.125em;
+          font-family: "Aleo Regular";
+          font-weight: 500;
+          color: #000;
+          margin-bottom: -10px; }
+        .dashboard .user-info .dashboard-info .info span {
+          font-size: 0.8125em;
+          font-family: "Aleo Light";
+          font-weight: 800;
+          color: #000; }
     .dashboard .user-info .dashboard-account {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 31.76157%;
-      background-color: rgba(77, 108, 153, 0.19);
-      border-radius: 12px;
-      padding: 20px 20px 10px 20px; }
+      width: 31.76157%; }
       .dashboard .user-info .dashboard-account:last-child {
         margin-right: 0; }
-      .dashboard .user-info .dashboard-account h3 {
-        font-size: 1.25em;
-        font-family: "Aleo Bold";
-        font-weight: 500;
-        margin-bottom: 5px; }
-      .dashboard .user-info .dashboard-account p {
-        font-size: 0.8125em;
-        font-family: "Aleo Light";
-        font-weight: 800;
-        color: #000; }
-      .dashboard .user-info .dashboard-account a {
-        font-size: 1.5em;
-        font-family: "Blanch Caps";
-        font-weight: 500;
-        color: #fff;
-        background-color: #4D6C99;
-        border: 1px solid #4D6C99;
-        border-radius: 15px;
-        float: right;
-        padding: 0px 10px;
-        line-height: 1.1; }
-        .dashboard .user-info .dashboard-account a:hover {
-          background-color: transparent;
-          color: #4D6C99; }
+      @media (max-width: 1100px) {
+        .dashboard .user-info .dashboard-account {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%; }
+          .dashboard .user-info .dashboard-account:last-child {
+            margin-right: 0; } }
+      .dashboard .user-info .dashboard-account .account {
+        background-color: rgba(77, 108, 153, 0.19);
+        border-radius: 12px;
+        padding: 25px 20px 20px 20px;
+        text-align: right; }
+        @media (max-width: 1100px) {
+          .dashboard .user-info .dashboard-account .account {
+            width: 65%;
+            margin: 10px auto 0 auto; } }
+        @media (max-width: 900px) {
+          .dashboard .user-info .dashboard-account .account {
+            width: 80%; } }
+        @media (max-width: 500px) {
+          .dashboard .user-info .dashboard-account .account {
+            width: 92%; } }
+        .dashboard .user-info .dashboard-account .account h3 {
+          font-size: 1.25em;
+          font-family: "Aleo Bold";
+          font-weight: 500;
+          margin-bottom: 5px;
+          text-align: left; }
+        .dashboard .user-info .dashboard-account .account p {
+          font-size: 0.8125em;
+          font-family: "Aleo Light";
+          font-weight: 800;
+          color: #000;
+          text-align: left;
+          margin-bottom: 20px; }
+          @media (max-width: 1126px) {
+            .dashboard .user-info .dashboard-account .account p {
+              margin-bottom: 0; } }
+          @media (max-width: 1100px) {
+            .dashboard .user-info .dashboard-account .account p {
+              margin-bottom: 10px; } }
+        .dashboard .user-info .dashboard-account .account a {
+          font-size: 1.5em;
+          font-family: "Blanch Caps";
+          font-weight: 500;
+          color: #fff;
+          background-color: #4D6C99;
+          border: 1px solid #4D6C99;
+          border-radius: 15px;
+          padding: 0px 10px;
+          line-height: 1.1;
+          width: 95px; }
+          .dashboard .user-info .dashboard-account .account a:hover {
+            background-color: transparent;
+            color: #4D6C99; }
   .dashboard .dashboard-activity {
     max-width: 68em;
     margin-left: auto;
-    margin-right: auto;
-    padding-right: 25px; }
+    margin-right: auto; }
     .dashboard .dashboard-activity::after {
       clear: both;
       content: "";
@@ -1779,9 +1847,16 @@ header {
         margin-right: 0;
         margin-left: 0;
         width: 25%;
+        min-width: 210px;
         color: #fff; }
         .dashboard .dashboard-activity ul li > a:hover {
           color: #333; }
+        @media (max-width: 488px) {
+          .dashboard .dashboard-activity ul li > a {
+            min-width: 160px; } }
+        @media (max-width: 400px) {
+          .dashboard .dashboard-activity ul li > a {
+            min-width: 150px; } }
       .dashboard .dashboard-activity ul li a.is-active {
         background-color: #F2F2F2;
         color: #333; }
@@ -1791,27 +1866,41 @@ header {
         border: none;
         padding-left: 0;
         background-color: #F2F2F2;
-        padding-left: 20px; }
-      .dashboard .dashboard-activity ul li .recently-viewed {
+        padding-left: 20px;
         padding-right: 0; }
-        .dashboard .dashboard-activity ul li .recently-viewed .scroll {
+        .dashboard .dashboard-activity ul li .tab-content .scroll {
           max-height: 70vh;
           overflow-y: auto; }
-          .dashboard .dashboard-activity ul li .recently-viewed .scroll .rows-courses {
+          .dashboard .dashboard-activity ul li .tab-content .scroll::-webkit-scrollbar {
+            width: 8px;
+            background-color: #AAC4E2;
+            border-radius: 10px; }
+          .dashboard .dashboard-activity ul li .tab-content .scroll::-webkit-scrollbar-thumb {
+            background-color: #4D6C99;
+            border-radius: 10px; }
+          .dashboard .dashboard-activity ul li .tab-content .scroll .rows-courses {
             border-bottom: 1px solid black;
             vertical-align: middle;
-            margin-right: 25px; }
-            .dashboard .dashboard-activity ul li .recently-viewed .scroll .rows-courses span {
+            margin-right: 35px;
+            padding: 20px 0 10px 0; }
+            @media (max-width: 900px) {
+              .dashboard .dashboard-activity ul li .tab-content .scroll .rows-courses {
+                text-align: center; } }
+            .dashboard .dashboard-activity ul li .tab-content .scroll .rows-courses span {
               display: inline-block;
               vertical-align: middle;
+              margin-right: 30px;
               height: 66px;
               width: 66px;
               background: url("../public/images/cursos/circuitos1/dashboard-circuitos1.svg"); }
-            .dashboard .dashboard-activity ul li .recently-viewed .scroll .rows-courses p {
+              @media (max-width: 800px) {
+                .dashboard .dashboard-activity ul li .tab-content .scroll .rows-courses span {
+                  margin-right: 0; } }
+            .dashboard .dashboard-activity ul li .tab-content .scroll .rows-courses p {
               display: inline-block;
               vertical-align: middle;
               margin-bottom: 0; }
-            .dashboard .dashboard-activity ul li .recently-viewed .scroll .rows-courses a {
+            .dashboard .dashboard-activity ul li .tab-content .scroll .rows-courses a {
               display: inline-block;
               vertical-align: middle;
               float: right;
@@ -1824,10 +1913,16 @@ header {
               border-radius: 15px;
               padding: 0px 12px;
               line-height: 1.1;
-              margin-top: 10px; }
-              .dashboard .dashboard-activity ul li .recently-viewed .scroll .rows-courses a:hover {
+              margin-top: 20px; }
+              .dashboard .dashboard-activity ul li .tab-content .scroll .rows-courses a:hover {
                 background-color: transparent;
                 color: #4D6C99; }
+              @media (max-width: 900px) {
+                .dashboard .dashboard-activity ul li .tab-content .scroll .rows-courses a {
+                  float: none;
+                  display: block;
+                  width: 100px;
+                  margin: 5px auto 0 auto; } }
 
 /*===================OUR-ENGINEERING STYLES==================================================*/
 .our-engineering .our-engineering-title {
