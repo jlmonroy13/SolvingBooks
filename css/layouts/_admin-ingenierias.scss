@@ -1,0 +1,81 @@
+.main {
+  position: relative;
+}
+.main-container {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px 5% 0 5%;
+}
+
+.back-button {
+  position: absolute;
+  left: 30px;
+  top: 10px;
+  display: block;
+  @include size(60px);
+  background: #222F3F url('../public/images/admin/admin-back.png') no-repeat center center;
+  border-radius: 50%;
+}
+.table-responsive {
+  overflow: auto;
+  min-height: .01%;
+  height: 470px;
+  margin-bottom: 20px;
+}
+.table {
+  text-align: center;
+  min-width: 1050px;
+  height: 200px;
+  &__icon {
+    display: inline-block;
+    @include size(50px);
+    border-radius: 50%;
+    background-color: rgba(89, 128, 173, .31);
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 10px; 
+    vertical-align: middle;
+    cursor: pointer;
+    &--delete {
+      background-image: url('../public/images/admin/admin-delete.png');     
+    }
+    &--edit {
+      background-image: url('../public/images/admin/admin-edit.png');
+    }
+  }
+  &__head{  
+    font-family: "Aleo Bold";
+    border-bottom: 4px solid #5980AD;
+  }
+  &__title {
+    font-size: em(19px);
+    &--annotation {
+      font-family: "Aleo Light";
+    }
+  }
+  &__body {
+    font-family: "Aleo Light";
+    font-size: em(18px);
+  }
+  &__row {
+    border-bottom: 2px solid #757575;
+    @include transition(0.5s);
+    &:hover {
+      background-color: rgba(#5980AD, 0.1);
+    }
+  }
+}
+
+.create-button {
+  float: right;
+  font-family:"Blanch Caps";
+  font-size: em(28px);
+  border-radius: 20px;
+  color: white;
+  background-color: #0D5880;
+  padding: 1px 1.3em 4px;
+  &:focus {
+    outline: none;
+  }
+}

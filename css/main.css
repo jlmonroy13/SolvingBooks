@@ -4450,4 +4450,146 @@ li.content.question.answered .mecanica-circle {
 .mecanica-smallfooter .small-footer-container .text-smallfooter span {
   color: purple; }
 
+.main-admin {
+  padding-top: 150px; }
+  @media screen and (max-width: 754px) {
+    .main-admin {
+      padding-top: 80px; } }
+  .main-admin__title {
+    font-family: "Blanch Caps";
+    font-size: 2.875em;
+    color: #071D2B; }
+    @media screen and (max-width: 754px) {
+      .main-admin__title {
+        margin-top: -60px; } }
+
+.categories {
+  display: inline-block;
+  height: 167px;
+  width: 167px;
+  margin-right: 20px;
+  border-radius: 15px;
+  border: 8px solid #5980AD;
+  margin-bottom: 45px;
+  position: relative; }
+  .categories__container {
+    border: 4px solid #1E416B;
+    height: 100%;
+    border-radius: 6px;
+    padding: 20px 0; }
+  .categories__title {
+    position: relative;
+    top: 40px;
+    font-family: "Aleo BoldItalic";
+    color: #000;
+    font-size: 0.875em; }
+
+.circle {
+  display: inline-block;
+  background-color: rgba(89, 128, 173, 0.67);
+  height: 107px;
+  width: 107px;
+  border-radius: 50%;
+  padding: 40px 0;
+  transition: 0.5s; }
+  .circle:hover {
+    background-color: #5980ad; }
+  .circle--ingenierias {
+    background-image: url("../public/images/admin/admin-ingenierias.png");
+    background-repeat: no-repeat;
+    background-position: center; }
+  .circle--cursos {
+    background-image: url("../public/images/admin/admin-cursos.png");
+    background-repeat: no-repeat;
+    background-position: center; }
+  .circle--profesores {
+    background-image: url("../public/images/admin/admin-profesores.png");
+    background-repeat: no-repeat;
+    background-position: center; }
+  .circle--notificaciones {
+    background-image: url("../public/images/admin/admin-notificaciones.png");
+    background-repeat: no-repeat;
+    background-position: center; }
+
+.admin-categories {
+  margin-bottom: 100px; }
+  .admin-categories__btn:hover .circle {
+    background-color: #5980ad; }
+
+.main-admin {
+  text-align: center; }
+
+.main {
+  position: relative; }
+
+.main-container {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px 5% 0 5%; }
+
+.back-button {
+  position: absolute;
+  left: 30px;
+  top: 10px;
+  display: block;
+  height: 60px;
+  width: 60px;
+  background: #222F3F url("../public/images/admin/admin-back.png") no-repeat center center;
+  border-radius: 50%; }
+
+.table-responsive {
+  overflow: auto;
+  min-height: .01%;
+  height: 470px;
+  margin-bottom: 20px; }
+
+.table {
+  text-align: center;
+  min-width: 1050px;
+  height: 200px; }
+  .table__icon {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgba(89, 128, 173, 0.31);
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 10px;
+    vertical-align: middle;
+    cursor: pointer; }
+    .table__icon--delete {
+      background-image: url("../public/images/admin/admin-delete.png"); }
+    .table__icon--edit {
+      background-image: url("../public/images/admin/admin-edit.png"); }
+  .table__head {
+    font-family: "Aleo Bold";
+    border-bottom: 4px solid #5980AD; }
+  .table__title {
+    font-size: 1.1875em; }
+    .table__title--annotation {
+      font-family: "Aleo Light"; }
+  .table__body {
+    font-family: "Aleo Light";
+    font-size: 1.125em; }
+  .table__row {
+    border-bottom: 2px solid #757575;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s; }
+    .table__row:hover {
+      background-color: rgba(89, 128, 173, 0.1); }
+
+.create-button {
+  float: right;
+  font-family: "Blanch Caps";
+  font-size: 1.75em;
+  border-radius: 20px;
+  color: white;
+  background-color: #0D5880;
+  padding: 1px 1.3em 4px; }
+  .create-button:focus {
+    outline: none; }
+
 /*# sourceMappingURL=main.css.map */
