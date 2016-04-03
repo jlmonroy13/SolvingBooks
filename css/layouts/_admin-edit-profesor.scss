@@ -1,0 +1,24 @@
+.main--padding {
+	padding: 70px 90px;
+	position: relative;
+}
+
+.back-button--top {
+	top: 60px;
+}
+
+.edit-title {
+	border-bottom: 4px solid #5980AD;
+	font-family: "Aleo Bold";
+	font-size: em(20px);
+	padding-left: 20px;
+}
+
+.photo-section {
+	text-align: center;
+	@include span-columns(3);
+	&__image {
+		border: 6px solid #4D6C99;
+		border-radius: 16px;
+	}
+}

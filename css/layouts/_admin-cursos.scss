@@ -1,0 +1,35 @@
+.subtitle {
+	margin: 0;
+	position: relative;
+	background-color: rgba(#AAC4E2, 0.88);
+	width: 422px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+    bottom: 6px;
+    padding: 10px 0;
+    font-family: "Aleo Bold";
+    font-size: em(16px);
+    &--size {
+    	width: 352px !important;
+    }
+    &--size-small {
+	    width: 302px !important;
+    }
+}
+
+.table__title--subtitle {
+	position: relative;
+    bottom: 20px;
+}
+
+.table__title--padding {
+	padding-bottom: 0;
+}
+
+.table-responsive--height {
+    height: 475px;
+}
+
+.table__title--left {
+	text-align: left;
+}

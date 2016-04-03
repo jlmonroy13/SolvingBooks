@@ -43,6 +43,12 @@
     &--edit {
       background-image: url('../public/images/admin/admin-edit.png');
     }
+    &--electronica {
+      background-image: url('../public/images/admin/admin-electronica.png');
+    }
+    &--watch {
+      background-image: url('../public/images/admin/admin-watch.png');
+    }
   }
   &__head{  
     font-family: "Aleo Bold";
@@ -67,7 +73,7 @@
   }
 }
 
-.create-button {
+.modal-button {
   float: right;
   font-family:"Blanch Caps";
   font-size: em(28px);
@@ -75,7 +81,76 @@
   color: white;
   background-color: #0D5880;
   padding: 1px 1.3em 4px;
+  line-height: 1;
   &:focus {
     outline: none;
   }
+  &:hover {
+    background-color: #004868;
+    color: white;
+  }
+  &--position {
+    float: none;
+    display: block;
+    margin: 0 auto 10px;
+  }
 }
+
+.modal {
+  padding: 16rem 30px 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0, 0.63);
+  z-index: 9999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+  &:target {
+    opacity:1;
+    pointer-events: auto;
+  }
+}
+.modal-content {
+  padding: 10px 30px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.85);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.85);
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.85);
+  overflow: auto; 
+  max-width: 371px;
+  margin: auto;
+  height: 144px;
+  border-radius: 10px;
+  position: relative;
+  &__title {
+    color: #053024;
+    font-size: em(30px);
+    font-family:"Blanch Caps";
+    margin: 0;
+  }
+  &__input {
+    background-color: rgba(#5980AD, 0.67) !important;
+    border-radius: 50px !important;
+    padding: 10px 20px !important;
+  }
+  &__close {
+    position: absolute;
+    color: #053024;
+    font-size: em(30px);
+    font-family:"Blanch Caps";
+    top: -5px;
+    right: 10px;
+  }
+}
+
+
+
+
+
+
+
