@@ -1,86 +1,86 @@
 .main-admin {
-	padding-top: 150px;
-	$mobile: new-breakpoint(max-width 754px);
-	@include media($mobile) {
-		padding-top: 80px;
-	}
-	&__title {
-		font-family:"Blanch Caps";
-		font-size: em(46px);
-		color: #071D2B;
-		$mobile: new-breakpoint(max-width 754px);
-		@include media($mobile) {
-			margin-top: -60px;
-		}
-	}
+  padding-top: 150px;
+  $mobile: new-breakpoint(max-width 754px);
+  @include media($mobile) {
+    padding-top: 80px;
+  }
+  &__title {
+    font-family:"Blanch Caps";
+    font-size: em(46px);
+    color: #071D2B;
+    $mobile: new-breakpoint(max-width 754px);
+    @include media($mobile) {
+      margin-top: -60px;
+    }
+  }
 }
 
 
 .categories {
-	display: inline-block;
-	@include size(167px);
-	margin-right: 20px;
-	border-radius: 15px;
-	border: 8px solid #5980AD;
-	margin-bottom: 45px;
-	position: relative;
-	
-	&__container {
-		border: 4px solid #1E416B;
-		height: 100%;
-		border-radius: 6px;
-		padding: 20px 0;
-	}
-	&__title {
-		position: relative;
-		top: 40px;
-		font-family:"Aleo BoldItalic";
-		color: #000;
-		font-size: em(14px);
-	}
+  display: inline-block;
+  @include size(167px);
+  margin-right: 20px;
+  border-radius: 15px;
+  border: 8px solid #5980AD;
+  margin-bottom: 45px;
+  position: relative;
+  
+  &__container {
+    border: 4px solid #1E416B;
+    height: 100%;
+    border-radius: 6px;
+    padding: 20px 0;
+  }
+  &__title {
+    position: relative;
+    top: 40px;
+    font-family:"Aleo BoldItalic";
+    color: #000;
+    font-size: em(14px);
+  }
 }
 
 .circle {
-	display: inline-block;
-	background-color: rgba(#5980AD, 0.67);
-	@include size(107px);
-	border-radius: 50%;
-	padding: 40px 0;
-	transition: 0.5s;
-	&:hover {
-		background-color: rgba(#5980AD, 1);	
-	}
-	&--ingenierias {
-		background-image: url('../public/images/admin/admin-ingenierias.png');
-		background-repeat: no-repeat;
-		background-position: center;
-	}
-	&--cursos {
-		background-image: url('../public/images/admin/admin-cursos.png');
-		background-repeat: no-repeat;
-		background-position: center;
-	}
-	&--profesores {
-		background-image: url('../public/images/admin/admin-profesores.png');
-		background-repeat: no-repeat;
-		background-position: center;
-	}
-	&--notificaciones {
-		background-image: url('../public/images/admin/admin-notificaciones.png');
-		background-repeat: no-repeat;
-		background-position: center;
-	}
+  display: inline-block;
+  background-color: rgba(#5980AD, 0.67);
+  @include size(107px);
+  border-radius: 50%;
+  padding: 40px 0;
+  transition: 0.5s;
+  &:hover {
+    background-color: rgba(#5980AD, 1); 
+  }
+  &--ingenierias {
+    background-image: url('../public/images/admin/admin-ingenierias.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &--cursos {
+    background-image: url('../public/images/admin/admin-cursos.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &--profesores {
+    background-image: url('../public/images/admin/admin-profesores.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &--notificaciones {
+    background-image: url('../public/images/admin/admin-notificaciones.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 .admin-categories {
-	margin-bottom: 100px;
-	&__btn {
-		&:hover {
-			.circle {
-				background-color: rgba(#5980AD, 1);	
-			}
-		}
-	}
+  margin-bottom: 100px;
+  &__btn {
+    &:hover {
+      .circle {
+        background-color: rgba(#5980AD, 1); 
+      }
+    }
+  }
 }
 .main-admin {
-	text-align: center;
+  text-align: center;
 }

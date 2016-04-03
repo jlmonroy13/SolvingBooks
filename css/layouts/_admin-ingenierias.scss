@@ -14,7 +14,7 @@
   top: 10px;
   display: block;
   @include size(60px);
-  background: #222F3F url('../public/images/admin/admin-back.png') no-repeat center center;
+  background: #222F3F url('../public/images/admin/admin-back.png') no-repeat center;
   border-radius: 50%;
 }
 .table-responsive {
@@ -33,7 +33,7 @@
     border-radius: 50%;
     background-color: rgba(89, 128, 173, .31);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     margin-right: 10px; 
     vertical-align: middle;
     cursor: pointer;

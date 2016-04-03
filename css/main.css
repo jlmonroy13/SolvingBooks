@@ -4535,7 +4535,7 @@ li.content.question.answered .mecanica-circle {
   display: block;
   height: 60px;
   width: 60px;
-  background: #222F3F url("../public/images/admin/admin-back.png") no-repeat center center;
+  background: #222F3F url("../public/images/admin/admin-back.png") no-repeat center;
   border-radius: 50%; }
 
 .table-responsive {
@@ -4555,7 +4555,7 @@ li.content.question.answered .mecanica-circle {
     border-radius: 50%;
     background-color: rgba(89, 128, 173, 0.31);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     margin-right: 10px;
     vertical-align: middle;
     cursor: pointer; }
@@ -4681,7 +4681,7 @@ li.content.question.answered .mecanica-circle {
   text-align: left; }
 
 .main--padding {
-  padding: 70px 90px;
+  padding: 70px 6%;
   position: relative; }
 
 .back-button--top {
@@ -4694,6 +4694,7 @@ li.content.question.answered .mecanica-circle {
   padding-left: 20px; }
 
 .photo-section {
+  margin-bottom: 20px;
   text-align: center;
   float: left;
   display: block;
@@ -4701,8 +4702,126 @@ li.content.question.answered .mecanica-circle {
   width: 23.23176%; }
   .photo-section:last-child {
     margin-right: 0; }
+  @media (max-width: 992px) {
+    .photo-section {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      .photo-section:last-child {
+        margin-right: 0; } }
+  @media (max-width: 750px) {
+    .photo-section {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-right: 0; }
+      .photo-section:last-child {
+        margin-right: 0; } }
   .photo-section__image {
     border: 6px solid #4D6C99;
-    border-radius: 16px; }
+    border-radius: 16px;
+    margin-bottom: 15px; }
+
+.info-container {
+  padding: 10px 20px;
+  background-color: rgba(77, 108, 153, 0.2);
+  border-radius: 10px;
+  margin-bottom: 15px;
+  position: relative; }
+
+.general-info {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%; }
+  .general-info:last-child {
+    margin-right: 0; }
+  @media (max-width: 992px) {
+    .general-info {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      margin-right: 0; }
+      .general-info:last-child {
+        margin-right: 0; } }
+  @media (max-width: 750px) {
+    .general-info {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-right: 0; }
+      .general-info:last-child {
+        margin-right: 0; } }
+  .general-info__name {
+    font-weight: 300;
+    font-family: "Blanch Caps";
+    font-size: 4em;
+    color: #08143A;
+    line-height: 1;
+    margin-bottom: 15px; }
+    .general-info__name:after {
+      content: " ";
+      border-bottom: 1px solid #15344C;
+      width: 350px;
+      display: table-cell; }
+  .general-info__full-name {
+    font-family: "Aleo Regular";
+    font-size: 1.125em;
+    margin: 0; }
+  .general-info__hometown {
+    font-family: "Aleo Light";
+    font-size: 0.9375em;
+    margin: 0; }
+  .general-info__description {
+    font-family: "Aleo Light";
+    font-size: 0.9375em;
+    margin: 15px 0; }
+
+.specific-info {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  .specific-info:last-child {
+    margin-right: 0; }
+  @media (max-width: 992px) {
+    .specific-info {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .specific-info:last-child {
+        margin-right: 0; } }
+  .specific-info__title {
+    font-family: "Aleo Bold";
+    font-size: 1.0625em;
+    margin: 0; }
+    .specific-info__title--first {
+      margin-top: 15px; }
+  .specific-info__legend {
+    font-family: "Aleo Light";
+    font-size: 1.0625em;
+    margin: 0;
+    margin-bottom: 15px; }
+
+.edit-icon {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: block;
+  background: rgba(89, 128, 173, 0.31) url("../public/images/admin/admin-edit.png") center/18px no-repeat;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s; }
+  .edit-icon:hover {
+    background-color: rgba(89, 128, 173, 0.6); }
 
 /*# sourceMappingURL=main.css.map */
