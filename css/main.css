@@ -4604,7 +4604,7 @@ li.content.question.answered .mecanica-circle {
     display: block;
     margin: 0 auto 10px; }
 
-.modal {
+.modal-admin {
   padding: 16rem 30px 0;
   position: fixed;
   top: 0;
@@ -4618,7 +4618,7 @@ li.content.question.answered .mecanica-circle {
   -moz-transition: opacity 400ms ease-in;
   transition: opacity 400ms ease-in;
   pointer-events: none; }
-  .modal:target {
+  .modal-admin:target {
     opacity: 1;
     pointer-events: auto; }
 
